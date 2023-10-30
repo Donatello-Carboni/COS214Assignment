@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/main.dir/src/Caretaker.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.cpp",
+  "output": "CMakeFiles/main.dir/src/Caretaker.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/main.dir/src/Tab.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp",
+  "output": "CMakeFiles/main.dir/src/Tab.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/main.dir/src/TabMemento.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp",
+  "output": "CMakeFiles/main.dir/src/TabMemento.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/main.dir/src/Main/Main.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Main/Main.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Main/Main.cpp",
+  "output": "CMakeFiles/main.dir/src/Main/Main.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/test.dir/src/Caretaker.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.cpp",
+  "output": "CMakeFiles/test.dir/src/Caretaker.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/test.dir/src/Tab.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp",
+  "output": "CMakeFiles/test.dir/src/Tab.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/test.dir/src/TabMemento.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp",
+  "output": "CMakeFiles/test.dir/src/TabMemento.cpp.o"
+},
+{
+  "directory": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src -g -std=gnu++14 -o CMakeFiles/test.dir/src/tests/test_main.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/tests/test_main.cpp",
+  "file": "/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/tests/test_main.cpp",
+  "output": "CMakeFiles/test.dir/src/tests/test_main.cpp.o"
+}
+]

@@ -10,7 +10,7 @@ run:
 test:
 	cd build && make
 	cd ../
-  ./bin/test
+	./bin/test
   
 clean:
 	rm -rf ./build/*
