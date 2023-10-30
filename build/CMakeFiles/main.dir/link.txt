@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/src/Caretaker.cpp.o CMakeFiles/main.dir/src/Tab.cpp.o CMakeFiles/main.dir/src/TabMemento.cpp.o CMakeFiles/main.dir/src/Main/Main.cpp.o -o /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main 
