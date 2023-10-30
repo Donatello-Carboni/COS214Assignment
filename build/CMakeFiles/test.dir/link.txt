@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test.dir/src/Caretaker.cpp.o CMakeFiles/test.dir/src/Tab.cpp.o CMakeFiles/test.dir/src/TabMemento.cpp.o CMakeFiles/test.dir/src/tests/test_main.cpp.o -o /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/test  /usr/lib/libgtest.so.1.14.0 -lpthread 

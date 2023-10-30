@@ -1,0 +1,4 @@
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles/main.dir
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles/test.dir
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles/edit_cache.dir
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles/rebuild_cache.dir
