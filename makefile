@@ -1,9 +1,16 @@
+make:
+	cd build && make
+	cd ../
+
 run:
-	./bin/prod
+	cd build && make
+	cd ../
+	./bin/main
 
 test:
-	./bin/test	
-
-# Clean generated files
+	cd build && make
+	cd ../
+  ./bin/test
+  
 clean:
-	rm -rf ./bin/*
+	rm -rf ./build/*
