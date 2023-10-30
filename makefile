@@ -10,8 +10,7 @@ run:
 test:
 	cd build && make
 	cd ../
-	./bin/test	
-
-# Clean generated files
+  ./bin/test
+  
 clean:
 	rm -rf ./build/*
