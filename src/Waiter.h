@@ -7,7 +7,7 @@
 class Waiter: public Colleague{
     private:
      //Mediator
-     KitchenMediator *mediator;
+     ConcreteMediator *mediator;
     
     public:
         Waiter(ConcreteMediator *mediator);

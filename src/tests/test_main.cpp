@@ -78,8 +78,6 @@ TEST(MediatorTest, AddColleague) {
   ASSERT_EQ(mediator.getColleagues().at(0), &chef);
   ASSERT_EQ(mediator.getColleagues().at(1), &waiter);
   delete mediator;
-  delete chef;
-  delete waiter;
 }
 
 TEST(MediatorTest, AddCommand) {
@@ -95,10 +93,24 @@ TEST(MediatorTest, AddCommand) {
   ASSERT_EQ(mediator.getCommands().at(0), &command);
   ASSERT_EQ(mediator.getCommands().at(1), &command2);
   delete mediator;
-  delete command;
-  delete command2;
 }
 
+TEST(MediatorTest,CommsToDecor ){
+  KitchenMediator mediator=new ConcreteMediator();
+  Chef chef=new Chef();
+  Waiter waiter=new Waiter();
+
+  mediator.addColleague(&chef);
+  mediator.addColleague(&waiter);
+
+  waiter.writeDownOrder("Burger");
+  waiter.writeDownOrder("Burger");
+  
+
+  // Perform assertions to validate the number of colleagues
+  ASSERT_EQ(mediator.getCommands().at(0)->Burger->test, "BurgerBurger");
+  delete mediator;
+}
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

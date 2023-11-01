@@ -7,15 +7,15 @@ Waiter::Waiter(ConcreteMediator *mediator)
 
 void Waiter::WriteDownOrder(std::string order)
 {
-    this->mediator->notify(this,1,order);
+    this->mediator->notifyOrder(this,1,order);
 }
 
 void Waiter::CancelItem(std::string order)
 {
-    this->mediator->notify(this,2,order);
+    this->mediator->notifyOrder(this,2,order);
 }
 
 void Waiter::DoneOrder()
 {
-    this->mediator->NotifyDoneOrder(this);
+    this->mediator->notifyDone(this,3);
 }

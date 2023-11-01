@@ -1,12 +1,24 @@
 #include "KitchenMediator.h"
 #include <vector>
 
+KitchenMediator::~KitchenMediator()
+{
+    for (int i = 0; i < colleagues.size(); i++)
+    {
+        delete colleagues[i];
+    }
+    for (int i = 0; i < commands.size(); i++)
+    {
+        delete commands[i];
+    }
+}
+
 KitchenMediator::KitchenMediator(Colleague *colleague[], Command *command[])
 {
     for (int i = 0; i < 3; i++)
     {
-        colleagues.push_back(colleague[i]);
-        commands.push_back(command[i]);
+        colleagues.push_back(colleague[i]);// colleague 1 is for waiter colleague 2 is for chef 
+        commands.push_back(command[i]); // command 1 is for adding to order and canceling from the order second is for complaints
     }
 }
 
