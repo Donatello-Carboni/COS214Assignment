@@ -5,7 +5,7 @@
 
 class Observer {
     public:
-        void virtual  update(Table*) = 0;
+        void virtual update(Table* changedTable) = 0;
 };
 
 #endif
