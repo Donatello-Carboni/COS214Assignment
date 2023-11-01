@@ -64,6 +64,7 @@ TEST(CaretakerTest, AddAndGetMemento) {
 
 #include "../RestaurantTable.h"
 #include "../CompositeTable.h"
+#include "../Table.h"
 #include "../Customer.h"
 
 // Define a test fixture for RestaurantTable and CompositeTable

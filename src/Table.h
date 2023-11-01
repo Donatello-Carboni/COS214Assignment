@@ -1,8 +1,11 @@
 #ifndef TABLE_H
 #define TABLE_H
+
+
 #include "Observer.h"
 #include "Customer.h"
 #include <vector>
+
 class Table {
     private:
         Observer* myWaiter;
