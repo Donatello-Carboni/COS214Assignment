@@ -8,7 +8,7 @@
 class Chef
 {
 public:
-    virtual void addToPlate(std::vector<std::string> order,Plate* plate)  = 0;
+    virtual void addToPlate(std::vector<std::string> order,Plate* plate);
 };
 
 #endif 

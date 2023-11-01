@@ -12,16 +12,16 @@ class KitchenMediator {
    std::vector<Command*> commands;
 
  public:
-
-   KitchenMediator(Colleague *colleague[], Command *command[]);
-  virtual ~KitchenMediator();
-   virtual void notify(Colleague *colleague, int choice, std::vector<std::string> order)=0;
-   void addColleague(Colleague *colleague);
-   void addCommand(Command *command);
-   void removeColleague(Colleague *colleague);
-   void removeCommand(Command *command);
-   std::vector<Colleague*> getColleagues();
-   std::vector<Command*> getCommands();
+    KitchenMediator();
+    KitchenMediator(Colleague *colleague[], Command *command[]);
+    virtual ~KitchenMediator();
+    virtual void notify(Colleague *colleague, int choice, std::vector<std::string> order)=0;
+    void addColleague(Colleague *colleague);
+    void addCommand(Command *command);
+    void removeColleague(Colleague *colleague);
+    void removeCommand(Command *command);
+    std::vector<Colleague*> getColleagues();
+    std::vector<Command*> getCommands();
   
 };
 #endif

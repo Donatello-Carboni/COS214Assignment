@@ -66,45 +66,48 @@ TEST(CaretakerTest, AddAndGetMemento) {
 }
 
 TEST(MediatorTest, AddColleague) {
-  KitchenMediator mediator=new ConcreteMediator();
-  Chef chef=new Chef();
-  Waiter waiter=new Waiter();
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef=new Chef();
+  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
 
-  mediator.addColleague(&chef);
-  mediator.addColleague(&waiter);
+  mediator->addColleague((Colleague*)chef);
+  mediator->addColleague((Colleague*)waiter);
 
   // Perform assertions to validate the number of colleagues
   ASSERT_EQ(mediator.getColleagues().size(), 2);
-  ASSERT_EQ(mediator.getColleagues().at(0), &chef);
-  ASSERT_EQ(mediator.getColleagues().at(1), &waiter);
+  ASSERT_EQ(mediator.getColleagues().at(0), chef);
+  ASSERT_EQ(mediator.getColleagues().at(1), waiter);
   delete mediator;
 }
 
 TEST(MediatorTest, AddCommand) {
-  KitchenMediator mediator=new ConcreteMediator();
-  Command command=new Command();
-  Command command2=new Command();
+  KitchenMediator *mediator = new ConcreteMediator();
 
-  mediator.addCommand(&command);
-  mediator.addCommand(&command2);
+  Command *command = new  CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
 
   // Perform assertions to validate the number of commands
   ASSERT_EQ(mediator.getCommands().size(), 2);
-  ASSERT_EQ(mediator.getCommands().at(0), &command);
-  ASSERT_EQ(mediator.getCommands().at(1), &command2);
+  ASSERT_EQ(mediator.getCommands().at(0), command);
+  ASSERT_EQ(mediator.getCommands().at(1), command2);
   delete mediator;
 }
 
 TEST(MediatorTest,CommsToDecor ){
-  KitchenMediator mediator=new ConcreteMediator();
-  Chef chef=new Chef();
-  Waiter waiter=new Waiter();
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef=new Chef();
+  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
 
-  mediator.addColleague(&chef);
-  mediator.addColleague(&waiter);
+  mediator->addColleague((Colleague*)chef);
+  mediator->addColleague((Colleague*)waiter);
+  Command *command = new  CreateOrder();
+  Command *command2 = new CreateOrder();
 
-  waiter.writeDownOrder("Burger");
-  waiter.writeDownOrder("Burger");
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
   
 
   // Perform assertions to validate the number of colleagues
