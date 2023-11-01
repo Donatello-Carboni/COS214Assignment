@@ -62,9 +62,9 @@ TEST(CaretakerTest, AddAndGetMemento) {
 
 //COMPOSITE
 
-#include "RestaurantTable.h"
-#include "CompositeTable.h"
-#include "Customer.h"
+#include "../RestaurantTable.h"
+#include "../CompositeTable.h"
+#include "../Customer.h"
 
 // Define a test fixture for RestaurantTable and CompositeTable
 class TableTest : public ::testing::Test {
