@@ -1,7 +1,7 @@
 #ifndef Observer_H
 #define Observer_H
 
-#include "Table.h"
+class Table;
 
 class Observer {
     public:

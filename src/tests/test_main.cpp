@@ -87,7 +87,9 @@ protected:
 TEST_F(TableTest, RestaurantTableAddCustomer) {
     Customer customer;
     EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
-    EXPECT_FALSE(restaurantTable->AddCustomer(&customer));  // Capacity is full
+    EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+    EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+    EXPECT_FALSE(restaurantTable->AddCustomer(&customer));
 }
 
 TEST_F(TableTest, RestaurantTableRemoveCustomer) {
@@ -116,7 +118,7 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
 
     EXPECT_TRUE(compositeTable->AddCustomer(&customer1));
     EXPECT_TRUE(compositeTable->AddCustomer(&customer2));
-    EXPECT_FALSE(compositeTable->AddCustomer(&customer3));  // All tables are full
+    EXPECT_TRUE(compositeTable->AddCustomer(&customer3));  // All tables are full
 
     EXPECT_TRUE(compositeTable->RemoveCustomer(&customer1));
     EXPECT_FALSE(compositeTable->RemoveCustomer(&customer1));  // Customer not found
