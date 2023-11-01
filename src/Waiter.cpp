@@ -2,19 +2,26 @@
 
 #include <algorithm>
 
-Waiter::Waiter(std::vector<Table*> freeTables) : FreeTables(freeTables) {}
+Waiter::Waiter(std::vector<Table*> freeTables) : FreeTables(freeTables) {
+    for (auto table : FreeTables) {
+        table->attach(this);
+    }
+}
 
 Waiter::~Waiter() {
   for (auto table : FreeTables) {
+    table->detach(this);
     delete table;
   }
   FreeTables.clear();
 
   for (auto table : OccupiedTables) {
+    table->detach(this);
     delete table;
   }
   OccupiedTables.clear();
 }
+
 
 void Waiter::update(Table* changedTable) {
   if (changedTable->getState()) {
