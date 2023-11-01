@@ -41,5 +41,6 @@ int main() {
   std::cout << "\nTab State After Rollback:" << std::endl;
   tab.printBill();
 
+  
   return 0;
 }

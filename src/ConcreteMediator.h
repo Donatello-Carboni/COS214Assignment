@@ -5,14 +5,11 @@
 class ConcreteMediator : public KitchenMediator
 {
 private:
-    Colleague *colleague;
-    Command *command;
+    
 public:
-    ConcreteMediator();
-    void notify(Colleague *colleague, int choice);
+    ConcreteMediator(Colleague *colleague[], Command *command[]):KitchenMediator(colleague, command){};
+    void notify(Colleague *colleague, int choice, std::vector<std::string> order);
     void HandleCommand(int choice);
-    void setColleague(Colleague *colleague);
-    void setCommand(Command *command);
 };
 
 #endif

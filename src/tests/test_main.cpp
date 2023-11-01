@@ -5,6 +5,12 @@
 #include "../Caretaker.h"
 #include "../Tab.h"
 #include "../TabMemento.h"
+#include "../Plate.h"
+#include "../Waiter.h"
+#include "../Chef.h"
+#include "../Colleague.h"
+#include "../KitchenMediator.h"
+#include "../ConcreteMediator.h"
 
 TEST(TabTest, CreateMemento) {
   Tab tab;
@@ -58,6 +64,41 @@ TEST(CaretakerTest, AddAndGetMemento) {
   // Perform assertions to validate the retrieved memento
   // (similar to the previous tests)
 }
+
+TEST(MediatorTest, AddColleague) {
+  KitchenMediator mediator=new ConcreteMediator();
+  Chef chef=new Chef();
+  Waiter waiter=new Waiter();
+
+  mediator.addColleague(&chef);
+  mediator.addColleague(&waiter);
+
+  // Perform assertions to validate the number of colleagues
+  ASSERT_EQ(mediator.getColleagues().size(), 2);
+  ASSERT_EQ(mediator.getColleagues().at(0), &chef);
+  ASSERT_EQ(mediator.getColleagues().at(1), &waiter);
+  delete mediator;
+  delete chef;
+  delete waiter;
+}
+
+TEST(MediatorTest, AddCommand) {
+  KitchenMediator mediator=new ConcreteMediator();
+  Command command=new Command();
+  Command command2=new Command();
+
+  mediator.addCommand(&command);
+  mediator.addCommand(&command2);
+
+  // Perform assertions to validate the number of commands
+  ASSERT_EQ(mediator.getCommands().size(), 2);
+  ASSERT_EQ(mediator.getCommands().at(0), &command);
+  ASSERT_EQ(mediator.getCommands().at(1), &command2);
+  delete mediator;
+  delete command;
+  delete command2;
+}
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
