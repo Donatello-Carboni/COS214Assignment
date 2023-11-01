@@ -44,6 +44,7 @@ bool CompositeTable::RemoveCustomer(Customer* customer) {
     for (int i = 0; i < this->tables.size(); i++) {
         if (this->tables[i]->RemoveCustomer(customer)) {
             return true;
+
         }
     }
     return false;
