@@ -124,6 +124,44 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
     EXPECT_FALSE(compositeTable->RemoveCustomer(&customer1));  // Customer not found
 }
 
+//OBSERVER
+ #include "../Waiter.h"
+ 
+
+
+TEST_F(TableTest, WaiterUpdate) {
+    // Create tables
+    RestaurantTable table3(3);
+    RestaurantTable table4(3);
+    
+    Waiter waiter({ &table3, &table4 });
+
+    table4.setState(false); // Make table4 occupied
+
+
+    // Check if the tables are initially in the correct vectors
+    EXPECT_EQ(waiter.getFreeTablesCount(), 1); 
+    EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
+
+    // Change the state of the tables and simulate notification
+    table3.setState(false); // Make table3 occupied
+
+
+    // Check if tables are moved to the correct vectors after the state change
+    EXPECT_EQ(waiter.getFreeTablesCount(), 0);
+    EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
+
+    table3.setState(true);
+    table4.setState(true);
+
+  EXPECT_EQ(waiter.getFreeTablesCount(), 2);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 0);
+
+}
+
+
+
+
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

@@ -14,6 +14,8 @@ class Waiter : public Observer {
   Waiter(std::vector<Table*> FreeTables);
   ~Waiter();
   void update(Table* changedTable);
+  int getFreeTablesCount() const;
+  int getOccupiedTablesCount() const;
 };
 
 #endif
