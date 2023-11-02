@@ -5,7 +5,15 @@
 #include "../Caretaker.h"
 #include "../Tab.h"
 #include "../TabMemento.h"
-
+#include "../Plate.h"
+#include "../Waiter.h"
+#include "../Chef.h"
+#include "../Colleague.h"
+#include "../KitchenMediator.h"
+#include "../ConcreteMediator.h"
+#include "../CreateOrder.h"
+#include "../Command.h"
+#include "../BaseChef.h"
 int main() {
   // Create a Caretaker and a Tab
   Caretaker caretaker;
@@ -40,6 +48,21 @@ int main() {
 
   std::cout << "\nTab State After Rollback:" << std::endl;
   tab.printBill();
+  //Mediator 
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef=new BaseChef();
+  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
+
+  mediator->addColleague((Colleague*)chef);
+  mediator->addColleague((Colleague*)waiter);
+  Command *command = new  CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  waiter->WriteDownOrder("Burger");
+  waiter->WriteDownOrder("Burger");
 
   return 0;
 }

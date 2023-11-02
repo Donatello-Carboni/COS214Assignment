@@ -1,6 +1,24 @@
 #include "Waiter.h"
-
 #include <algorithm>
+Waiter::Waiter(ConcreteMediator *mediator)
+{
+    this->mediator = mediator;
+}
+
+void Waiter::WriteDownOrder(std::string order)
+{
+    this->mediator->notifyOrder((Colleague*)this,1,order);
+}
+
+void Waiter::CancelItem(std::string order)
+{
+    this->mediator->notifyOrder((Colleague*)this,2,order);
+}
+
+void Waiter::DoneOrder()
+{
+    this->mediator->notifyDone((Colleague*)this);
+}
 
 Waiter::Waiter(std::vector<Table*> freeTables) : FreeTables(freeTables) {
     for (auto table : FreeTables) {
