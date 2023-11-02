@@ -66,7 +66,6 @@ TEST(CaretakerTest, AddAndGetMemento) {
   // Perform assertions to validate the retrieved memento
   // (similar to the previous tests)
 }
-
 TEST(MediatorTest, AddColleague) {
   KitchenMediator *mediator = new ConcreteMediator();
   Chef *chef = new BaseChef();
@@ -120,6 +119,70 @@ TEST(MediatorTest, CommsToDecor) {
   std::string test = command4->burger->test;
   ASSERT_EQ(test, "BurgerBurger");
   //delete mediator;
+}
+
+//COMPOSITE
+
+#include "../RestaurantTable.h"
+#include "../CompositeTable.h"
+#include "../Table.h"
+#include "../Customer.h"
+
+// Define a test fixture for RestaurantTable and CompositeTable
+class TableTest : public ::testing::Test {
+protected:
+    RestaurantTable* restaurantTable;
+    CompositeTable* compositeTable;
+
+    void SetUp() override {
+        restaurantTable = new RestaurantTable(3);
+        compositeTable = new CompositeTable();
+    }
+
+    void TearDown() override {
+        delete restaurantTable;
+        delete compositeTable;
+    }
+};
+
+TEST_F(TableTest, RestaurantTableAddCustomer) {
+    Customer customer;
+    EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+    EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+    EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+    EXPECT_FALSE(restaurantTable->AddCustomer(&customer));
+}
+
+TEST_F(TableTest, RestaurantTableRemoveCustomer) {
+    Customer customer;
+    restaurantTable->AddCustomer(&customer);
+    EXPECT_TRUE(restaurantTable->RemoveCustomer(&customer));
+    EXPECT_FALSE(restaurantTable->RemoveCustomer(&customer));  // Customer not found
+}
+
+TEST_F(TableTest, CompositeTableAddRemoveTable) {
+    RestaurantTable* table1 = new RestaurantTable(2);
+    RestaurantTable* table2 = new RestaurantTable(3);
+
+    EXPECT_TRUE(compositeTable->AddTable(table1));
+    EXPECT_TRUE(compositeTable->AddTable(table2));
+    EXPECT_EQ(compositeTable->getState(), true); // Should be available
+
+    EXPECT_TRUE(compositeTable->RemoveTable(table1));
+    EXPECT_FALSE(compositeTable->RemoveTable(table1));  // Table not found
+}
+
+TEST_F(TableTest, CompositeTableAddCustomer) {
+    Customer customer1;
+    Customer customer2;
+    Customer customer3;
+
+    EXPECT_TRUE(compositeTable->AddCustomer(&customer1));
+    EXPECT_TRUE(compositeTable->AddCustomer(&customer2));
+    EXPECT_TRUE(compositeTable->AddCustomer(&customer3));  // All tables are full
+
+    EXPECT_TRUE(compositeTable->RemoveCustomer(&customer1));
+    EXPECT_FALSE(compositeTable->RemoveCustomer(&customer1));  // Customer not found
 }
 
 int main(int argc, char **argv) {
