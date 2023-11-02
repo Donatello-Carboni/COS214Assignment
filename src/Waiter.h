@@ -5,11 +5,12 @@
 #include "ConcreteMediator.h"
 #include "Observer.h"
 #include "Table.h"
-
+#include "Plate.h"
 
 class Waiter: public Colleague, public Observer{
     private:
      //Mediator
+     Plate *plate;
      ConcreteMediator *mediator;
      //obs
      std::vector<Table*> FreeTables;
@@ -26,6 +27,7 @@ class Waiter: public Colleague, public Observer{
         void update(Table* changedTable);
         int getFreeTablesCount() const;
         int getOccupiedTablesCount() const;
+        void givePlate(Plate* plate);
 };
 
 #endif

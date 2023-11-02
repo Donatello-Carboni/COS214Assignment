@@ -7,8 +7,8 @@ class ConcreteMediator : public KitchenMediator {
  private:
  public:
   ConcreteMediator(){};
-  ConcreteMediator(Colleague *colleague[], Command *command[])
-      : KitchenMediator(colleague, command){};
+  ConcreteMediator(Colleague *colleague[], Command *command[],Chef* chef)
+      : KitchenMediator(colleague, command,chef){};
   void notify(Colleague *colleague, int choice, std::vector<std::string> order);
   void notifyOrder(Colleague *colleague, int choice, std::string order);
   void notifyDone(Colleague *colleague);
