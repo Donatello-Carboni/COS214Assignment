@@ -3,15 +3,17 @@
 #include <gtest/gtest.h>
 
 #include "../Caretaker.h"
-#include "../Tab.h"
-#include "../TabMemento.h"
-#include "../Plate.h"
-#include "../Waiter.h"
 #include "../Chef.h"
 #include "../Colleague.h"
-#include "../KitchenMediator.h"
+#include "../Command.h"
 #include "../ConcreteMediator.h"
-
+#include "../CreateOrder.h"
+#include "../KitchenMediator.h"
+#include "../Plate.h"
+#include "../Tab.h"
+#include "../TabMemento.h"
+#include "../Waiter.h"
+#include "../BaseChef.h"
 TEST(TabTest, CreateMemento) {
   Tab tab;
   tab.addOrderedItem("Item1", 10.0);
@@ -67,52 +69,57 @@ TEST(CaretakerTest, AddAndGetMemento) {
 
 TEST(MediatorTest, AddColleague) {
   KitchenMediator *mediator = new ConcreteMediator();
-  Chef *chef=new Chef();
-  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
-  mediator->addColleague((Colleague*)chef);
-  mediator->addColleague((Colleague*)waiter);
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
 
   // Perform assertions to validate the number of colleagues
-  ASSERT_EQ(mediator.getColleagues().size(), 2);
-  ASSERT_EQ(mediator.getColleagues().at(0), chef);
-  ASSERT_EQ(mediator.getColleagues().at(1), waiter);
-  delete mediator;
+  ASSERT_EQ(mediator->getColleagues().size(), 2);
+  ASSERT_EQ(mediator->getColleagues().at(0), (Colleague *)chef);
+  ASSERT_EQ(mediator->getColleagues().at(1), (Colleague *)waiter);
+  //delete mediator;
 }
 
 TEST(MediatorTest, AddCommand) {
   KitchenMediator *mediator = new ConcreteMediator();
 
-  Command *command = new  CreateOrder();
+  Command *command = new CreateOrder();
   Command *command2 = new CreateOrder();
 
   mediator->addCommand(command);
   mediator->addCommand(command2);
 
   // Perform assertions to validate the number of commands
-  ASSERT_EQ(mediator.getCommands().size(), 2);
-  ASSERT_EQ(mediator.getCommands().at(0), command);
-  ASSERT_EQ(mediator.getCommands().at(1), command2);
-  delete mediator;
+  ASSERT_EQ(mediator->getCommands().size(), 2);
+  ASSERT_EQ(mediator->getCommands().at(0), command);
+  ASSERT_EQ(mediator->getCommands().at(1), command2);
+  //delete mediator;
+  //ASSERT_EQ(1, 1);
 }
 
-TEST(MediatorTest,CommsToDecor ){
+TEST(MediatorTest, CommsToDecor) {
   KitchenMediator *mediator = new ConcreteMediator();
-  Chef *chef=new Chef();
-  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
-  mediator->addColleague((Colleague*)chef);
-  mediator->addColleague((Colleague*)waiter);
-  Command *command = new  CreateOrder();
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
   Command *command2 = new CreateOrder();
 
   mediator->addCommand(command);
   mediator->addCommand(command2);
-  
 
+  waiter->WriteDownOrder("Burger");
+  waiter->WriteDownOrder("Burger");
+  Command *command3 = mediator->getCommands().at(0);
+  CreateOrder *command4 = (CreateOrder *)command3;
   // Perform assertions to validate the number of colleagues
-  ASSERT_EQ(mediator.getCommands().at(0)->Burger->test, "BurgerBurger");
-  delete mediator;
+  std::string test = command4->burger->test;
+  ASSERT_EQ(test, "BurgerBurger");
+  //delete mediator;
 }
 
 int main(int argc, char **argv) {
