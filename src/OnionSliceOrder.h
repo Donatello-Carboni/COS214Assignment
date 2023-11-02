@@ -7,9 +7,11 @@ class OnionSliceOrder : public BurgerToppingOrder {
     public:
         OnionSliceOrder();
         ~OnionSliceOrder();
-        
+        double getPrice();
+        std::string toString();
+
     private:
-    
+        double price;
 };
 
 #endif

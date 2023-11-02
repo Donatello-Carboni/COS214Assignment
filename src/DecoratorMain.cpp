@@ -12,11 +12,20 @@
 #include "RegularBunOrder.h"
 #include "TomatoSauceOrder.h"
 #include <iostream>
+#include <unistd.h>
 
 using namespace std;
 
 int decoratorMain()
 {
     cout << "YUM :)" << endl;
+    BurgerOrder* regBun = new RegularBunOrder();
+    BurgerOrder* patty = new PattyOrder();
+    BurgerOrder* cheese = new CheeseOrder();
+    BurgerOrder* tomatoSauce = new TomatoSauceOrder();
+    BurgerOrder* lettuce = new LettuceOrder();
+
+    //Print works from any component
+    tomatoSauce->printList();
     return 0;
 }

@@ -12,11 +12,11 @@ BurgerToppingOrder::~BurgerToppingOrder()
 
 BurgerOrder* BurgerToppingOrder::getBurger()
 {
-    return NULL;
+    return burger;
 }
 
-void BurgerToppingOrder::setBurger(BurgerOrder*)
+void BurgerToppingOrder::setBurger(BurgerOrder* b)
 {
-    
+    this->burger = b;
 }
 

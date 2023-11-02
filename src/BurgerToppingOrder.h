@@ -6,9 +6,12 @@ class BurgerOrder;
 class BurgerToppingOrder : public BurgerOrder {
     public:
         BurgerToppingOrder();
-        ~BurgerToppingOrder();
+        virtual ~BurgerToppingOrder();
+        virtual double getPrice() =0;
+        virtual std::string toString() =0;
         BurgerOrder* getBurger();
         void setBurger(BurgerOrder*);
+
     private:
         BurgerOrder* burger;
 };

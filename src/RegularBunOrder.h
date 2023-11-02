@@ -7,9 +7,11 @@ class RegularBunOrder : public BurgerBunOrder {
     public:
         RegularBunOrder();
         ~RegularBunOrder();
+        double getPrice();
+        std::string toString();
 
     private:
-        
+        double price;
 };
 
 #endif

@@ -7,12 +7,17 @@
 class BurgerOrder {
     public:
         BurgerOrder();
-        ~BurgerOrder();
+        virtual ~BurgerOrder();
+        virtual double getPrice() =0;
+        virtual std::string toString() =0;
         bool add(BurgerOrder*);
-        double total();
+        void printList();
 
     private:
-        
+        static BurgerOrder* base;
+        static BurgerOrder* head;
+        BurgerOrder* next;
+        double price;
 };
 
 #endif

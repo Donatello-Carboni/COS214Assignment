@@ -7,8 +7,11 @@ class MushroomOrder : public BurgerToppingOrder {
     public:
         MushroomOrder();
         ~MushroomOrder();
-    private:
-    
+        double getPrice();
+        std::string toString();
+
+    private:    
+        double price;
 };
 
 #endif
