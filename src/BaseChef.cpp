@@ -1,6 +1,32 @@
 #include "BaseChef.h"
 
-void BaseChef::addToPlate(std::vector<std::string> order, Plate* plate)
+BaseChef::BaseChef() : nextChef(nullptr)
 {
-    return;
+}
+
+BaseChef *BaseChef::add(BaseChef *chef)
+{
+    if (nextChef)
+    {
+        nextChef->add(chef);
+    }
+    else
+    {
+        nextChef = chef;
+        
+    }
+    return chef;
+}
+
+void BaseChef::addToPlate(std::vector<std::string> order, Plate *plate)
+{
+
+    if (nextChef)
+    {
+        nextChef->addToPlate(order, plate);
+    }
+    else
+    {
+        std::cout << "Order Complete." << std::endl;
+    }
 }
