@@ -3,8 +3,24 @@
 #include <gtest/gtest.h>
 
 #include "../Caretaker.h"
+#include "../Chef.h"
+#include "../Colleague.h"
+#include "../Command.h"
+#include "../ConcreteMediator.h"
+#include "../CreateOrder.h"
+#include "../KitchenMediator.h"
+#include "../Plate.h"
 #include "../Tab.h"
 #include "../TabMemento.h"
+#include "../Waiter.h"
+#include "../BaseChef.h"
+#include "../Waiter.h"
+#include "../RestaurantTable.h"
+#include "../CompositeTable.h"
+#include "../Table.h"
+#include "../Customer.h"
+
+
 
 TEST(TabTest, CreateMemento) {
   Tab tab;
@@ -58,14 +74,62 @@ TEST(CaretakerTest, AddAndGetMemento) {
   // Perform assertions to validate the retrieved memento
   // (similar to the previous tests)
 }
+TEST(MediatorTest, AddColleague) {
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+
+  // Perform assertions to validate the number of colleagues
+  ASSERT_EQ(mediator->getColleagues().size(), 2);
+  ASSERT_EQ(mediator->getColleagues().at(0), (Colleague *)chef);
+  ASSERT_EQ(mediator->getColleagues().at(1), (Colleague *)waiter);
+  //delete mediator;
+}
+
+TEST(MediatorTest, AddCommand) {
+  KitchenMediator *mediator = new ConcreteMediator();
+
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  // Perform assertions to validate the number of commands
+  ASSERT_EQ(mediator->getCommands().size(), 2);
+  ASSERT_EQ(mediator->getCommands().at(0), command);
+  ASSERT_EQ(mediator->getCommands().at(1), command2);
+  //delete mediator;
+  //ASSERT_EQ(1, 1);
+}
+
+TEST(MediatorTest, CommsToDecor) {
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
+
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  waiter->WriteDownOrder("Burger");
+  waiter->WriteDownOrder("Burger");
+  Command *command3 = mediator->getCommands().at(0);
+  CreateOrder *command4 = (CreateOrder *)command3;
+  // Perform assertions to validate the number of colleagues
+  std::string test = command4->burger->test;
+  ASSERT_EQ(test, "BurgerBurger");
+  //delete mediator;
+}
 
 //COMPOSITE
-
-#include "../RestaurantTable.h"
-#include "../CompositeTable.h"
-#include "../Table.h"
-#include "../Customer.h"
 
 // Define a test fixture for RestaurantTable and CompositeTable
 class TableTest : public ::testing::Test {
@@ -124,10 +188,8 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
     EXPECT_FALSE(compositeTable->RemoveCustomer(&customer1));  // Customer not found
 }
 
-//OBSERVER
- #include "../Waiter.h"
- 
 
+//OBSERVER
 
 TEST_F(TableTest, WaiterUpdate) {
     // Create tables
@@ -158,6 +220,7 @@ TEST_F(TableTest, WaiterUpdate) {
   EXPECT_EQ(waiter.getOccupiedTablesCount(), 0);
 
 }
+
 
 
 
