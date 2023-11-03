@@ -17,12 +17,6 @@ int decoratorMain();
 
 using namespace std;
 
-// int main()
-// {
-//     return decoratorMain();
-// }
-
-
 int decoratorMain()
 {
     cout << "YUM :)" << endl;

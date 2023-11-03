@@ -1,22 +1,22 @@
 #include "Customer.h"
 #include "WaitingToSit.h"
+#include "WaitingToOrder.h"
 
 Customer::Customer()
 {
-
+    paid = false;
 }
 
 Customer::Customer(int num)
 {
     customerNumber = num;
     happiness = 60;
-    cout << "New customer created (" << num << ")" << endl;
     state = new WaitingToSit();
 }
 
 Customer::~Customer()
 {
-    cout << "Customer deleted (" << customerNumber << ")" << endl;    
+    cout << "Customer (" << customerNumber << ") left the restaurant..." << endl;    
 }
 
 int Customer::getHappiness()
@@ -53,7 +53,7 @@ void Customer::setState(State* newState)
 
 void Customer::setOrder(vector<string> extras)
 {
-    //First item is the bun-type, the rest are toppings
+    cout << "[CUSTOMER]\t\t- Customer (" << customerNumber << ") is ready to order!" << endl;
     order = extras;
 }
 
@@ -64,14 +64,16 @@ vector<string> Customer::getOrder()
 
 void Customer::placeOrder()
 {
+    cout << "[CUSTOMER]\t\t- Customer (" << customerNumber << ") is deciding what to order..." << endl;
     state->chooseItems(this);
 }
 
 void Customer::getTheBill()
 {
     state->callForBill(this);
-    state->payBill(this);
+    state->payBill(this);               //Should change state to "AboutToLeave"
     state->review(this);
+    paid = true;
 }
 
 int Customer::getCustomerNumber()
@@ -86,9 +88,21 @@ void Customer::leave()
 
 void Customer::printOrder()
 {
+    cout << "======CUSTOMER(" << customerNumber << ")======" << endl;
     std::vector<std::string>::iterator it;
     for (it = order.begin(); it != order.end(); it++)
     {
         cout << *(it) << endl;
     }
+}
+
+void Customer::sitDown()
+{
+    cout << "[CUSTOMER]\t\t- Customer (" << customerNumber << ") is sitting down at a table" << endl;
+    setState(new WaitingToOrder());
+}
+
+void Customer::cancelOrder(string item)
+{
+    order.push_back(item);
 }

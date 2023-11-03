@@ -57,9 +57,87 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
+CMakeFiles/test.dir/src/AboutToLeave.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/AboutToLeave.cpp.o: ../src/AboutToLeave.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/AboutToLeave.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/AboutToLeave.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/AboutToLeave.cpp
+
+CMakeFiles/test.dir/src/AboutToLeave.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/AboutToLeave.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/AboutToLeave.cpp > CMakeFiles/test.dir/src/AboutToLeave.cpp.i
+
+CMakeFiles/test.dir/src/AboutToLeave.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/AboutToLeave.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/AboutToLeave.cpp -o CMakeFiles/test.dir/src/AboutToLeave.cpp.s
+
+CMakeFiles/test.dir/src/BaseChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BaseChef.cpp.o: ../src/BaseChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/BaseChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BaseChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BaseChef.cpp
+
+CMakeFiles/test.dir/src/BaseChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BaseChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BaseChef.cpp > CMakeFiles/test.dir/src/BaseChef.cpp.i
+
+CMakeFiles/test.dir/src/BaseChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BaseChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BaseChef.cpp -o CMakeFiles/test.dir/src/BaseChef.cpp.s
+
+CMakeFiles/test.dir/src/BunChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BunChef.cpp.o: ../src/BunChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/BunChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BunChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BunChef.cpp
+
+CMakeFiles/test.dir/src/BunChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BunChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BunChef.cpp > CMakeFiles/test.dir/src/BunChef.cpp.i
+
+CMakeFiles/test.dir/src/BunChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BunChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BunChef.cpp -o CMakeFiles/test.dir/src/BunChef.cpp.s
+
+CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o: ../src/BurgerBunOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerBunOrder.cpp
+
+CMakeFiles/test.dir/src/BurgerBunOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BurgerBunOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerBunOrder.cpp > CMakeFiles/test.dir/src/BurgerBunOrder.cpp.i
+
+CMakeFiles/test.dir/src/BurgerBunOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BurgerBunOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerBunOrder.cpp -o CMakeFiles/test.dir/src/BurgerBunOrder.cpp.s
+
+CMakeFiles/test.dir/src/BurgerOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BurgerOrder.cpp.o: ../src/BurgerOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/BurgerOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BurgerOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerOrder.cpp
+
+CMakeFiles/test.dir/src/BurgerOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BurgerOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerOrder.cpp > CMakeFiles/test.dir/src/BurgerOrder.cpp.i
+
+CMakeFiles/test.dir/src/BurgerOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BurgerOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerOrder.cpp -o CMakeFiles/test.dir/src/BurgerOrder.cpp.s
+
+CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o: ../src/BurgerToppingOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerToppingOrder.cpp
+
+CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerToppingOrder.cpp > CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.i
+
+CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/BurgerToppingOrder.cpp -o CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.s
+
 CMakeFiles/test.dir/src/Caretaker.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Caretaker.cpp.o: ../src/Caretaker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/Caretaker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/Caretaker.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Caretaker.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Caretaker.cpp
 
 CMakeFiles/test.dir/src/Caretaker.cpp.i: cmake_force
@@ -70,9 +148,321 @@ CMakeFiles/test.dir/src/Caretaker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Caretaker.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Caretaker.cpp -o CMakeFiles/test.dir/src/Caretaker.cpp.s
 
+CMakeFiles/test.dir/src/CheeseChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CheeseChef.cpp.o: ../src/CheeseChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/src/CheeseChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CheeseChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseChef.cpp
+
+CMakeFiles/test.dir/src/CheeseChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CheeseChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseChef.cpp > CMakeFiles/test.dir/src/CheeseChef.cpp.i
+
+CMakeFiles/test.dir/src/CheeseChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CheeseChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseChef.cpp -o CMakeFiles/test.dir/src/CheeseChef.cpp.s
+
+CMakeFiles/test.dir/src/CheeseOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CheeseOrder.cpp.o: ../src/CheeseOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/src/CheeseOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CheeseOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseOrder.cpp
+
+CMakeFiles/test.dir/src/CheeseOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CheeseOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseOrder.cpp > CMakeFiles/test.dir/src/CheeseOrder.cpp.i
+
+CMakeFiles/test.dir/src/CheeseOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CheeseOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CheeseOrder.cpp -o CMakeFiles/test.dir/src/CheeseOrder.cpp.s
+
+CMakeFiles/test.dir/src/CompositeTable.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CompositeTable.cpp.o: ../src/CompositeTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/src/CompositeTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CompositeTable.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CompositeTable.cpp
+
+CMakeFiles/test.dir/src/CompositeTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CompositeTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CompositeTable.cpp > CMakeFiles/test.dir/src/CompositeTable.cpp.i
+
+CMakeFiles/test.dir/src/CompositeTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CompositeTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CompositeTable.cpp -o CMakeFiles/test.dir/src/CompositeTable.cpp.s
+
+CMakeFiles/test.dir/src/ConcreteMediator.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/ConcreteMediator.cpp.o: ../src/ConcreteMediator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/src/ConcreteMediator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/ConcreteMediator.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ConcreteMediator.cpp
+
+CMakeFiles/test.dir/src/ConcreteMediator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/ConcreteMediator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ConcreteMediator.cpp > CMakeFiles/test.dir/src/ConcreteMediator.cpp.i
+
+CMakeFiles/test.dir/src/ConcreteMediator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/ConcreteMediator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ConcreteMediator.cpp -o CMakeFiles/test.dir/src/ConcreteMediator.cpp.s
+
+CMakeFiles/test.dir/src/CreateOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/CreateOrder.cpp.o: ../src/CreateOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/src/CreateOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/CreateOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CreateOrder.cpp
+
+CMakeFiles/test.dir/src/CreateOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/CreateOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CreateOrder.cpp > CMakeFiles/test.dir/src/CreateOrder.cpp.i
+
+CMakeFiles/test.dir/src/CreateOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/CreateOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/CreateOrder.cpp -o CMakeFiles/test.dir/src/CreateOrder.cpp.s
+
+CMakeFiles/test.dir/src/Customer.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Customer.cpp.o: ../src/Customer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/src/Customer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Customer.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Customer.cpp
+
+CMakeFiles/test.dir/src/Customer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Customer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Customer.cpp > CMakeFiles/test.dir/src/Customer.cpp.i
+
+CMakeFiles/test.dir/src/Customer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Customer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Customer.cpp -o CMakeFiles/test.dir/src/Customer.cpp.s
+
+CMakeFiles/test.dir/src/DecoratorMain.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/DecoratorMain.cpp.o: ../src/DecoratorMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test.dir/src/DecoratorMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/DecoratorMain.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/DecoratorMain.cpp
+
+CMakeFiles/test.dir/src/DecoratorMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/DecoratorMain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/DecoratorMain.cpp > CMakeFiles/test.dir/src/DecoratorMain.cpp.i
+
+CMakeFiles/test.dir/src/DecoratorMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/DecoratorMain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/DecoratorMain.cpp -o CMakeFiles/test.dir/src/DecoratorMain.cpp.s
+
+CMakeFiles/test.dir/src/Default.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Default.cpp.o: ../src/Default.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test.dir/src/Default.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Default.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Default.cpp
+
+CMakeFiles/test.dir/src/Default.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Default.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Default.cpp > CMakeFiles/test.dir/src/Default.cpp.i
+
+CMakeFiles/test.dir/src/Default.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Default.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Default.cpp -o CMakeFiles/test.dir/src/Default.cpp.s
+
+CMakeFiles/test.dir/src/ExtrasChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/ExtrasChef.cpp.o: ../src/ExtrasChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test.dir/src/ExtrasChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/ExtrasChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ExtrasChef.cpp
+
+CMakeFiles/test.dir/src/ExtrasChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/ExtrasChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ExtrasChef.cpp > CMakeFiles/test.dir/src/ExtrasChef.cpp.i
+
+CMakeFiles/test.dir/src/ExtrasChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/ExtrasChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/ExtrasChef.cpp -o CMakeFiles/test.dir/src/ExtrasChef.cpp.s
+
+CMakeFiles/test.dir/src/GherkinOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/GherkinOrder.cpp.o: ../src/GherkinOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test.dir/src/GherkinOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/GherkinOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GherkinOrder.cpp
+
+CMakeFiles/test.dir/src/GherkinOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/GherkinOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GherkinOrder.cpp > CMakeFiles/test.dir/src/GherkinOrder.cpp.i
+
+CMakeFiles/test.dir/src/GherkinOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/GherkinOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GherkinOrder.cpp -o CMakeFiles/test.dir/src/GherkinOrder.cpp.s
+
+CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o: ../src/GlutenFreeBunOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GlutenFreeBunOrder.cpp
+
+CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GlutenFreeBunOrder.cpp > CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.i
+
+CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/GlutenFreeBunOrder.cpp -o CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.s
+
+CMakeFiles/test.dir/src/KitchenMediator.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/KitchenMediator.cpp.o: ../src/KitchenMediator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test.dir/src/KitchenMediator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/KitchenMediator.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/KitchenMediator.cpp
+
+CMakeFiles/test.dir/src/KitchenMediator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/KitchenMediator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/KitchenMediator.cpp > CMakeFiles/test.dir/src/KitchenMediator.cpp.i
+
+CMakeFiles/test.dir/src/KitchenMediator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/KitchenMediator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/KitchenMediator.cpp -o CMakeFiles/test.dir/src/KitchenMediator.cpp.s
+
+CMakeFiles/test.dir/src/LettuceOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/LettuceOrder.cpp.o: ../src/LettuceOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test.dir/src/LettuceOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/LettuceOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/LettuceOrder.cpp
+
+CMakeFiles/test.dir/src/LettuceOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/LettuceOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/LettuceOrder.cpp > CMakeFiles/test.dir/src/LettuceOrder.cpp.i
+
+CMakeFiles/test.dir/src/LettuceOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/LettuceOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/LettuceOrder.cpp -o CMakeFiles/test.dir/src/LettuceOrder.cpp.s
+
+CMakeFiles/test.dir/src/MushroomOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/MushroomOrder.cpp.o: ../src/MushroomOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test.dir/src/MushroomOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/MushroomOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MushroomOrder.cpp
+
+CMakeFiles/test.dir/src/MushroomOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/MushroomOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MushroomOrder.cpp > CMakeFiles/test.dir/src/MushroomOrder.cpp.i
+
+CMakeFiles/test.dir/src/MushroomOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/MushroomOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MushroomOrder.cpp -o CMakeFiles/test.dir/src/MushroomOrder.cpp.s
+
+CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o: ../src/MustardSauceOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MustardSauceOrder.cpp
+
+CMakeFiles/test.dir/src/MustardSauceOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/MustardSauceOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MustardSauceOrder.cpp > CMakeFiles/test.dir/src/MustardSauceOrder.cpp.i
+
+CMakeFiles/test.dir/src/MustardSauceOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/MustardSauceOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/MustardSauceOrder.cpp -o CMakeFiles/test.dir/src/MustardSauceOrder.cpp.s
+
+CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o: ../src/OnionSliceOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/OnionSliceOrder.cpp
+
+CMakeFiles/test.dir/src/OnionSliceOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/OnionSliceOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/OnionSliceOrder.cpp > CMakeFiles/test.dir/src/OnionSliceOrder.cpp.i
+
+CMakeFiles/test.dir/src/OnionSliceOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/OnionSliceOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/OnionSliceOrder.cpp -o CMakeFiles/test.dir/src/OnionSliceOrder.cpp.s
+
+CMakeFiles/test.dir/src/PattyChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/PattyChef.cpp.o: ../src/PattyChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/test.dir/src/PattyChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/PattyChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyChef.cpp
+
+CMakeFiles/test.dir/src/PattyChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/PattyChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyChef.cpp > CMakeFiles/test.dir/src/PattyChef.cpp.i
+
+CMakeFiles/test.dir/src/PattyChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/PattyChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyChef.cpp -o CMakeFiles/test.dir/src/PattyChef.cpp.s
+
+CMakeFiles/test.dir/src/PattyOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/PattyOrder.cpp.o: ../src/PattyOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/test.dir/src/PattyOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/PattyOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyOrder.cpp
+
+CMakeFiles/test.dir/src/PattyOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/PattyOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyOrder.cpp > CMakeFiles/test.dir/src/PattyOrder.cpp.i
+
+CMakeFiles/test.dir/src/PattyOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/PattyOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/PattyOrder.cpp -o CMakeFiles/test.dir/src/PattyOrder.cpp.s
+
+CMakeFiles/test.dir/src/Plate.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Plate.cpp.o: ../src/Plate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/test.dir/src/Plate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Plate.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Plate.cpp
+
+CMakeFiles/test.dir/src/Plate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Plate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Plate.cpp > CMakeFiles/test.dir/src/Plate.cpp.i
+
+CMakeFiles/test.dir/src/Plate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Plate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Plate.cpp -o CMakeFiles/test.dir/src/Plate.cpp.s
+
+CMakeFiles/test.dir/src/RegularBunOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/RegularBunOrder.cpp.o: ../src/RegularBunOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/test.dir/src/RegularBunOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/RegularBunOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RegularBunOrder.cpp
+
+CMakeFiles/test.dir/src/RegularBunOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/RegularBunOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RegularBunOrder.cpp > CMakeFiles/test.dir/src/RegularBunOrder.cpp.i
+
+CMakeFiles/test.dir/src/RegularBunOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/RegularBunOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RegularBunOrder.cpp -o CMakeFiles/test.dir/src/RegularBunOrder.cpp.s
+
+CMakeFiles/test.dir/src/RestaurantTable.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/RestaurantTable.cpp.o: ../src/RestaurantTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/test.dir/src/RestaurantTable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/RestaurantTable.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RestaurantTable.cpp
+
+CMakeFiles/test.dir/src/RestaurantTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/RestaurantTable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RestaurantTable.cpp > CMakeFiles/test.dir/src/RestaurantTable.cpp.i
+
+CMakeFiles/test.dir/src/RestaurantTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/RestaurantTable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/RestaurantTable.cpp -o CMakeFiles/test.dir/src/RestaurantTable.cpp.s
+
+CMakeFiles/test.dir/src/SauceChef.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/SauceChef.cpp.o: ../src/SauceChef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/test.dir/src/SauceChef.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/SauceChef.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/SauceChef.cpp
+
+CMakeFiles/test.dir/src/SauceChef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/SauceChef.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/SauceChef.cpp > CMakeFiles/test.dir/src/SauceChef.cpp.i
+
+CMakeFiles/test.dir/src/SauceChef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/SauceChef.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/SauceChef.cpp -o CMakeFiles/test.dir/src/SauceChef.cpp.s
+
+CMakeFiles/test.dir/src/State.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/State.cpp.o: ../src/State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/test.dir/src/State.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/State.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/State.cpp
+
+CMakeFiles/test.dir/src/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/State.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/State.cpp > CMakeFiles/test.dir/src/State.cpp.i
+
+CMakeFiles/test.dir/src/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/State.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/State.cpp -o CMakeFiles/test.dir/src/State.cpp.s
+
+CMakeFiles/test.dir/src/StateMain.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/StateMain.cpp.o: ../src/StateMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/test.dir/src/StateMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/StateMain.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/StateMain.cpp
+
+CMakeFiles/test.dir/src/StateMain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/StateMain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/StateMain.cpp > CMakeFiles/test.dir/src/StateMain.cpp.i
+
+CMakeFiles/test.dir/src/StateMain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/StateMain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/StateMain.cpp -o CMakeFiles/test.dir/src/StateMain.cpp.s
+
 CMakeFiles/test.dir/src/Tab.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Tab.cpp.o: ../src/Tab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/Tab.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/test.dir/src/Tab.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Tab.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Tab.cpp
 
 CMakeFiles/test.dir/src/Tab.cpp.i: cmake_force
@@ -85,7 +475,7 @@ CMakeFiles/test.dir/src/Tab.cpp.s: cmake_force
 
 CMakeFiles/test.dir/src/TabMemento.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/TabMemento.cpp.o: ../src/TabMemento.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/TabMemento.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/test.dir/src/TabMemento.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/TabMemento.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/TabMemento.cpp
 
 CMakeFiles/test.dir/src/TabMemento.cpp.i: cmake_force
@@ -96,9 +486,74 @@ CMakeFiles/test.dir/src/TabMemento.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/TabMemento.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/TabMemento.cpp -o CMakeFiles/test.dir/src/TabMemento.cpp.s
 
+CMakeFiles/test.dir/src/Table.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Table.cpp.o: ../src/Table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/test.dir/src/Table.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Table.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Table.cpp
+
+CMakeFiles/test.dir/src/Table.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Table.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Table.cpp > CMakeFiles/test.dir/src/Table.cpp.i
+
+CMakeFiles/test.dir/src/Table.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Table.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Table.cpp -o CMakeFiles/test.dir/src/Table.cpp.s
+
+CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o: ../src/TomatoSauceOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/TomatoSauceOrder.cpp
+
+CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/TomatoSauceOrder.cpp > CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.i
+
+CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/TomatoSauceOrder.cpp -o CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.s
+
+CMakeFiles/test.dir/src/Waiter.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/Waiter.cpp.o: ../src/Waiter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/test.dir/src/Waiter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Waiter.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Waiter.cpp
+
+CMakeFiles/test.dir/src/Waiter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Waiter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Waiter.cpp > CMakeFiles/test.dir/src/Waiter.cpp.i
+
+CMakeFiles/test.dir/src/Waiter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Waiter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/Waiter.cpp -o CMakeFiles/test.dir/src/Waiter.cpp.s
+
+CMakeFiles/test.dir/src/WaitingToOrder.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/WaitingToOrder.cpp.o: ../src/WaitingToOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/test.dir/src/WaitingToOrder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/WaitingToOrder.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToOrder.cpp
+
+CMakeFiles/test.dir/src/WaitingToOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/WaitingToOrder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToOrder.cpp > CMakeFiles/test.dir/src/WaitingToOrder.cpp.i
+
+CMakeFiles/test.dir/src/WaitingToOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/WaitingToOrder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToOrder.cpp -o CMakeFiles/test.dir/src/WaitingToOrder.cpp.s
+
+CMakeFiles/test.dir/src/WaitingToSit.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/WaitingToSit.cpp.o: ../src/WaitingToSit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/test.dir/src/WaitingToSit.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/WaitingToSit.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToSit.cpp
+
+CMakeFiles/test.dir/src/WaitingToSit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/WaitingToSit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToSit.cpp > CMakeFiles/test.dir/src/WaitingToSit.cpp.i
+
+CMakeFiles/test.dir/src/WaitingToSit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/WaitingToSit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/WaitingToSit.cpp -o CMakeFiles/test.dir/src/WaitingToSit.cpp.s
+
 CMakeFiles/test.dir/src/tests/test_main.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/tests/test_main.cpp.o: ../src/tests/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/tests/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/test.dir/src/tests/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/tests/test_main.cpp.o -c /mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/src/tests/test_main.cpp
 
 CMakeFiles/test.dir/src/tests/test_main.cpp.i: cmake_force
@@ -111,22 +566,92 @@ CMakeFiles/test.dir/src/tests/test_main.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
+"CMakeFiles/test.dir/src/AboutToLeave.cpp.o" \
+"CMakeFiles/test.dir/src/BaseChef.cpp.o" \
+"CMakeFiles/test.dir/src/BunChef.cpp.o" \
+"CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o" \
+"CMakeFiles/test.dir/src/BurgerOrder.cpp.o" \
+"CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o" \
 "CMakeFiles/test.dir/src/Caretaker.cpp.o" \
+"CMakeFiles/test.dir/src/CheeseChef.cpp.o" \
+"CMakeFiles/test.dir/src/CheeseOrder.cpp.o" \
+"CMakeFiles/test.dir/src/CompositeTable.cpp.o" \
+"CMakeFiles/test.dir/src/ConcreteMediator.cpp.o" \
+"CMakeFiles/test.dir/src/CreateOrder.cpp.o" \
+"CMakeFiles/test.dir/src/Customer.cpp.o" \
+"CMakeFiles/test.dir/src/DecoratorMain.cpp.o" \
+"CMakeFiles/test.dir/src/Default.cpp.o" \
+"CMakeFiles/test.dir/src/ExtrasChef.cpp.o" \
+"CMakeFiles/test.dir/src/GherkinOrder.cpp.o" \
+"CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o" \
+"CMakeFiles/test.dir/src/KitchenMediator.cpp.o" \
+"CMakeFiles/test.dir/src/LettuceOrder.cpp.o" \
+"CMakeFiles/test.dir/src/MushroomOrder.cpp.o" \
+"CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o" \
+"CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o" \
+"CMakeFiles/test.dir/src/PattyChef.cpp.o" \
+"CMakeFiles/test.dir/src/PattyOrder.cpp.o" \
+"CMakeFiles/test.dir/src/Plate.cpp.o" \
+"CMakeFiles/test.dir/src/RegularBunOrder.cpp.o" \
+"CMakeFiles/test.dir/src/RestaurantTable.cpp.o" \
+"CMakeFiles/test.dir/src/SauceChef.cpp.o" \
+"CMakeFiles/test.dir/src/State.cpp.o" \
+"CMakeFiles/test.dir/src/StateMain.cpp.o" \
 "CMakeFiles/test.dir/src/Tab.cpp.o" \
 "CMakeFiles/test.dir/src/TabMemento.cpp.o" \
+"CMakeFiles/test.dir/src/Table.cpp.o" \
+"CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o" \
+"CMakeFiles/test.dir/src/Waiter.cpp.o" \
+"CMakeFiles/test.dir/src/WaitingToOrder.cpp.o" \
+"CMakeFiles/test.dir/src/WaitingToSit.cpp.o" \
 "CMakeFiles/test.dir/src/tests/test_main.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
+../bin/test: CMakeFiles/test.dir/src/AboutToLeave.cpp.o
+../bin/test: CMakeFiles/test.dir/src/BaseChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/BunChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/BurgerBunOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/BurgerOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/BurgerToppingOrder.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/Caretaker.cpp.o
+../bin/test: CMakeFiles/test.dir/src/CheeseChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/CheeseOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/CompositeTable.cpp.o
+../bin/test: CMakeFiles/test.dir/src/ConcreteMediator.cpp.o
+../bin/test: CMakeFiles/test.dir/src/CreateOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/Customer.cpp.o
+../bin/test: CMakeFiles/test.dir/src/DecoratorMain.cpp.o
+../bin/test: CMakeFiles/test.dir/src/Default.cpp.o
+../bin/test: CMakeFiles/test.dir/src/ExtrasChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/GherkinOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/GlutenFreeBunOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/KitchenMediator.cpp.o
+../bin/test: CMakeFiles/test.dir/src/LettuceOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/MushroomOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/MustardSauceOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/OnionSliceOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/PattyChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/PattyOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/Plate.cpp.o
+../bin/test: CMakeFiles/test.dir/src/RegularBunOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/RestaurantTable.cpp.o
+../bin/test: CMakeFiles/test.dir/src/SauceChef.cpp.o
+../bin/test: CMakeFiles/test.dir/src/State.cpp.o
+../bin/test: CMakeFiles/test.dir/src/StateMain.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/Tab.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/TabMemento.cpp.o
+../bin/test: CMakeFiles/test.dir/src/Table.cpp.o
+../bin/test: CMakeFiles/test.dir/src/TomatoSauceOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/Waiter.cpp.o
+../bin/test: CMakeFiles/test.dir/src/WaitingToOrder.cpp.o
+../bin/test: CMakeFiles/test.dir/src/WaitingToSit.cpp.o
 ../bin/test: CMakeFiles/test.dir/src/tests/test_main.cpp.o
 ../bin/test: CMakeFiles/test.dir/build.make
 ../bin/test: /usr/lib/x86_64-linux-gnu/libgtest.a
 ../bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../bin/test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable ../bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

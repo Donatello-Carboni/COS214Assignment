@@ -16,6 +16,8 @@ class Customer {
         int getHappiness();
         void setHappiness(int happy);
         State* getState();
+        void sitDown();
+        void cancelOrder(std::string item);
         void setState(State* currState);
         void setOrder(std::vector<std::string> extras);
         std::vector<std::string> getOrder();
@@ -29,6 +31,7 @@ class Customer {
         int happiness;
         std::vector<std::string> order;
         int customerNumber;
+        bool paid;
 };
 
 #endif
