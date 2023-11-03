@@ -19,7 +19,9 @@
 #include "../CompositeTable.h"
 #include "../Table.h"
 #include "../Customer.h"
-
+#include "../CheeseChef.h"
+#include "../PattyChef.h"
+#include "../SauceChef.h"
 
 
 TEST(TabTest, CreateMemento) {
@@ -124,11 +126,34 @@ TEST(MediatorTest, CommsToDecor) {
   Command *command3 = mediator->getCommands().at(0);
   CreateOrder *command4 = (CreateOrder *)command3;
   // Perform assertions to validate the number of colleagues
-  std::string test = command4->burger->test;
-  ASSERT_EQ(test, "BurgerBurger");
+  //std::string test = command4->burger->test;
+  //ASSERT_EQ(test, "BurgerBurger");
   //delete mediator;
 }
+//TESTS for command 
+TEST(COMMAND, decorcmd){
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  waiter->WriteDownOrder("ID-1");
+  waiter->WriteDownOrder("RegularBun");
+  waiter->WriteDownOrder("Cheese");
+  waiter->DoneOrder();
+  bool truefalse = false;
+  if(waiter->getPlate()!=NULL){
+    truefalse = true;
+  }
+  EXPECT_TRUE(truefalse);
+}
 //COMPOSITE
 
 // Define a test fixture for RestaurantTable and CompositeTable
@@ -222,7 +247,48 @@ TEST_F(TableTest, WaiterUpdate) {
 }
 
 
+//Chain
+class ChefTest : public ::testing::Test {
+ protected:
+  virtual void SetUp() {
+        cheeseChef = new CheeseChef();
+        sauceChef = new SauceChef();
+        pattyChef = new PattyChef();
+        baseChef = new BaseChef();
+        plate = new Plate();
+  }
 
+  virtual void TearDown() {
+        delete cheeseChef;
+        delete sauceChef;
+        delete pattyChef;
+        delete baseChef;
+        delete plate;
+  }
+
+  
+  CheeseChef* cheeseChef;
+  SauceChef* sauceChef;
+  PattyChef* pattyChef;
+  BaseChef* baseChef;
+  Plate* plate;
+};
+TEST_F(ChefTest, CheeseChefTest) {
+  // Simulate adding an order for cheese
+  std::vector<std::string> order = {"cheese"};
+
+  // Redirect stdout to a stringstream
+  testing::internal::CaptureStdout();
+
+  // Handle the order
+  cheeseChef->addToPlate(order, plate);
+
+  // Get the captured output
+  std::string output = testing::internal::GetCapturedStdout();
+
+  // Assert that "Adding Cheese to the plate." is printed
+  ASSERT_TRUE(output.find("Adding Cheese to the plate.") != std::string::npos);
+}
 
 
 

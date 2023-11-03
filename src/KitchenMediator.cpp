@@ -3,8 +3,8 @@
 #include <vector>
 
 KitchenMediator::~KitchenMediator() {
-  for (int i = 0; i < colleagues.size(); i++) {
-    delete colleagues[i];
+  for (int i = 0; i < WaiterColleagues.size(); i++) {
+    delete WaiterColleagues[i];
   }
   for (int i = 0; i < commands.size(); i++) {
     delete commands[i];
@@ -12,13 +12,13 @@ KitchenMediator::~KitchenMediator() {
 }
 KitchenMediator::KitchenMediator() {
   this->commands = std::vector<Command *>();
-  this->colleagues = std::vector<Colleague *>();
+  this->WaiterColleagues = std::vector<Colleague *>();
 }
-KitchenMediator::KitchenMediator(Colleague *colleague[], Command *command[]) {
+KitchenMediator::KitchenMediator(Colleague *colleague[], Command *command[],Chef* chef) {
   this->commands = std::vector<Command *>();
-  this->colleagues = std::vector<Colleague *>();
+  this->WaiterColleagues = std::vector<Colleague *>();
   for (int i = 0; i < 3; i++) {
-    colleagues.push_back(
+    WaiterColleagues.push_back(
         colleague[i]);  // colleague 1 is for waiter colleague 2 is for chef
     commands.push_back(
         command[i]);  // command 1 is for adding to order and canceling from the
@@ -27,7 +27,7 @@ KitchenMediator::KitchenMediator(Colleague *colleague[], Command *command[]) {
 }
 
 void KitchenMediator::addColleague(Colleague *colleague) {
-  colleagues.push_back(colleague);
+  WaiterColleagues.push_back(colleague);
 }
 
 void KitchenMediator::addCommand(Command *command) {
@@ -37,9 +37,9 @@ void KitchenMediator::addCommand(Command *command) {
 void KitchenMediator::removeColleague(Colleague *colleague) {
   bool bfound = false;
   int i = 0;
-  while (!bfound && i < colleagues.size()) {
-    if (colleagues[i] == colleague) {
-      colleagues.erase(colleagues.begin() + i);
+  while (!bfound && i < WaiterColleagues.size()) {
+    if (WaiterColleagues[i] == colleague) {
+      WaiterColleagues.erase(WaiterColleagues.begin() + i);
       bfound = true;
     }
     i++;
@@ -58,6 +58,6 @@ void KitchenMediator::removeCommand(Command *command) {
   }
 }
 
-std::vector<Colleague *> KitchenMediator::getColleagues() { return colleagues; }
+std::vector<Colleague *> KitchenMediator::getColleagues() { return WaiterColleagues; }
 
 std::vector<Command *> KitchenMediator::getCommands() { return commands; }

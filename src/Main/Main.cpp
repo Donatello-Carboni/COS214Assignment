@@ -63,6 +63,6 @@ int main() {
 
   waiter->WriteDownOrder("Burger");
   waiter->WriteDownOrder("Burger");
-
+  
   return 0;
 }
