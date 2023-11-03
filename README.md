@@ -1,5 +1,8 @@
 # COS 214 Project: Restaurant Simulator
 
+[![Compile and Test](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/CompileAndTest.yml/badge.svg)](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/CompileAndTest.yml)
+[![Super Linter](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/superLinter.yml/badge.svg)](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/superLinter.yml)
+
 This repository contains the source code and documentation for a restaurant simulator project for the COS 214 course at the University of Pretoria. The project aims to demonstrate the application of various design patterns in a complex system.
 
 ## Project Description
