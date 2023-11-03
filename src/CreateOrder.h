@@ -3,10 +3,18 @@
 #include "Command.h"
 #include <vector>
 #include <string>
+#include"BurgerOrder.h"
+#include"BurgerBunOrder.h"
+#include"RegularBunOrder.h"
+#include"GlutenFreeBunOrder.h"
+#include"BurgerToppingOrder.h"
+#include"CheeseOrder.h"
+#include"PattyOrder.h"
+
 class CreateOrder : public Command {
  private:
   std::vector<std::string> orders;
-  Burger *burger;
+  BurgerOrder *burgerorder;
  public:
   CreateOrder();
   ~CreateOrder();

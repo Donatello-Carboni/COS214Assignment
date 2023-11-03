@@ -1,11 +1,11 @@
 #ifndef CHEF_H
 #define CHEF_H
-
+#include "Colleague.h"
 #include "string"
 #include "vector"
 #include "Plate.h"  
 #include <iostream>
-class Chef
+class Chef : public Colleague
 {
     
 public:
