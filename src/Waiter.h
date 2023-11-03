@@ -2,11 +2,11 @@
 #define WAITER_H
 #include <vector>
 #include <string>
-#include "ConcreteMediator.h"
 #include "Observer.h"
 #include "Table.h"
 #include "Plate.h"
-
+#include "Colleague.h"
+class ConcreteMediator;
 class Waiter: public Colleague, public Observer{
     private:
      //Mediator

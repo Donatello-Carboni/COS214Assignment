@@ -1,8 +1,6 @@
 #include "CreateOrder.h"
 
 void CreateOrder::execute() { 
-  // Create a new burger
-  //pop from vector and add to burger
   
   };
 

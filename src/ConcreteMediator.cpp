@@ -27,7 +27,7 @@ void ConcreteMediator::notifyDone(Colleague *colleague) {
   //identify waiter
   int i=0;
   while(this->getColleagues().at(i)!=colleague){
-    int i++;
+    i++;
   }
   Waiter* w=(Waiter*)this->getColleagues().at(i);
   w->givePlate(plate);

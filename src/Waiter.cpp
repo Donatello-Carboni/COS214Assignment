@@ -1,4 +1,5 @@
 #include "Waiter.h"
+#include "ConcreteMediator.h"
 #include <algorithm>
 Waiter::Waiter(ConcreteMediator *mediator)
 {
@@ -61,3 +62,8 @@ void Waiter::update(Table* changedTable) {
 int Waiter::getFreeTablesCount() const { return FreeTables.size(); }
 
 int Waiter::getOccupiedTablesCount() const { return OccupiedTables.size(); }
+
+void Waiter::givePlate(Plate* plate)
+{
+  this->plate=plate;
+}
