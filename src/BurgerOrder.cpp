@@ -1,3 +1,4 @@
+
 #include "BurgerOrder.h"
 
 BurgerOrder* BurgerOrder::base = NULL;                      //First instance of BurgerOrder object

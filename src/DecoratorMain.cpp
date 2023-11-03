@@ -17,10 +17,10 @@ int decoratorMain();
 
 using namespace std;
 
-int main()
-{
-    return decoratorMain();
-}
+// int main()
+// {
+//     return decoratorMain();
+// }
 
 
 int decoratorMain()

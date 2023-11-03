@@ -67,3 +67,8 @@ void Waiter::givePlate(Plate* plate)
 {
   this->plate=plate;
 }
+
+Plate* Waiter::getPlate()
+{
+  return this->plate;
+}

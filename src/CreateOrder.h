@@ -10,7 +10,12 @@
 #include"BurgerToppingOrder.h"
 #include"CheeseOrder.h"
 #include"PattyOrder.h"
-
+#include"TomatoSauceOrder.h"
+#include"MustardSauceOrder.h"
+#include"LettuceOrder.h"
+#include"OnionSliceOrder.h"
+#include"MushroomOrder.h"
+#include"GherkinOrder.h"
 class CreateOrder : public Command {
  private:
   std::vector<std::string> orders;

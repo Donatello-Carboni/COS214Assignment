@@ -28,6 +28,7 @@ class Waiter: public Colleague, public Observer{
         int getFreeTablesCount() const;
         int getOccupiedTablesCount() const;
         void givePlate(Plate* plate);
+        Plate* getPlate();
 };
 
 #endif
