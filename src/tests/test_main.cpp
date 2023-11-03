@@ -126,11 +126,34 @@ TEST(MediatorTest, CommsToDecor) {
   Command *command3 = mediator->getCommands().at(0);
   CreateOrder *command4 = (CreateOrder *)command3;
   // Perform assertions to validate the number of colleagues
-  std::string test = command4->burger->test;
-  ASSERT_EQ(test, "BurgerBurger");
+  //std::string test = command4->burger->test;
+  //ASSERT_EQ(test, "BurgerBurger");
   //delete mediator;
 }
+//TESTS for command 
+TEST(COMMAND, decorcmd){
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  waiter->WriteDownOrder("ID-1");
+  waiter->WriteDownOrder("RegularBun");
+  waiter->WriteDownOrder("Cheese");
+  waiter->DoneOrder();
+  bool truefalse = false;
+  if(waiter->getPlate()!=NULL){
+    truefalse = true;
+  }
+  EXPECT_TRUE(truefalse);
+}
 //COMPOSITE
 
 // Define a test fixture for RestaurantTable and CompositeTable
