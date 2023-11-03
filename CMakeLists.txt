@@ -17,6 +17,7 @@ include_directories(src)
 
 # Create the production executable
 add_executable(main ${SOURCES} "./src/Main/Main.cpp")
+
 # Create the test executable
 add_executable(test ${SOURCES} "./src/tests/test_main.cpp")
 

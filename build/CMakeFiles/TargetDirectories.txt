@@ -1,4 +1,0 @@
-/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles/test.dir
-/mnt/c/Users/User/Documents/University/Second_Year/Second_Sem/COS214/Pracs/Project/GITHUB/COS214Assignment/build/CMakeFiles/main.dir
