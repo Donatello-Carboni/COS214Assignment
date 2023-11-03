@@ -13,7 +13,10 @@ PattyOrder::~PattyOrder()
 
 std::string PattyOrder::toString()
 {
-    return "PATTY";
+    if (this != nullptr)
+        return "PATTY";
+
+    return "";
 }
 
 double PattyOrder::getPrice()

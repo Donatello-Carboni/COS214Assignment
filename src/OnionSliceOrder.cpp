@@ -13,7 +13,10 @@ OnionSliceOrder::~OnionSliceOrder()
 
 std::string OnionSliceOrder::toString()
 {
-    return "ONION_SLICE";
+    if (this != nullptr)
+        return "ONION_SLICE";
+
+    return "";
 }
 
 double OnionSliceOrder::getPrice()

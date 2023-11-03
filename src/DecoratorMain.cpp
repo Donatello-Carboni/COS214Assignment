@@ -13,8 +13,15 @@
 #include "TomatoSauceOrder.h"
 #include <iostream>
 #include <unistd.h>
+int decoratorMain();
 
 using namespace std;
+
+int main()
+{
+    return decoratorMain();
+}
+
 
 int decoratorMain()
 {
@@ -27,5 +34,11 @@ int decoratorMain()
 
     //Print works from any component
     tomatoSauce->printList();
+    cout << "REG_BUN NEXT: " << regBun->getNext()->toString() << endl;
+    cout << "PATTY NEXT: " << patty->getNext()->toString() << endl;
+    cout << "CHEESE NEXT: " << cheese->getNext()->toString() << endl;
+    cout << "TOMATO_SAUCE NEXT: " << tomatoSauce->getNext()->toString() << endl;
+    //cout << "LETTUCE NEXT: " << lettuce->getNext()->toString() << endl;     //Causes segfault even with nullptr check to toString(). Will fix later
+
     return 0;
 }

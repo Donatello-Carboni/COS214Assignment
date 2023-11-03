@@ -13,7 +13,10 @@ TomatoSauceOrder::~TomatoSauceOrder()
 
 std::string TomatoSauceOrder::toString()
 {
-    return "TOMATO_SAUCE";
+    if (this != nullptr)
+        return "TOMATO_SAUCE";
+
+    return "";
 }
 
 double TomatoSauceOrder::getPrice()

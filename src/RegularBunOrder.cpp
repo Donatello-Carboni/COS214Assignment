@@ -13,7 +13,10 @@ RegularBunOrder::~RegularBunOrder()
 
 std::string RegularBunOrder::toString()
 {
-    return "REGULAR_BUN";
+    if (this != nullptr)
+        return "REGULAR_BUN";
+
+    return "";
 }
 
 double RegularBunOrder::getPrice()

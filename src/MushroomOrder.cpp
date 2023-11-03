@@ -13,7 +13,10 @@ MushroomOrder::~MushroomOrder()
 
 std::string MushroomOrder::toString()
 {
-    return "MUSHROOM";
+    if (this != nullptr)
+        return "MUSHROOM";
+
+    return "";
 }
 
 double MushroomOrder::getPrice()

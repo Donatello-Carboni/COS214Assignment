@@ -57,3 +57,8 @@ void BurgerOrder::printList()
     std::cout << out << std::endl;
     std::cout << "\n=====DONE=====" <<std::endl;
 }
+
+BurgerOrder* BurgerOrder::getNext() 
+{
+    return next;
+}

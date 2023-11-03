@@ -13,7 +13,10 @@ GlutenFreeBunOrder::~GlutenFreeBunOrder()
 
 std::string GlutenFreeBunOrder::toString()
 {
-    return "GLUTEN_FREE_BUN";
+    if (this != nullptr)
+        return "GLUTEN_FREE_BUN";
+
+    return "";
 }
 
 double GlutenFreeBunOrder::getPrice()

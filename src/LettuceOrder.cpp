@@ -13,7 +13,10 @@ LettuceOrder::~LettuceOrder()
 
 std::string LettuceOrder::toString()
 {
-    return "LETTUCE";
+    if (this != nullptr)
+        return "LETTUCE";
+ 
+    return "";
 }
 
 double LettuceOrder::getPrice()

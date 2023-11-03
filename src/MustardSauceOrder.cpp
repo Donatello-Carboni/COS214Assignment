@@ -13,7 +13,10 @@ MustardSauceOrder::~MustardSauceOrder()
 
 std::string MustardSauceOrder::toString()
 {
-    return "MUSTARD_SAUCE";
+    if (this != nullptr)
+        return "MUSTARD_SAUCE";
+
+    return "";
 }
 
 double MustardSauceOrder::getPrice()

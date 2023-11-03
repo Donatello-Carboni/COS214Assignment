@@ -12,6 +12,7 @@ class BurgerOrder {
         virtual std::string toString() =0;
         bool add(BurgerOrder*);
         void printList();
+        BurgerOrder* getNext();
 
     private:
         static BurgerOrder* base;

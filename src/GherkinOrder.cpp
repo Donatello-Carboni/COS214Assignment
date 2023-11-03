@@ -13,7 +13,10 @@ GherkinOrder::~GherkinOrder()
 
 std::string GherkinOrder::toString()
 {
-    return "GHERKIN";
+    if (this != nullptr)
+        return "GHERKIN";
+
+    return "";
 }
 
 double GherkinOrder::getPrice()

@@ -13,7 +13,10 @@ CheeseOrder::~CheeseOrder()
 
 std::string CheeseOrder::toString()
 {
-    return "CHEESE_SLICE";
+    if (this != nullptr)
+        return "CHEESE_SLICE";
+
+    return "";
 }
 
 double CheeseOrder::getPrice()
@@ -21,3 +24,7 @@ double CheeseOrder::getPrice()
     return price;
 }
 
+BurgerOrder* CheeseOrder::getNext()
+{
+    return getNext();
+}
