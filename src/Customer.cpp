@@ -1,6 +1,6 @@
 #include "Customer.h"
 #include "WaitingToSit.h"
-
+#include "WaitingToOrder.h"
 Customer::Customer()
 {
 
@@ -11,7 +11,8 @@ Customer::Customer(int num)
     customerNumber = num;
     happiness = 60;
     cout << "New customer created (" << num << ")" << endl;
-    state = new WaitingToSit();
+    //state = new WaitingToSit();
+    state = new WaitingToOrder();
 }
 
 Customer::~Customer()
@@ -64,7 +65,20 @@ vector<string> Customer::getOrder()
 
 void Customer::placeOrder()
 {
-    state->chooseItems(this);
+    cout<<"Placing order"<<endl;
+    // state->chooseItems(this);
+    std::vector<std::string> order;
+    std::string bun = "RegularBun";
+    std::string patty = "Patty";
+    std::string cheese = "Cheese";
+    std::string cCheese = "cancel-Cheese";
+    std::string id = "1";
+    order.push_back(id);
+    order.push_back(bun);
+    order.push_back(patty);
+    order.push_back(cheese);
+    order.push_back(cCheese);
+    this->setOrder(order);
 }
 
 void Customer::getTheBill()

@@ -15,7 +15,8 @@ class RestaurantTable : public Table {
     virtual bool AddCustomer(Customer* customer);
     virtual bool RemoveCustomer(Customer* customer);
     int getCapacity() {return this->customerCapacity;};
-
+    int getCustomerCount() {return this->customerCount;};
+    std::vector<Customer*> getCustomers() {return this->customers;};
 };
 
 

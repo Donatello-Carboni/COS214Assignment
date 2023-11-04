@@ -1,16 +1,16 @@
 
 #include "BurgerOrder.h"
 
-BurgerOrder* BurgerOrder::base = NULL;                      //First instance of BurgerOrder object
-BurgerOrder* BurgerOrder::head = NULL;                      //Head of the linked list
+BurgerOrder* BurgerOrder::base = nullptr;                      //First instance of BurgerOrder object
+BurgerOrder* BurgerOrder::head = nullptr;                      //Head of the linked list
 
 BurgerOrder::BurgerOrder()
 {
-    if (base == NULL)
+    if (base == nullptr)
     {
         base = this;
         head = head;
-        next = NULL;
+        next = nullptr;
     }
 }
 
@@ -22,15 +22,15 @@ BurgerOrder::~BurgerOrder()
 bool BurgerOrder::add(BurgerOrder* topping)
 {
     BurgerOrder* curr = head;
-    if (curr == NULL)
+    if (curr == nullptr)
     {
         head = topping;
-        head->next = NULL;
+        head->next = nullptr;
         return true;
     }
     else
     {
-        while (curr->next != NULL)
+        while (curr->next != nullptr)
         {
             curr = curr->next;
         }
@@ -47,10 +47,10 @@ void BurgerOrder::printList()
     std::cout << "" << std::endl;
     std::string out = "";
 
-    while (curr != NULL)
+    while (curr != nullptr)
     {
         out += "[" + curr->toString() + "]";
-        if (curr->next != NULL)
+        if (curr->next != nullptr)
             out += "->";
         curr = curr->next;
     }
