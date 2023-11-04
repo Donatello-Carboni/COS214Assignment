@@ -5,20 +5,29 @@ ExtrasChef::ExtrasChef()
     nextChef = nullptr;
 }
 
-void ExtrasChef::addToPlate(std::vector<std::string> order, Plate *plate)
+void ExtrasChef::addToPlate(BurgerOrder *order, Plate *plate)
 {
-    if (order.size() <= 0)
+    BurgerOrder *tempOrder = order;
+    while (tempOrder != nullptr)
     {
-        return;
+        if (tempOrder->toString() == "GHERKIN")
+        {
+            plate->addExtra("GHERKIN");
+        }
+        else if (tempOrder->toString() == "ONION_SLICE")
+        {
+            plate->addExtra("ONION_SLICE");
+        }
+        else if (tempOrder->toString() == "LETTUCE")
+        {
+            plate->addExtra("LETTUCE");
+        }
+        else if (tempOrder->toString() == "MUSHROOM")
+        {
+            plate->addExtra("MUSHROOM");
+        }
+        tempOrder = tempOrder->getNext();
     }
-    auto it = std::find(order.begin(), order.end(), "extras");
-    if (it != order.end())
-    {
-        std::cout << "Adding Extras to the plate." << std::endl;
-        //plate.addSauce(); Todo
-        order.erase(it); //Remove from order
-    }
-    
-    
-    BaseChef::addToPlate(order, plate); //Pass to next 
+
+    BaseChef::addToPlate(order, plate); // Pass to next
 }

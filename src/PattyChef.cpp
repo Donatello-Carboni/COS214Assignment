@@ -5,20 +5,17 @@ PattyChef::PattyChef()
     nextChef = nullptr;
 }
 
-void PattyChef::addToPlate(std::vector<std::string> order, Plate *plate)
+void PattyChef::addToPlate(BurgerOrder *order, Plate *plate)
 {
-    if (order.size() <= 0)
+    BurgerOrder *tempOrder = order;
+    while (tempOrder != nullptr)
     {
-        return;
+        if (tempOrder->toString() == "PATTY")
+        {
+            plate->addPatty();
+        }
+        tempOrder = tempOrder->getNext();
     }
-    auto it = std::find(order.begin(), order.end(), "patty");
-    if (it != order.end())
-    {
-        std::cout << "Adding patty to the plate." << std::endl;
-        //plate.addSauce(); Todo
-        order.erase(it); //Remove from order
-    }
-    
-    
-    BaseChef::addToPlate(order, plate); //Pass to next 
+
+    BaseChef::addToPlate(order, plate); // Pass to next
 }

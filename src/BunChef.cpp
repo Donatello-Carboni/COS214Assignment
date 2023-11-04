@@ -4,15 +4,21 @@ BunChef::BunChef()
 {
 }
 
-void BunChef::addToPlate(std::vector<std::string> order, Plate *plate)
+void BunChef::addToPlate(BurgerOrder *order, Plate *plate)
 {
-    auto it = std::find(order.begin(), order.end(), "bun");
-    if (it != order.end())
+    BurgerOrder *tempOrder = order;
+    while (tempOrder != nullptr)
     {
-        std::cout << "Adding Bun to the plate." << std::endl;
-        //plate.addSauce(); Todo
+        if (tempOrder->toString() == "GLUTEN_FREE_BUN")
+        {
+            plate->addBun("GLUTEN_FREE_BUN");
+        }
+        else if (tempOrder->toString() == "REGULAR_BUN")
+        {
+            plate->addBun("REGULAR_BUN");
+        }
+        tempOrder = tempOrder->getNext();
     }
-    
-    order.erase(it); //Remove from order
-    BaseChef::addToPlate(order, plate); //Pass to next 
+
+    BaseChef::addToPlate(order, plate); // Pass to next
 }

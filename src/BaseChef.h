@@ -1,13 +1,26 @@
 #ifndef BCHEF_H
 #define BCHEF_H
 
+#include"BurgerOrder.h"
+#include"BurgerBunOrder.h"
+#include"RegularBunOrder.h"
+#include"GlutenFreeBunOrder.h"
+#include"BurgerToppingOrder.h"
+#include"CheeseOrder.h"
+#include"PattyOrder.h"
+#include"TomatoSauceOrder.h"
+#include"MustardSauceOrder.h"
+#include"LettuceOrder.h"
+#include"OnionSliceOrder.h"
+#include"MushroomOrder.h"
+#include"GherkinOrder.h"
 #include "Chef.h"
-#include <algorithm>
+
 class BaseChef : public Chef
 {
 private:
     
-    std::vector<std::string> order; // This needs to be populated by the mediator which will convert the Json to a vector
+    // BurgerOrder *order; // order to be added to plate
     Plate *plate;
 
 protected:
@@ -15,6 +28,6 @@ BaseChef *nextChef;
 public:
     BaseChef();
     BaseChef* add(BaseChef *chef);                                         // setNext
-    void addToPlate(std::vector<std::string> order, Plate *plate); // Handle method
+    void addToPlate(BurgerOrder* order, Plate *plate); // Handle method
 };
 #endif

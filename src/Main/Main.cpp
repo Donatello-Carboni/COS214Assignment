@@ -14,6 +14,7 @@
 #include "../CreateOrder.h"
 #include "../Command.h"
 #include "../BaseChef.h"
+
 int main() {
   // Create a Caretaker and a Tab
   Caretaker caretaker;
@@ -50,7 +51,7 @@ int main() {
   tab.printBill();
   //Mediator 
   KitchenMediator *mediator = new ConcreteMediator();
-  Chef *chef=new BaseChef();
+  BaseChef *chef=new BaseChef();
   Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
 
   mediator->addColleague((Colleague*)chef);
