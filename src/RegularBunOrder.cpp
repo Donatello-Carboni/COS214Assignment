@@ -4,6 +4,7 @@ RegularBunOrder::RegularBunOrder()
 {
     price = 15.00;
     add(this);
+    std::cout << "done creating burger bun" << std::endl;
 }
 
 RegularBunOrder::~RegularBunOrder()

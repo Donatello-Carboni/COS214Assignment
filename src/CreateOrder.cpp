@@ -1,10 +1,15 @@
 #include "CreateOrder.h"
 #include <iostream>
 void CreateOrder::execute() {
+this->burgerorder=nullptr;
+for(int i=0;i<this->orders.size();i++){
+  std::cout<<this->orders.at(i)<<std::endl;
+}
 // Create burger order
 std::cout<<"creating burger bun"<<std::endl;
    if (this->orders.at(1) == "RegularBun") {
     this->burgerorder = new RegularBunOrder();
+    std::cout<<"Done bun"<<std::endl;
   } else {
     this->burgerorder = new GlutenFreeBunOrder();
   }
