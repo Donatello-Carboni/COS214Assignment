@@ -14,17 +14,18 @@ class Customer {
         ~Customer();
         int getCustomerNumber();
         int getHappiness();
-        void setHappiness(int happy);
-        State* getState();
-        void sitDown();
-        void cancelOrder(std::string item);
-        void setState(State* currState);
+        void changeHappiness(int happy);
         void setOrder(std::vector<std::string> extras);
         std::vector<std::string> getOrder();
+        void setState(State* currState);
+        State* getState();
+        void sitDown();
         void placeOrder();
+        void cancelOrder(std::string item);
         void getTheBill();
-        void leave();
         void printOrder();
+        void leave();
+        bool didPay();
     
     private:
         State* state;
