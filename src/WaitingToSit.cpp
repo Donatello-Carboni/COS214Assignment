@@ -19,7 +19,10 @@ WaitingToSit::~WaitingToSit()
 
 void WaitingToSit::chooseItems(Customer* customer)
 {
+<<<<<<< Updated upstream
     cout << "[WAITING_TO_SIT] - Choosing items..." << endl;
+=======
+>>>>>>> Stashed changes
     customer->setState(new WaitingToOrder());
 }
 
@@ -58,8 +61,13 @@ void WaitingToSit::changeHappiness(Customer* customer)
 {
     srand(time(NULL));
     int happiness = rand() % 100;
+<<<<<<< Updated upstream
     cout << "[WAITING_TO_SIT] - HAPPINESS: " << customer->getHappiness() << endl;
     customer->setHappiness(happiness);
+=======
+    cout << "[WAITING_TO_SIT]\t- HAPPINESS: " << customer->getHappiness() << endl;
+    customer->changeHappiness(happiness);
+>>>>>>> Stashed changes
 }
 
 string WaitingToSit::toString()

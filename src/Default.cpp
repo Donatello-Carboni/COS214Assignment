@@ -52,9 +52,15 @@ void Default::review(Customer* customer)
 void Default::changeHappiness(Customer* customer)
 {
     srand(time(NULL));
+<<<<<<< Updated upstream
     int happiness = rand() % 100;
     cout << "[DEFAULT] - HAPPINESS: " << customer->getHappiness() << endl;
     customer->setHappiness(happiness);
+=======
+    int happiness = rand() % 100 + 40;
+    cout << "[DEFAULT]\t\t- HAPPINESS: " << customer->getHappiness() << endl;
+    customer->changeHappiness(happiness);
+>>>>>>> Stashed changes
 }
 
 

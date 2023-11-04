@@ -1,5 +1,10 @@
 #include "Customer.h"
 #include "WaitingToSit.h"
+<<<<<<< Updated upstream
+=======
+#include "WaitingToOrder.h"
+#include <random>
+>>>>>>> Stashed changes
 
 Customer::Customer()
 {
@@ -26,13 +31,21 @@ int Customer::getHappiness()
 
 void Customer::setHappiness(int happy)
 {
-    if (happiness - happy < 0)
+    random_device random;
+    mt19937 happ(random());
+    std::uniform_int_distribution<int> happiness(1, 2);
+    int incOrDec = happiness(happ);
+
+    switch (incOrDec)
     {
-        happiness = 20;
-    }
-    else
-    {
-        happiness -= happy;
+        case 1:
+        {
+            happiness += happy;
+        }
+        case 2:
+        {
+            happiness -= happy;
+        }
     }
 }
 

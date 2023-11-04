@@ -48,9 +48,27 @@ void AboutToLeave::review(Customer* customer)
 
 void AboutToLeave::changeHappiness(Customer* customer)
 {
+<<<<<<< Updated upstream
     srand(time(NULL));
     int happiness = rand() % 10 + 8;
     customer->setHappiness(happiness);
+=======
+    //Randomize seed before changing happiness every time
+    int num = rand() %10;
+    for (int i = 0; i < num; i++)
+    {
+        srand(time(NULL));
+    }
+
+    int happiness = customer->getHappiness();
+
+    if (happiness < 50)
+        happiness = rand() %10;
+    else if (happiness < 75 && happiness > 50)
+        happiness = rand() % 10 + rand() %16;
+
+    customer->changeHappiness(happiness);
+>>>>>>> Stashed changes
 
     cout << "[ABOUT_TO_LEAVE] - Happiness changed..." << endl;
     cout << "[ABOUT_TO_LEAVE] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
