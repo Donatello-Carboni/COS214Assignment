@@ -14,6 +14,7 @@
 #include "../CreateOrder.h"
 #include "../Command.h"
 #include "../BaseChef.h"
+
 #include "../Customer.h"
 #include "../AboutToLeave.h"
 #include "../WaitingToOrder.h"
@@ -157,7 +158,7 @@ int main() {
   tab.printBill();
   //Mediator 
   KitchenMediator *mediator = new ConcreteMediator();
-  Chef *chef=new BaseChef();
+  BaseChef *chef=new BaseChef();
   Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
 
   mediator->addColleague((Colleague*)chef);

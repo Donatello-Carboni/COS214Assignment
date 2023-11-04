@@ -3,26 +3,35 @@
 #include <gtest/gtest.h>
 
 #include "../BaseChef.h"
+#include "../BunChef.h"
+#include "../BurgerOrder.h"
+#include "../BaseChef.h"
 #include "../Caretaker.h"
+#include "../CheeseChef.h"
 #include "../CheeseChef.h"
 #include "../Chef.h"
 #include "../Colleague.h"
 #include "../Command.h"
+#include "../CompositeTable.h"
 #include "../Complaint.h"
 #include "../CompositeTable.h"
 #include "../ConcreteMediator.h"
 #include "../CreateOrder.h"
 #include "../Customer.h"
+#include "../Customer.h"
 #include "../KitchenMediator.h"
 #include "../Manager.h"
 #include "../PattyChef.h"
 #include "../Plate.h"
+#include "../RestaurantTable.h"
 #include "../Report.h"
 #include "../RestaurantTable.h"
 #include "../Review.h"
 #include "../SauceChef.h"
 #include "../Tab.h"
 #include "../TabMemento.h"
+#include "../Table.h"
+#include "../Waiter.h"
 #include "../Table.h"
 #include "../Waiter.h"
 
@@ -128,6 +137,7 @@ TEST(MediatorTest, AddColleague) {
   ASSERT_EQ(mediator->getColleagues().at(0), (Colleague *)chef);
   ASSERT_EQ(mediator->getColleagues().at(1), (Colleague *)waiter);
   // delete mediator;
+  // delete mediator;
 }
 
 TEST(MediatorTest, AddCommand) {
@@ -143,6 +153,8 @@ TEST(MediatorTest, AddCommand) {
   ASSERT_EQ(mediator->getCommands().size(), 2);
   ASSERT_EQ(mediator->getCommands().at(0), command);
   ASSERT_EQ(mediator->getCommands().at(1), command2);
+  // delete mediator;
+  // ASSERT_EQ(1, 1);
   // delete mediator;
   // ASSERT_EQ(1, 1);
 }
@@ -200,7 +212,14 @@ class TableTest : public ::testing::Test {
  protected:
   RestaurantTable *restaurantTable;
   CompositeTable *compositeTable;
+ protected:
+  RestaurantTable *restaurantTable;
+  CompositeTable *compositeTable;
 
+  void SetUp() override {
+    restaurantTable = new RestaurantTable(3);
+    compositeTable = new CompositeTable();
+  }
   void SetUp() override {
     restaurantTable = new RestaurantTable(3);
     compositeTable = new CompositeTable();
@@ -210,9 +229,18 @@ class TableTest : public ::testing::Test {
     delete restaurantTable;
     delete compositeTable;
   }
+  void TearDown() override {
+    delete restaurantTable;
+    delete compositeTable;
+  }
 };
 
 TEST_F(TableTest, RestaurantTableAddCustomer) {
+  Customer customer;
+  EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+  EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+  EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
+  EXPECT_FALSE(restaurantTable->AddCustomer(&customer));
   Customer customer;
   EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
   EXPECT_TRUE(restaurantTable->AddCustomer(&customer));
@@ -226,16 +254,28 @@ TEST_F(TableTest, RestaurantTableRemoveCustomer) {
   EXPECT_TRUE(restaurantTable->RemoveCustomer(&customer));
   EXPECT_FALSE(
       restaurantTable->RemoveCustomer(&customer));  // Customer not found
+  Customer customer;
+  restaurantTable->AddCustomer(&customer);
+  EXPECT_TRUE(restaurantTable->RemoveCustomer(&customer));
+  EXPECT_FALSE(
+      restaurantTable->RemoveCustomer(&customer));  // Customer not found
 }
 
 TEST_F(TableTest, CompositeTableAddRemoveTable) {
+  RestaurantTable *table1 = new RestaurantTable(2);
+  RestaurantTable *table2 = new RestaurantTable(3);
   RestaurantTable *table1 = new RestaurantTable(2);
   RestaurantTable *table2 = new RestaurantTable(3);
 
   EXPECT_TRUE(compositeTable->AddTable(table1));
   EXPECT_TRUE(compositeTable->AddTable(table2));
   EXPECT_EQ(compositeTable->getState(), true);  // Should be available
+  EXPECT_TRUE(compositeTable->AddTable(table1));
+  EXPECT_TRUE(compositeTable->AddTable(table2));
+  EXPECT_EQ(compositeTable->getState(), true);  // Should be available
 
+  EXPECT_TRUE(compositeTable->RemoveTable(table1));
+  EXPECT_FALSE(compositeTable->RemoveTable(table1));  // Table not found
   EXPECT_TRUE(compositeTable->RemoveTable(table1));
   EXPECT_FALSE(compositeTable->RemoveTable(table1));  // Table not found
 }
@@ -244,7 +284,13 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
   Customer customer1;
   Customer customer2;
   Customer customer3;
+  Customer customer1;
+  Customer customer2;
+  Customer customer3;
 
+  EXPECT_TRUE(compositeTable->AddCustomer(&customer1));
+  EXPECT_TRUE(compositeTable->AddCustomer(&customer2));
+  EXPECT_TRUE(compositeTable->AddCustomer(&customer3));  // All tables are full
   EXPECT_TRUE(compositeTable->AddCustomer(&customer1));
   EXPECT_TRUE(compositeTable->AddCustomer(&customer2));
   EXPECT_TRUE(compositeTable->AddCustomer(&customer3));  // All tables are full
@@ -252,8 +298,12 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
   EXPECT_TRUE(compositeTable->RemoveCustomer(&customer1));
   EXPECT_FALSE(
       compositeTable->RemoveCustomer(&customer1));  // Customer not found
+  EXPECT_TRUE(compositeTable->RemoveCustomer(&customer1));
+  EXPECT_FALSE(
+      compositeTable->RemoveCustomer(&customer1));  // Customer not found
 }
 
+// OBSERVER
 // OBSERVER
 
 TEST_F(TableTest, WaiterUpdate) {
@@ -262,20 +312,36 @@ TEST_F(TableTest, WaiterUpdate) {
   RestaurantTable table4(3);
 
   Waiter waiter({&table3, &table4});
+  // Create tables
+  RestaurantTable table3(3);
+  RestaurantTable table4(3);
+
+  Waiter waiter({&table3, &table4});
 
   table4.setState(false);  // Make table4 occupied
+  table4.setState(false);  // Make table4 occupied
 
+  // Check if the tables are initially in the correct vectors
+  EXPECT_EQ(waiter.getFreeTablesCount(), 1);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
   // Check if the tables are initially in the correct vectors
   EXPECT_EQ(waiter.getFreeTablesCount(), 1);
   EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
 
   // Change the state of the tables and simulate notification
   table3.setState(false);  // Make table3 occupied
+  // Change the state of the tables and simulate notification
+  table3.setState(false);  // Make table3 occupied
 
   // Check if tables are moved to the correct vectors after the state change
   EXPECT_EQ(waiter.getFreeTablesCount(), 0);
   EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
+  // Check if tables are moved to the correct vectors after the state change
+  EXPECT_EQ(waiter.getFreeTablesCount(), 0);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
 
+  table3.setState(true);
+  table4.setState(true);
   table3.setState(true);
   table4.setState(true);
 
@@ -284,45 +350,34 @@ TEST_F(TableTest, WaiterUpdate) {
 }
 
 // Chain
-class ChefTest : public ::testing::Test {
+class BurgerChefTest : public ::testing::Test {
  protected:
-  virtual void SetUp() {
-    cheeseChef = new CheeseChef();
-    sauceChef = new SauceChef();
-    pattyChef = new PattyChef();
-    baseChef = new BaseChef();
+  BunChef *bunChef;
+  Plate *plate;
+
+  // Set up the test environment before each test case
+  void SetUp() override {
+    bunChef = new BunChef();
     plate = new Plate();
   }
 
-  virtual void TearDown() {
-    delete cheeseChef;
-    delete sauceChef;
-    delete pattyChef;
-    delete baseChef;
+  // Clean up the test environment after each test case
+  void TearDown() override {
+    delete bunChef;
     delete plate;
   }
-
-  CheeseChef *cheeseChef;
-  SauceChef *sauceChef;
-  PattyChef *pattyChef;
-  BaseChef *baseChef;
-  Plate *plate;
 };
-TEST_F(ChefTest, CheeseChefTest) {
-  // Simulate adding an order for cheese
-  std::vector<std::string> order = {"cheese"};
 
-  // Redirect stdout to a stringstream
-  testing::internal::CaptureStdout();
+// Write your individual test cases
+TEST_F(BurgerChefTest, BunChefTest) {
+  BurgerOrder *regBun = new RegularBunOrder();
 
-  // Handle the order
-  cheeseChef->addToPlate(order, plate);
+  // Call your chef to process the order
+  bunChef->addToPlate(regBun, plate);
+  EXPECT_EQ(plate->toString(), "REGULAR_BUN ");
 
-  // Get the captured output
-  std::string output = testing::internal::GetCapturedStdout();
-
-  // Assert that "Adding Cheese to the plate." is printed
-  ASSERT_TRUE(output.find("Adding Cheese to the plate.") != std::string::npos);
+  // Clean up the order
+  delete regBun;
 }
 
 int main(int argc, char **argv) {

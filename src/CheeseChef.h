@@ -6,7 +6,7 @@ class CheeseChef: public BaseChef
 {
 public:
     CheeseChef();
-    void addToPlate(std::vector<std::string> order, Plate *plate);
+    void addToPlate(BurgerOrder *order, Plate *plate);
 };
 
 #endif

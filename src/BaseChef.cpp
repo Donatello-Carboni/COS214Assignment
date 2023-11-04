@@ -18,10 +18,10 @@ BaseChef *BaseChef::add(BaseChef *chef)
     return chef;
 }
 
-void BaseChef::addToPlate(std::vector<std::string> order, Plate *plate)
+void BaseChef::addToPlate(BurgerOrder* order, Plate *plate)
 {
 
-    if (nextChef)
+    if (nextChef != nullptr)
     {
         nextChef->addToPlate(order, plate);
     }
