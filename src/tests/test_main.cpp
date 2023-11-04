@@ -26,6 +26,16 @@
 #include "../Table.h"
 #include "../Waiter.h"
 
+//=============================================
+//===============CUSTOMER TEST=================
+//=============================================
+
+
+
+//=============================================
+//===========REPORT & MANAGER TEST=============
+//=============================================
+
 TEST(ReportManagerTest, SingletonInstance) {
   Manager &manager1 = Manager::getManager();
   Manager &manager2 = Manager::getManager();
@@ -63,6 +73,10 @@ TEST(ManagerTest, AddAndPrintReports) {
   ASSERT_EQ(buffer.str(), expectedOutput);
 }
 
+//=============================================
+//============TAB & MEMENTO TEST===============
+//=============================================
+
 TEST(TabTest, CreateMemento) {
   Tab tab;
   tab.addOrderedItem("Item1", 10.0);
@@ -96,6 +110,10 @@ TEST(TabTest, SetMemento) {
 
 // Add more test cases for other functions in Tab class
 
+//=============================================
+//=========CARETAKER & MEMENTO TEST============
+//=============================================
+
 TEST(CaretakerTest, AddAndGetMemento) {
   Caretaker caretaker;
   Tab tab;
@@ -115,6 +133,11 @@ TEST(CaretakerTest, AddAndGetMemento) {
   // Perform assertions to validate the retrieved memento
   // (similar to the previous tests)
 }
+
+//=================================================
+//===========MEDIATOR & COLLEAGUE TEST=============
+//=================================================
+
 TEST(MediatorTest, AddColleague) {
   KitchenMediator *mediator = new ConcreteMediator();
   Chef *chef = new BaseChef();
@@ -129,6 +152,10 @@ TEST(MediatorTest, AddColleague) {
   ASSERT_EQ(mediator->getColleagues().at(1), (Colleague *)waiter);
   // delete mediator;
 }
+
+//===============================================
+//===========MEDIATOR & COMMAND TEST=============
+//===============================================
 
 TEST(MediatorTest, AddCommand) {
   KitchenMediator *mediator = new ConcreteMediator();
@@ -169,7 +196,11 @@ TEST(MediatorTest, CommsToDecor) {
   // ASSERT_EQ(test, "BurgerBurger");
   // delete mediator;
 }
-// TESTS for command
+
+//====================================
+//===========COMMAND TEST=============
+//====================================
+
 TEST(COMMAND, decorcmd) {
   KitchenMediator *mediator = new ConcreteMediator();
   Chef *chef = new BaseChef();
@@ -193,7 +224,10 @@ TEST(COMMAND, decorcmd) {
   }
   EXPECT_TRUE(truefalse);
 }
-// COMPOSITE
+
+//======================================
+//===========COMPOSITE TEST=============
+//======================================
 
 // Define a test fixture for RestaurantTable and CompositeTable
 class TableTest : public ::testing::Test {
@@ -254,7 +288,9 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
       compositeTable->RemoveCustomer(&customer1));  // Customer not found
 }
 
-// OBSERVER
+//=====================================
+//===========OBSERVER TEST=============
+//=====================================
 
 TEST_F(TableTest, WaiterUpdate) {
   // Create tables
@@ -283,7 +319,10 @@ TEST_F(TableTest, WaiterUpdate) {
   EXPECT_EQ(waiter.getOccupiedTablesCount(), 0);
 }
 
-// Chain
+//========================================
+//=====CHAIN OF RESPONSIBILITY TEST=======
+//========================================
+
 class ChefTest : public ::testing::Test {
  protected:
   virtual void SetUp() {

@@ -24,7 +24,7 @@ int Customer::getHappiness()
     return happiness;
 }
 
-void Customer::setHappiness(int happy)
+void Customer::changeHappiness(int happy)
 {
     if (happiness - happy < 0)
     {
@@ -68,6 +68,11 @@ void Customer::placeOrder()
     state->chooseItems(this);
 }
 
+void Customer::cancelOrder(string item)
+{
+    order.push_back(item);
+}
+
 void Customer::getTheBill()
 {
     state->callForBill(this);
@@ -81,11 +86,6 @@ int Customer::getCustomerNumber()
     return customerNumber;
 }
 
-void Customer::leave()
-{
-    this->~Customer();
-}
-
 void Customer::printOrder()
 {
     cout << "======CUSTOMER(" << customerNumber << ")======" << endl;
@@ -96,13 +96,20 @@ void Customer::printOrder()
     }
 }
 
+
 void Customer::sitDown()
 {
     cout << "[CUSTOMER]\t\t- Customer (" << customerNumber << ") is sitting down at a table" << endl;
     setState(new WaitingToOrder());
 }
 
-void Customer::cancelOrder(string item)
+
+void Customer::leave()
 {
-    order.push_back(item);
+    this->~Customer();
+}
+
+bool Customer::didPay()
+{
+    return paid;
 }
