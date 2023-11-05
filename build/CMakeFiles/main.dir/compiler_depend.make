@@ -191,9 +191,23 @@ CMakeFiles/main.dir/src/AboutToLeave.cpp.o: /home/donatellogc/Documents/Universi
 
 CMakeFiles/main.dir/src/BaseChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -257,10 +271,8 @@ CMakeFiles/main.dir/src/BaseChef.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -300,23 +312,19 @@ CMakeFiles/main.dir/src/BaseChef.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -386,9 +394,23 @@ CMakeFiles/main.dir/src/BaseChef.cpp.o: /home/donatellogc/Documents/University/C
 CMakeFiles/main.dir/src/BunChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BunChef.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BunChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -452,10 +474,8 @@ CMakeFiles/main.dir/src/BunChef.cpp.o: /home/donatellogc/Documents/University/CO
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -495,23 +515,19 @@ CMakeFiles/main.dir/src/BunChef.cpp.o: /home/donatellogc/Documents/University/CO
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -1136,150 +1152,9 @@ CMakeFiles/main.dir/src/BurgerToppingOrder.cpp.o: /home/donatellogc/Documents/Un
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
 CMakeFiles/main.dir/src/Caretaker.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Caretaker.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/backward/binders.h \
-  /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/alloc_traits.h \
-  /usr/include/c++/13.2.1/bits/allocator.h \
-  /usr/include/c++/13.2.1/bits/basic_string.h \
-  /usr/include/c++/13.2.1/bits/basic_string.tcc \
-  /usr/include/c++/13.2.1/bits/char_traits.h \
-  /usr/include/c++/13.2.1/bits/charconv.h \
-  /usr/include/c++/13.2.1/bits/concept_check.h \
-  /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/13.2.1/bits/exception.h \
-  /usr/include/c++/13.2.1/bits/exception_defines.h \
-  /usr/include/c++/13.2.1/bits/functexcept.h \
-  /usr/include/c++/13.2.1/bits/functional_hash.h \
-  /usr/include/c++/13.2.1/bits/hash_bytes.h \
-  /usr/include/c++/13.2.1/bits/invoke.h \
-  /usr/include/c++/13.2.1/bits/localefwd.h \
-  /usr/include/c++/13.2.1/bits/memoryfwd.h \
-  /usr/include/c++/13.2.1/bits/move.h \
-  /usr/include/c++/13.2.1/bits/new_allocator.h \
-  /usr/include/c++/13.2.1/bits/ostream_insert.h \
-  /usr/include/c++/13.2.1/bits/postypes.h \
-  /usr/include/c++/13.2.1/bits/predefined_ops.h \
-  /usr/include/c++/13.2.1/bits/ptr_traits.h \
-  /usr/include/c++/13.2.1/bits/range_access.h \
-  /usr/include/c++/13.2.1/bits/refwrap.h \
-  /usr/include/c++/13.2.1/bits/requires_hosted.h \
-  /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algobase.h \
-  /usr/include/c++/13.2.1/bits/stl_bvector.h \
-  /usr/include/c++/13.2.1/bits/stl_construct.h \
-  /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_iterator.h \
-  /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/13.2.1/bits/stl_vector.h \
-  /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/utility.h \
-  /usr/include/c++/13.2.1/bits/vector.tcc \
-  /usr/include/c++/13.2.1/cctype \
-  /usr/include/c++/13.2.1/cerrno \
-  /usr/include/c++/13.2.1/clocale \
-  /usr/include/c++/13.2.1/cstdio \
-  /usr/include/c++/13.2.1/cstdlib \
-  /usr/include/c++/13.2.1/cwchar \
-  /usr/include/c++/13.2.1/debug/assertions.h \
-  /usr/include/c++/13.2.1/debug/debug.h \
-  /usr/include/c++/13.2.1/ext/alloc_traits.h \
-  /usr/include/c++/13.2.1/ext/numeric_traits.h \
-  /usr/include/c++/13.2.1/ext/string_conversions.h \
-  /usr/include/c++/13.2.1/ext/type_traits.h \
-  /usr/include/c++/13.2.1/initializer_list \
-  /usr/include/c++/13.2.1/iosfwd \
-  /usr/include/c++/13.2.1/new \
-  /usr/include/c++/13.2.1/string \
-  /usr/include/c++/13.2.1/type_traits \
-  /usr/include/c++/13.2.1/vector \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
-
-CMakeFiles/main.dir/src/CheeseChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseChef.cpp \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseChef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1343,10 +1218,8 @@ CMakeFiles/main.dir/src/CheeseChef.cpp.o: /home/donatellogc/Documents/University
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -1386,23 +1259,222 @@ CMakeFiles/main.dir/src/CheeseChef.cpp.o: /home/donatellogc/Documents/University
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+  /usr/include/c++/13.2.1/bits/utility.h \
+  /usr/include/c++/13.2.1/bits/vector.tcc \
+  /usr/include/c++/13.2.1/cctype \
+  /usr/include/c++/13.2.1/cerrno \
+  /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cstdio \
+  /usr/include/c++/13.2.1/cstdlib \
+  /usr/include/c++/13.2.1/cwchar \
+  /usr/include/c++/13.2.1/cwctype \
+  /usr/include/c++/13.2.1/debug/assertions.h \
+  /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/exception \
+  /usr/include/c++/13.2.1/ext/alloc_traits.h \
+  /usr/include/c++/13.2.1/ext/atomicity.h \
+  /usr/include/c++/13.2.1/ext/numeric_traits.h \
+  /usr/include/c++/13.2.1/ext/string_conversions.h \
+  /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/initializer_list \
+  /usr/include/c++/13.2.1/ios \
+  /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/iostream \
+  /usr/include/c++/13.2.1/istream \
+  /usr/include/c++/13.2.1/new \
+  /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/stdexcept \
+  /usr/include/c++/13.2.1/streambuf \
+  /usr/include/c++/13.2.1/string \
+  /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/type_traits \
+  /usr/include/c++/13.2.1/typeinfo \
+  /usr/include/c++/13.2.1/vector \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
+
+CMakeFiles/main.dir/src/CheeseChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseChef.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/13.2.1/backward/binders.h \
+  /usr/include/c++/13.2.1/bit \
+  /usr/include/c++/13.2.1/bits/alloc_traits.h \
+  /usr/include/c++/13.2.1/bits/allocator.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
+  /usr/include/c++/13.2.1/bits/basic_string.h \
+  /usr/include/c++/13.2.1/bits/basic_string.tcc \
+  /usr/include/c++/13.2.1/bits/char_traits.h \
+  /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/concept_check.h \
+  /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/exception.h \
+  /usr/include/c++/13.2.1/bits/exception_defines.h \
+  /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/functexcept.h \
+  /usr/include/c++/13.2.1/bits/functional_hash.h \
+  /usr/include/c++/13.2.1/bits/hash_bytes.h \
+  /usr/include/c++/13.2.1/bits/invoke.h \
+  /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
+  /usr/include/c++/13.2.1/bits/locale_classes.h \
+  /usr/include/c++/13.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/13.2.1/bits/locale_facets.h \
+  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
+  /usr/include/c++/13.2.1/bits/localefwd.h \
+  /usr/include/c++/13.2.1/bits/memoryfwd.h \
+  /usr/include/c++/13.2.1/bits/move.h \
+  /usr/include/c++/13.2.1/bits/nested_exception.h \
+  /usr/include/c++/13.2.1/bits/new_allocator.h \
+  /usr/include/c++/13.2.1/bits/ostream.tcc \
+  /usr/include/c++/13.2.1/bits/ostream_insert.h \
+  /usr/include/c++/13.2.1/bits/postypes.h \
+  /usr/include/c++/13.2.1/bits/predefined_ops.h \
+  /usr/include/c++/13.2.1/bits/ptr_traits.h \
+  /usr/include/c++/13.2.1/bits/range_access.h \
+  /usr/include/c++/13.2.1/bits/refwrap.h \
+  /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/std_abs.h \
+  /usr/include/c++/13.2.1/bits/stl_algobase.h \
+  /usr/include/c++/13.2.1/bits/stl_bvector.h \
+  /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_function.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13.2.1/bits/stl_pair.h \
+  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
+  /usr/include/c++/13.2.1/bits/stl_vector.h \
+  /usr/include/c++/13.2.1/bits/streambuf.tcc \
+  /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
+  /usr/include/c++/13.2.1/bits/stringfwd.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -2037,9 +2109,11 @@ CMakeFiles/main.dir/src/ConcreteMediator.cpp.o: /home/donatellogc/Documents/Univ
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Command.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CompositeTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ConcreteMediator.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CreateOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Customer.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.h \
@@ -2051,6 +2125,7 @@ CMakeFiles/main.dir/src/ConcreteMediator.cpp.o: /home/donatellogc/Documents/Univ
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Table.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
@@ -2118,10 +2193,8 @@ CMakeFiles/main.dir/src/ConcreteMediator.cpp.o: /home/donatellogc/Documents/Univ
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -2161,23 +2234,19 @@ CMakeFiles/main.dir/src/ConcreteMediator.cpp.o: /home/donatellogc/Documents/Univ
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -2461,9 +2530,18 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -2471,6 +2549,7 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
@@ -2549,6 +2628,8 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/c++/13.2.1/bits/postypes.h \
   /usr/include/c++/13.2.1/bits/predefined_ops.h \
   /usr/include/c++/13.2.1/bits/ptr_traits.h \
+  /usr/include/c++/13.2.1/bits/random.h \
+  /usr/include/c++/13.2.1/bits/random.tcc \
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
@@ -2560,17 +2641,21 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13.2.1/bits/stl_numeric.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
+  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
   /usr/include/c++/13.2.1/cerrno \
   /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cmath \
+  /usr/include/c++/13.2.1/cstdint \
   /usr/include/c++/13.2.1/cstdio \
   /usr/include/c++/13.2.1/cstdlib \
   /usr/include/c++/13.2.1/cwchar \
@@ -2588,8 +2673,11 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/c++/13.2.1/iosfwd \
   /usr/include/c++/13.2.1/iostream \
   /usr/include/c++/13.2.1/istream \
+  /usr/include/c++/13.2.1/limits \
   /usr/include/c++/13.2.1/new \
+  /usr/include/c++/13.2.1/numeric \
   /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/random \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/streambuf \
   /usr/include/c++/13.2.1/string \
@@ -2607,6 +2695,7 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -2617,9 +2706,11 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
@@ -2630,7 +2721,8 @@ CMakeFiles/main.dir/src/Customer.cpp.o: /home/donatellogc/Documents/University/C
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h
 
 CMakeFiles/main.dir/src/DecoratorMain.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/DecoratorMain.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
@@ -3026,12 +3118,8 @@ CMakeFiles/main.dir/src/Default.cpp.o: /home/donatellogc/Documents/University/CO
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
-CMakeFiles/main.dir/src/ExtrasChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.h \
-  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+CMakeFiles/main.dir/src/EdibleBurger.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -3095,10 +3183,8 @@ CMakeFiles/main.dir/src/ExtrasChef.cpp.o: /home/donatellogc/Documents/University
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -3138,23 +3224,222 @@ CMakeFiles/main.dir/src/ExtrasChef.cpp.o: /home/donatellogc/Documents/University
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+  /usr/include/c++/13.2.1/bits/utility.h \
+  /usr/include/c++/13.2.1/bits/vector.tcc \
+  /usr/include/c++/13.2.1/cctype \
+  /usr/include/c++/13.2.1/cerrno \
+  /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cstdio \
+  /usr/include/c++/13.2.1/cstdlib \
+  /usr/include/c++/13.2.1/cwchar \
+  /usr/include/c++/13.2.1/cwctype \
+  /usr/include/c++/13.2.1/debug/assertions.h \
+  /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/exception \
+  /usr/include/c++/13.2.1/ext/alloc_traits.h \
+  /usr/include/c++/13.2.1/ext/atomicity.h \
+  /usr/include/c++/13.2.1/ext/numeric_traits.h \
+  /usr/include/c++/13.2.1/ext/string_conversions.h \
+  /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/initializer_list \
+  /usr/include/c++/13.2.1/ios \
+  /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/iostream \
+  /usr/include/c++/13.2.1/istream \
+  /usr/include/c++/13.2.1/new \
+  /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/stdexcept \
+  /usr/include/c++/13.2.1/streambuf \
+  /usr/include/c++/13.2.1/string \
+  /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/type_traits \
+  /usr/include/c++/13.2.1/typeinfo \
+  /usr/include/c++/13.2.1/vector \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
+
+CMakeFiles/main.dir/src/ExtrasChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/13.2.1/backward/binders.h \
+  /usr/include/c++/13.2.1/bit \
+  /usr/include/c++/13.2.1/bits/alloc_traits.h \
+  /usr/include/c++/13.2.1/bits/allocator.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
+  /usr/include/c++/13.2.1/bits/basic_string.h \
+  /usr/include/c++/13.2.1/bits/basic_string.tcc \
+  /usr/include/c++/13.2.1/bits/char_traits.h \
+  /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/concept_check.h \
+  /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/exception.h \
+  /usr/include/c++/13.2.1/bits/exception_defines.h \
+  /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/functexcept.h \
+  /usr/include/c++/13.2.1/bits/functional_hash.h \
+  /usr/include/c++/13.2.1/bits/hash_bytes.h \
+  /usr/include/c++/13.2.1/bits/invoke.h \
+  /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
+  /usr/include/c++/13.2.1/bits/locale_classes.h \
+  /usr/include/c++/13.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/13.2.1/bits/locale_facets.h \
+  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
+  /usr/include/c++/13.2.1/bits/localefwd.h \
+  /usr/include/c++/13.2.1/bits/memoryfwd.h \
+  /usr/include/c++/13.2.1/bits/move.h \
+  /usr/include/c++/13.2.1/bits/nested_exception.h \
+  /usr/include/c++/13.2.1/bits/new_allocator.h \
+  /usr/include/c++/13.2.1/bits/ostream.tcc \
+  /usr/include/c++/13.2.1/bits/ostream_insert.h \
+  /usr/include/c++/13.2.1/bits/postypes.h \
+  /usr/include/c++/13.2.1/bits/predefined_ops.h \
+  /usr/include/c++/13.2.1/bits/ptr_traits.h \
+  /usr/include/c++/13.2.1/bits/range_access.h \
+  /usr/include/c++/13.2.1/bits/refwrap.h \
+  /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/std_abs.h \
+  /usr/include/c++/13.2.1/bits/stl_algobase.h \
+  /usr/include/c++/13.2.1/bits/stl_bvector.h \
+  /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_function.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13.2.1/bits/stl_pair.h \
+  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
+  /usr/include/c++/13.2.1/bits/stl_vector.h \
+  /usr/include/c++/13.2.1/bits/streambuf.tcc \
+  /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
+  /usr/include/c++/13.2.1/bits/stringfwd.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -3598,15 +3883,31 @@ CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o: /home/donatellogc/Documents/Un
 CMakeFiles/main.dir/src/KitchenMediator.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Burger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Command.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CompositeTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Customer.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Observer.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Table.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Waiter.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -3671,10 +3972,8 @@ CMakeFiles/main.dir/src/KitchenMediator.cpp.o: /home/donatellogc/Documents/Unive
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -3714,23 +4013,19 @@ CMakeFiles/main.dir/src/KitchenMediator.cpp.o: /home/donatellogc/Documents/Unive
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -3996,9 +4291,11 @@ CMakeFiles/main.dir/src/Main/Main.cpp.o: /home/donatellogc/Documents/University/
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Command.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CompositeTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ConcreteMediator.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CreateOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Customer.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.h \
@@ -4010,6 +4307,7 @@ CMakeFiles/main.dir/src/Main/Main.cpp.o: /home/donatellogc/Documents/University/
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.h \
@@ -4087,10 +4385,8 @@ CMakeFiles/main.dir/src/Main/Main.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -4130,23 +4426,19 @@ CMakeFiles/main.dir/src/Main/Main.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -4964,10 +5256,24 @@ CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o: /home/donatellogc/Documents/Unive
 
 CMakeFiles/main.dir/src/PattyChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyChef.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -5031,10 +5337,8 @@ CMakeFiles/main.dir/src/PattyChef.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -5074,23 +5378,19 @@ CMakeFiles/main.dir/src/PattyChef.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -5345,8 +5645,190 @@ CMakeFiles/main.dir/src/PattyOrder.cpp.o: /home/donatellogc/Documents/University
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
 CMakeFiles/main.dir/src/Plate.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
-  /usr/include/stdc-predef.h
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/13.2.1/backward/binders.h \
+  /usr/include/c++/13.2.1/bit \
+  /usr/include/c++/13.2.1/bits/alloc_traits.h \
+  /usr/include/c++/13.2.1/bits/allocator.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
+  /usr/include/c++/13.2.1/bits/basic_string.h \
+  /usr/include/c++/13.2.1/bits/basic_string.tcc \
+  /usr/include/c++/13.2.1/bits/char_traits.h \
+  /usr/include/c++/13.2.1/bits/charconv.h \
+  /usr/include/c++/13.2.1/bits/concept_check.h \
+  /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13.2.1/bits/exception.h \
+  /usr/include/c++/13.2.1/bits/exception_defines.h \
+  /usr/include/c++/13.2.1/bits/exception_ptr.h \
+  /usr/include/c++/13.2.1/bits/functexcept.h \
+  /usr/include/c++/13.2.1/bits/functional_hash.h \
+  /usr/include/c++/13.2.1/bits/hash_bytes.h \
+  /usr/include/c++/13.2.1/bits/invoke.h \
+  /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
+  /usr/include/c++/13.2.1/bits/locale_classes.h \
+  /usr/include/c++/13.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/13.2.1/bits/locale_facets.h \
+  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
+  /usr/include/c++/13.2.1/bits/localefwd.h \
+  /usr/include/c++/13.2.1/bits/memoryfwd.h \
+  /usr/include/c++/13.2.1/bits/move.h \
+  /usr/include/c++/13.2.1/bits/nested_exception.h \
+  /usr/include/c++/13.2.1/bits/new_allocator.h \
+  /usr/include/c++/13.2.1/bits/ostream.tcc \
+  /usr/include/c++/13.2.1/bits/ostream_insert.h \
+  /usr/include/c++/13.2.1/bits/postypes.h \
+  /usr/include/c++/13.2.1/bits/predefined_ops.h \
+  /usr/include/c++/13.2.1/bits/ptr_traits.h \
+  /usr/include/c++/13.2.1/bits/range_access.h \
+  /usr/include/c++/13.2.1/bits/refwrap.h \
+  /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/std_abs.h \
+  /usr/include/c++/13.2.1/bits/stl_algobase.h \
+  /usr/include/c++/13.2.1/bits/stl_bvector.h \
+  /usr/include/c++/13.2.1/bits/stl_construct.h \
+  /usr/include/c++/13.2.1/bits/stl_function.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13.2.1/bits/stl_pair.h \
+  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
+  /usr/include/c++/13.2.1/bits/stl_vector.h \
+  /usr/include/c++/13.2.1/bits/streambuf.tcc \
+  /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
+  /usr/include/c++/13.2.1/bits/stringfwd.h \
+  /usr/include/c++/13.2.1/bits/utility.h \
+  /usr/include/c++/13.2.1/bits/vector.tcc \
+  /usr/include/c++/13.2.1/cctype \
+  /usr/include/c++/13.2.1/cerrno \
+  /usr/include/c++/13.2.1/clocale \
+  /usr/include/c++/13.2.1/cstdio \
+  /usr/include/c++/13.2.1/cstdlib \
+  /usr/include/c++/13.2.1/cwchar \
+  /usr/include/c++/13.2.1/cwctype \
+  /usr/include/c++/13.2.1/debug/assertions.h \
+  /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/exception \
+  /usr/include/c++/13.2.1/ext/alloc_traits.h \
+  /usr/include/c++/13.2.1/ext/atomicity.h \
+  /usr/include/c++/13.2.1/ext/numeric_traits.h \
+  /usr/include/c++/13.2.1/ext/string_conversions.h \
+  /usr/include/c++/13.2.1/ext/type_traits.h \
+  /usr/include/c++/13.2.1/initializer_list \
+  /usr/include/c++/13.2.1/ios \
+  /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/iostream \
+  /usr/include/c++/13.2.1/istream \
+  /usr/include/c++/13.2.1/new \
+  /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/stdexcept \
+  /usr/include/c++/13.2.1/streambuf \
+  /usr/include/c++/13.2.1/string \
+  /usr/include/c++/13.2.1/system_error \
+  /usr/include/c++/13.2.1/type_traits \
+  /usr/include/c++/13.2.1/typeinfo \
+  /usr/include/c++/13.2.1/vector \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
 CMakeFiles/main.dir/src/RegularBunOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
@@ -6088,10 +6570,24 @@ CMakeFiles/main.dir/src/Review.cpp.o: /home/donatellogc/Documents/University/COS
 
 CMakeFiles/main.dir/src/SauceChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/SauceChef.cpp \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CheeseOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/SauceChef.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -6155,10 +6651,8 @@ CMakeFiles/main.dir/src/SauceChef.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
-  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
-  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -6198,23 +6692,19 @@ CMakeFiles/main.dir/src/SauceChef.cpp.o: /home/donatellogc/Documents/University/
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
-  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
-  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
-  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
-  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
   /usr/include/c++/13.2.1/cctype \
@@ -6666,6 +7156,7 @@ CMakeFiles/main.dir/src/StateMain.cpp.o: /home/donatellogc/Documents/University/
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
 CMakeFiles/main.dir/src/Tab.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.h \
   /usr/include/alloca.h \
@@ -6852,6 +7343,7 @@ CMakeFiles/main.dir/src/Tab.cpp.o: /home/donatellogc/Documents/University/COS214
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
 CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -6859,6 +7351,7 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/asm/errno.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
   /usr/include/bits/errno.h \
@@ -6867,17 +7360,22 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
   /usr/include/bits/types.h \
   /usr/include/bits/types/FILE.h \
   /usr/include/bits/types/__FILE.h \
@@ -6894,8 +7392,12 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/bits/types/mbstate_t.h \
   /usr/include/bits/types/sigset_t.h \
   /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
   /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/bits/types/wint_t.h \
@@ -6904,11 +7406,14 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.h \
+  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
   /usr/include/c++/13.2.1/bits/basic_string.h \
   /usr/include/c++/13.2.1/bits/basic_string.tcc \
   /usr/include/c++/13.2.1/bits/char_traits.h \
@@ -6916,16 +7421,26 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
+  /usr/include/c++/13.2.1/bits/exception_ptr.h \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
   /usr/include/c++/13.2.1/bits/invoke.h \
+  /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
+  /usr/include/c++/13.2.1/bits/locale_classes.h \
+  /usr/include/c++/13.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/13.2.1/bits/locale_facets.h \
+  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
   /usr/include/c++/13.2.1/bits/localefwd.h \
   /usr/include/c++/13.2.1/bits/memoryfwd.h \
   /usr/include/c++/13.2.1/bits/move.h \
+  /usr/include/c++/13.2.1/bits/nested_exception.h \
   /usr/include/c++/13.2.1/bits/new_allocator.h \
+  /usr/include/c++/13.2.1/bits/ostream.tcc \
   /usr/include/c++/13.2.1/bits/ostream_insert.h \
   /usr/include/c++/13.2.1/bits/postypes.h \
   /usr/include/c++/13.2.1/bits/predefined_ops.h \
@@ -6944,6 +7459,8 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/c++/13.2.1/bits/stl_pair.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
+  /usr/include/c++/13.2.1/bits/streambuf.tcc \
+  /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
   /usr/include/c++/13.2.1/bits/utility.h \
   /usr/include/c++/13.2.1/bits/vector.tcc \
@@ -6953,22 +7470,39 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/c++/13.2.1/cstdio \
   /usr/include/c++/13.2.1/cstdlib \
   /usr/include/c++/13.2.1/cwchar \
+  /usr/include/c++/13.2.1/cwctype \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/exception \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
+  /usr/include/c++/13.2.1/ext/atomicity.h \
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/string_conversions.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
   /usr/include/c++/13.2.1/initializer_list \
+  /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/iostream \
+  /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
+  /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/stdexcept \
+  /usr/include/c++/13.2.1/streambuf \
   /usr/include/c++/13.2.1/string \
+  /usr/include/c++/13.2.1/system_error \
   /usr/include/c++/13.2.1/type_traits \
+  /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/vector \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -6979,13 +7513,18 @@ CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
+  /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h
 
@@ -7374,9 +7913,11 @@ CMakeFiles/main.dir/src/Waiter.cpp.o: /home/donatellogc/Documents/University/COS
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Colleague.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Command.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CompositeTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ConcreteMediator.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CreateOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Customer.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.h \
@@ -7388,6 +7929,7 @@ CMakeFiles/main.dir/src/Waiter.cpp.o: /home/donatellogc/Documents/University/COS
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.h \
+  /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Table.h \
   /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h \
@@ -7986,31 +8528,13 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/stdlib.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
+/usr/include/c++/13.2.1/bits/stl_tempbuf.h:
 
-/usr/include/math.h:
+/usr/include/c++/13.2.1/bits/stl_heap.h:
 
-/usr/include/c++/13.2.1/numeric:
+/usr/include/c++/13.2.1/bits/stl_algo.h:
 
-/usr/include/c++/13.2.1/limits:
-
-/usr/include/c++/13.2.1/cstdint:
-
-/usr/include/c++/13.2.1/cmath:
-
-/usr/include/c++/13.2.1/bits/stl_numeric.h:
-
-/usr/include/c++/13.2.1/bits/random.tcc:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/bits/flt-eval-method.h:
+/usr/include/c++/13.2.1/algorithm:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.cpp:
 
@@ -8040,6 +8564,26 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Main/Main.cpp:
 
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.cpp:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.cpp:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/bits/confname.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/DecoratorMain.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
+
 /usr/include/c++/13.2.1/clocale:
 
 /usr/include/bits/endian.h:
@@ -8049,6 +8593,10 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 /usr/include/c++/13.2.1/bits/stringfwd.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/AboutToLeave.h:
+
+/usr/include/bits/unistd_ext.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/13.2.1/bits/exception.h:
 
@@ -8080,15 +8628,19 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/bits/memoryfwd.h:
 
+/usr/include/bits/libm-simd-decl-stubs.h:
+
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h:
 
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/13.2.1/bits/move.h:
+
 /usr/include/c++/13.2.1/bits/streambuf.tcc:
 
 /usr/include/gnu/stubs-64.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/DecoratorMain.cpp:
 
 /usr/include/c++/13.2.1/bits/functional_hash.h:
 
@@ -8107,6 +8659,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Report.cpp:
 
 /usr/include/features-time64.h:
+
+/usr/include/c++/13.2.1/cmath:
 
 /usr/include/c++/13.2.1/bits/ptr_traits.h:
 
@@ -8174,6 +8728,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/bits/types/__fpos64_t.h:
 
+/usr/include/c++/13.2.1/limits:
+
 /usr/include/bits/libc-header-start.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.cpp:
@@ -8186,11 +8742,15 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/bits/floatn-common.h:
 
+/usr/include/c++/13.2.1/numeric:
+
 /usr/include/bits/errno.h:
 
-/usr/include/bits/locale.h:
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Default.h:
 
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.cpp:
+/usr/include/bits/timex.h:
+
+/usr/include/bits/locale.h:
 
 /usr/include/bits/endianness.h:
 
@@ -8220,9 +8780,15 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.h:
+
+/usr/include/sys/cdefs.h:
+
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/bits/fp-logb.h:
 
 /usr/include/bits/types/__fpos_t.h:
 
@@ -8274,19 +8840,7 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/bits/thread-shared-types.h:
 
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/c++/13.2.1/bits/move.h:
-
-/usr/include/linux/close_range.h:
-
 /usr/include/bits/types/error_t.h:
-
-/usr/include/c++/13.2.1/bits/random.h:
-
-/usr/include/c++/13.2.1/istream:
 
 /usr/include/c++/13.2.1/typeinfo:
 
@@ -8298,6 +8852,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/bits/locale_facets.h:
 
+/usr/include/bits/flt-eval-method.h:
+
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.h:
 
 /usr/include/gnu/stubs.h:
@@ -8307,8 +8863,6 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 /usr/include/bits/atomic_wide_counter.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/WaitingToSit.h:
-
-/usr/include/bits/posix_opt.h:
 
 /usr/include/c++/13.2.1/bits/ios_base.h:
 
@@ -8352,6 +8906,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/bits/types/time_t.h:
 
+/usr/include/c++/13.2.1/bits/stl_numeric.h:
+
 /usr/include/c++/13.2.1/cstdlib:
 
 /usr/include/c++/13.2.1/iosfwd:
@@ -8376,6 +8932,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Waiter.h:
 
+/usr/include/c++/13.2.1/bits/random.tcc:
+
 /usr/include/c++/13.2.1/ext/type_traits.h:
 
 /usr/include/bits/types.h:
@@ -8383,6 +8941,12 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerToppingOrder.h:
 
 /usr/include/c++/13.2.1/initializer_list:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Default.cpp:
+
+/usr/include/c++/13.2.1/bits/ostream.tcc:
+
+/usr/include/c++/13.2.1/ios:
 
 /usr/include/bits/types/mbstate_t.h:
 
@@ -8397,6 +8961,8 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.h:
 
 /usr/include/c++/13.2.1/stdexcept:
+
+/usr/include/bits/mathcalls-narrow.h:
 
 /usr/include/c++/13.2.1/streambuf:
 
@@ -8418,13 +8984,17 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+/usr/include/bits/environments.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ConcreteMediator.cpp:
 
-/usr/include/bits/environments.h:
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
@@ -8432,19 +9002,13 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
-/usr/include/stdint.h:
+/usr/include/bits/getopt_posix.h:
 
-/usr/include/endian.h:
+/usr/include/errno.h:
 
 /usr/include/locale.h:
 
 /usr/include/pthread.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.cpp:
 
@@ -8466,15 +9030,11 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /usr/include/sys/select.h:
 
-/usr/include/sys/cdefs.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.h:
-
 /usr/include/sys/single_threaded.h:
 
-/usr/include/c++/13.2.1/random:
-
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp:
+
+/usr/include/c++/13.2.1/random:
 
 /usr/include/time.h:
 
@@ -8488,11 +9048,9 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BaseChef.h:
 
-/usr/include/bits/math-vector.h:
+/usr/include/c++/13.2.1/cstdio:
 
-/usr/include/c++/13.2.1/bits/functexcept.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h:
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ConcreteMediator.h:
 
@@ -8502,27 +9060,27 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Observer.h:
 
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Review.h:
+
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h:
+
+/usr/include/math.h:
+
 /usr/include/c++/13.2.1/debug/assertions.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.h:
 
-/usr/include/c++/13.2.1/bits/stl_algo.h:
-
-/usr/include/c++/13.2.1/algorithm:
-
-/usr/include/c++/13.2.1/bits/stl_heap.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp:
-
-/usr/include/c++/13.2.1/bits/stl_tempbuf.h:
-
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BunChef.cpp:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerBunOrder.cpp:
-
-/usr/include/c++/13.2.1/cstdio:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/BurgerOrder.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
 
@@ -8556,44 +9114,32 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/Universi
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Command.h:
 
-/usr/include/errno.h:
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CreateOrder.cpp:
 
-/usr/include/bits/getopt_posix.h:
+/usr/include/wctype.h:
 
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.h:
+/usr/include/sched.h:
 
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Review.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.h:
-
-/usr/include/bits/iscanonical.h:
+/usr/include/bits/fp-fast.h:
 
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.h:
 
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/CreateOrder.cpp:
+/usr/include/bits/iscanonical.h:
 
-/usr/include/bits/confname.h:
+/usr/include/c++/13.2.1/bits/functexcept.h:
 
-/usr/include/bits/getopt_core.h:
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Chef.h:
 
-/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
+/usr/include/bits/math-vector.h:
 
-/usr/include/bits/unistd_ext.h:
+/usr/include/bits/mathcalls-helper-functions.h:
 
-/usr/include/unistd.h:
+/usr/include/c++/13.2.1/istream:
 
-/usr/include/c++/13.2.1/bits/ostream.tcc:
+/usr/include/c++/13.2.1/bits/random.h:
 
-/usr/include/c++/13.2.1/ios:
+/usr/include/c++/13.2.1/cstdint:
 
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Default.cpp:
+/usr/include/endian.h:
 
-/usr/include/bits/timex.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Default.h:
-
-/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.cpp:
+/usr/include/stdint.h:

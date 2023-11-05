@@ -155,61 +155,81 @@ TEST(ManagerTest, AddAndPrintReports) {
 //============TAB & MEMENTO TEST===============
 //=============================================
 
-TEST(TabTest, CreateMemento) {
+// Test case for creating and setting memento
+TEST(TabTest, CreateAndSetMemento) {
   Tab tab;
-  tab.addOrderedItem("Item1", 10.0);
-  tab.addOrderedItem("Item2", 15.0);
 
+  // Create memento
   TabMemento memento = tab.createMemento();
 
-  // Perform assertions to validate the memento
-  ASSERT_EQ(memento.getTabID(), tab.getTabID());
-  ASSERT_EQ(memento.getTotalPrice(), tab.getTotalPrice());
-  ASSERT_EQ(memento.getItemCost(), tab.getItemCost());
-  ASSERT_EQ(memento.getOrderedItems(), tab.getOrderedItems());
-}
+  // Set new values to the tab
+  tab.setTabID(2);
+  tab.setTotalPrice(25.0);
 
-TEST(TabTest, SetMemento) {
-  Tab tab;
-  TabMemento memento;
-  memento.setTabID(1);
-  memento.setTotalPrice(25.0);
-  memento.setItemCost({10.0, 15.0});
-  memento.setOrderedItems({"Item1", "Item2"});
-
+  // Set memento to restore previous state
   tab.setMemento(memento);
 
-  // Perform assertions to validate the tab state after setting the memento
-  ASSERT_EQ(memento.getTabID(), tab.getTabID());
-  ASSERT_EQ(memento.getTotalPrice(), tab.getTotalPrice());
-  ASSERT_EQ(memento.getItemCost(), tab.getItemCost());
-  ASSERT_EQ(memento.getOrderedItems(), tab.getOrderedItems());
+  // Check if the tab has been restored to the previous state
+  EXPECT_EQ(tab.getTabID(), 0);
+  EXPECT_EQ(tab.getTotalPrice(), 0);
 }
 
-// Add more test cases for other functions in Tab class
-
-//=============================================
-//=========CARETAKER & MEMENTO TEST============
-//=============================================
-
-TEST(CaretakerTest, AddAndGetMemento) {
-  Caretaker caretaker;
+// Test case for adding ordered items and calculating total price
+TEST(TabTest, AddOrderedItemAndCalculateTotalPrice) {
   Tab tab;
 
-  // Perform some actions on the tab
-  tab.addOrderedItem("Item1", 10.0);
-  tab.addOrderedItem("Item2", 15.0);
-  caretaker.addMemento(tab.createMemento());
+  // Create a burger order
+  BurgerOrder *burgerOrder = new GlutenFreeBunOrder();
+  burgerOrder->add(new CheeseOrder());
+  burgerOrder->add(new OnionSliceOrder());
 
-  // Perform more actions on the tab
-  tab.addOrderedItem("Item3", 20.0);
-  caretaker.addMemento(tab.createMemento());
+  // Add the burger order to the tab
+  tab.addOrderedItem(burgerOrder);
 
-  // Retrieve the previous state
-  TabMemento memento = caretaker.getMemento(1);
+  // Check if the ordered items are correctly added
+  EXPECT_EQ(tab.getOrderedItems().size(), 1);
 
-  // Perform assertions to validate the retrieved memento
-  // (similar to the previous tests)
+  // Check if the total price is correctly calculated
+  EXPECT_EQ(tab.getTotalPrice(), 17.0);
+}
+
+// Test case for printing the bill
+TEST(TabTest, PrintBill) {
+  testing::internal::CaptureStdout();  // Redirect cout for testing
+
+  Tab tab;
+  tab.printBill();
+
+  std::string output = testing::internal::GetCapturedStdout();
+
+  // Check if the printed bill contains expected information
+  EXPECT_NE(output.find("Tab ID: 1"), std::string::npos);
+  EXPECT_NE(output.find("Ordered Items:"), std::string::npos);
+  EXPECT_NE(output.find("Total:"), std::string::npos);
+}
+
+// Test case for adding multiple BurgerOrders
+TEST(TabTest, AddMultipleOrderedItems) {
+  Tab tab;
+
+  // Create and add the first burger order
+  BurgerOrder *burgerOrder1 = new GlutenFreeBunOrder();
+  burgerOrder1->add(new CheeseOrder());
+  burgerOrder1->add(new OnionSliceOrder());
+  tab.addOrderedItem(burgerOrder1);
+
+  // Create and add the second burger order
+  BurgerOrder *burgerOrder2 = new GlutenFreeBunOrder();
+  burgerOrder2->add(new CheeseOrder());
+  burgerOrder2->add(new CheeseOrder());
+  burgerOrder2->add(new OnionSliceOrder());
+  tab.addOrderedItem(burgerOrder2);
+
+  // Check if the ordered items are correctly added
+  EXPECT_EQ(tab.getOrderedItems().size(), 2);
+
+  // Check if the total price is correctly calculated
+  EXPECT_EQ(tab.getTotalPrice(), 44.0);
 }
 
 //=================================================
