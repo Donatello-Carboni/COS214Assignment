@@ -293,10 +293,24 @@ CMakeFiles/main.dir/src/Default.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Default.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Default.cpp -o CMakeFiles/main.dir/src/Default.cpp.s
 
+CMakeFiles/main.dir/src/EdibleBurger.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/EdibleBurger.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp
+CMakeFiles/main.dir/src/EdibleBurger.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/EdibleBurger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/EdibleBurger.cpp.o -MF CMakeFiles/main.dir/src/EdibleBurger.cpp.o.d -o CMakeFiles/main.dir/src/EdibleBurger.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp
+
+CMakeFiles/main.dir/src/EdibleBurger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/EdibleBurger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp > CMakeFiles/main.dir/src/EdibleBurger.cpp.i
+
+CMakeFiles/main.dir/src/EdibleBurger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/EdibleBurger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/EdibleBurger.cpp -o CMakeFiles/main.dir/src/EdibleBurger.cpp.s
+
 CMakeFiles/main.dir/src/ExtrasChef.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/ExtrasChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp
 CMakeFiles/main.dir/src/ExtrasChef.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/ExtrasChef.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/ExtrasChef.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/ExtrasChef.cpp.o -MF CMakeFiles/main.dir/src/ExtrasChef.cpp.o.d -o CMakeFiles/main.dir/src/ExtrasChef.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/ExtrasChef.cpp
 
 CMakeFiles/main.dir/src/ExtrasChef.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/main.dir/src/ExtrasChef.cpp.s: cmake_force
 CMakeFiles/main.dir/src/GherkinOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/GherkinOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.cpp
 CMakeFiles/main.dir/src/GherkinOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/GherkinOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/src/GherkinOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/GherkinOrder.cpp.o -MF CMakeFiles/main.dir/src/GherkinOrder.cpp.o.d -o CMakeFiles/main.dir/src/GherkinOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GherkinOrder.cpp
 
 CMakeFiles/main.dir/src/GherkinOrder.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/main.dir/src/GherkinOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.cpp
 CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o -MF CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o.d -o CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/GlutenFreeBunOrder.cpp
 
 CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/KitchenMediator.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/KitchenMediator.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.cpp
 CMakeFiles/main.dir/src/KitchenMediator.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/src/KitchenMediator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/src/KitchenMediator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/KitchenMediator.cpp.o -MF CMakeFiles/main.dir/src/KitchenMediator.cpp.o.d -o CMakeFiles/main.dir/src/KitchenMediator.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/KitchenMediator.cpp
 
 CMakeFiles/main.dir/src/KitchenMediator.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/main.dir/src/KitchenMediator.cpp.s: cmake_force
 CMakeFiles/main.dir/src/LettuceOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/LettuceOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.cpp
 CMakeFiles/main.dir/src/LettuceOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/src/LettuceOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/src/LettuceOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/LettuceOrder.cpp.o -MF CMakeFiles/main.dir/src/LettuceOrder.cpp.o.d -o CMakeFiles/main.dir/src/LettuceOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/LettuceOrder.cpp
 
 CMakeFiles/main.dir/src/LettuceOrder.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/main.dir/src/LettuceOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Manager.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Manager.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Manager.cpp
 CMakeFiles/main.dir/src/Manager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/src/Manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/src/Manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Manager.cpp.o -MF CMakeFiles/main.dir/src/Manager.cpp.o.d -o CMakeFiles/main.dir/src/Manager.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Manager.cpp
 
 CMakeFiles/main.dir/src/Manager.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/main.dir/src/Manager.cpp.s: cmake_force
 CMakeFiles/main.dir/src/MushroomOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MushroomOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.cpp
 CMakeFiles/main.dir/src/MushroomOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/src/MushroomOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/src/MushroomOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/MushroomOrder.cpp.o -MF CMakeFiles/main.dir/src/MushroomOrder.cpp.o.d -o CMakeFiles/main.dir/src/MushroomOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MushroomOrder.cpp
 
 CMakeFiles/main.dir/src/MushroomOrder.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/main.dir/src/MushroomOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.cpp
 CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o -MF CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o.d -o CMakeFiles/main.dir/src/MustardSauceOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/MustardSauceOrder.cpp
 
 CMakeFiles/main.dir/src/MustardSauceOrder.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/main.dir/src/MustardSauceOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.cpp
 CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o -MF CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o.d -o CMakeFiles/main.dir/src/OnionSliceOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/OnionSliceOrder.cpp
 
 CMakeFiles/main.dir/src/OnionSliceOrder.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/main.dir/src/OnionSliceOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/PattyChef.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PattyChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyChef.cpp
 CMakeFiles/main.dir/src/PattyChef.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/main.dir/src/PattyChef.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/main.dir/src/PattyChef.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PattyChef.cpp.o -MF CMakeFiles/main.dir/src/PattyChef.cpp.o.d -o CMakeFiles/main.dir/src/PattyChef.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyChef.cpp
 
 CMakeFiles/main.dir/src/PattyChef.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/main.dir/src/PattyChef.cpp.s: cmake_force
 CMakeFiles/main.dir/src/PattyOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PattyOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.cpp
 CMakeFiles/main.dir/src/PattyOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/main.dir/src/PattyOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/main.dir/src/PattyOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PattyOrder.cpp.o -MF CMakeFiles/main.dir/src/PattyOrder.cpp.o.d -o CMakeFiles/main.dir/src/PattyOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/PattyOrder.cpp
 
 CMakeFiles/main.dir/src/PattyOrder.cpp.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/main.dir/src/PattyOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Plate.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Plate.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.cpp
 CMakeFiles/main.dir/src/Plate.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/main.dir/src/Plate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/main.dir/src/Plate.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Plate.cpp.o -MF CMakeFiles/main.dir/src/Plate.cpp.o.d -o CMakeFiles/main.dir/src/Plate.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Plate.cpp
 
 CMakeFiles/main.dir/src/Plate.cpp.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/main.dir/src/Plate.cpp.s: cmake_force
 CMakeFiles/main.dir/src/RegularBunOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/RegularBunOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.cpp
 CMakeFiles/main.dir/src/RegularBunOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/main.dir/src/RegularBunOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/main.dir/src/RegularBunOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/RegularBunOrder.cpp.o -MF CMakeFiles/main.dir/src/RegularBunOrder.cpp.o.d -o CMakeFiles/main.dir/src/RegularBunOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RegularBunOrder.cpp
 
 CMakeFiles/main.dir/src/RegularBunOrder.cpp.i: cmake_force
@@ -478,7 +492,7 @@ CMakeFiles/main.dir/src/RegularBunOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Report.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Report.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Report.cpp
 CMakeFiles/main.dir/src/Report.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/main.dir/src/Report.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/main.dir/src/Report.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Report.cpp.o -MF CMakeFiles/main.dir/src/Report.cpp.o.d -o CMakeFiles/main.dir/src/Report.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Report.cpp
 
 CMakeFiles/main.dir/src/Report.cpp.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/main.dir/src/Report.cpp.s: cmake_force
 CMakeFiles/main.dir/src/RestaurantTable.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/RestaurantTable.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.cpp
 CMakeFiles/main.dir/src/RestaurantTable.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/main.dir/src/RestaurantTable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/main.dir/src/RestaurantTable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/RestaurantTable.cpp.o -MF CMakeFiles/main.dir/src/RestaurantTable.cpp.o.d -o CMakeFiles/main.dir/src/RestaurantTable.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/RestaurantTable.cpp
 
 CMakeFiles/main.dir/src/RestaurantTable.cpp.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/main.dir/src/RestaurantTable.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Review.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Review.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Review.cpp
 CMakeFiles/main.dir/src/Review.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/main.dir/src/Review.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/main.dir/src/Review.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Review.cpp.o -MF CMakeFiles/main.dir/src/Review.cpp.o.d -o CMakeFiles/main.dir/src/Review.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Review.cpp
 
 CMakeFiles/main.dir/src/Review.cpp.i: cmake_force
@@ -520,7 +534,7 @@ CMakeFiles/main.dir/src/Review.cpp.s: cmake_force
 CMakeFiles/main.dir/src/SauceChef.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SauceChef.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/SauceChef.cpp
 CMakeFiles/main.dir/src/SauceChef.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/main.dir/src/SauceChef.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/main.dir/src/SauceChef.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/SauceChef.cpp.o -MF CMakeFiles/main.dir/src/SauceChef.cpp.o.d -o CMakeFiles/main.dir/src/SauceChef.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/SauceChef.cpp
 
 CMakeFiles/main.dir/src/SauceChef.cpp.i: cmake_force
@@ -534,7 +548,7 @@ CMakeFiles/main.dir/src/SauceChef.cpp.s: cmake_force
 CMakeFiles/main.dir/src/State.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/State.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.cpp
 CMakeFiles/main.dir/src/State.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/main.dir/src/State.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/main.dir/src/State.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/State.cpp.o -MF CMakeFiles/main.dir/src/State.cpp.o.d -o CMakeFiles/main.dir/src/State.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/State.cpp
 
 CMakeFiles/main.dir/src/State.cpp.i: cmake_force
@@ -548,7 +562,7 @@ CMakeFiles/main.dir/src/State.cpp.s: cmake_force
 CMakeFiles/main.dir/src/StateMain.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/StateMain.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/StateMain.cpp
 CMakeFiles/main.dir/src/StateMain.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/main.dir/src/StateMain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/main.dir/src/StateMain.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/StateMain.cpp.o -MF CMakeFiles/main.dir/src/StateMain.cpp.o.d -o CMakeFiles/main.dir/src/StateMain.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/StateMain.cpp
 
 CMakeFiles/main.dir/src/StateMain.cpp.i: cmake_force
@@ -562,7 +576,7 @@ CMakeFiles/main.dir/src/StateMain.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Tab.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Tab.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp
 CMakeFiles/main.dir/src/Tab.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/main.dir/src/Tab.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/main.dir/src/Tab.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Tab.cpp.o -MF CMakeFiles/main.dir/src/Tab.cpp.o.d -o CMakeFiles/main.dir/src/Tab.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Tab.cpp
 
 CMakeFiles/main.dir/src/Tab.cpp.i: cmake_force
@@ -576,7 +590,7 @@ CMakeFiles/main.dir/src/Tab.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TabMemento.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TabMemento.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp
 CMakeFiles/main.dir/src/TabMemento.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/main.dir/src/TabMemento.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/main.dir/src/TabMemento.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TabMemento.cpp.o -MF CMakeFiles/main.dir/src/TabMemento.cpp.o.d -o CMakeFiles/main.dir/src/TabMemento.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TabMemento.cpp
 
 CMakeFiles/main.dir/src/TabMemento.cpp.i: cmake_force
@@ -590,7 +604,7 @@ CMakeFiles/main.dir/src/TabMemento.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Table.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Table.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Table.cpp
 CMakeFiles/main.dir/src/Table.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/main.dir/src/Table.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/main.dir/src/Table.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Table.cpp.o -MF CMakeFiles/main.dir/src/Table.cpp.o.d -o CMakeFiles/main.dir/src/Table.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Table.cpp
 
 CMakeFiles/main.dir/src/Table.cpp.i: cmake_force
@@ -604,7 +618,7 @@ CMakeFiles/main.dir/src/Table.cpp.s: cmake_force
 CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.cpp
 CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o -MF CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o.d -o CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/TomatoSauceOrder.cpp
 
 CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.i: cmake_force
@@ -618,7 +632,7 @@ CMakeFiles/main.dir/src/TomatoSauceOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Waiter.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Waiter.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Waiter.cpp
 CMakeFiles/main.dir/src/Waiter.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/main.dir/src/Waiter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/main.dir/src/Waiter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Waiter.cpp.o -MF CMakeFiles/main.dir/src/Waiter.cpp.o.d -o CMakeFiles/main.dir/src/Waiter.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Waiter.cpp
 
 CMakeFiles/main.dir/src/Waiter.cpp.i: cmake_force
@@ -632,7 +646,7 @@ CMakeFiles/main.dir/src/Waiter.cpp.s: cmake_force
 CMakeFiles/main.dir/src/WaitingToOrder.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/WaitingToOrder.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/WaitingToOrder.cpp
 CMakeFiles/main.dir/src/WaitingToOrder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/main.dir/src/WaitingToOrder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/main.dir/src/WaitingToOrder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/WaitingToOrder.cpp.o -MF CMakeFiles/main.dir/src/WaitingToOrder.cpp.o.d -o CMakeFiles/main.dir/src/WaitingToOrder.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/WaitingToOrder.cpp
 
 CMakeFiles/main.dir/src/WaitingToOrder.cpp.i: cmake_force
@@ -646,7 +660,7 @@ CMakeFiles/main.dir/src/WaitingToOrder.cpp.s: cmake_force
 CMakeFiles/main.dir/src/WaitingToSit.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/WaitingToSit.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/WaitingToSit.cpp
 CMakeFiles/main.dir/src/WaitingToSit.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/main.dir/src/WaitingToSit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/main.dir/src/WaitingToSit.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/WaitingToSit.cpp.o -MF CMakeFiles/main.dir/src/WaitingToSit.cpp.o.d -o CMakeFiles/main.dir/src/WaitingToSit.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/WaitingToSit.cpp
 
 CMakeFiles/main.dir/src/WaitingToSit.cpp.i: cmake_force
@@ -660,7 +674,7 @@ CMakeFiles/main.dir/src/WaitingToSit.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Main/Main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Main/Main.cpp.o: /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Main/Main.cpp
 CMakeFiles/main.dir/src/Main/Main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/main.dir/src/Main/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/main.dir/src/Main/Main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Main/Main.cpp.o -MF CMakeFiles/main.dir/src/Main/Main.cpp.o.d -o CMakeFiles/main.dir/src/Main/Main.cpp.o -c /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/src/Main/Main.cpp
 
 CMakeFiles/main.dir/src/Main/Main.cpp.i: cmake_force
@@ -689,6 +703,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/Customer.cpp.o" \
 "CMakeFiles/main.dir/src/DecoratorMain.cpp.o" \
 "CMakeFiles/main.dir/src/Default.cpp.o" \
+"CMakeFiles/main.dir/src/EdibleBurger.cpp.o" \
 "CMakeFiles/main.dir/src/ExtrasChef.cpp.o" \
 "CMakeFiles/main.dir/src/GherkinOrder.cpp.o" \
 "CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o" \
@@ -736,6 +751,7 @@ main_EXTERNAL_OBJECTS =
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/Customer.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/DecoratorMain.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/Default.cpp.o
+/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/EdibleBurger.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/ExtrasChef.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/GherkinOrder.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/GlutenFreeBunOrder.cpp.o
@@ -765,7 +781,7 @@ main_EXTERNAL_OBJECTS =
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/src/Main/Main.cpp.o
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/build.make
 /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable /home/donatellogc/Documents/University/COS214/Practicals/COS214Assignment/bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

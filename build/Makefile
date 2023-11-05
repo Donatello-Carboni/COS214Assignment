@@ -574,6 +574,33 @@ src/Default.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Default.cpp.s
 .PHONY : src/Default.cpp.s
 
+src/EdibleBurger.o: src/EdibleBurger.cpp.o
+.PHONY : src/EdibleBurger.o
+
+# target to build an object file
+src/EdibleBurger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EdibleBurger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/EdibleBurger.cpp.o
+.PHONY : src/EdibleBurger.cpp.o
+
+src/EdibleBurger.i: src/EdibleBurger.cpp.i
+.PHONY : src/EdibleBurger.i
+
+# target to preprocess a source file
+src/EdibleBurger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EdibleBurger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/EdibleBurger.cpp.i
+.PHONY : src/EdibleBurger.cpp.i
+
+src/EdibleBurger.s: src/EdibleBurger.cpp.s
+.PHONY : src/EdibleBurger.s
+
+# target to generate assembly for a file
+src/EdibleBurger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/EdibleBurger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/EdibleBurger.cpp.s
+.PHONY : src/EdibleBurger.cpp.s
+
 src/ExtrasChef.o: src/ExtrasChef.cpp.o
 .PHONY : src/ExtrasChef.o
 
@@ -1382,6 +1409,9 @@ help:
 	@echo "... src/Default.o"
 	@echo "... src/Default.i"
 	@echo "... src/Default.s"
+	@echo "... src/EdibleBurger.o"
+	@echo "... src/EdibleBurger.i"
+	@echo "... src/EdibleBurger.s"
 	@echo "... src/ExtrasChef.o"
 	@echo "... src/ExtrasChef.i"
 	@echo "... src/ExtrasChef.s"

@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/DecoratorMain.cpp.o.d"
   "CMakeFiles/main.dir/src/Default.cpp.o"
   "CMakeFiles/main.dir/src/Default.cpp.o.d"
+  "CMakeFiles/main.dir/src/EdibleBurger.cpp.o"
+  "CMakeFiles/main.dir/src/EdibleBurger.cpp.o.d"
   "CMakeFiles/main.dir/src/ExtrasChef.cpp.o"
   "CMakeFiles/main.dir/src/ExtrasChef.cpp.o.d"
   "CMakeFiles/main.dir/src/GherkinOrder.cpp.o"
