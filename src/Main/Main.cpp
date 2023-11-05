@@ -20,6 +20,11 @@
 #include "../Waiter.h"
 #include "../WaitingToOrder.h"
 #include "../WaitingToSit.h"
+#include "../SauceChef.h"
+#include "../CheeseChef.h"
+#include "../PattyChef.h"
+#include "../ExtrasChef.h"
+#include "../BunChef.h"
 
 int main() {
   //======================
@@ -81,40 +86,40 @@ int main() {
   // Waiter needs to send order (string vector) through mediator and command to
   // decorator)
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Decorator creates order objects based on order (command triggers the
-  // creation of objects)
+  // // Decorator creates order objects based on order (command triggers the
+  // // creation of objects)
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Chef needs to create items
+  // // Chef needs to create items
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Chef needs to send created order back
+  // // Chef needs to send created order back
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Waiter gives order back to customer
+  // // Waiter gives order back to customer
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Customer gets the bill and leaves a review/complaint
+  // // Customer gets the bill and leaves a review/complaint
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
   customer1.getTheBill();
   customer2.getTheBill();
@@ -161,7 +166,17 @@ int main() {
   // Mediator
   KitchenMediator *mediator = new ConcreteMediator();
 
-  Chef *chef = new BaseChef();
+  CheeseChef *cheeseChef = new CheeseChef();
+  SauceChef *sauceChef = new SauceChef();
+  PattyChef *pattyChef = new PattyChef();
+  ExtrasChef *extrasChef = new ExtrasChef();
+  BunChef * bunChef = new BunChef();
+
+
+    cheeseChef->add(sauceChef);
+    sauceChef->add(pattyChef);
+    pattyChef->add(extrasChef);
+    extrasChef->add(bunChef);
   // 3 tables
   CompositeTable table;
   CompositeTable table2;
@@ -177,7 +192,7 @@ int main() {
   Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables);
   Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2);
 
-  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *) cheeseChef);
   mediator->addColleague((Colleague *)waiter);
 
   Command *command = new CreateOrder();
