@@ -5,10 +5,10 @@ using namespace std;
 
 State::State()
 {
-    cout << "NEW STATE CREATED" << endl;
+
 }
 
 State::~State()
 {
-    cout << "STATE DESTROTED" << endl;
+    
 }

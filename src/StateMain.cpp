@@ -9,49 +9,82 @@
 int stateMain()
 {
     int numCustomers = 0;
-    Customer customer(++numCustomers);
-    customer.placeOrder();
-    string ready = "N";
+    Customer customer1(++numCustomers);
+    Customer customer2(++numCustomers);
+    Customer customer3(++numCustomers);
+    Customer customer4(++numCustomers);
 
-    cout << "=========================" << endl;
-    cout << "       BURGER MANIA      " << endl;
-    cout << "=========================" << endl;
-    cout << "Welcome to Burger Mania!" << endl;
-    cout << "This is a customer: " << endl;
+    //Customers are ready to order...
+    customer1.placeOrder();
+    customer2.placeOrder();
+    customer3.placeOrder();
+    customer4.placeOrder();
+    string ready = "";
 
-    cout << "Here is the customer number: " << customer.getCustomerNumber() << endl;
-    cout << "Customer is currently " << customer.getState()->toString() << endl;
-    cout << "Ready to order? (Y/N): ";
+    //Customers are now in default state awaiting order...
+    cout << "Simulation paused, enter any key to continue: ";
     
     cin >> ready;
-    if (ready == "N")
-        cout << "Okay well, you are going to order anyway... soz" << endl;
-    else if (ready == "Y")
-        cout << "Alright, here's the menu: " << endl;
-    else cout << "sigh..." << endl;
-
-    customer.placeOrder();
-
-    cout << "The meal is now being prepared..." << endl;
-    sleep(1);
-    cout << "." << endl;
-    sleep(1);
-    cout << ".." << endl;
-    sleep(1);
-    cout << "..." << endl;
-    sleep(1);
-    cout << "The order was created!" << endl;
-
-    vector<string> order = customer.getOrder();
-    vector<string>::iterator it;
     
-    cout << "Here is what you ordered: " << order.size() << endl;
-    for (it = order.begin(); it != order.end(); it++)
-    {
-        cout << *(it) << endl;
-    }
+        cout << "Resuming simulation..." << endl;
 
-    customer.getTheBill();
+    //Waiter needs to retrieve their order via the table & iterator
+
+    cout << "The meals are now being prepared..." << endl;
+    cout << "." << endl;
+    cout << ".." << endl;
+    cout << "..." << endl;
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Waiter needs to store order & add it to the bill in the memento
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Waiter needs to send order (string vector) through mediator and command to decorator)
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Decorator creates order objects based on order (command triggers the creation of objects)
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Chef needs to create items
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Chef needs to send created order back
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Waiter gives order back to customer
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+    //Customer gets the bill and leaves a review/complaint
+
+    cout << "Simulation paused, enter any key to continue: ";
+    cin >> ready;
+    cout << "Resuming simulation" << endl;
+
+
+    customer1.getTheBill();
+    customer2.getTheBill();
+    customer3.getTheBill();
+    customer4.getTheBill();
 
     return 0;
 }
