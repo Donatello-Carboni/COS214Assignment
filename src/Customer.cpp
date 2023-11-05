@@ -89,6 +89,11 @@ void Customer::leave() { this->~Customer(); }
 
 bool Customer::didPay() { return paid; }
 
+bool Customer::Tab()
+{
+  return WantsTab;
+}
+
 void Customer::givePlate(Plate* plate)
 {
   this->plate = plate;

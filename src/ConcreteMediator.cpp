@@ -40,11 +40,12 @@ void ConcreteMediator::notifyDone(Colleague *colleague)
   {
     i++;
   }
-  cout << "done finding waiter" << endl;
+  //cout << "done finding waiter" << endl;
   Waiter *w = (Waiter *)this->getColleagues().at(i);
-  cout << "giving plate" << endl;
-  cout << plate->toString() << endl;
+  //cout << "giving plate" << endl;
+  //cout << plate->toString() << endl;
   w->storePlate(ID, plate);
-  cout << "Waiter plate map:" << endl;
-  w->printPlateMap();
+  w->storeBurgerOrder(ID, Cmd->getBurgerOrder());
+  // cout << "Waiter plate map:" << endl;
+  // w->printPlateMap();
 }

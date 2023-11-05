@@ -10,6 +10,7 @@
 #include "CompositeTable.h"
 #include "RestaurantTable.h"
 #include "Customer.h"
+#include "BurgerOrder.h"
 class ConcreteMediator;
 class Waiter: public Colleague, public Observer{
     private:
@@ -19,6 +20,7 @@ class Waiter: public Colleague, public Observer{
     int currCustomer;
     //Mediator
     std::unordered_map<int, Plate*> plateMap;
+    std::unordered_map<int, BurgerOrder*> BurgerMap;
      ConcreteMediator *mediator;
     //obs
      std::vector<Table*> FreeTables;
@@ -43,6 +45,10 @@ class Waiter: public Colleague, public Observer{
         Plate* getPlate(int plateID);
         void removePlate(int plateID);
         void printPlateMap();
+        void printBurgerMap();
+        BurgerOrder* getBurgerOrder(int orderID);
+        void removeBurgerOrder(int orderID);
+        void storeBurgerOrder(int orderID, BurgerOrder* order);
 };
 
 #endif

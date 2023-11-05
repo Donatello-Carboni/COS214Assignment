@@ -34,54 +34,54 @@ int main() {
   // directing the flow of what should happen in the demo main. Other classes
   // will be added later in between (such as the waiter, mediator, command etc)
 
-  int numCustomers = 0;
-  string ready = "";
-  Customer customer1(++numCustomers);
-  Customer customer2(++numCustomers);
-  Customer customer3(++numCustomers);
-  Customer customer4(++numCustomers);
+  // int numCustomers = 0;
+  // string ready = "";
+  // Customer customer1(++numCustomers);
+  // Customer customer2(++numCustomers);
+  // Customer customer3(++numCustomers);
+  // Customer customer4(++numCustomers);
 
-  // Customers being assigned to a table, table could be assigned these 4
-  // customers?
-  customer1.sitDown();
-  customer2.sitDown();
-  customer3.sitDown();
-  customer4.sitDown();
+  // // Customers being assigned to a table, table could be assigned these 4
+  // // customers?
+  // customer1.sitDown();
+  // customer2.sitDown();
+  // customer3.sitDown();
+  // customer4.sitDown();
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation..." << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation..." << endl;
 
-  // Customers are ready to order...
-  customer1.placeOrder();
-  customer2.placeOrder();
-  customer3.placeOrder();
-  customer4.placeOrder();
+  // // Customers are ready to order...
+  // customer1.placeOrder();
+  // customer2.placeOrder();
+  // customer3.placeOrder();
+  // customer4.placeOrder();
 
-  // Customers are now in default state awaiting order...
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation..." << endl;
+  // // Customers are now in default state awaiting order...
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation..." << endl;
 
-  // Waiter needs to retrieve their order via the table & iterator
-  customer1.printOrder();
-  customer2.printOrder();
-  customer3.printOrder();
-  customer4.printOrder();
+  // // Waiter needs to retrieve their order via the table & iterator
+  // customer1.printOrder();
+  // customer2.printOrder();
+  // customer3.printOrder();
+  // customer4.printOrder();
 
-  cout << "The meals are now being prepared..." << endl;
-  cout << "." << endl;
-  cout << ".." << endl;
-  cout << "..." << endl;
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "The meals are now being prepared..." << endl;
+  // cout << "." << endl;
+  // cout << ".." << endl;
+  // cout << "..." << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
-  // Waiter needs to store order & add it to the bill in the memento
+  // // Waiter needs to store order & add it to the bill in the memento
 
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
+  // cout << "Simulation paused, enter any key to continue: ";
+  // cin >> ready;
+  // cout << "Resuming simulation" << endl;
 
   // Waiter needs to send order (string vector) through mediator and command to
   // decorator)
@@ -121,48 +121,48 @@ int main() {
   // cin >> ready;
   // cout << "Resuming simulation" << endl;
 
-  customer1.getTheBill();
-  customer2.getTheBill();
-  customer3.getTheBill();
-  customer4.getTheBill();
+  // customer1.getTheBill();
+  // customer2.getTheBill();
+  // customer3.getTheBill();
+  // customer4.getTheBill();
 
-  //================
-  //======END=======
-  //================
+  // //================
+  // //======END=======
+  // //================
 
-  // Create a Caretaker and a Tab
-  Caretaker caretaker;
-  Tab tab;
+  // // Create a Caretaker and a Tab
+  // Caretaker caretaker;
+  // Tab tab;
 
-  // Perform some actions on the tab
-  tab.addOrderedItem("Item1", 10.0);
-  tab.addOrderedItem("Item2", 15.0);
+  // // Perform some actions on the tab
+  // tab.addOrderedItem("Item1", 10.0);
+  // tab.addOrderedItem("Item2", 15.0);
 
-  // Save the initial state in the caretaker
-  caretaker.addMemento(tab.createMemento());
+  // // Save the initial state in the caretaker
+  // caretaker.addMemento(tab.createMemento());
 
-  // Perform more actions on the tab
-  tab.addOrderedItem("Item3", 20.0);
+  // // Perform more actions on the tab
+  // tab.addOrderedItem("Item3", 20.0);
 
-  // Save the updated state in the caretaker
-  caretaker.addMemento(tab.createMemento());
+  // // Save the updated state in the caretaker
+  // caretaker.addMemento(tab.createMemento());
 
-  // Print the current tab state
-  std::cout << "Current Tab State:" << std::endl;
-  tab.printBill();
+  // // Print the current tab state
+  // std::cout << "Current Tab State:" << std::endl;
+  // tab.printBill();
 
-  // Rollback to the previous state
-  TabMemento previousState = caretaker.getMemento(3);
-  tab.setMemento(previousState);
+  // // Rollback to the previous state
+  // TabMemento previousState = caretaker.getMemento(3);
+  // tab.setMemento(previousState);
 
-  // Print the tab state after rollback
-  std::cout << "\nTab State After Rollback:" << std::endl;
-  tab.printBill();
+  // // Print the tab state after rollback
+  // std::cout << "\nTab State After Rollback:" << std::endl;
+  // tab.printBill();
 
-  tab.setMemento(tab.createMemento());
+  // tab.setMemento(tab.createMemento());
 
-  std::cout << "\nTab State After Rollback:" << std::endl;
-  tab.printBill();
+  // std::cout << "\nTab State After Rollback:" << std::endl;
+  // tab.printBill();
   // Mediator
   KitchenMediator *mediator = new ConcreteMediator();
 
@@ -208,15 +208,16 @@ int main() {
     c->placeOrder();
     seat9.push_back(c);
   }
-  for (int i = 10; i < 14; i++) {
+  for (int i = 8; i < 12; i++) {
     Customer *c = new Customer(i);
     c->placeOrder();
     seat4.push_back(c);
   }
   cout << "starting to seat" << endl;
   waiter->seatCustomer(seat9);
-  // waiter2->seatCustomer(seat4);
+  waiter->seatCustomer(seat4);
   waiter->CompleteCircuit(); 
+  waiter->CompleteCircuit();
   waiter->CompleteCircuit();
   // waiter2->CompleteCircuit();
 

@@ -27,6 +27,7 @@ class Customer {
   void printOrder();
   void leave();
   bool didPay();
+  bool Tab();
   void givePlate(Plate* plate);
   Plate* removePlate();
  private:
@@ -35,6 +36,7 @@ class Customer {
   std::vector<std::string> order;
   int customerNumber;
   bool paid;
+  bool WantsTab;
   Plate* plate;
 };
 
