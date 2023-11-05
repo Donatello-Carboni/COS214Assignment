@@ -30,6 +30,7 @@ class Customer {
   bool Tab();
   void givePlate(Plate* plate);
   Plate* removePlate();
+  Plate* getPlate();
  private:
   State* state;
   int happiness;

@@ -1,14 +1,15 @@
 #include "Waiter.h"
-
+#include "Tab.h"
 #include <algorithm>
 
+#include "AboutToLeave.h"
 #include "ConcreteMediator.h"
 void Waiter::WriteDownOrder(std::vector<std::string> order) {
   for (int i = 0; i < order.size(); i++) {
     std::string Singleorder = order[i];
     // check if order item is cancel or add
     // check if single order contains "cancel-x"
-    if (Singleorder.find("cancel-") != std::string::npos) {
+    if (Singleorder.find("CANCEL-") != std::string::npos) {
       // remove cancel- from string
       Singleorder.erase(0, 7);
       this->CancelItem(Singleorder);
@@ -113,7 +114,7 @@ Customer* Waiter::nextCustomer() {
 
   RestaurantTable* currRestTable =
       (RestaurantTable*)currComp->getTables().at(this->currInternalTable);
-      
+
   if (this->currCustomer + 1 > currRestTable->getCustomerCount()) {
     cout << "next internal table" << endl;
     this->currCustomer = 0;
@@ -125,7 +126,8 @@ Customer* Waiter::nextCustomer() {
       return nullptr;
     }
   }
-  currRestTable=(RestaurantTable*)currComp->getTables().at(this->currInternalTable);
+  currRestTable =
+      (RestaurantTable*)currComp->getTables().at(this->currInternalTable);
   cout << "getting customer from current table" << endl;
   cout << "currCustomer: " << this->currCustomer << endl;
   cout << "currInternalTable: " << this->currInternalTable << endl;
@@ -143,30 +145,37 @@ void Waiter::CompleteCircuit() {
     if (c == nullptr) {
       break;
     }
-    if (this->currCustomer >3) {
+    if (this->currCustomer > 3) {
       cout << "next table" << endl;
       this->nextTable();
-    } 
-      cout << "serving customer" <<c->getCustomerNumber()<<endl;
-      std::string stateStr = c->getState()->toString();
-      if (stateStr == "[WAITING_TO_ORDER]") {
-        c->placeOrder();
-        this->WriteDownOrder(c->getOrder());
-      } else if (stateStr == "[DEFAULT]") {
-        // return plate customer
-        Plate* plate = this->getPlate(c->getCustomerNumber());
-        if (plate != nullptr) {
-          c->givePlate(plate);
-        }
-        cout << "Waiter plate map:" << endl;
-        this->printPlateMap();
-      } else if (stateStr == "[ABOUT_TO_LEAVE]") {
-        // pay the bill
-        // review
-        // making tab: needs to be looked at
+    }
+    cout << "serving customer" << c->getCustomerNumber() << endl;
+    std::string stateStr = c->getState()->toString();
+    if (stateStr == "[WAITING_TO_ORDER]") {
+      c->placeOrder();
+      this->WriteDownOrder(c->getOrder());
+    } else if (stateStr == "[DEFAULT]") {
+      // return plate customer
+      Plate* plate = this->getPlate(c->getCustomerNumber());
+      if (plate != nullptr) {
+        c->givePlate(plate);
       }
-      cout << "done serving customer" << endl;
-    
+      cout << "Waiter plate map:" << endl;
+      this->printPlateMap();
+      c->setState(new AboutToLeave());
+    } else if (stateStr == "[ABOUT_TO_LEAVE]") {
+      // if (c->Tab()) {
+      //   cout<<c->getCustomerNumber()<<"is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+      //   Tab* tab=this->getTab(c->getCustomerNumber());
+      //   tab->setMemento(tab->createMemento());
+      //   this->removeTab(c->getCustomerNumber());
+      // } else {
+      //   cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+      //   this->removeTab(c->getCustomerNumber());
+      // }
+      c->leave();
+    }
+    cout << "done serving customer" << endl;
   }
   if (c == nullptr && this->OccupiedTables.size() == 1) {
     this->currCustomer = 0;
@@ -199,10 +208,18 @@ void Waiter::CompleteCircuit() {
         }
         cout << "Waiter plate map:" << endl;
         this->printPlateMap();
+        c->setState(new AboutToLeave());
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
-        // pay the bill
-        // review
-        // making tab: needs to be looked at
+      //   if (c->Tab()) {
+      //   cout<<c->getCustomerNumber()<<"is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+      //   Tab* tab=this->getTab(c->getCustomerNumber());
+      //   tab->setMemento(tab->createMemento());
+      //   this->removeTab(c->getCustomerNumber());
+      // } else {
+      //   cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+      //   this->removeTab(c->getCustomerNumber());
+      // }
+      c->leave();
       }
     }
   }
@@ -260,3 +277,25 @@ void Waiter::removeBurgerOrder(int orderID) { BurgerMap.erase(orderID); }
 void Waiter::storeBurgerOrder(int orderID, BurgerOrder* order) {
   BurgerMap[orderID] = order;
 }
+
+void Waiter::printTabMap() {
+  std::cout << "Tab Map Contents:" << std::endl;
+  for (const auto& pair : TabMap) {
+    std::cout << "ID: " << pair.first << ", Tab: " << pair.second << std::endl;
+  }
+}
+
+Tab* Waiter::getTab(int tabID) {
+  auto it = TabMap.find(tabID);
+  if (it != TabMap.end()) {
+    Tab* tab = it->second;
+    removeTab(tabID);
+    return tab;  // Return the Plate associated with the ID
+  } else {
+    return nullptr;  // Plate not found
+  }
+}
+
+void Waiter::removeTab(int tabID) { TabMap.erase(tabID); }
+
+void Waiter::storeTab(int tabID, Tab* tab) { TabMap[tabID] = tab; }

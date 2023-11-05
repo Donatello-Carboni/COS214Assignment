@@ -1,7 +1,7 @@
 #include "Customer.h"
-
+#include <cstdlib>  
+#include <ctime>    
 #include <random>
-
 #include "WaitingToOrder.h"
 #include "WaitingToSit.h"
 
@@ -12,6 +12,14 @@ Customer::Customer(int num) {
   happiness = 60;
   // may need to start at waiting to order
   state = new WaitingToSit();
+  // Seed the random number generator with the current time
+  std::srand(static_cast<unsigned int>(std::time(nullptr)));
+  
+  // Generate a random number (0 or 1) to determine the value of WantsTab
+  int randomValue = std::rand() % 2;  // Generates 0 or 1
+  
+  // Set WantsTab based on the random value (0 or 1)
+  this->WantsTab = (randomValue == 1);
 }
 
 Customer::~Customer() {
@@ -104,4 +112,9 @@ Plate* Customer::removePlate()
   Plate* plate = this->plate;
   this->plate = NULL;
   return plate;
+}
+
+Plate* Customer::getPlate()
+{
+  return this->plate;
 }
