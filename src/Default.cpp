@@ -51,10 +51,18 @@ void Default::review(Customer* customer)
 
 void Default::changeHappiness(Customer* customer)
 {
-    srand(time(NULL));
-    int happiness = rand() % 100 + 40;
+    //Randomize seed before changing happiness every time
+    int num = rand() % 10;
+    for (int i = 0; i < num; i++)
+    {
+        srand(time(NULL));
+    }
+
+    int happiness = rand() % 12;
+    
+    customer->changeHappiness(happiness);
     cout << "[DEFAULT]\t\t- HAPPINESS: " << customer->getHappiness() << endl;
-    customer->setHappiness(happiness);
+
 }
 
 string Default::toString()

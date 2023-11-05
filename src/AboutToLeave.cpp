@@ -48,23 +48,18 @@ void AboutToLeave::review(Customer* customer)
 void AboutToLeave::changeHappiness(Customer* customer)
 {
     //Randomize seed before changing happiness every time
-    int num = rand() %10;
+    int num = rand() % 10;
+
     for (int i = 0; i < num; i++)
     {
         srand(time(NULL));
     }
 
-    int happiness = customer->getHappiness();
+    int happiness = rand() % 12;
 
-    if (happiness < 50)
-        happiness = rand() %10;
-    else if (happiness < 75 && happiness > 50)
-        happiness = rand() % 10 + rand() %16;
-
-   // customer->setHappiness(happiness);
-
-    cout << "[ABOUT_TO_LEAVE]\t- Happiness changed..." << endl;
-    cout << "[ABOUT_TO_LEAVE]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
+    customer->changeHappiness(happiness);
+    cout << "[ABOUT_TO_LEAVE] - Happiness changed..." << endl;
+    cout << "[ABOUT_TO_LEAVE] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 
 string AboutToLeave::toString()

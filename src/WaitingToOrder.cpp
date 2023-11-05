@@ -134,8 +134,17 @@ void WaitingToOrder::review(Customer* customer)
 
 void WaitingToOrder::changeHappiness(Customer* customer)
 {
-    cout << "[WAITING_TO_ORDER]\t- Happiness changed..." << endl;
-    cout << "[WAITING_TO_ORDER]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
+    //Randomize seed before changing happiness every time
+    int num = rand() % 10;
+    for (int i = 0; i < num; i++)
+    {
+        srand(time(NULL));
+    }
+
+    int happiness = rand() % 12;
+    customer->changeHappiness(happiness);
+    cout << "[WAITING_TO_ORDER] - Happiness changed..." << endl;
+    cout << "[WAITING_TO_ORDER] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 
 string WaitingToOrder::toString()

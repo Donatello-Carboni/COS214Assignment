@@ -19,7 +19,6 @@ WaitingToSit::~WaitingToSit()
 
 void WaitingToSit::chooseItems(Customer* customer)
 {
-    //cout << "[WAITING_TO_SIT]\t- Choosing items..." << endl;
     customer->setState(new WaitingToOrder());
 }
 
@@ -56,10 +55,17 @@ void WaitingToSit::review(Customer* customer)
 
 void WaitingToSit::changeHappiness(Customer* customer)
 {
-    srand(time(NULL));
-    int happiness = rand() % 100;
+    //Randomize seed before changing happiness every time
+    int num = rand() % 10;
+    for (int i = 0; i < num; i++)
+    {
+        srand(time(NULL));
+    }
+
+    int happiness = rand() % 12;
+
+    customer->changeHappiness(happiness);
     cout << "[WAITING_TO_SIT]\t- HAPPINESS: " << customer->getHappiness() << endl;
-    customer->setHappiness(happiness);
 }
 
 string WaitingToSit::toString()
