@@ -61,7 +61,7 @@ void AboutToLeave::changeHappiness(Customer* customer)
     else if (happiness < 75 && happiness > 50)
         happiness = rand() % 10 + rand() %16;
 
-    customer->setHappiness(happiness);
+   // customer->setHappiness(happiness);
 
     cout << "[ABOUT_TO_LEAVE]\t- Happiness changed..." << endl;
     cout << "[ABOUT_TO_LEAVE]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
