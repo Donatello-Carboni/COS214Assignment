@@ -14,7 +14,7 @@ class Customer {
         ~Customer();
         int getCustomerNumber();
         int getHappiness();
-        void setHappiness(int happy);
+        void changeHappiness(int happy);
         State* getState();
         void setState(State* currState);
         void setOrder(std::vector<std::string> extras);
