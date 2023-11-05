@@ -39,7 +39,79 @@
 //===============CUSTOMER TEST=================
 //=============================================
 
+TEST(CustomerTest, getCustomerNumber) {
+  Customer* c1 = new Customer(1)
+  Customer* c2 = new Customer(2);
 
+  // Checking if customer numbers are being set
+  ASSERT_EQ(c1->getCustomerNumber(), 1);
+  ASSERT_EQ(c2->getCustomerNumber(), 2);
+}
+
+TEST(CustomerTest, setOrder) {
+  Customer* c = new Customer(1)
+
+  std::vector<std::string> customerOrder;
+  customerOrder.push_back("PATTY");
+  customerOrder.push_back("TOMATO_SAUCE");
+  customerOrder.push_back("REGULAR_BUN");
+  customerOrder.push_back("SLICE_OF_CHEESE");
+  c->setOrder(customerOrder)l
+
+  //Checking if the order is being set correctly
+  ASSERT_EQ(c->getOrder(), customerOrder);
+}
+
+TEST(CustomerTest, stateInitialization) {
+  Customer* c = new Customer(1)
+
+  //Checking if state initialized correctly 
+  ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_SIT]");
+}
+
+TEST(CustomerTest, setState) {
+  Customer* c = new Customer(1)
+  State* newState = new AboutToLeave();
+
+  c->setState(newState);
+
+  //Checking if setState is implemented correctly
+  ASSERT_EQ(c->getState()->toString(), "[ABOUT_TO_LEAVE]");
+}
+
+TEST(CustomerTest, placeOrder) {
+  Customer* c = new Customer(1);
+  c->setState(new WaitingToOrder());
+  c->placeOrder();
+
+  //Checks if state switches to WaitingToOrder
+  ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_ORDER]");
+}
+
+TEST(CustomerTest, sitDown) {
+  Customer* c = new Customer(1)
+  c->sitDown();
+
+  //Checks if state switches to WaitingToOrder
+  ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_ORDER]");
+}
+
+TEST(CustomerTest, leave) {
+  Customer* c = new Customer(1)
+
+  //Checks if object calls destructor
+  ASSERT_EQ(c->leave(), NULL);
+}
+
+TEST(CustomerTest, getTheBill_and_paid) {
+  Customer* c = new Customer(1)
+  c->setState(new Default());
+  c->getTheBill();
+
+  //Checks if paid param is set and if state changes
+  ASSERT_EQ(c->didPay(), true);
+  ASSERT_EQ(c->getState()->toString(), "[ABOUT_TO_LEAVE]");
+}
 
 //=============================================
 //===========REPORT & MANAGER TEST=============
@@ -150,10 +222,7 @@ TEST(CaretakerTest, AddAndGetMemento) {
 TEST(MediatorTest, AddColleague) {
   KitchenMediator *mediator = new ConcreteMediator();
   Chef *chef = new BaseChef();
-  Table *table = new CompositeTable;
-  std::vector<Table*> FreeTables;
-  FreeTables.push_back(table);
-  Waiter *waiter = new Waiter((ConcreteMediator *)mediator,FreeTables);
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
   mediator->addColleague((Colleague *)chef);
   mediator->addColleague((Colleague *)waiter);
@@ -189,56 +258,60 @@ TEST(MediatorTest, AddCommand) {
   // ASSERT_EQ(1, 1);
 }
 
-// TEST(MediatorTest, CommsToDecor) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
+TEST(MediatorTest, CommsToDecor) {
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
 
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
 
-//   waiter->WriteDownOrder("Burger");
-//   waiter->WriteDownOrder("Burger");
-//   Command *command3 = mediator->getCommands().at(0);
-//   CreateOrder *command4 = (CreateOrder *)command3;
-//   // Perform assertions to validate the number of colleagues
-//   //std::string test = command4->burger->test;
-//   //ASSERT_EQ(test, "BurgerBurger");
-//   //delete mediator;
-// }
-//TESTS for command 
-// TEST(COMMAND, decorcmd){
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
+  waiter->WriteDownOrder("Burger");
+  waiter->WriteDownOrder("Burger");
+  Command *command3 = mediator->getCommands().at(0);
+  CreateOrder *command4 = (CreateOrder *)command3;
+  // Perform assertions to validate the number of colleagues
+  // std::string test = command4->burger->test;
+  // ASSERT_EQ(test, "BurgerBurger");
+  // delete mediator;
+}
 
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
+//====================================
+//===========COMMAND TEST=============
+//====================================
 
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
+TEST(COMMAND, decorcmd) {
+  KitchenMediator *mediator = new ConcreteMediator();
+  Chef *chef = new BaseChef();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
 
-//   waiter->WriteDownOrder("ID-1");
-//   waiter->WriteDownOrder("RegularBun");
-//   waiter->WriteDownOrder("Cheese");
-//   waiter->DoneOrder();
-//   bool truefalse = false;
-//   if(waiter->getPlate()!=NULL){
-//     truefalse = true;
-//   }
-//   EXPECT_TRUE(truefalse);
-// }
+  mediator->addColleague((Colleague *)chef);
+  mediator->addColleague((Colleague *)waiter);
+  Command *command = new CreateOrder();
+  Command *command2 = new CreateOrder();
+
+  mediator->addCommand(command);
+  mediator->addCommand(command2);
+
+  waiter->WriteDownOrder("ID-1");
+  waiter->WriteDownOrder("RegularBun");
+  waiter->WriteDownOrder("Cheese");
+  waiter->DoneOrder();
+  bool truefalse = false;
+  if (waiter->getPlate() != NULL) {
+    truefalse = true;
+  }
+  EXPECT_TRUE(truefalse);
+}
+
 //======================================
 //===========COMPOSITE TEST=============
 //======================================
-
 
 // Define a test fixture for RestaurantTable and CompositeTable
 class TableTest : public ::testing::Test {
@@ -341,69 +414,43 @@ TEST_F(TableTest, CompositeTableAddCustomer) {
 //=====================================
 
 TEST_F(TableTest, WaiterUpdate) {
+  // Create tables
+  RestaurantTable table3(3);
+  RestaurantTable table4(3);
 
-    // Create tables
-    RestaurantTable table3(3);
-    RestaurantTable table4(3);
-     KitchenMediator *mediator = new ConcreteMediator();
-    Waiter waiter((ConcreteMediator*)mediator,{ &table3, &table4 });
+  Waiter waiter({&table3, &table4});
+  // Create tables
+  RestaurantTable table3(3);
+  RestaurantTable table4(3);
 
-    table4.setState(false); // Make table4 occupied
+  Waiter waiter({&table3, &table4});
 
+  table4.setState(false);  // Make table4 occupied
+  table4.setState(false);  // Make table4 occupied
 
-    // Check if the tables are initially in the correct vectors
-    EXPECT_EQ(waiter.getFreeTablesCount(), 1); 
-    EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
+  // Check if the tables are initially in the correct vectors
+  EXPECT_EQ(waiter.getFreeTablesCount(), 1);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
+  // Check if the tables are initially in the correct vectors
+  EXPECT_EQ(waiter.getFreeTablesCount(), 1);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
 
-    // Change the state of the tables and simulate notification
-    table3.setState(false); // Make table3 occupied
+  // Change the state of the tables and simulate notification
+  table3.setState(false);  // Make table3 occupied
+  // Change the state of the tables and simulate notification
+  table3.setState(false);  // Make table3 occupied
 
+  // Check if tables are moved to the correct vectors after the state change
+  EXPECT_EQ(waiter.getFreeTablesCount(), 0);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
+  // Check if tables are moved to the correct vectors after the state change
+  EXPECT_EQ(waiter.getFreeTablesCount(), 0);
+  EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
 
-    // Check if tables are moved to the correct vectors after the state change
-    EXPECT_EQ(waiter.getFreeTablesCount(), 0);
-    EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
-
-    table3.setState(true);
-    table4.setState(true);
-//old test----------------------------------------------------------
-//   // Create tables
-//   RestaurantTable table3(3);
-//   RestaurantTable table4(3);
-
-//   Waiter waiter({&table3, &table4});
-//   // Create tables
-//   RestaurantTable table3(3);
-//   RestaurantTable table4(3);
-
-//   Waiter waiter({&table3, &table4});
-
-//   table4.setState(false);  // Make table4 occupied
-//   table4.setState(false);  // Make table4 occupied
-
-//   // Check if the tables are initially in the correct vectors
-//   EXPECT_EQ(waiter.getFreeTablesCount(), 1);
-//   EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
-//   // Check if the tables are initially in the correct vectors
-//   EXPECT_EQ(waiter.getFreeTablesCount(), 1);
-//   EXPECT_EQ(waiter.getOccupiedTablesCount(), 1);
-
-//   // Change the state of the tables and simulate notification
-//   table3.setState(false);  // Make table3 occupied
-//   // Change the state of the tables and simulate notification
-//   table3.setState(false);  // Make table3 occupied
-
-//   // Check if tables are moved to the correct vectors after the state change
-//   EXPECT_EQ(waiter.getFreeTablesCount(), 0);
-//   EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
-//   // Check if tables are moved to the correct vectors after the state change
-//   EXPECT_EQ(waiter.getFreeTablesCount(), 0);
-//   EXPECT_EQ(waiter.getOccupiedTablesCount(), 2);
-
-//   table3.setState(true);
-//   table4.setState(true);
-//   table3.setState(true);
-//   table4.setState(true);
-
+  table3.setState(true);
+  table4.setState(true);
+  table3.setState(true);
+  table4.setState(true);
 
   EXPECT_EQ(waiter.getFreeTablesCount(), 2);
   EXPECT_EQ(waiter.getOccupiedTablesCount(), 0);
