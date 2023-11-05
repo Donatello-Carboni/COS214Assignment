@@ -88,3 +88,15 @@ void Customer::sitDown() {
 void Customer::leave() { this->~Customer(); }
 
 bool Customer::didPay() { return paid; }
+
+void Customer::givePlate(Plate* plate)
+{
+  this->plate = plate;
+}
+
+Plate* Customer::removePlate()
+{
+  Plate* plate = this->plate;
+  this->plate = NULL;
+  return plate;
+}

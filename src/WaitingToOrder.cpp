@@ -30,7 +30,7 @@ void WaitingToOrder::chooseItems(Customer* customer)
 
     std::uniform_int_distribution<int> optionChoice(1, 2);
     int option = optionChoice(op);
-
+    order.push_back((std::to_string)(customer->getCustomerNumber()));
     switch (option)
     {
         case 1:

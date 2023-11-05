@@ -1,7 +1,5 @@
 #include "Waiter.h"
-
 #include <algorithm>
-
 #include "ConcreteMediator.h"
 void Waiter::WriteDownOrder(std::vector<std::string> order) {
   for (int i = 0; i < order.size(); i++) {
@@ -13,6 +11,7 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
       Singleorder.erase(0, 7);
       this->CancelItem(Singleorder);
     } else {
+      // cout<<"Write Down Order: "<<Singleorder<<endl;
       this->mediator->notifyOrder((Colleague*)this, 1, Singleorder);
     }
   }
@@ -21,6 +20,7 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
 }
 
 void Waiter::CancelItem(std::string order) {
+  // cout<<"Cancel Item "+order<<endl;
   this->mediator->notifyOrder((Colleague*)this, 2, order);
 }
 
@@ -73,9 +73,6 @@ int Waiter::getFreeTablesCount() const { return FreeTables.size(); }
 
 int Waiter::getOccupiedTablesCount() const { return OccupiedTables.size(); }
 
-void Waiter::givePlate(Plate* plate) { this->plate = plate; }
-
-Plate* Waiter::getPlate() { return this->plate; }
 // iterator
 void Waiter::seatCustomer(vector<Customer*> customers) {
   if (this->getFreeTablesCount() > 0) {
@@ -83,7 +80,7 @@ void Waiter::seatCustomer(vector<Customer*> customers) {
     for (int i = 0; i < customers.size(); i++) {
       if (this->FreeTables[whichTable]->AddCustomer(customers[i])) {
         customers[i]->sitDown();
-        customers[i]->placeOrder();
+
       } else {
         cout << "No free tables" << endl;
       }
@@ -152,14 +149,28 @@ void Waiter::CompleteCircuit() {
       cout << "serving customer" << endl;
       std::string stateStr = c->getState()->toString();
       if (stateStr == "[WAITING_TO_ORDER]") {
+        c->placeOrder();
         this->WriteDownOrder(c->getOrder());
-      } else if (stateStr == "[DEFAULT]") {
+       } else if (stateStr == "[DEFAULT]") {
+        //return plate customer
+        Plate* plate = this->getPlate(c->getCustomerNumber());
+        if (plate != nullptr) {
+          c->givePlate(plate);
+        }
+        cout<<"Waiter plate map:"<<endl;
+        this->printPlateMap();
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
+          //pay the bill
+          //review
+          //making tab: needs to be looked at
       }
       cout << "done serving customer" << endl;
     }
   }
   if (c == nullptr) {
+    this->currCustomer = 0;
+    this->currInternalTable = 0;
+    this->currTable = 0;
     return;
   }
   cout << "Finishing circuit itertions circuit" << endl;
@@ -172,10 +183,47 @@ void Waiter::CompleteCircuit() {
       std::string stateStr = c->getState()->toString();
 
       if (stateStr == "[WAITING_TO_ORDER]") {
+        c->placeOrder();
         this->WriteDownOrder(c->getOrder());
       } else if (stateStr == "[DEFAULT]") {
+        //return plate customer
+        Plate* plate = this->getPlate(c->getCustomerNumber());
+        if (plate != nullptr) {
+          c->givePlate(plate);
+        }
+        cout<<"Waiter plate map:"<<endl;
+        this->printPlateMap();
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
+          //pay the bill
+          //review
+          //making tab: needs to be looked at
       }
     }
   }
 }
+
+void Waiter::storePlate(int plateID, Plate* plate) {
+  plateMap[plateID] = plate;
+}
+
+Plate* Waiter::getPlate(int plateID) {
+  auto it = plateMap.find(plateID);
+  if (it != plateMap.end()) {
+    Plate* plate = it->second;
+    removePlate(plateID);
+    return plate;  // Return the Plate associated with the ID
+  } else {
+    return nullptr;  // Plate not found
+  }
+}
+
+void Waiter::removePlate(int plateID) {
+    plateMap.erase(plateID);
+}
+
+void Waiter::printPlateMap() {
+        std::cout << "Plate Map Contents:" << std::endl;
+        for (const auto& pair : plateMap) {
+            std::cout << "ID: " << pair.first << ", Plate: " << pair.second->toString() << std::endl;
+        }
+    }

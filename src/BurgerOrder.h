@@ -15,8 +15,8 @@ class BurgerOrder {
         BurgerOrder* getNext();
 
     private:
-         BurgerOrder* base;
-         BurgerOrder* head;
+        BurgerOrder* base;
+        BurgerOrder* head;
         BurgerOrder* next;
         double price;
 };

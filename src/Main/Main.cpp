@@ -12,7 +12,6 @@
 #include "../Command.h"
 #include "../ConcreteMediator.h"
 #include "../CreateOrder.h"
-#include "../Customer.h"
 #include "../KitchenMediator.h"
 #include "../Plate.h"
 #include "../Tab.h"
@@ -25,6 +24,7 @@
 #include "../PattyChef.h"
 #include "../ExtrasChef.h"
 #include "../BunChef.h"
+#include "../Customer.h"
 
 int main() {
   //======================
@@ -192,7 +192,7 @@ int main() {
   Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables);
   Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2);
 
-  mediator->addColleague((Colleague *) cheeseChef);
+  mediator->addChef(cheeseChef);
   mediator->addColleague((Colleague *)waiter);
 
   Command *command = new CreateOrder();
@@ -216,6 +216,7 @@ int main() {
   cout << "starting to seat" << endl;
   waiter->seatCustomer(seat9);
   // waiter2->seatCustomer(seat4);
+  waiter->CompleteCircuit(); 
   waiter->CompleteCircuit();
   // waiter2->CompleteCircuit();
 

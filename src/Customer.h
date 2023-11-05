@@ -2,7 +2,7 @@
 #define CUSTOMER_H
 #include <string>
 #include <vector>
-
+#include "Plate.h"
 #include "State.h"
 
 using namespace std;
@@ -27,13 +27,15 @@ class Customer {
   void printOrder();
   void leave();
   bool didPay();
-
+  void givePlate(Plate* plate);
+  Plate* removePlate();
  private:
   State* state;
   int happiness;
   std::vector<std::string> order;
   int customerNumber;
   bool paid;
+  Plate* plate;
 };
 
 #endif

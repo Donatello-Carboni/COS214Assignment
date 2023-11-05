@@ -58,6 +58,16 @@ void KitchenMediator::removeCommand(Command *command) {
   }
 }
 
+Chef* KitchenMediator::getChef()
+{
+  return chef;
+}
+
+void KitchenMediator::addChef(Chef* chef)
+{
+  this->chef = chef;
+}
+
 std::vector<Colleague *> KitchenMediator::getColleagues() { return WaiterColleagues; }
 
 std::vector<Command *> KitchenMediator::getCommands() { return commands; }

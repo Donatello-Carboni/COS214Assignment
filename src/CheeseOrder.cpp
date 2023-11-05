@@ -23,8 +23,3 @@ double CheeseOrder::getPrice()
 {
     return price;
 }
-
-BurgerOrder* CheeseOrder::getNext()
-{
-    return getNext();
-}

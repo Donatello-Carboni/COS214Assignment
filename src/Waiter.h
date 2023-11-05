@@ -1,6 +1,7 @@
 #ifndef WAITER_H
 #define WAITER_H
 #include <vector>
+#include <unordered_map>
 #include <string>
 #include "Observer.h"
 #include "Table.h"
@@ -17,7 +18,7 @@ class Waiter: public Colleague, public Observer{
     int currInternalTable;
     int currCustomer;
     //Mediator
-     Plate *plate;
+    std::unordered_map<int, Plate*> plateMap;
      ConcreteMediator *mediator;
     //obs
      std::vector<Table*> FreeTables;
@@ -33,14 +34,15 @@ class Waiter: public Colleague, public Observer{
         void update(Table* changedTable);
         int getFreeTablesCount() const;
         int getOccupiedTablesCount() const;
-        // orders from kicthen
-        void givePlate(Plate* plate);
-        Plate* getPlate();
         //seating customers
         void seatCustomer(vector<Customer*> customers);
         void nextTable();
         Customer* nextCustomer();
         void CompleteCircuit();
+        void storePlate(int plateID, Plate* plate);
+        Plate* getPlate(int plateID);
+        void removePlate(int plateID);
+        void printPlateMap();
 };
 
 #endif
