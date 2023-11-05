@@ -2,28 +2,25 @@
 
 #include <gtest/gtest.h>
 
+#include "../AboutToLeave.h"
 #include "../BaseChef.h"
 #include "../BunChef.h"
 #include "../BurgerOrder.h"
-#include "../BaseChef.h"
 #include "../Caretaker.h"
-#include "../CheeseChef.h"
 #include "../CheeseChef.h"
 #include "../Chef.h"
 #include "../Colleague.h"
 #include "../Command.h"
-#include "../CompositeTable.h"
 #include "../Complaint.h"
 #include "../CompositeTable.h"
 #include "../ConcreteMediator.h"
 #include "../CreateOrder.h"
 #include "../Customer.h"
-#include "../Customer.h"
+#include "../Default.h"
 #include "../KitchenMediator.h"
 #include "../Manager.h"
 #include "../PattyChef.h"
 #include "../Plate.h"
-#include "../RestaurantTable.h"
 #include "../Report.h"
 #include "../RestaurantTable.h"
 #include "../Review.h"
@@ -32,20 +29,16 @@
 #include "../TabMemento.h"
 #include "../Table.h"
 #include "../Waiter.h"
-#include "../Table.h"
-#include "../Waiter.h"
 #include "../WaitingToOrder.h"
 #include "../WaitingToSit.h"
-#include "../AboutToLeave.h"
-#include "../Default.h"
 
 //=============================================
 //===============CUSTOMER TEST=================
 //=============================================
 
 TEST(CustomerTest, getCustomerNumber) {
-  Customer* c1 = new Customer(1);
-  Customer* c2 = new Customer(2);
+  Customer *c1 = new Customer(1);
+  Customer *c2 = new Customer(2);
 
   // Checking if customer numbers are being set
   ASSERT_EQ(c1->getCustomerNumber(), 1);
@@ -53,7 +46,7 @@ TEST(CustomerTest, getCustomerNumber) {
 }
 
 TEST(CustomerTest, setOrder) {
-  Customer* c = new Customer(1);
+  Customer *c = new Customer(1);
 
   std::vector<std::string> customerOrder;
   customerOrder.push_back("PATTY");
@@ -62,41 +55,41 @@ TEST(CustomerTest, setOrder) {
   customerOrder.push_back("SLICE_OF_CHEESE");
   c->setOrder(customerOrder);
 
-  //Checking if the order is being set correctly
+  // Checking if the order is being set correctly
   ASSERT_EQ(c->getOrder(), customerOrder);
 }
 
 TEST(CustomerTest, stateInitialization) {
-  Customer* c = new Customer(1);
+  Customer *c = new Customer(1);
 
-  //Checking if state initialized correctly 
+  // Checking if state initialized correctly
   ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_SIT]");
 }
 
 TEST(CustomerTest, setState) {
-  Customer* c = new Customer(1);
-  State* newState = new AboutToLeave();
+  Customer *c = new Customer(1);
+  State *newState = new AboutToLeave();
 
   c->setState(newState);
 
-  //Checking if setState is implemented correctly
+  // Checking if setState is implemented correctly
   ASSERT_EQ(c->getState()->toString(), "[ABOUT_TO_LEAVE]");
 }
 
 TEST(CustomerTest, placeOrder) {
-  Customer* c = new Customer(1);
+  Customer *c = new Customer(1);
   c->setState(new WaitingToOrder());
   c->placeOrder();
 
-  //Checks if state switches to WaitingToOrder
+  // Checks if state switches to WaitingToOrder
   ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_ORDER]");
 }
 
 TEST(CustomerTest, sitDown) {
-  Customer* c = new Customer(1);
+  Customer *c = new Customer(1);
   c->sitDown();
 
-  //Checks if state switches to WaitingToOrder
+  // Checks if state switches to WaitingToOrder
   ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_ORDER]");
 }
 
@@ -108,11 +101,11 @@ TEST(CustomerTest, sitDown) {
 // }
 
 TEST(CustomerTest, getTheBill_and_paid) {
-  Customer* c = new Customer(1);
+  Customer *c = new Customer(1);
   c->setState(new Default());
   c->getTheBill();
 
-  //Checks if paid param is set and if state changes
+  // Checks if paid param is set and if state changes
   ASSERT_EQ(c->didPay(), true);
   ASSERT_EQ(c->getState()->toString(), "[ABOUT_TO_LEAVE]");
 }
@@ -323,7 +316,6 @@ class TableTest : public ::testing::Test {
   RestaurantTable *restaurantTable;
   CompositeTable *compositeTable;
 
-
   void SetUp() override {
     restaurantTable = new RestaurantTable(3);
     compositeTable = new CompositeTable();
@@ -354,7 +346,6 @@ TEST_F(TableTest, RestaurantTableRemoveCustomer) {
 TEST_F(TableTest, CompositeTableAddRemoveTable) {
   RestaurantTable *table1 = new RestaurantTable(2);
   RestaurantTable *table2 = new RestaurantTable(3);
-
 
   EXPECT_TRUE(compositeTable->AddTable(table1));
   EXPECT_TRUE(compositeTable->AddTable(table2));

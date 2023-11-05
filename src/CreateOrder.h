@@ -1,25 +1,27 @@
 #ifndef CREATEORDER_H
 #define CREATEORDER_H
-#include "Command.h"
-#include <vector>
 #include <string>
-#include"BurgerOrder.h"
-#include"BurgerBunOrder.h"
-#include"RegularBunOrder.h"
-#include"GlutenFreeBunOrder.h"
-#include"BurgerToppingOrder.h"
-#include"CheeseOrder.h"
-#include"PattyOrder.h"
-#include"TomatoSauceOrder.h"
-#include"MustardSauceOrder.h"
-#include"LettuceOrder.h"
-#include"OnionSliceOrder.h"
-#include"MushroomOrder.h"
-#include"GherkinOrder.h"
+#include <vector>
+
+#include "BurgerBunOrder.h"
+#include "BurgerOrder.h"
+#include "BurgerToppingOrder.h"
+#include "CheeseOrder.h"
+#include "Command.h"
+#include "GherkinOrder.h"
+#include "GlutenFreeBunOrder.h"
+#include "LettuceOrder.h"
+#include "MushroomOrder.h"
+#include "MustardSauceOrder.h"
+#include "OnionSliceOrder.h"
+#include "PattyOrder.h"
+#include "RegularBunOrder.h"
+#include "TomatoSauceOrder.h"
 class CreateOrder : public Command {
  private:
   std::vector<std::string> orders;
-  BurgerOrder *burgerorder;
+  BurgerOrder* burgerorder;
+
  public:
   CreateOrder();
   ~CreateOrder();
