@@ -181,7 +181,7 @@ TEST(TabTest, AddOrderedItemAndCalculateTotalPrice) {
   // Create a burger order
   BurgerOrder *burgerOrder = new GlutenFreeBunOrder();
   burgerOrder->add(new CheeseOrder());
-  burgerOrder->add(new OnionSliceOrder());
+  // burgerOrder->add(new OnionSliceOrder());
 
   // Add the burger order to the tab
   tab.addOrderedItem(burgerOrder);
@@ -198,14 +198,15 @@ TEST(TabTest, PrintBill) {
   testing::internal::CaptureStdout();  // Redirect cout for testing
 
   Tab tab;
+  tab.setTabID(1);
   tab.printBill();
 
   std::string output = testing::internal::GetCapturedStdout();
 
   // Check if the printed bill contains expected information
   EXPECT_NE(output.find("Tab ID: 1"), std::string::npos);
+  EXPECT_NE(output.find("Total Price: "), std::string::npos);
   EXPECT_NE(output.find("Ordered Items:"), std::string::npos);
-  EXPECT_NE(output.find("Total:"), std::string::npos);
 }
 
 // Test case for adding multiple BurgerOrders

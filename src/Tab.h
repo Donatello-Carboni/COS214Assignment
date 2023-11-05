@@ -14,6 +14,11 @@ class Tab {
   std::vector<BurgerOrder*> orderedItems;  // Change to pointer
 
  public:
+  Tab() {
+    tabID = 0;
+    totalPrice = 0;
+  };
+
   TabMemento createMemento();
 
   void setMemento(TabMemento& memento);  // Pass by const reference
