@@ -1,7 +1,7 @@
 #include "BurgerOrder.h"
 
-BurgerOrder* BurgerOrder::base = nullptr;                      //First instance of BurgerOrder object
-BurgerOrder* BurgerOrder::head = nullptr;                      //Head of the linked list
+// BurgerOrder* BurgerOrder::base = nullptr;                      //First instance of BurgerOrder object
+// BurgerOrder* BurgerOrder::head = nullptr;                      //Head of the linked list
 
 BurgerOrder::BurgerOrder()
 {

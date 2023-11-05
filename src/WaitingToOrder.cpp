@@ -30,7 +30,7 @@ void WaitingToOrder::chooseItems(Customer* customer)
 
     std::uniform_int_distribution<int> optionChoice(1, 2);
     int option = optionChoice(op);
-
+    order.push_back((std::to_string)(customer->getCustomerNumber()));
     switch (option)
     {
         case 1:
@@ -99,7 +99,53 @@ void WaitingToOrder::chooseItems(Customer* customer)
             }
         }
     }
-
+     //Creating a new random object to ensure more randomness
+    mt19937 canTop(ran());
+    std::uniform_int_distribution<int> canTopp(1, 8);
+    int Canceltopping = canTopp(canTop);
+       switch(Canceltopping)
+        {
+            case 1:
+            {
+                order.push_back("CANCEL-PATTY");
+                break;
+            }
+            case 2:
+            {   
+                order.push_back("CANCEL-MUSTARD_SAUCE");
+                break;
+            }
+            case 3:
+            {
+                order.push_back("CANCEL-TOMATO_SAUCE");
+                break;
+            }
+            case 4:
+            {
+                order.push_back("CANCEL-SLICE_OF_CHEESE");
+                break;
+            }
+            case 5:
+            {
+                order.push_back("CANCEL-LETTUCE");
+                break;
+            }
+            case 6:
+            {
+                order.push_back("CANCEL-GHERKINS");
+                break;
+            }
+            case 7:
+            {
+                order.push_back("CANCEL-ONION_SLICE");
+                break;
+            }
+            case 8:
+            {
+                order.push_back("CANCEL-MUSHROOMS");
+                break;
+            }
+        }
     customer->setOrder(order);
     customer->setState(new Default());
 }
