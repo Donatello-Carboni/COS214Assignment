@@ -4,7 +4,6 @@
 
 #include "ConcreteMediator.h"
 void Waiter::WriteDownOrder(std::vector<std::string> order) {
-  
   for (int i = 0; i < order.size(); i++) {
     std::string Singleorder = order[i];
     // check if order item is cancel or add
@@ -17,7 +16,7 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
       this->mediator->notifyOrder((Colleague*)this, 1, Singleorder);
     }
   }
- 
+
   this->DoneOrder();
 }
 
@@ -25,9 +24,7 @@ void Waiter::CancelItem(std::string order) {
   this->mediator->notifyOrder((Colleague*)this, 2, order);
 }
 
-void Waiter::DoneOrder() { 
-  this->mediator->notifyDone((Colleague*)this); 
-}
+void Waiter::DoneOrder() { this->mediator->notifyDone((Colleague*)this); }
 
 Waiter::Waiter(ConcreteMediator* mediator, std::vector<Table*> freeTables)
     : FreeTables(freeTables) {
@@ -81,19 +78,18 @@ void Waiter::givePlate(Plate* plate) { this->plate = plate; }
 Plate* Waiter::getPlate() { return this->plate; }
 // iterator
 void Waiter::seatCustomer(vector<Customer*> customers) {
-  
   if (this->getFreeTablesCount() > 0) {
     int whichTable = 0;
     for (int i = 0; i < customers.size(); i++) {
-    
-    if(this->FreeTables[whichTable]->AddCustomer(customers[i])){
-   
-  } else {
-    cout << "No free tables" << endl;
+      if (this->FreeTables[whichTable]->AddCustomer(customers[i])) {
+        customers[i]->sitDown();
+        customers[i]->placeOrder();
+      } else {
+        cout << "No free tables" << endl;
+      }
+    }
+    this->FreeTables[whichTable]->setState(false);
   }
-  }
-  this->FreeTables[whichTable]->setState(false);
-}
 };
 
 void Waiter::nextTable() {
@@ -110,32 +106,34 @@ void Waiter::nextTable() {
 }
 
 Customer* Waiter::nextCustomer() {
-  cout<<"next customer"<<endl;
-  cout<<"currTable in next customer: "<<this->currTable<<endl;
+  cout << "next customer" << endl;
+  cout << "currTable in next customer: " << this->currTable << endl;
   CompositeTable* currComp =
       (CompositeTable*)this->OccupiedTables.at(this->currTable);
-  
+
   RestaurantTable* currRestTable =
       (RestaurantTable*)currComp->getTables().at(this->currInternalTable);
   // check if there are customers at current restaurant table
-  cout<<"current Restables count: "<<currRestTable->getCustomerCount()<<endl;
+  cout << "current Restables count: " << currRestTable->getCustomerCount()
+       << endl;
 
-  if (this->currCustomer+1 > currRestTable->getCustomerCount()) {
-    cout<<"next internal table"<<endl;
+  if (this->currCustomer + 1 > currRestTable->getCustomerCount()) {
+    cout << "next internal table" << endl;
     this->currCustomer = 0;
     this->currInternalTable++;
-    cout<<"composite tables tables size"<<currComp->getTables().size()<<endl;
-    if (this->currInternalTable+1 > currComp->getTables().size()) {
-      cout<<"returning null"<<endl;
+    cout << "composite tables tables size" << currComp->getTables().size()
+         << endl;
+    if (this->currInternalTable + 1 > currComp->getTables().size()) {
+      cout << "returning null" << endl;
       return nullptr;
     }
   }
-  cout<<"getting customer from current table"<<endl;
-  cout<<"currCustomer: "<<this->currCustomer<<endl;
-  cout<<"currInternalTable: "<<this->currInternalTable<<endl;
+  cout << "getting customer from current table" << endl;
+  cout << "currCustomer: " << this->currCustomer << endl;
+  cout << "currInternalTable: " << this->currInternalTable << endl;
   Customer* c = currRestTable->getCustomers().at(this->currCustomer);
   this->currCustomer++;
-  cout<<"returning customer"<<endl;
+  cout << "returning customer" << endl;
   return c;
 }
 
@@ -144,22 +142,26 @@ void Waiter::CompleteCircuit() {
   Customer* c = nullptr;
   while (this->currTable != 1) {
     c = this->nextCustomer();
-    if(c==nullptr){break;}
+    if (c == nullptr) {
+      break;
+    }
     if (this->currCustomer == 0) {
-      cout<<"next table"<<endl;
+      cout << "next table" << endl;
       this->nextTable();
     } else {
-      cout<<"serving customer"<<endl;
+      cout << "serving customer" << endl;
       std::string stateStr = c->getState()->toString();
       if (stateStr == "[WAITING_TO_ORDER]") {
         this->WriteDownOrder(c->getOrder());
       } else if (stateStr == "[DEFAULT]") {
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
       }
-      cout<<"done serving customer"<<endl;
+      cout << "done serving customer" << endl;
     }
   }
-  if(c==nullptr){return;}
+  if (c == nullptr) {
+    return;
+  }
   cout << "Finishing circuit itertions circuit" << endl;
   while (this->currTable != 0) {
     Customer* c = this->nextCustomer();

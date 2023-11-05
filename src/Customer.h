@@ -19,8 +19,6 @@ class Customer {
         void setState(State* currState);
         void setOrder(std::vector<std::string> extras);
         std::vector<std::string> getOrder();
-        void setState(State* currState);
-        State* getState();
         void sitDown();
         void placeOrder();
         void cancelOrder(std::string item);

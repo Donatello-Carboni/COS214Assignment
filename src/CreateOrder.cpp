@@ -62,6 +62,11 @@ void CreateOrder::deleteOrder()
 {
   this->orders.clear();
 }
+
+BurgerOrder* CreateOrder::getBurgerOrder()
+{
+  return this->burgerorder;
+}
 CreateOrder::CreateOrder() {
   this->burgerorder = nullptr;
   this->orders = std::vector<std::string>();

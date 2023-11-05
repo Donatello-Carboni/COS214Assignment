@@ -52,13 +52,13 @@ State* Customer::getState()
     return state;
 }
 
-void Customer::setState(State* newState)
+void Customer::setState(State* currState)
 {
-    if (newState != this->state)
+    if (currState != this->state)
     {
         if (this->state != NULL)
             delete this->state;
-        this->state = newState;
+        this->state = currState;
     }
 }
 

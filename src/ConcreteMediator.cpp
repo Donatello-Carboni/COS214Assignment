@@ -26,7 +26,7 @@ void ConcreteMediator::notifyDone(Colleague *colleague) {
   BaseChef* c = (BaseChef *)this->getColleagues().at(1);
   Plate* plate=new Plate();
   // pass to chef to make burger
-  c->addToPlate(Cmd->getOrders(), plate);
+  c->addToPlate(Cmd->getBurgerOrder(), plate);
   Cmd->deleteOrder();
   cout<<"done adding to plate"<<endl;
   //identify waiter

@@ -28,5 +28,6 @@ class CreateOrder : public Command {
   void RemoveOrder(std::string order);
   std::vector<std::string> getOrders();
   void deleteOrder();
+  BurgerOrder* getBurgerOrder();
 };
 #endif
