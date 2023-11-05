@@ -27,5 +27,6 @@ class CreateOrder : public Command {
   void AddOrder(std::string order);
   void RemoveOrder(std::string order);
   std::vector<std::string> getOrders();
+  void deleteOrder();
 };
 #endif

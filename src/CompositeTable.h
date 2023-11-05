@@ -13,6 +13,7 @@ class CompositeTable : public Table {
     virtual bool RemoveTable(Table* table);
     virtual bool AddCustomer(Customer* customer);
     virtual bool RemoveCustomer(Customer* customer);
+    virtual std::vector<Table*> getTables();
 };
 
 #endif // COMPOSITE_TABLE_H

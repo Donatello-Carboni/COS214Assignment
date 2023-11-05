@@ -158,19 +158,50 @@ int main() {
   tab.printBill();
   //Mediator 
   KitchenMediator *mediator = new ConcreteMediator();
-  BaseChef *chef=new BaseChef();
-  Waiter *waiter=new Waiter((ConcreteMediator*)mediator);
+
+  Chef *chef=new BaseChef();
+  //3 tables
+  CompositeTable table;
+  CompositeTable table2;
+  std::vector<Table*> FreeTables;
+  FreeTables.push_back(&table);
+  FreeTables.push_back(&table2);
+  std::vector<Table*> FreeTables2;
+   CompositeTable table3;
+  CompositeTable table4;
+  FreeTables2.push_back(&table3);
+  FreeTables2.push_back(&table4);
+
+  Waiter *waiter=new Waiter((ConcreteMediator*)mediator,FreeTables);
+  Waiter *waiter2=new Waiter((ConcreteMediator*)mediator,FreeTables2);
+
 
   mediator->addColleague((Colleague*)chef);
   mediator->addColleague((Colleague*)waiter);
+
   Command *command = new  CreateOrder();
   Command *command2 = new CreateOrder();
 
   mediator->addCommand(command);
   mediator->addCommand(command2);
 
-  waiter->WriteDownOrder("Burger");
-  waiter->WriteDownOrder("Burger");
+  std::vector<Customer*> seat9;
+  std::vector<Customer*> seat4;
+  for(int i = 0; i < 8; i++){
+    Customer* c = new Customer(i);
+    c->placeOrder();
+    seat9.push_back(c);
+  }
+  for(int i = 10; i < 14; i++){
+    Customer* c = new Customer(i);
+    c->placeOrder();
+    seat4.push_back(c);
+  }
+  cout<<"starting to seat"<<endl;
+  waiter->seatCustomer(seat9);
+  //waiter2->seatCustomer(seat4);
+  waiter->CompleteCircuit();
+  //waiter2->CompleteCircuit();
   
   return 0;
 }

@@ -20,12 +20,18 @@ bool CompositeTable::AddCustomer(Customer* customer) {
     //check if there are no tables, if so create one and add the customer
     if (tables.empty()) {
         this->AddTable(new RestaurantTable(3));
+        for(int i = 0; i < this->tables.size(); i++) {
+        
+    }
         return this->tables[0]->AddCustomer(customer);
     }
 
     //check if there is a table with space, if so add the customer
     for (int i = 0; i < this->tables.size(); i++) {
         if (this->tables[i]->AddCustomer(customer)) {
+            for(int i = 0; i < this->tables.size(); i++) {
+        
+    }
             return true;
         }
     }
@@ -33,9 +39,12 @@ bool CompositeTable::AddCustomer(Customer* customer) {
     //check if there are less than 3 tables, if so create a table and add the customer
     if (this->tables.size() < 3) {
         this->AddTable(new RestaurantTable(3));
+        for(int i = 0; i < this->tables.size(); i++) {
+        
+    }
         return this->tables[this->tables.size() - 1]->AddCustomer(customer);
     }
-
+    
     return false; //couldnt add customer
 }
 
@@ -48,4 +57,8 @@ bool CompositeTable::RemoveCustomer(Customer* customer) {
         }
     }
     return false;
+}
+
+std::vector<Table*> CompositeTable::getTables() {
+    return this->tables;
 }

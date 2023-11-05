@@ -11,7 +11,9 @@ Customer::Customer(int num)
 {
     customerNumber = num;
     happiness = 60;
+    //may need to start at waiting to order
     state = new WaitingToSit();
+
 }
 
 Customer::~Customer()
@@ -64,8 +66,10 @@ vector<string> Customer::getOrder()
 
 void Customer::placeOrder()
 {
+    //need to make sure its strings just being pushed
     cout << "[CUSTOMER]\t\t- Customer (" << customerNumber << ") is deciding what to order..." << endl;
     state->chooseItems(this);
+
 }
 
 void Customer::cancelOrder(string item)

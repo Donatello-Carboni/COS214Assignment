@@ -15,7 +15,6 @@ bool RestaurantTable::AddCustomer(Customer* customer)
         customerCount++;
         return this;
     }
-
     return false;
 }
 
