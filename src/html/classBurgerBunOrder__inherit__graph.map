@@ -1,0 +1,6 @@
+<map id="BurgerBunOrder" name="BurgerBunOrder">
+<area shape="rect" id="node1" title="Class to manage a burger bun order, inheriting from BurgerOrder." alt="" coords="103,80,230,107"/>
+<area shape="rect" id="node3" href="$classGlutenFreeBunOrder.html" title="Class representing an order for a gluten&#45;free bun, inheriting from BurgerBunOrder." alt="" coords="5,155,160,181"/>
+<area shape="rect" id="node4" href="$classRegularBunOrder.html" title="Class representing an order for a regular bun, inheriting from BurgerBunOrder." alt="" coords="184,155,317,181"/>
+<area shape="rect" id="node2" href="$classBurgerOrder.html" title="Class representing a generic BurgerOrder." alt="" coords="116,5,217,32"/>
+</map>

@@ -1,0 +1,159 @@
+\hypertarget{classTable}{}\doxysection{Table Class Reference}
+\label{classTable}\index{Table@{Table}}
+
+
+Abstract class representing a table in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Table.\+h$>$}
+
+
+
+Inheritance diagram for Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classTable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTable_a049f2e06391781ae255c6698869c4ad1}\label{classTable_a049f2e06391781ae255c6698869c4ad1}} 
+\mbox{\hyperlink{classTable_a049f2e06391781ae255c6698869c4ad1}{Table}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classTable}{Table}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_a9a559f2e7beb37b511ee9f88873164f8}\label{classTable_a9a559f2e7beb37b511ee9f88873164f8}} 
+virtual \mbox{\hyperlink{classTable_a9a559f2e7beb37b511ee9f88873164f8}{$\sim$\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classTable}{Table}} class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTable_a90b2637521bc39a7c4ce194afe043cb9}{Add\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)=0
+\begin{DoxyCompactList}\small\item\em Adds a customer to the table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTable_a72c0194a02ee8e912ccc830b111a844b}{Remove\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)=0
+\begin{DoxyCompactList}\small\item\em Removes a customer from the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_afd4b379de3d8c0bd199829f2f0f47813}{attach}} (\mbox{\hyperlink{classObserver}{Observer}} $\ast$waiter)
+\begin{DoxyCompactList}\small\item\em Attaches a waiter as an observer to the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_ab03e2bc9044a4fc8aeea4c339e2797ad}{detach}} (\mbox{\hyperlink{classObserver}{Observer}} $\ast$waiter)
+\begin{DoxyCompactList}\small\item\em Detaches a waiter from being an observer of the table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_a05f725d3db910d7b07448f26d5bb3eda}\label{classTable_a05f725d3db910d7b07448f26d5bb3eda}} 
+void \mbox{\hyperlink{classTable_a05f725d3db910d7b07448f26d5bb3eda}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Notifies the waiter about changes in the table. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTable_aa3cb4086c7de0e6f62c4688e34d75091}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Get the availability status of the table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTable_a2c5a390d51d153ef3bf7318fc877f645}{set\+State}} (bool state)
+\begin{DoxyCompactList}\small\item\em Set the availability status of the table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class representing a table in a restaurant. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTable_a90b2637521bc39a7c4ce194afe043cb9}\label{classTable_a90b2637521bc39a7c4ce194afe043cb9}} 
+\index{Table@{Table}!AddCustomer@{AddCustomer}}
+\index{AddCustomer@{AddCustomer}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{AddCustomer()}{AddCustomer()}}
+{\footnotesize\ttfamily virtual bool Table\+::\+Add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a customer to the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the addition was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRestaurantTable_a96ab80e0553995addb7a767129f1150f}{Restaurant\+Table}}, and \mbox{\hyperlink{classCompositeTable_adf36502deae8d672816670f4517cc2f1}{Composite\+Table}}.
+
+\mbox{\Hypertarget{classTable_afd4b379de3d8c0bd199829f2f0f47813}\label{classTable_afd4b379de3d8c0bd199829f2f0f47813}} 
+\index{Table@{Table}!attach@{attach}}
+\index{attach@{attach}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Table\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classObserver}{Observer}} $\ast$}]{waiter }\end{DoxyParamCaption})}
+
+
+
+Attaches a waiter as an observer to the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & -\/ Pointer to the \mbox{\hyperlink{classObserver}{Observer}} (waiter) to attach. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTable_ab03e2bc9044a4fc8aeea4c339e2797ad}\label{classTable_ab03e2bc9044a4fc8aeea4c339e2797ad}} 
+\index{Table@{Table}!detach@{detach}}
+\index{detach@{detach}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Table\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classObserver}{Observer}} $\ast$}]{waiter }\end{DoxyParamCaption})}
+
+
+
+Detaches a waiter from being an observer of the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & -\/ Pointer to the \mbox{\hyperlink{classObserver}{Observer}} (waiter) to detach. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTable_aa3cb4086c7de0e6f62c4688e34d75091}\label{classTable_aa3cb4086c7de0e6f62c4688e34d75091}} 
+\index{Table@{Table}!getState@{getState}}
+\index{getState@{getState}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily bool Table\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the availability status of the table. 
+
+\begin{DoxyReturn}{Returns}
+True if the table is available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTable_a72c0194a02ee8e912ccc830b111a844b}\label{classTable_a72c0194a02ee8e912ccc830b111a844b}} 
+\index{Table@{Table}!RemoveCustomer@{RemoveCustomer}}
+\index{RemoveCustomer@{RemoveCustomer}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{RemoveCustomer()}{RemoveCustomer()}}
+{\footnotesize\ttfamily virtual bool Table\+::\+Remove\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Removes a customer from the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the removal was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRestaurantTable_a9495b3d97eac0e5d0858ed9e87690c66}{Restaurant\+Table}}, and \mbox{\hyperlink{classCompositeTable_a4493e58a2358aaa380c1b6777d654248}{Composite\+Table}}.
+
+\mbox{\Hypertarget{classTable_a2c5a390d51d153ef3bf7318fc877f645}\label{classTable_a2c5a390d51d153ef3bf7318fc877f645}} 
+\index{Table@{Table}!setState@{setState}}
+\index{setState@{setState}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Table\+::set\+State (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Set the availability status of the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & -\/ The state to set (true for available, false for not available). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Table.\+h\item 
+Table.\+cpp\end{DoxyCompactItemize}

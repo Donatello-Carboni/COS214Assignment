@@ -1,0 +1,4 @@
+<map id="WaitingToOrder" name="WaitingToOrder">
+<area shape="rect" id="node1" title="Class representing the state when the customer is waiting to order." alt="" coords="5,80,127,107"/>
+<area shape="rect" id="node2" href="$classState.html" title=" " alt="" coords="38,5,94,32"/>
+</map>

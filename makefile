@@ -5,7 +5,9 @@ make:
 run:
 	cd build && make
 	cd ../
+	clear
 	./bin/main
+	
 
 test:
 	cd build && make

@@ -1,0 +1,223 @@
+\hypertarget{classTab}{}\doxysection{Tab Class Reference}
+\label{classTab}\index{Tab@{Tab}}
+
+
+Class representing a tab for an order in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Tab.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTabMemento}{Tab\+Memento}} \mbox{\hyperlink{classTab_afec04a201b31eda2e5b7b55ff16f0728}{create\+Memento}} ()
+\begin{DoxyCompactList}\small\item\em Creates a memento representing the state of the tab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_a100beffbc2fbed4638f89c27c0169f5d}{set\+Memento}} (\mbox{\hyperlink{classTabMemento}{Tab\+Memento}} memento)
+\begin{DoxyCompactList}\small\item\em Sets the state of the tab to a previous memento state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_afbc061733bf038a5acf69947d0fd00be}{add\+Ordered\+Item}} (std\+::string ordered\+Item, float price)
+\begin{DoxyCompactList}\small\item\em Adds an item to the list of ordered items with its price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_ac828cee16d321f12a9d12415ffdf53d5}{set\+Tab\+ID}} (int tab\+ID)
+\begin{DoxyCompactList}\small\item\em Sets the ID for the tab. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTab_a8799e488fa0b760de9a79632c05df1e1}{get\+Tab\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ID of the tab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_a41f263ce2ba6d0033521aebbecc16aa3}{set\+Total\+Price}} (float total\+Price)
+\begin{DoxyCompactList}\small\item\em Sets the total price for the tab. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTab_aea2de60d6859a4bcdfe0615d04548064}{get\+Total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Gets the total price of the tab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_a280576b860272a64fd83a2c65b869a69}{set\+Item\+Cost}} (std\+::vector$<$ float $>$ item\+Cost)
+\begin{DoxyCompactList}\small\item\em Sets the costs of individual items in the tab. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classTab_a8e9ffeae6307e3493f52854892fd2ce0}{get\+Item\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Gets the costs of individual items in the tab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTab_a428fefa6640294bbfdf7fe5084c40572}{set\+Ordered\+Items}} (std\+::vector$<$ std\+::string $>$ ordered\+Items)
+\begin{DoxyCompactList}\small\item\em Sets the list of ordered items in the tab. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classTab_a9a6a321717fc8a3f1f4bc8b2ebe6f903}{get\+Ordered\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Gets the list of ordered items in the tab. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTab_a85eb466de24d20b7c242283545ed9e9e}{calculate\+Total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the total price based on the individual item costs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTab_ab6a4b0a6c190a544b6b0d20053de17ee}\label{classTab_ab6a4b0a6c190a544b6b0d20053de17ee}} 
+void \mbox{\hyperlink{classTab_ab6a4b0a6c190a544b6b0d20053de17ee}{print\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Prints the bill with details of ordered items and the total price. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a tab for an order in a restaurant. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTab_afbc061733bf038a5acf69947d0fd00be}\label{classTab_afbc061733bf038a5acf69947d0fd00be}} 
+\index{Tab@{Tab}!addOrderedItem@{addOrderedItem}}
+\index{addOrderedItem@{addOrderedItem}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{addOrderedItem()}{addOrderedItem()}}
+{\footnotesize\ttfamily void Tab\+::add\+Ordered\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{ordered\+Item,  }\item[{float}]{price }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the list of ordered items with its price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ordered\+Item} & -\/ The name of the item ordered. \\
+\hline
+{\em price} & -\/ The price of the item. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTab_a85eb466de24d20b7c242283545ed9e9e}\label{classTab_a85eb466de24d20b7c242283545ed9e9e}} 
+\index{Tab@{Tab}!calculateTotalPrice@{calculateTotalPrice}}
+\index{calculateTotalPrice@{calculateTotalPrice}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{calculateTotalPrice()}{calculateTotalPrice()}}
+{\footnotesize\ttfamily float Tab\+::calculate\+Total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the total price based on the individual item costs. 
+
+\begin{DoxyReturn}{Returns}
+The recalculated total price of the tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_afec04a201b31eda2e5b7b55ff16f0728}\label{classTab_afec04a201b31eda2e5b7b55ff16f0728}} 
+\index{Tab@{Tab}!createMemento@{createMemento}}
+\index{createMemento@{createMemento}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{createMemento()}{createMemento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTabMemento}{Tab\+Memento}} Tab\+::create\+Memento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a memento representing the state of the tab. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classTabMemento}{Tab\+Memento}} object representing the current state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_a8e9ffeae6307e3493f52854892fd2ce0}\label{classTab_a8e9ffeae6307e3493f52854892fd2ce0}} 
+\index{Tab@{Tab}!getItemCost@{getItemCost}}
+\index{getItemCost@{getItemCost}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{getItemCost()}{getItemCost()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Tab\+::get\+Item\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the costs of individual items in the tab. 
+
+\begin{DoxyReturn}{Returns}
+The costs of individual items in the tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_a9a6a321717fc8a3f1f4bc8b2ebe6f903}\label{classTab_a9a6a321717fc8a3f1f4bc8b2ebe6f903}} 
+\index{Tab@{Tab}!getOrderedItems@{getOrderedItems}}
+\index{getOrderedItems@{getOrderedItems}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{getOrderedItems()}{getOrderedItems()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Tab\+::get\+Ordered\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the list of ordered items in the tab. 
+
+\begin{DoxyReturn}{Returns}
+The list of ordered items in the tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_a8799e488fa0b760de9a79632c05df1e1}\label{classTab_a8799e488fa0b760de9a79632c05df1e1}} 
+\index{Tab@{Tab}!getTabID@{getTabID}}
+\index{getTabID@{getTabID}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{getTabID()}{getTabID()}}
+{\footnotesize\ttfamily int Tab\+::get\+Tab\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ID of the tab. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_aea2de60d6859a4bcdfe0615d04548064}\label{classTab_aea2de60d6859a4bcdfe0615d04548064}} 
+\index{Tab@{Tab}!getTotalPrice@{getTotalPrice}}
+\index{getTotalPrice@{getTotalPrice}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{getTotalPrice()}{getTotalPrice()}}
+{\footnotesize\ttfamily float Tab\+::get\+Total\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the total price of the tab. 
+
+\begin{DoxyReturn}{Returns}
+The total price of the tab. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTab_a280576b860272a64fd83a2c65b869a69}\label{classTab_a280576b860272a64fd83a2c65b869a69}} 
+\index{Tab@{Tab}!setItemCost@{setItemCost}}
+\index{setItemCost@{setItemCost}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{setItemCost()}{setItemCost()}}
+{\footnotesize\ttfamily void Tab\+::set\+Item\+Cost (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$}]{item\+Cost }\end{DoxyParamCaption})}
+
+
+
+Sets the costs of individual items in the tab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Cost} & -\/ The item costs to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTab_a100beffbc2fbed4638f89c27c0169f5d}\label{classTab_a100beffbc2fbed4638f89c27c0169f5d}} 
+\index{Tab@{Tab}!setMemento@{setMemento}}
+\index{setMemento@{setMemento}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{setMemento()}{setMemento()}}
+{\footnotesize\ttfamily void Tab\+::set\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTabMemento}{Tab\+Memento}}}]{memento }\end{DoxyParamCaption})}
+
+
+
+Sets the state of the tab to a previous memento state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em memento} & -\/ The \mbox{\hyperlink{classTabMemento}{Tab\+Memento}} object representing the state to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTab_a428fefa6640294bbfdf7fe5084c40572}\label{classTab_a428fefa6640294bbfdf7fe5084c40572}} 
+\index{Tab@{Tab}!setOrderedItems@{setOrderedItems}}
+\index{setOrderedItems@{setOrderedItems}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{setOrderedItems()}{setOrderedItems()}}
+{\footnotesize\ttfamily void Tab\+::set\+Ordered\+Items (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{ordered\+Items }\end{DoxyParamCaption})}
+
+
+
+Sets the list of ordered items in the tab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ordered\+Items} & -\/ The list of ordered items to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTab_ac828cee16d321f12a9d12415ffdf53d5}\label{classTab_ac828cee16d321f12a9d12415ffdf53d5}} 
+\index{Tab@{Tab}!setTabID@{setTabID}}
+\index{setTabID@{setTabID}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{setTabID()}{setTabID()}}
+{\footnotesize\ttfamily void Tab\+::set\+Tab\+ID (\begin{DoxyParamCaption}\item[{int}]{tab\+ID }\end{DoxyParamCaption})}
+
+
+
+Sets the ID for the tab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+ID} & -\/ The ID to set for the tab. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTab_a41f263ce2ba6d0033521aebbecc16aa3}\label{classTab_a41f263ce2ba6d0033521aebbecc16aa3}} 
+\index{Tab@{Tab}!setTotalPrice@{setTotalPrice}}
+\index{setTotalPrice@{setTotalPrice}!Tab@{Tab}}
+\doxysubsubsection{\texorpdfstring{setTotalPrice()}{setTotalPrice()}}
+{\footnotesize\ttfamily void Tab\+::set\+Total\+Price (\begin{DoxyParamCaption}\item[{float}]{total\+Price }\end{DoxyParamCaption})}
+
+
+
+Sets the total price for the tab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Price} & -\/ The total price to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tab.\+h\item 
+Tab.\+cpp\end{DoxyCompactItemize}

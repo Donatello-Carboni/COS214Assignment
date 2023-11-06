@@ -1,0 +1,64 @@
+\hypertarget{classManager}{}\doxysection{Manager Class Reference}
+\label{classManager}\index{Manager@{Manager}}
+
+
+Class representing a \mbox{\hyperlink{classManager}{Manager}} responsible for handling reports.  
+
+
+
+
+{\ttfamily \#include $<$Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classManager_ac52cff4d14486356b6f39f3820282579}{add\+Report}} (\mbox{\hyperlink{classReport}{Report}} $\ast$report)
+\begin{DoxyCompactList}\small\item\em Method to add a report to the manager\textquotesingle{}s collection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classManager_ae50153f084b463b86743df33da0da807}\label{classManager_ae50153f084b463b86743df33da0da807}} 
+void \mbox{\hyperlink{classManager_ae50153f084b463b86743df33da0da807}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Method to display information about the reports. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classManager}{Manager}} \& \mbox{\hyperlink{classManager_ab0da376da4a879f2e4f1d5d76f4c34d6}{get\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Method to access the \mbox{\hyperlink{classManager}{Manager}} instance (Singleton pattern). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a \mbox{\hyperlink{classManager}{Manager}} responsible for handling reports. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classManager_ac52cff4d14486356b6f39f3820282579}\label{classManager_ac52cff4d14486356b6f39f3820282579}} 
+\index{Manager@{Manager}!addReport@{addReport}}
+\index{addReport@{addReport}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{addReport()}{addReport()}}
+{\footnotesize\ttfamily void Manager\+::add\+Report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReport}{Report}} $\ast$}]{report }\end{DoxyParamCaption})}
+
+
+
+Method to add a report to the manager\textquotesingle{}s collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em report} & -\/ Pointer to the \mbox{\hyperlink{classReport}{Report}} object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classManager_ab0da376da4a879f2e4f1d5d76f4c34d6}\label{classManager_ab0da376da4a879f2e4f1d5d76f4c34d6}} 
+\index{Manager@{Manager}!getManager@{getManager}}
+\index{getManager@{getManager}!Manager@{Manager}}
+\doxysubsubsection{\texorpdfstring{getManager()}{getManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classManager}{Manager}} \& Manager\+::get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to access the \mbox{\hyperlink{classManager}{Manager}} instance (Singleton pattern). 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \mbox{\hyperlink{classManager}{Manager}} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Manager.\+h\item 
+Manager.\+cpp\end{DoxyCompactItemize}

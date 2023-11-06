@@ -3,12 +3,12 @@
 #include <iostream>
 void CreateOrder::execute()
 {
-  // std::cout<<"Current ORDER VECTOR IN COMMAND"<<std::endl;
-  // for (int i = 0; i < this->orders.size(); i++) {
-  //   std::cout << this->orders.at(i) << std::endl;
-  // }
-  // Create burger order
-  // std::cout << "creating burger bun" << std::endl;
+  std::string read;
+  if(Inspection==false){
+    std::cout<<"Order Creation happening"<<std::endl;
+    std::cout<<"Press Enter to Continue"<<std::endl;
+    std::cin>>read;
+  }
   if (this->orders.at(1) == "REGULAR_BUN")
   {
     this->burgerorder = new RegularBunOrder();
@@ -76,6 +76,15 @@ void CreateOrder::RemoveOrder(std::string order)
   {
     if (*it == order)
     {
+      std::string read;
+      if(Inspection==false){
+        std::cout<<"Order Cancelation happening"<<order<<std::endl;
+        std::cout<<"Cancel out of Order: "<<order<<std::endl;
+        std::cin>>read;
+        this->Inspection = true;
+      }else{
+        std::cout<<"Cancel out of Order: "<<order<<std::endl;
+      }
       this->orders.erase(std::next(it).base());
       break;
     }

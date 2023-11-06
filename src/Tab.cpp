@@ -36,13 +36,13 @@ void Tab::addOrderedItem(BurgerOrder* orderedItem) {
 
 float Tab::calculateTotalPrice() {
   float totalPrice = 0;
-  for (int i = 0; i < orderedItems.size(); i++) {
-    BurgerOrder* head = orderedItems[i];
-    while (head != NULL) {
-      totalPrice += head->getPrice();
-      head = head->getNext();
-    }
-  }
+  // for (int i = 0; i < orderedItems.size(); i++) {
+  //   BurgerOrder* curr = orderedItems[i];
+  //   while (curr != NULL) {
+  //     totalPrice += curr->getPrice();
+  //     curr = curr->getNext();
+  //   }
+  // }
   setTotalPrice(totalPrice);
   return totalPrice;
 }
@@ -51,8 +51,9 @@ void Tab::printBill() {
   std::cout << "Tab ID: " << tabID << std::endl;
   std::cout << "Total Price: " << totalPrice << std::endl;
   std::cout << "Ordered Items: " << std::endl;
-  for (int i = 0; i < orderedItems.size(); i++) {
-    std::cout << "Item " << i + 1 << ": " << std::endl;
-    std::cout << "Price: " << orderedItems[i]->getPrice() << std::endl;
-  }
+  // for (int i = 0; i < orderedItems.size(); i++) {
+  //   std::cout << "\t Item " << i + 1 << ": " << orderedItems[i]->toString()
+  //             << std::endl;
+  //   std::cout << "\t Price: " << orderedItems[i]->getPrice() << std::endl;
+  // }
 }

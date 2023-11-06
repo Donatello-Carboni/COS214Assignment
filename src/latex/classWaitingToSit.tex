@@ -1,0 +1,220 @@
+\hypertarget{classWaitingToSit}{}\doxysection{Waiting\+To\+Sit Class Reference}
+\label{classWaitingToSit}\index{WaitingToSit@{WaitingToSit}}
+
+
+The \mbox{\hyperlink{classWaitingToSit}{Waiting\+To\+Sit}} class represents the state where a customer is waiting to be seated in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Waiting\+To\+Sit.\+h$>$}
+
+
+
+Inheritance diagram for Waiting\+To\+Sit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classWaitingToSit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Waiting\+To\+Sit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classWaitingToSit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWaitingToSit_a63599a9349d9e1b00b2ac62c95590f61}\label{classWaitingToSit_a63599a9349d9e1b00b2ac62c95590f61}} 
+\mbox{\hyperlink{classWaitingToSit_a63599a9349d9e1b00b2ac62c95590f61}{Waiting\+To\+Sit}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classWaitingToSit}{Waiting\+To\+Sit}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaitingToSit_afc9b5d5ebeb78853fec0bd3902a992e0}\label{classWaitingToSit_afc9b5d5ebeb78853fec0bd3902a992e0}} 
+\mbox{\hyperlink{classWaitingToSit_afc9b5d5ebeb78853fec0bd3902a992e0}{$\sim$\+Waiting\+To\+Sit}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classWaitingToSit}{Waiting\+To\+Sit}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_a2bafadf752d916bec94769b812a20a83}{choose\+Items}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allows the customer to choose items from the menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_ac18d806d9168dcd539594fd2da9fe49d}{call\+To\+Order}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Makes a call to place an order for the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_a0f5f54810e04538f22bc71e48384a401}{idle}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Represents an idle state for the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_a29fe7ccebce44112b6c31e76264a3c9c}{call\+For\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Notifies the staff for the bill request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_ad64095bc5b859456631a64958dad843b}{pay\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allows the customer to pay the bill. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_a317ee61d56ec5defb4f03fd455e0061f}{review}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Enables the customer to give a review after the meal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToSit_a266928533f07fe81cf9ba76fd31d18dd}{change\+Happiness}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Changes the customer\textquotesingle{}s happiness level based on the situation. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classWaitingToSit_af5bad1329ed4f4c9f568a801d6b10d5c}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Provides a string representation of the current state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classWaitingToSit}{Waiting\+To\+Sit}} class represents the state where a customer is waiting to be seated in a restaurant. 
+
+This class inherits from the base class \textquotesingle{}\mbox{\hyperlink{classState}{State}}\textquotesingle{} and defines methods related to different actions a customer can perform in this state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaitingToSit_a29fe7ccebce44112b6c31e76264a3c9c}\label{classWaitingToSit_a29fe7ccebce44112b6c31e76264a3c9c}} 
+\index{WaitingToSit@{WaitingToSit}!callForBill@{callForBill}}
+\index{callForBill@{callForBill}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{callForBill()}{callForBill()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::call\+For\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Notifies the staff for the bill request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a3286080132494c6d2ec03cca2ba054b3}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_ac18d806d9168dcd539594fd2da9fe49d}\label{classWaitingToSit_ac18d806d9168dcd539594fd2da9fe49d}} 
+\index{WaitingToSit@{WaitingToSit}!callToOrder@{callToOrder}}
+\index{callToOrder@{callToOrder}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{callToOrder()}{callToOrder()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::call\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Makes a call to place an order for the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa09257ae6efe963395d8fd912fa05402}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_a266928533f07fe81cf9ba76fd31d18dd}\label{classWaitingToSit_a266928533f07fe81cf9ba76fd31d18dd}} 
+\index{WaitingToSit@{WaitingToSit}!changeHappiness@{changeHappiness}}
+\index{changeHappiness@{changeHappiness}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{changeHappiness()}{changeHappiness()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::change\+Happiness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Changes the customer\textquotesingle{}s happiness level based on the situation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a4db4be03bb2c5879125fe76244277804}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_a2bafadf752d916bec94769b812a20a83}\label{classWaitingToSit_a2bafadf752d916bec94769b812a20a83}} 
+\index{WaitingToSit@{WaitingToSit}!chooseItems@{chooseItems}}
+\index{chooseItems@{chooseItems}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{chooseItems()}{chooseItems()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::choose\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Allows the customer to choose items from the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aeab420351e13fd2757ace694089b5938}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_a0f5f54810e04538f22bc71e48384a401}\label{classWaitingToSit_a0f5f54810e04538f22bc71e48384a401}} 
+\index{WaitingToSit@{WaitingToSit}!idle@{idle}}
+\index{idle@{idle}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::idle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Represents an idle state for the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a60c8744e2f61a4821d761615e0fd9e81}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_ad64095bc5b859456631a64958dad843b}\label{classWaitingToSit_ad64095bc5b859456631a64958dad843b}} 
+\index{WaitingToSit@{WaitingToSit}!payBill@{payBill}}
+\index{payBill@{payBill}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{payBill()}{payBill()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::pay\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Allows the customer to pay the bill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_a317ee61d56ec5defb4f03fd455e0061f}\label{classWaitingToSit_a317ee61d56ec5defb4f03fd455e0061f}} 
+\index{WaitingToSit@{WaitingToSit}!review@{review}}
+\index{review@{review}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{review()}{review()}}
+{\footnotesize\ttfamily void Waiting\+To\+Sit\+::review (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Enables the customer to give a review after the meal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & A pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a00bb52b0534b424774580637ad121f7b}{State}}.
+
+\mbox{\Hypertarget{classWaitingToSit_af5bad1329ed4f4c9f568a801d6b10d5c}\label{classWaitingToSit_af5bad1329ed4f4c9f568a801d6b10d5c}} 
+\index{WaitingToSit@{WaitingToSit}!toString@{toString}}
+\index{toString@{toString}!WaitingToSit@{WaitingToSit}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Waiting\+To\+Sit\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Provides a string representation of the current state. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the state. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classState_a7384d38ca7d9f4312f62711885325fa3}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiting\+To\+Sit.\+h\item 
+Waiting\+To\+Sit.\+cpp\end{DoxyCompactItemize}

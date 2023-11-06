@@ -1,0 +1,56 @@
+\hypertarget{classObserver}{}\doxysection{Observer Class Reference}
+\label{classObserver}\index{Observer@{Observer}}
+
+
+Abstract class for an observer observing changes in a \mbox{\hyperlink{classTable}{Table}}.  
+
+
+
+
+{\ttfamily \#include $<$Observer.\+h$>$}
+
+
+
+Inheritance diagram for Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classObserver__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classObserver_ab8029d1afb3ed4a2e8e8dc8c174cc457}{update}} (\mbox{\hyperlink{classTable}{Table}} $\ast$changed\+Table)=0
+\begin{DoxyCompactList}\small\item\em Method to be implemented by observers for updates on changes in a table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for an observer observing changes in a \mbox{\hyperlink{classTable}{Table}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classObserver_ab8029d1afb3ed4a2e8e8dc8c174cc457}\label{classObserver_ab8029d1afb3ed4a2e8e8dc8c174cc457}} 
+\index{Observer@{Observer}!update@{update}}
+\index{update@{update}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Observer\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}} $\ast$}]{changed\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to be implemented by observers for updates on changes in a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em changed\+Table} & -\/ Pointer to the \mbox{\hyperlink{classTable}{Table}} object that has changed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaiter_a812c0f22562031a7f68ced4de370c36e}{Waiter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Observer.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="PattyOrder" name="PattyOrder">
+<area shape="rect" id="node1" title="Class representing an order for a patty as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="35,155,126,181"/>
+<area shape="rect" id="node2" href="$classBurgerToppingOrder.html" title="Class representing a burger topping order, inheriting from BurgerOrder." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node3" href="$classBurgerOrder.html" title="Class representing a generic BurgerOrder." alt="" coords="30,5,131,32"/>
+</map>
