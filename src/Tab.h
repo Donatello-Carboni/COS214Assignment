@@ -4,24 +4,21 @@
 #include <string>
 #include <vector>
 
-#include "BurgerOrder.h"
 #include "TabMemento.h"
 
 class Tab {
  private:
   int tabID;
   float totalPrice;
-  std::vector<BurgerOrder*> orderedItems;  // Change to pointer
+  std::vector<float> itemCost;
+  std::vector<std::string> orderedItems;
 
  public:
-  Tab() {
-    tabID = 0;
-    totalPrice = 0;
-  };
-
   TabMemento createMemento();
 
-  void setMemento(TabMemento& memento);  // Pass by const reference
+  void setMemento(TabMemento memento);
+
+  void addOrderedItem(std::string orderedItem, float price);
 
   void setTabID(int tabID);
 
@@ -31,12 +28,13 @@ class Tab {
 
   float getTotalPrice();
 
-  void setOrderedItems(
-      const std::vector<BurgerOrder*>& orderedItems);  // Pass by pointer
+  void setItemCost(std::vector<float> itemCost);
 
-  std::vector<BurgerOrder*> getOrderedItems();  // Change to pointer
+  std::vector<float> getItemCost();
 
-  void addOrderedItem(BurgerOrder* orderedItem);
+  void setOrderedItems(std::vector<std::string> orderedItems);
+
+  std::vector<std::string> getOrderedItems();
 
   float calculateTotalPrice();
 

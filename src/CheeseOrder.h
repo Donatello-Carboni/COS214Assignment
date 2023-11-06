@@ -9,8 +9,6 @@ class CheeseOrder : public BurgerToppingOrder {
         ~CheeseOrder();
         double getPrice();
         std::string toString();
-        BurgerOrder* getNext();
-        
     private:
         double price;
 };

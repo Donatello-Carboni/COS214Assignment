@@ -3,20 +3,14 @@
 #include <string>
 #include <vector>
 
-#include "BurgerOrder.h"
-
 class TabMemento {
  private:
   int tabID;
   float totalPrice;
-  std::vector<BurgerOrder*> orderedItems;  // Change to pointer
+  std::vector<float> itemCost;
+  std::vector<std::string> orderedItems;
 
  public:
-  TabMemento() {
-    tabID = 0;
-    totalPrice = 0;
-  };
-
   void setTabID(int tabID);
 
   int getTabID();
@@ -25,10 +19,13 @@ class TabMemento {
 
   float getTotalPrice();
 
-  void setOrderedItems(
-      const std::vector<BurgerOrder*>& orderedItems);  // Pass by pointer
+  void setItemCost(std::vector<float> itemCost);
 
-  std::vector<BurgerOrder*> getOrderedItems();  // Change to pointer
+  std::vector<float> getItemCost();
+
+  void setOrderedItems(std::vector<std::string> orderedItems);
+
+  std::vector<std::string> getOrderedItems();
 };
 
 #endif

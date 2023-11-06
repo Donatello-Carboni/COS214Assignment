@@ -10,11 +10,16 @@ void TabMemento::setTotalPrice(float totalPrice) {
 
 float TabMemento::getTotalPrice() { return this->totalPrice; }
 
-void TabMemento::setOrderedItems(
-    const std::vector<BurgerOrder*>& orderedItems) {
+void TabMemento::setItemCost(std::vector<float> itemCost) {
+  this->itemCost = itemCost;
+}
+
+std::vector<float> TabMemento::getItemCost() { return this->itemCost; }
+
+void TabMemento::setOrderedItems(std::vector<std::string> orderedItems) {
   this->orderedItems = orderedItems;
 }
 
-std::vector<BurgerOrder*> TabMemento::getOrderedItems() {
+std::vector<std::string> TabMemento::getOrderedItems() {
   return this->orderedItems;
 }

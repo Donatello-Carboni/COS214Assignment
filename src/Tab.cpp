@@ -4,15 +4,22 @@ TabMemento Tab::createMemento() {
   TabMemento memento = TabMemento();
   memento.setTabID(tabID);
   memento.setTotalPrice(totalPrice);
-  memento.setOrderedItems(orderedItems);  // Pass vector pointer
-
+  memento.setItemCost(itemCost);
+  memento.setOrderedItems(orderedItems);
   return memento;
 }
 
-void Tab::setMemento(TabMemento& memento) {
+void Tab::setMemento(TabMemento memento) {
   tabID = memento.getTabID();
   totalPrice = memento.getTotalPrice();
-  orderedItems = memento.getOrderedItems();  // Copy vector pointer
+  itemCost = memento.getItemCost();
+  orderedItems = memento.getOrderedItems();
+}
+
+void Tab::addOrderedItem(std::string orderedItem, float price) {
+  orderedItems.push_back(orderedItem);
+  itemCost.push_back(price);
+  calculateTotalPrice();
 }
 
 void Tab::setTabID(int tabID) { this->tabID = tabID; }
@@ -23,37 +30,31 @@ void Tab::setTotalPrice(float totalPrice) { this->totalPrice = totalPrice; }
 
 float Tab::getTotalPrice() { return this->totalPrice; }
 
-void Tab::setOrderedItems(const std::vector<BurgerOrder*>& orderedItems) {
+void Tab::setItemCost(std::vector<float> itemCost) {
+  this->itemCost = itemCost;
+}
+
+std::vector<float> Tab::getItemCost() { return this->itemCost; }
+
+void Tab::setOrderedItems(std::vector<std::string> orderedItems) {
   this->orderedItems = orderedItems;
 }
 
-std::vector<BurgerOrder*> Tab::getOrderedItems() { return this->orderedItems; }
-
-void Tab::addOrderedItem(BurgerOrder* orderedItem) {
-  orderedItems.push_back(orderedItem);
-  calculateTotalPrice();
-}
+std::vector<std::string> Tab::getOrderedItems() { return this->orderedItems; }
 
 float Tab::calculateTotalPrice() {
-  float totalPrice = 0;
-  for (int i = 0; i < orderedItems.size(); i++) {
-    BurgerOrder* curr = orderedItems[i];
-    while (curr != NULL) {
-      totalPrice += curr->getPrice();
-      curr = curr->getNext();
-    }
+  totalPrice = 0;
+  for (int i = 0; i < itemCost.size(); i++) {
+    totalPrice += itemCost[i];
   }
-  setTotalPrice(totalPrice);
+
   return totalPrice;
 }
 
 void Tab::printBill() {
   std::cout << "Tab ID: " << tabID << std::endl;
-  std::cout << "Total Price: " << totalPrice << std::endl;
-  std::cout << "Ordered Items: " << std::endl;
   for (int i = 0; i < orderedItems.size(); i++) {
-    std::cout << "\t Item " << i + 1 << ": " << orderedItems[i]->toString()
-              << std::endl;
-    std::cout << "\t Price: " << orderedItems[i]->getPrice() << std::endl;
+    std::cout << orderedItems[i] << " - " << itemCost[i] << std::endl;
   }
+  std::cout << "Total: " << calculateTotalPrice() << std::endl;
 }

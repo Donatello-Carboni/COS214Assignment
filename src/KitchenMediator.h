@@ -26,5 +26,7 @@ class KitchenMediator {
   void removeCommand(Command *command);
   std::vector<Colleague *> getColleagues();
   std::vector<Command *> getCommands();
+  Chef* getChef();
+  void addChef(Chef* chef);
 };
 #endif
