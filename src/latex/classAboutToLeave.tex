@@ -1,0 +1,218 @@
+\hypertarget{classAboutToLeave}{}\doxysection{About\+To\+Leave Class Reference}
+\label{classAboutToLeave}\index{AboutToLeave@{AboutToLeave}}
+
+
+Class representing the state when a customer is about to leave, inheriting from \mbox{\hyperlink{classState}{State}}.  
+
+
+
+
+{\ttfamily \#include $<$About\+To\+Leave.\+h$>$}
+
+
+
+Inheritance diagram for About\+To\+Leave\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classAboutToLeave__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for About\+To\+Leave\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classAboutToLeave__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAboutToLeave_a4a50f2534f8ca31163db4e976a2a200e}\label{classAboutToLeave_a4a50f2534f8ca31163db4e976a2a200e}} 
+\mbox{\hyperlink{classAboutToLeave_a4a50f2534f8ca31163db4e976a2a200e}{About\+To\+Leave}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAboutToLeave_a9b3b088408cb7759724d1e9d3c90f03b}\label{classAboutToLeave_a9b3b088408cb7759724d1e9d3c90f03b}} 
+\mbox{\hyperlink{classAboutToLeave_a9b3b088408cb7759724d1e9d3c90f03b}{$\sim$\+About\+To\+Leave}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a394cb70f030b2fdd69fd4d53a3163aba}{choose\+Items}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of choosing items for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a840bd6e183171fc500a14ce7afd0aa45}{call\+To\+Order}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of calling to order for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a9862861ebfbaf2f0a4e283fb1d1ff748}{idle}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of the idle state for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a8ed18e4ac27bacb0e543ab6737ab963a}{call\+For\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of calling for the bill for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_ad3c32ca245a34fc98b92cf7e657e92a0}{change\+Happiness}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Changes the happiness of the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a1038aa1f66886e4a34b93282cc6abdb0}{pay\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of paying the bill for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAboutToLeave_a990087ce6e1aaaa37b341a728800e447}{review}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Implementation of reviewing the order for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classAboutToLeave_a2eb395a8509570dc73b935410e8bf9ba}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Get a string representation of the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing the state when a customer is about to leave, inheriting from \mbox{\hyperlink{classState}{State}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAboutToLeave_a8ed18e4ac27bacb0e543ab6737ab963a}\label{classAboutToLeave_a8ed18e4ac27bacb0e543ab6737ab963a}} 
+\index{AboutToLeave@{AboutToLeave}!callForBill@{callForBill}}
+\index{callForBill@{callForBill}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{callForBill()}{callForBill()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::call\+For\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of calling for the bill for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a3286080132494c6d2ec03cca2ba054b3}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a840bd6e183171fc500a14ce7afd0aa45}\label{classAboutToLeave_a840bd6e183171fc500a14ce7afd0aa45}} 
+\index{AboutToLeave@{AboutToLeave}!callToOrder@{callToOrder}}
+\index{callToOrder@{callToOrder}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{callToOrder()}{callToOrder()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::call\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of calling to order for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa09257ae6efe963395d8fd912fa05402}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_ad3c32ca245a34fc98b92cf7e657e92a0}\label{classAboutToLeave_ad3c32ca245a34fc98b92cf7e657e92a0}} 
+\index{AboutToLeave@{AboutToLeave}!changeHappiness@{changeHappiness}}
+\index{changeHappiness@{changeHappiness}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{changeHappiness()}{changeHappiness()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::change\+Happiness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Changes the happiness of the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a4db4be03bb2c5879125fe76244277804}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a394cb70f030b2fdd69fd4d53a3163aba}\label{classAboutToLeave_a394cb70f030b2fdd69fd4d53a3163aba}} 
+\index{AboutToLeave@{AboutToLeave}!chooseItems@{chooseItems}}
+\index{chooseItems@{chooseItems}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{chooseItems()}{chooseItems()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::choose\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of choosing items for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aeab420351e13fd2757ace694089b5938}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a9862861ebfbaf2f0a4e283fb1d1ff748}\label{classAboutToLeave_a9862861ebfbaf2f0a4e283fb1d1ff748}} 
+\index{AboutToLeave@{AboutToLeave}!idle@{idle}}
+\index{idle@{idle}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::idle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of the idle state for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a60c8744e2f61a4821d761615e0fd9e81}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a1038aa1f66886e4a34b93282cc6abdb0}\label{classAboutToLeave_a1038aa1f66886e4a34b93282cc6abdb0}} 
+\index{AboutToLeave@{AboutToLeave}!payBill@{payBill}}
+\index{payBill@{payBill}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{payBill()}{payBill()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::pay\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of paying the bill for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a990087ce6e1aaaa37b341a728800e447}\label{classAboutToLeave_a990087ce6e1aaaa37b341a728800e447}} 
+\index{AboutToLeave@{AboutToLeave}!review@{review}}
+\index{review@{review}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{review()}{review()}}
+{\footnotesize\ttfamily void About\+To\+Leave\+::review (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementation of reviewing the order for a customer in the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a00bb52b0534b424774580637ad121f7b}{State}}.
+
+\mbox{\Hypertarget{classAboutToLeave_a2eb395a8509570dc73b935410e8bf9ba}\label{classAboutToLeave_a2eb395a8509570dc73b935410e8bf9ba}} 
+\index{AboutToLeave@{AboutToLeave}!toString@{toString}}
+\index{toString@{toString}!AboutToLeave@{AboutToLeave}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string About\+To\+Leave\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get a string representation of the \mbox{\hyperlink{classAboutToLeave}{About\+To\+Leave}} state. 
+
+\begin{DoxyReturn}{Returns}
+String representation of the state. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classState_a7384d38ca7d9f4312f62711885325fa3}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+About\+To\+Leave.\+h\item 
+About\+To\+Leave.\+cpp\end{DoxyCompactItemize}

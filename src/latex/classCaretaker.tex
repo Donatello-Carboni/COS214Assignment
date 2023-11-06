@@ -1,0 +1,63 @@
+\hypertarget{classCaretaker}{}\doxysection{Caretaker Class Reference}
+\label{classCaretaker}\index{Caretaker@{Caretaker}}
+
+
+\mbox{\hyperlink{classCaretaker}{Caretaker}} class to manage mementos of the \mbox{\hyperlink{classTab}{Tab}}.  
+
+
+
+
+{\ttfamily \#include $<$Caretaker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCaretaker_ab550d6688bbbdde233f79e9dfa42b7fa}{add\+Memento}} (\mbox{\hyperlink{classTabMemento}{Tab\+Memento}} memento)
+\begin{DoxyCompactList}\small\item\em Adds a memento to the caretaker\textquotesingle{}s history. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTabMemento}{Tab\+Memento}} \mbox{\hyperlink{classCaretaker_a952ff308c6ae471128d9cf79a45b092d}{get\+Memento}} (int number\+Of\+Rollbacks)
+\begin{DoxyCompactList}\small\item\em Retrieves a memento from the caretaker\textquotesingle{}s history based on the number of rollbacks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCaretaker}{Caretaker}} class to manage mementos of the \mbox{\hyperlink{classTab}{Tab}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCaretaker_ab550d6688bbbdde233f79e9dfa42b7fa}\label{classCaretaker_ab550d6688bbbdde233f79e9dfa42b7fa}} 
+\index{Caretaker@{Caretaker}!addMemento@{addMemento}}
+\index{addMemento@{addMemento}!Caretaker@{Caretaker}}
+\doxysubsubsection{\texorpdfstring{addMemento()}{addMemento()}}
+{\footnotesize\ttfamily void Caretaker\+::add\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTabMemento}{Tab\+Memento}}}]{memento }\end{DoxyParamCaption})}
+
+
+
+Adds a memento to the caretaker\textquotesingle{}s history. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em memento} & -\/ \mbox{\hyperlink{classTabMemento}{Tab\+Memento}} to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCaretaker_a952ff308c6ae471128d9cf79a45b092d}\label{classCaretaker_a952ff308c6ae471128d9cf79a45b092d}} 
+\index{Caretaker@{Caretaker}!getMemento@{getMemento}}
+\index{getMemento@{getMemento}!Caretaker@{Caretaker}}
+\doxysubsubsection{\texorpdfstring{getMemento()}{getMemento()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTabMemento}{Tab\+Memento}} Caretaker\+::get\+Memento (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Rollbacks }\end{DoxyParamCaption})}
+
+
+
+Retrieves a memento from the caretaker\textquotesingle{}s history based on the number of rollbacks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Rollbacks} & -\/ The number of rollbacks to perform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested \mbox{\hyperlink{classTabMemento}{Tab\+Memento}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Caretaker.\+h\item 
+Caretaker.\+cpp\end{DoxyCompactItemize}
