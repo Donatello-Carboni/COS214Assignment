@@ -1,3 +1,4 @@
+
 #ifndef CONCRETEMEDIATOR_H
 #define CONCRETEMEDIATOR_H
 #include "KitchenMediator.h"  // Mediator
@@ -49,10 +50,14 @@ public:
     void notifyDone(Colleague* colleague);
 
     /**
-     * @brief Handles the command based on the choice made.
-     * @param choice - The choice made by the colleague.
+     * @brief Handles the creation of reports.
+     * @param colleague - Colleague making call.
      */
-    void HandleCommand(int choice);
+      void notifyReport(Colleague *colleague);
 };
 
 #endif
+
+
+#endif
+

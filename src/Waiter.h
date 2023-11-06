@@ -1,6 +1,6 @@
+
 #ifndef WAITER_H
 #define WAITER_H
-
 #include <vector>
 #include <unordered_map>
 #include <string>
@@ -13,7 +13,7 @@
 #include "Customer.h"
 #include "BurgerOrder.h"
 #include "Tab.h"
-
+#include "Caretaker.h"
 class ConcreteMediator;
 
 /**
@@ -21,33 +21,39 @@ class ConcreteMediator;
  */
 class Waiter : public Colleague, public Observer {
 private:
-    // Iterator
-    int currTable;
-    int currInternalTable;
-    int currCustomer;
+ Caretaker* caretaker; /**< Pointer to the Caretaker object. */
 
-    // Mediator
-    std::unordered_map<int, Plate*> plateMap;
-    std::unordered_map<int, BurgerOrder*> BurgerMap;
-    ConcreteMediator* mediator;
+  // Iterator
+  int currTable; /**< Current table number being handled by the waiter. */
+  int currInternalTable; /**< Current internal table number being managed. */
+  int currCustomer; /**< Current customer being attended by the waiter. */
 
-    // Observing Tables
-    std::vector<Table*> FreeTables;
-    std::vector<Table*> OccupiedTables;
+  // Mediator 
+  std::unordered_map<int, Plate*> plateMap; /**< Map containing plate IDs and their respective Plate objects. */ 
+  std::unordered_map<int, BurgerOrder*> BurgerMap; /**< Map containing burger order IDs and their respective BurgerOrder objects. */  
+  ConcreteMediator* mediator; /**< Pointer to the ConcreteMediator object. */
+ 
+  // Observing Tables
+  std::vector<Table*> FreeTables; /**< Vector containing free tables available in the restaurant. */ 
+  std::vector<Table*> OccupiedTables; /**< Vector containing tables currently occupied by customers. */
 
-    // Tabs
-    std::unordered_map<int, Tab*> TabMap;
+    
+  // Tabs
+  std::unordered_map<int, Tab*> TabMap; /**< Map containing tab IDs and their respective Tab objects. */
 
-    // Happiness
-        std::vector<int> HappyVec;
+    
+  // Happiness
+  std::vector<int> HappyVec; /**< Vector containing recorded happiness values. */
 
 public:
     /**
      * @brief Constructor for the Waiter class.
      * @param mediator - A pointer to the ConcreteMediator object.
      * @param FreeTables - A vector of available tables.
+     * @param caretaker - A pointer to the Caretaker object.
      */
     Waiter(ConcreteMediator* mediator, std::vector<Table*> FreeTables);
+    Waiter(ConcreteMediator *mediator,std::vector<Table*> FreeTables,Caretaker* caretaker );
 
     /**
      * @brief Destructor for the Waiter class.
@@ -201,3 +207,4 @@ public:
 };
 
 #endif
+

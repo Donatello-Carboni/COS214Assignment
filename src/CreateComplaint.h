@@ -1,3 +1,4 @@
+
 #ifndef CREATECOMPLAINT_H
 #define CREATECOMPLAINT_H
 #include "Command.h"
@@ -14,7 +15,7 @@
  */
 class CreateComplaint : public Command {
 private:
-  std::vector<std::string> complaint; /**< List to store the complaint. */
+  int happy; /**< The happiness level of the Customer making the report. */
   BurgerOrder *burgerorder; /**< Pointer to the BurgerOrder object. */
 
 public:
@@ -32,6 +33,22 @@ public:
    * @brief Execute the command to create the complaint.
    */
   void execute();
+  
+  /**
+   * @brief Sets the happiness level of the customer.
+   * 
+   * @param Happy The happiness level of the customer.
+   */
+  void setHappy(int Happy);
+
+  /**
+   * @brief Builds a report based on the happiness level of the customer.
+   * 
+   * @param Happy The happiness level of the customer.
+   * @return Report* A pointer to the generated report.
+   */
+  Report* buildReport(int Happy);
 };
 
 #endif
+

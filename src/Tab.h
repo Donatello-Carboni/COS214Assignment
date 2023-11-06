@@ -1,3 +1,4 @@
+
 #ifndef TAB_H
 #define TAB_H
 #include <iostream>
@@ -14,10 +15,16 @@ class Tab {
  private:
   int tabID; /**< The ID of the tab. */
   float totalPrice; /**< The total price of the tab. */
-  std::vector<float> itemCost; /**< The costs of individual items in the tab. */
-  std::vector<std::string> orderedItems; /**< The list of ordered items in the tab. */
+  std::vector<BurgerOrder*> orderedItems; /**< The list of ordered items in the tab. */
 
  public:
+    /**
+   * @brief Constructor for the Tab object.
+   */
+  Tab() {
+    tabID = 0;
+    totalPrice = 0;
+  };
   /**
    * @brief Creates a memento representing the state of the tab.
    * @return A TabMemento object representing the current state.
@@ -28,14 +35,13 @@ class Tab {
    * @brief Sets the state of the tab to a previous memento state.
    * @param memento - The TabMemento object representing the state to set.
    */
-  void setMemento(TabMemento memento);
+  void setMemento(TabMemento& memento);
 
   /**
-   * @brief Adds an item to the list of ordered items with its price.
+   * @brief Adds an item to the list of ordered items.
    * @param orderedItem - The name of the item ordered.
-   * @param price - The price of the item.
    */
-  void addOrderedItem(std::string orderedItem, float price);
+  void addOrderedItem(BurgerOrder* orderedItem);
 
   /**
    * @brief Sets the ID for the tab.
@@ -61,35 +67,20 @@ class Tab {
    */
   float getTotalPrice();
 
-  /**
-   * @brief Sets the costs of individual items in the tab.
-   * @param itemCost - The item costs to set.
-   */
-  void setItemCost(std::vector<float> itemCost);
-
-  /**
-   * @brief Gets the costs of individual items in the tab.
-   * @return The costs of individual items in the tab.
-   */
-  std::vector<float> getItemCost();
-
+  
   /**
    * @brief Sets the list of ordered items in the tab.
    * @param orderedItems - The list of ordered items to set.
    */
-  void setOrderedItems(std::vector<std::string> orderedItems);
+  void setOrderedItems(
+      const std::vector<BurgerOrder*>& orderedItems);  // Pass by pointer
 
   /**
    * @brief Gets the list of ordered items in the tab.
    * @return The list of ordered items in the tab.
    */
-  std::vector<std::string> getOrderedItems();
+  std::vector<BurgerOrder*> getOrderedItems();  // Change to pointer
 
-  /**
-   * @brief Calculates the total price based on the individual item costs.
-   * @return The recalculated total price of the tab.
-   */
-  float calculateTotalPrice();
 
   /**
    * @brief Prints the bill with details of ordered items and the total price.

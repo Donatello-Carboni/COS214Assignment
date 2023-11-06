@@ -12,10 +12,17 @@ class TabMemento {
  private:
   int tabID; /**< The ID of the Tab. */
   float totalPrice; /**< The total price of the Tab. */
-  std::vector<float> itemCost; /**< The costs of individual items in the Tab. */
-  std::vector<std::string> orderedItems; /**< The list of ordered items in the Tab. */
+  std::vector<BurgerOrder*> orderedItems;  /**< The list of ordered items in the Tab. */
 
  public:
+
+    /**
+   * @brief Constructor for the TabMemento object.
+   */
+  TabMemento() {
+    tabID = 0;
+    totalPrice = 0;
+  };
   /**
    * @brief Set the Tab ID for the memento.
    * @param tabID - The ID of the Tab to set.
@@ -40,29 +47,20 @@ class TabMemento {
    */
   float getTotalPrice();
 
-  /**
-   * @brief Set the item costs for the memento.
-   * @param itemCost - The item costs to set.
-   */
-  void setItemCost(std::vector<float> itemCost);
-
-  /**
-   * @brief Get the item costs from the memento.
-   * @return The costs of individual items in the Tab.
-   */
-  std::vector<float> getItemCost();
 
   /**
    * @brief Set the ordered items for the memento.
    * @param orderedItems - The ordered items to set.
    */
-  void setOrderedItems(std::vector<std::string> orderedItems);
+    void setOrderedItems(
+      const std::vector<BurgerOrder*>& orderedItems);
 
   /**
    * @brief Get the ordered items from the memento.
    * @return The list of ordered items in the Tab.
    */
-  std::vector<std::string> getOrderedItems();
+  std::vector<BurgerOrder*> getOrderedItems();
 };
 
 #endif
+
