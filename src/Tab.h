@@ -86,6 +86,11 @@ class Tab {
    * @brief Prints the bill with details of ordered items and the total price.
    */
   void printBill();
+  
+  /**
+   * @brief Calculates total price
+   */
+  float calculateTotalPrice();
 };
 
 #endif

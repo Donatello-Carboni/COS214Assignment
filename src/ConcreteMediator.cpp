@@ -48,9 +48,8 @@ void ConcreteMediator::notifyDone(Colleague *colleague)
   tab->setTabID(ID);
   tab->addOrderedItem(Cmd->getBurgerOrder());
   tab->calculateTotalPrice();
-  cout<<"Storage ID: "<<ID<<endl;
   w->storeTab(ID, tab);
-  w->printTabMap();
+  // w->printTabMap();
   // cout << "Waiter plate map:" << endl;
   // w->printPlateMap();
 }

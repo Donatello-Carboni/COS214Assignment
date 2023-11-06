@@ -20,8 +20,8 @@ class TabMemento {
    * @brief Constructor for the TabMemento object.
    */
   TabMemento() {
-    tabID = 0;
-    totalPrice = 0;
+    tabID = -1;
+    totalPrice = -1;
   };
   /**
    * @brief Set the Tab ID for the memento.

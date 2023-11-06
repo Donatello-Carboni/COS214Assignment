@@ -24,7 +24,7 @@ public:
      * @param numberOfRollbacks - The number of rollbacks to perform.
      * @return The requested TabMemento.
      */
-    TabMemento getMemento(int numberOfRollbacks);
+    TabMemento getMemento();
 };
 
 #endif

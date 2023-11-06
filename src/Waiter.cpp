@@ -12,9 +12,11 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
     if (Singleorder.find("CANCEL-") != std::string::npos) {
       // remove cancel- from string
       Singleorder.erase(0, 7);
+      
       this->CancelItem(Singleorder);
     } else {
       // cout<<"Write Down Order: "<<Singleorder<<endl;
+      cout<<"Write Down Order: "<<Singleorder<<endl;
       this->mediator->notifyOrder((Colleague*)this, 1, Singleorder);
     }
   }
@@ -101,7 +103,7 @@ void Waiter::nextTable() {
     } else {
       this->currTable = 0;
     }
-    cout << "Current table: " << this->currTable << endl;
+    //cout << "Current table: " << this->currTable << endl;
   } else {
     cout << "No occupied tables" << endl;
   }
@@ -117,7 +119,7 @@ Customer* Waiter::nextCustomer() {
       (RestaurantTable*)currComp->getTables().at(this->currInternalTable);
 
   if (this->currCustomer + 1 > currRestTable->getCustomerCount()) {
-    cout << "next internal table" << endl;
+    //cout << "next internal table" << endl;
     this->currCustomer = 0;
     this->currInternalTable++;
     // cout << "composite tables tables size" << currComp->getTables().size()
@@ -150,9 +152,13 @@ void Waiter::CompleteCircuit() {
       cout << "next table" << endl;
       this->nextTable();
     }
-    cout << "serving customer" << c->getCustomerNumber() << endl;
+    cout << "serving customer " << c->getCustomerNumber() << endl;
     std::string stateStr = c->getState()->toString();
     if (stateStr == "[WAITING_TO_ORDER]") {
+      TabMemento t=this->caretaker->getMemento();
+      if(t.getTabID()>=0){
+        cout<<"There exists a tab that need to be paid of by customer "<<c->getCustomerNumber()<<" of total "<<t.getTotalPrice()<<endl;
+      }
       c->placeOrder();
       this->WriteDownOrder(c->getOrder());
     } else if (stateStr == "[DEFAULT]") {
@@ -165,23 +171,26 @@ void Waiter::CompleteCircuit() {
       this->printPlateMap();
       c->setState(new AboutToLeave());
     } else if (stateStr == "[ABOUT_TO_LEAVE]") {
-      cout<<"before tab"<<endl;
       if (c->Tab()) {
-        cout<<"after tab"<<endl;
-        cout<<c->getCustomerNumber()<<"is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+        cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->printTabMap();
-        cout<<"Getting cust num"+c->getCustomerNumber()<<endl;
         Tab* tab=this->getTab(c->getCustomerNumber());
         this->caretaker->addMemento(tab->createMemento());
         this->removeTab(c->getCustomerNumber());
       } else {
-        cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+        cout<<c->getCustomerNumber()<<" is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->removeTab(c->getCustomerNumber());
       }
       this->storeHappy(c->getHappiness());
       c->leave();
     }
     cout << "done serving customer" << endl;
+    if(c->getCustomerNumber()==0){
+      string ready;
+         cout << "first customer served. Enter when inspected" << endl;
+    cin>>ready;
+  cout << "Resuming simulation..." << endl;
+    }
   }
   if (c == nullptr && this->OccupiedTables.size() == 1) {
     this->currCustomer = 0;
@@ -204,6 +213,7 @@ void Waiter::CompleteCircuit() {
       std::string stateStr = c->getState()->toString();
 
       if (stateStr == "[WAITING_TO_ORDER]") {
+        //logic for checking tab
         c->placeOrder();
         this->WriteDownOrder(c->getOrder());
       } else if (stateStr == "[DEFAULT]") {
@@ -218,7 +228,6 @@ void Waiter::CompleteCircuit() {
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
         if (c->Tab()) {
         cout<<c->getCustomerNumber()<<"is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
-        cout<<"Getting cust num"<<c->getCustomerNumber()<<endl;
         this->printTabMap();
         Tab* tab=this->getTab(c->getCustomerNumber());
         this->caretaker->addMemento(tab->createMemento());

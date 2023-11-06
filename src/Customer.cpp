@@ -66,7 +66,7 @@ void Customer::setOrder(vector<string> extras) {
 vector<string> Customer::getOrder() { return order; }
 
 void Customer::placeOrder() {
-  // need to make sure its strings just being pushed
+  //need to make sure its strings just being pushed
   cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
        << ") is deciding what to order..." << endl;
   state->chooseItems(this);
