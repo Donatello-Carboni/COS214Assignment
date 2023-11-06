@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sauce_361',['Sauce',['../classSauce.html#a55b1400d4b78ba8a6e26041755af46ed',1,'Sauce']]],
+  ['saucechef_362',['SauceChef',['../classSauceChef.html#a230edf9c2764230e39f94bd24700ee3b',1,'SauceChef']]],
+  ['seatcustomer_363',['seatCustomer',['../classWaiter.html#ae77d8c0c4d7a5f37555f41cfc237f467',1,'Waiter']]],
+  ['setburger_364',['setBurger',['../classBurgerToppingOrder.html#aca2449a21ea352717fc57223ab97a92b',1,'BurgerToppingOrder']]],
+  ['setitemcost_365',['setItemCost',['../classTab.html#a280576b860272a64fd83a2c65b869a69',1,'Tab::setItemCost()'],['../classTabMemento.html#acd41ffaa673e5885868acf5629adc1f1',1,'TabMemento::setItemCost()']]],
+  ['setmemento_366',['setMemento',['../classTab.html#a100beffbc2fbed4638f89c27c0169f5d',1,'Tab']]],
+  ['setorder_367',['setOrder',['../classCustomer.html#a7ddf410cd1b175030e8e2ea5b23b6583',1,'Customer']]],
+  ['setordereditems_368',['setOrderedItems',['../classTab.html#a428fefa6640294bbfdf7fe5084c40572',1,'Tab::setOrderedItems()'],['../classTabMemento.html#a178c8f6f8bd1e546677e551c6f7872c5',1,'TabMemento::setOrderedItems()']]],
+  ['setstate_369',['setState',['../classTable.html#a2c5a390d51d153ef3bf7318fc877f645',1,'Table::setState()'],['../classCustomer.html#a421153dc53114378988487987099ab0d',1,'Customer::setState()']]],
+  ['settabid_370',['setTabID',['../classTab.html#ac828cee16d321f12a9d12415ffdf53d5',1,'Tab::setTabID()'],['../classTabMemento.html#a9e44742abfb15e073267e9594caac4ad',1,'TabMemento::setTabID()']]],
+  ['settotalprice_371',['setTotalPrice',['../classTab.html#a41f263ce2ba6d0033521aebbecc16aa3',1,'Tab::setTotalPrice()'],['../classTabMemento.html#a31acb181a2ae336e4fafcbb6ab940355',1,'TabMemento::setTotalPrice()']]],
+  ['sitdown_372',['sitDown',['../classCustomer.html#ade10997b19926faeb807f1887ff74717',1,'Customer']]],
+  ['state_373',['State',['../classState.html#ab91bb1dd5aa6260ab2a456581daf9ec2',1,'State']]],
+  ['storeburgerorder_374',['storeBurgerOrder',['../classWaiter.html#a41d94d51016de17d76d4de4ced6e07b1',1,'Waiter']]],
+  ['storehappy_375',['storeHappy',['../classWaiter.html#aa1234818fa727d106e9bfd8210953c8c',1,'Waiter']]],
+  ['storeplate_376',['storePlate',['../classWaiter.html#ad59884ab6424eed5191870747607b1a4',1,'Waiter']]],
+  ['storetab_377',['storeTab',['../classWaiter.html#a25bce11fd10f67d71d4a19735ba71e31',1,'Waiter']]]
+];

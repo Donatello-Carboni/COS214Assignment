@@ -1,0 +1,4 @@
+<map id="Review" name="Review">
+<area shape="rect" id="node1" title="Class representing a review report, inheriting from the Report base class." alt="" coords="5,80,76,107"/>
+<area shape="rect" id="node2" href="$classReport.html" title="Class representing a generic report." alt="" coords="8,5,73,32"/>
+</map>

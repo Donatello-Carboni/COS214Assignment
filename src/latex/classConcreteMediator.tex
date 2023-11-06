@@ -1,0 +1,153 @@
+\hypertarget{classConcreteMediator}{}\doxysection{Concrete\+Mediator Class Reference}
+\label{classConcreteMediator}\index{ConcreteMediator@{ConcreteMediator}}
+
+
+Concrete mediator class responsible for coordinating communication between colleagues, inheriting from \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}}.  
+
+
+
+
+{\ttfamily \#include $<$Concrete\+Mediator.\+h$>$}
+
+
+
+Inheritance diagram for Concrete\+Mediator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classConcreteMediator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Mediator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classConcreteMediator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classConcreteMediator_a856eb6fb78ae6665b6fbb2115d749bed}\label{classConcreteMediator_a856eb6fb78ae6665b6fbb2115d749bed}} 
+\mbox{\hyperlink{classConcreteMediator_a856eb6fb78ae6665b6fbb2115d749bed}{Concrete\+Mediator}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDefault}{Default}} constructor for \mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classConcreteMediator_a36df830d984e31d3619601e21d01135c}{Concrete\+Mediator}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classCommand}{Command}} $\ast$command\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classChef}{Chef}} $\ast$chef)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcreteMediator_a63f0cc74dbff6f121a932187e5356d85}{notify}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague, int choice, std\+::vector$<$ std\+::string $>$ order)
+\begin{DoxyCompactList}\small\item\em Notifies the mediator when an action is taken by a colleague with an order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcreteMediator_a729029b859a75d1a06dcfea4355a4d1a}{notify\+Order}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague, int choice, std\+::string order)
+\begin{DoxyCompactList}\small\item\em Notifies the mediator when an order is placed by a colleague. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcreteMediator_acd0cbfea7bec4242ccc8777672c400f5}{notify\+Done}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague)
+\begin{DoxyCompactList}\small\item\em Notifies the mediator when an action is done by a colleague. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcreteMediator_a437b12f57a8fd53bcafa1f0456bc08a7}{Handle\+Command}} (int choice)
+\begin{DoxyCompactList}\small\item\em Handles the command based on the choice made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete mediator class responsible for coordinating communication between colleagues, inheriting from \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConcreteMediator_a36df830d984e31d3619601e21d01135c}\label{classConcreteMediator_a36df830d984e31d3619601e21d01135c}} 
+\index{ConcreteMediator@{ConcreteMediator}!ConcreteMediator@{ConcreteMediator}}
+\index{ConcreteMediator@{ConcreteMediator}!ConcreteMediator@{ConcreteMediator}}
+\doxysubsubsection{\texorpdfstring{ConcreteMediator()}{ConcreteMediator()}}
+{\footnotesize\ttfamily Concrete\+Mediator\+::\+Concrete\+Mediator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{chef }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor for \mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague\mbox{[}$\,$\mbox{]}} & -\/ Array of colleague pointers. \\
+\hline
+{\em command\mbox{[}$\,$\mbox{]}} & -\/ Array of command pointers. \\
+\hline
+{\em chef} & -\/ Pointer to the \mbox{\hyperlink{classChef}{Chef}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConcreteMediator_a437b12f57a8fd53bcafa1f0456bc08a7}\label{classConcreteMediator_a437b12f57a8fd53bcafa1f0456bc08a7}} 
+\index{ConcreteMediator@{ConcreteMediator}!HandleCommand@{HandleCommand}}
+\index{HandleCommand@{HandleCommand}!ConcreteMediator@{ConcreteMediator}}
+\doxysubsubsection{\texorpdfstring{HandleCommand()}{HandleCommand()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::\+Handle\+Command (\begin{DoxyParamCaption}\item[{int}]{choice }\end{DoxyParamCaption})}
+
+
+
+Handles the command based on the choice made. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & -\/ The choice made by the colleague. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classConcreteMediator_a63f0cc74dbff6f121a932187e5356d85}\label{classConcreteMediator_a63f0cc74dbff6f121a932187e5356d85}} 
+\index{ConcreteMediator@{ConcreteMediator}!notify@{notify}}
+\index{notify@{notify}!ConcreteMediator@{ConcreteMediator}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague,  }\item[{int}]{choice,  }\item[{std\+::vector$<$ std\+::string $>$}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Notifies the mediator when an action is taken by a colleague with an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ Pointer to the colleague. \\
+\hline
+{\em choice} & -\/ The choice made by the colleague. \\
+\hline
+{\em order} & -\/ Vector representing the order. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classKitchenMediator_a45832c71da29062664f72eaef0763fcf}{Kitchen\+Mediator}}.
+
+\mbox{\Hypertarget{classConcreteMediator_acd0cbfea7bec4242ccc8777672c400f5}\label{classConcreteMediator_acd0cbfea7bec4242ccc8777672c400f5}} 
+\index{ConcreteMediator@{ConcreteMediator}!notifyDone@{notifyDone}}
+\index{notifyDone@{notifyDone}!ConcreteMediator@{ConcreteMediator}}
+\doxysubsubsection{\texorpdfstring{notifyDone()}{notifyDone()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::notify\+Done (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague }\end{DoxyParamCaption})}
+
+
+
+Notifies the mediator when an action is done by a colleague. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ Pointer to the colleague. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classConcreteMediator_a729029b859a75d1a06dcfea4355a4d1a}\label{classConcreteMediator_a729029b859a75d1a06dcfea4355a4d1a}} 
+\index{ConcreteMediator@{ConcreteMediator}!notifyOrder@{notifyOrder}}
+\index{notifyOrder@{notifyOrder}!ConcreteMediator@{ConcreteMediator}}
+\doxysubsubsection{\texorpdfstring{notifyOrder()}{notifyOrder()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::notify\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague,  }\item[{int}]{choice,  }\item[{std\+::string}]{order }\end{DoxyParamCaption})}
+
+
+
+Notifies the mediator when an order is placed by a colleague. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ Pointer to the colleague. \\
+\hline
+{\em choice} & -\/ The choice made by the colleague. \\
+\hline
+{\em order} & -\/ String representing the order. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Concrete\+Mediator.\+h\item 
+Concrete\+Mediator.\+cpp\end{DoxyCompactItemize}

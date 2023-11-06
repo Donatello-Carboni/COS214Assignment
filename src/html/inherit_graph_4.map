@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classColleague.html" title="Abstract class representing a colleague." alt="" coords="5,107,92,133"/>
+<area shape="rect" id="node2" href="$classChef.html" title="Abstract class representing a chef, inheriting from Colleague." alt="" coords="146,107,198,133"/>
+<area shape="rect" id="node9" href="$classWaiter.html" title="Class representing a Waiter that serves customers in a restaurant." alt="" coords="140,157,204,184"/>
+<area shape="rect" id="node3" href="$classBaseChef.html" title="Class representing a base chef, inheriting from Chef." alt="" coords="252,107,336,133"/>
+<area shape="rect" id="node4" href="$classBunChef.html" title="Class representing a chef specialized in handling bun orders, inheriting from BaseChef." alt="" coords="395,5,473,32"/>
+<area shape="rect" id="node5" href="$classCheeseChef.html" title="Class representing a chef specialized in handling cheese orders, inheriting from BaseChef." alt="" coords="384,56,484,83"/>
+<area shape="rect" id="node6" href="$classExtrasChef.html" title="Class representing a chef specialized in adding extra toppings to a plate." alt="" coords="387,107,481,133"/>
+<area shape="rect" id="node7" href="$classPattyChef.html" title="Class representing a chef specialized in preparing patties for burger orders." alt="" coords="391,157,477,184"/>
+<area shape="rect" id="node8" href="$classSauceChef.html" title="Class representing a chef specializing in preparing sauces for burger orders." alt="" coords="389,208,479,235"/>
+<area shape="rect" id="node10" href="$classObserver.html" title="Abstract class for an observer observing changes in a Table." alt="" coords="8,157,89,184"/>
+</map>

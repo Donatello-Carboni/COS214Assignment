@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classState.html" title=" " alt="" coords="5,81,61,108"/>
+<area shape="rect" id="node2" href="$classAboutToLeave.html" title="Class representing the state when a customer is about to leave, inheriting from State." alt="" coords="113,5,227,32"/>
+<area shape="rect" id="node3" href="$classDefault.html" title="Class representing the default state for a customer, inheriting from State." alt="" coords="135,56,205,83"/>
+<area shape="rect" id="node4" href="$classWaitingToOrder.html" title="Class representing the state when the customer is waiting to order." alt="" coords="109,107,231,133"/>
+<area shape="rect" id="node5" href="$classWaitingToSit.html" title="The WaitingToSit class represents the state where a customer is waiting to be seated in a restaurant." alt="" coords="119,157,221,184"/>
+</map>

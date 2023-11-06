@@ -1,0 +1,98 @@
+\hypertarget{classBurgerBunOrder}{}\doxysection{Burger\+Bun\+Order Class Reference}
+\label{classBurgerBunOrder}\index{BurgerBunOrder@{BurgerBunOrder}}
+
+
+Class to manage a burger bun order, inheriting from \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}}.  
+
+
+
+
+{\ttfamily \#include $<$Burger\+Bun\+Order.\+h$>$}
+
+
+
+Inheritance diagram for Burger\+Bun\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classBurgerBunOrder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Burger\+Bun\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classBurgerBunOrder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBurgerBunOrder_ad70cb6f7ac3896c896ba328f6ae287a0}\label{classBurgerBunOrder_ad70cb6f7ac3896c896ba328f6ae287a0}} 
+\mbox{\hyperlink{classBurgerBunOrder_ad70cb6f7ac3896c896ba328f6ae287a0}{Burger\+Bun\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classBurgerBunOrder}{Burger\+Bun\+Order}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBurgerBunOrder_a44af16a70f57803b26774c8a927a3cb7}\label{classBurgerBunOrder_a44af16a70f57803b26774c8a927a3cb7}} 
+virtual \mbox{\hyperlink{classBurgerBunOrder_a44af16a70f57803b26774c8a927a3cb7}{$\sim$\+Burger\+Bun\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classBurgerBunOrder}{Burger\+Bun\+Order}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classBurgerBunOrder_ab762ddcb21eecaa530957c0042d3b90b}{get\+Price}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the price of the burger bun order. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classBurgerBunOrder_adb7b0072eba60be305af237338c204f6}{to\+String}} ()=0
+\begin{DoxyCompactList}\small\item\em Represent the burger bun order as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to manage a burger bun order, inheriting from \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBurgerBunOrder_ab762ddcb21eecaa530957c0042d3b90b}\label{classBurgerBunOrder_ab762ddcb21eecaa530957c0042d3b90b}} 
+\index{BurgerBunOrder@{BurgerBunOrder}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!BurgerBunOrder@{BurgerBunOrder}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily virtual double Burger\+Bun\+Order\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the price of the burger bun order. 
+
+\begin{DoxyReturn}{Returns}
+The price of the burger bun order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBurgerOrder_a5977473d278a03005dbbe977e2498dbd}{Burger\+Order}}.
+
+
+
+Implemented in \mbox{\hyperlink{classRegularBunOrder_a705dd87f12d7e24d70acc40b8b7d587d}{Regular\+Bun\+Order}}, and \mbox{\hyperlink{classGlutenFreeBunOrder_a516bb2b8baafdd87d4ebd3f5863f3017}{Gluten\+Free\+Bun\+Order}}.
+
+\mbox{\Hypertarget{classBurgerBunOrder_adb7b0072eba60be305af237338c204f6}\label{classBurgerBunOrder_adb7b0072eba60be305af237338c204f6}} 
+\index{BurgerBunOrder@{BurgerBunOrder}!toString@{toString}}
+\index{toString@{toString}!BurgerBunOrder@{BurgerBunOrder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily virtual std\+::string Burger\+Bun\+Order\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Represent the burger bun order as a string. 
+
+\begin{DoxyReturn}{Returns}
+String representation of the burger bun order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBurgerOrder_a0474a92b90c7a35271e76dd82ccbc078}{Burger\+Order}}.
+
+
+
+Implemented in \mbox{\hyperlink{classRegularBunOrder_a1c29d31593d9192c9fd43519ccde0fae}{Regular\+Bun\+Order}}, and \mbox{\hyperlink{classGlutenFreeBunOrder_a32f6af192488c2b939b3d1343c7cb198}{Gluten\+Free\+Bun\+Order}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Burger\+Bun\+Order.\+h\item 
+Burger\+Bun\+Order.\+cpp\end{DoxyCompactItemize}
