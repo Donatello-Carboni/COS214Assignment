@@ -227,13 +227,13 @@ void Waiter::CompleteCircuit() {
         c->setState(new AboutToLeave());
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
         if (c->Tab()) {
-        cout<<c->getCustomerNumber()<<"is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+        cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->printTabMap();
         Tab* tab=this->getTab(c->getCustomerNumber());
         this->caretaker->addMemento(tab->createMemento());
        this->removeTab(c->getCustomerNumber());
       } else {
-        cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
+        cout<<c->getCustomerNumber()<<" is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->removeTab(c->getCustomerNumber());
       }
       this->storeHappy(c->getHappiness());

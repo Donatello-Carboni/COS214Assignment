@@ -25,7 +25,7 @@ class CreateOrder : public Command {
  private:
   std::vector<std::string> orders; /**< List of orders. */
   BurgerOrder* burgerorder; /**< Pointer to the BurgerOrder object. */
-
+  bool Inspection = false; /**< Boolean to check if the order has been inspected. */
  public:
   /**
    * @brief Constructor for the CreateOrder class.

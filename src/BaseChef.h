@@ -47,6 +47,7 @@ public:
      * @param plate - Pointer to the Plate object.
      */
     void addToPlate(BurgerOrder* order, Plate *plate); // Handle method
+    bool inspected = false;
 };
 
 #endif
