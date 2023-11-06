@@ -5,20 +5,20 @@
 #include <vector>
 
 class BurgerOrder {
-    public:
-        BurgerOrder();
-        virtual ~BurgerOrder();
-        virtual double getPrice() =0;
-        virtual std::string toString() =0;
-        bool add(BurgerOrder*);
-        void printList();
-        BurgerOrder* getNext();
+ public:
+  BurgerOrder();
+  virtual ~BurgerOrder();
+  virtual double getPrice() = 0;
+  virtual std::string toString() = 0;
+  bool add(BurgerOrder*);
+  void printList();
+  BurgerOrder* getNext();
 
-    private:
-        BurgerOrder* base;
-        BurgerOrder* head;
-        BurgerOrder* next;
-        double price;
+ private:
+  BurgerOrder* base;
+  BurgerOrder* head;
+  BurgerOrder* next;
+  double price;
 };
 
 #endif
