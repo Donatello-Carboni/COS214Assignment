@@ -10,14 +10,18 @@ Customer::Customer() { paid = false; }
 Customer::Customer(int num) {
   customerNumber = num;
   happiness = 60;
-  // may need to start at waiting to order
   state = new WaitingToSit();
-  // Seed the random number generator with the current time
-  std::srand(static_cast<unsigned int>(std::time(nullptr)));
-  
+
+  // Seed the random number generator once at the beginning of your program
+  static bool seeded = false;
+  if (!seeded) {
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    seeded = true;
+  }
+
   // Generate a random number (0 or 1) to determine the value of WantsTab
   int randomValue = std::rand() % 2;  // Generates 0 or 1
-  
+
   // Set WantsTab based on the random value (0 or 1)
   this->WantsTab = (randomValue == 1);
 }

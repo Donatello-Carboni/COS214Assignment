@@ -12,9 +12,11 @@
 #include "Customer.h"
 #include "BurgerOrder.h"
 #include "Tab.h"
+#include "Caretaker.h"
 class ConcreteMediator;
 class Waiter: public Colleague, public Observer{
     private:
+    Caretaker* caretaker;
     //Iterator 
     int currTable;
     int currInternalTable;
@@ -36,7 +38,7 @@ class Waiter: public Colleague, public Observer{
         void CancelItem(std::string order);
         void DoneOrder();
         //Observer
-        Waiter(ConcreteMediator *mediator,std::vector<Table*> FreeTables);
+        Waiter(ConcreteMediator *mediator,std::vector<Table*> FreeTables,Caretaker* caretaker );
         ~Waiter();
         void update(Table* changedTable);
         int getFreeTablesCount() const;

@@ -31,7 +31,7 @@
 #include "../Waiter.h"
 #include "../WaitingToOrder.h"
 #include "../WaitingToSit.h"
-
+#include "../Caretaker.h"
 //=============================================
 //===============CUSTOMER TEST=================
 //=============================================
@@ -399,7 +399,8 @@ TEST_F(TableTest, WaiterUpdate) {
   RestaurantTable table3(3);
   RestaurantTable table4(3);
   KitchenMediator *mediator = new ConcreteMediator();
-  Waiter waiter((ConcreteMediator *)mediator, {&table3, &table4});
+  Caretaker *caretaker = new Caretaker();
+  Waiter waiter((ConcreteMediator *)mediator, {&table3, &table4},caretaker);
 
   table4.setState(false);  // Make table4 occupied
   table4.setState(false);  // Make table4 occupied

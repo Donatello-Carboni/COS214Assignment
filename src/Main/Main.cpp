@@ -4,29 +4,29 @@
 #include <string>
 #include <vector>
 
-#include "../AboutToLeave.h"
-#include "../BaseChef.h"
-#include "../Caretaker.h"
-#include "../Chef.h"
-#include "../Colleague.h"
-#include "../Command.h"
-#include "../ConcreteMediator.h"
-#include "../CreateOrder.h"
-#include "../KitchenMediator.h"
-#include "../Plate.h"
-#include "../Tab.h"
-#include "../TabMemento.h"
-#include "../Waiter.h"
-#include "../WaitingToOrder.h"
-#include "../WaitingToSit.h"
-#include "../SauceChef.h"
-#include "../CheeseChef.h"
-#include "../PattyChef.h"
-#include "../ExtrasChef.h"
-#include "../BunChef.h"
-#include "../Customer.h"
-#include "../CreateComplaint.h"
-
+#include "AboutToLeave.h"
+#include "BaseChef.h"
+#include "Caretaker.h"
+#include "Chef.h"
+#include "Colleague.h"
+#include "Command.h"
+#include "ConcreteMediator.h"
+#include "CreateOrder.h"
+#include "KitchenMediator.h"
+#include "Plate.h"
+#include "Tab.h"
+#include "TabMemento.h"
+#include "Waiter.h"
+#include "WaitingToOrder.h"
+#include "WaitingToSit.h"
+#include "SauceChef.h"
+#include "CheeseChef.h"
+#include "PattyChef.h"
+#include "ExtrasChef.h"
+#include "BunChef.h"
+#include "Customer.h"
+#include "CreateComplaint.h"
+#include "Caretaker.h"
 int main() {
   //======================
   //======CUSTOMER========
@@ -189,9 +189,9 @@ int main() {
   CompositeTable table4;
   FreeTables2.push_back(&table3);
   FreeTables2.push_back(&table4);
-
-  Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables);
-  Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2);
+  Caretaker* Care = new Caretaker();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables,Care);
+  Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2,Care);
 
   mediator->addChef(cheeseChef);
   mediator->addColleague((Colleague *)waiter);

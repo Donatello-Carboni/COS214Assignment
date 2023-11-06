@@ -43,7 +43,7 @@ float Tab::calculateTotalPrice() {
   //     curr = curr->getNext();
   //   }
   // }
-  // setTotalPrice(totalPrice);
+  setTotalPrice(totalPrice);
   return totalPrice;
 }
 
