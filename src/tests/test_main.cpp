@@ -440,6 +440,7 @@ class ChefTest : public ::testing::Test {
     delete plate;
     delete bunChef;
   }
+  
 };
 
 TEST_F(ChefTest, BunChefTest) { EXPECT_EQ(plate->toString(), ""); }

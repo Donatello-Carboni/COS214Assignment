@@ -35,17 +35,18 @@ int Customer::getHappiness() { return happiness; }
 void Customer::changeHappiness(int happy) {
   random_device random;
   mt19937 happ(random());
-  std::uniform_int_distribution<int> happiness(1, 2);
+  std::uniform_int_distribution<int> happiness(1, 100);
   int incOrDec = happiness(happ);
 
-  switch (incOrDec) {
-    case 1: {
+  if (incOrDec < 50)
       this->happiness += happy;
-    }
-    case 2: {
+  else 
       this->happiness -= happy;
-    }
-  }
+
+  if (this->happiness > 100)
+    this->happiness = 100;
+  else if (this->happiness <= 0)
+    this->happiness = 0;
 }
 
 State* Customer::getState() { return state; }
@@ -94,7 +95,7 @@ void Customer::printOrder() {
 void Customer::sitDown() {
   cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
        << ") is sitting down at a table" << endl;
-  setState(new WaitingToOrder());
+  state->chooseItems(this);
 }
 
 void Customer::leave() { this->~Customer(); }

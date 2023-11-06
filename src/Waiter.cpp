@@ -152,6 +152,7 @@ void Waiter::CompleteCircuit() {
       cout << "next table" << endl;
       this->nextTable();
     }
+    
     cout << "serving customer " << c->getCustomerNumber() << endl;
     std::string stateStr = c->getState()->toString();
     if (stateStr == "[WAITING_TO_ORDER]") {
@@ -171,6 +172,7 @@ void Waiter::CompleteCircuit() {
       this->printPlateMap();
       c->setState(new AboutToLeave());
     } else if (stateStr == "[ABOUT_TO_LEAVE]") {
+
       if (c->Tab()) {
         cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->printTabMap();
@@ -191,6 +193,7 @@ void Waiter::CompleteCircuit() {
     cin>>ready;
   cout << "Resuming simulation..." << endl;
     }
+    cout << "done serving customer" << endl;
   }
   if (c == nullptr && this->OccupiedTables.size() == 1) {
     this->currCustomer = 0;
@@ -226,6 +229,7 @@ void Waiter::CompleteCircuit() {
         this->printPlateMap();
         c->setState(new AboutToLeave());
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
+
         if (c->Tab()) {
         cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
         this->printTabMap();

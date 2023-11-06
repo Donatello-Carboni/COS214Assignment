@@ -19,6 +19,7 @@ WaitingToSit::~WaitingToSit()
 
 void WaitingToSit::chooseItems(Customer* customer)
 {
+    changeHappiness(customer);
     customer->setState(new WaitingToOrder());
 }
 
@@ -36,10 +37,10 @@ void WaitingToSit::idle(Customer* customer)
 void WaitingToSit::callForBill(Customer* customer)
 {
     cout << "[WAITING_TO_SIT]\t- Getting the bill..." << endl;
-    changeHappiness(customer);
     cout << "[WAITING_TO_SIT]\t- Happiness changed..." << endl;
     cout << "[WAITING_TO_SIT]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
     
+    changeHappiness(customer);
     payBill(customer);
 }
 
@@ -57,15 +58,15 @@ void WaitingToSit::changeHappiness(Customer* customer)
 {
     //Randomize seed before changing happiness every time
     int num = rand() % 10;
+
     for (int i = 0; i < num; i++)
     {
         srand(time(NULL));
     }
 
-    int happiness = rand() % 12;
-
+    int happiness = rand() % 30 + 6;
     customer->changeHappiness(happiness);
-    cout << "[WAITING_TO_SIT]\t- HAPPINESS: " << customer->getHappiness() << endl;
+    cout << "[WAITING_TO_SIT] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 
 string WaitingToSit::toString()

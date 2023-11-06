@@ -1,4 +1,3 @@
-
 #ifndef WAITER_H
 #define WAITER_H
 #include <vector>
@@ -207,4 +206,3 @@ public:
 };
 
 #endif
-
