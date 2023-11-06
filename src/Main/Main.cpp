@@ -58,7 +58,9 @@ int main() {
   Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables,Care);
   Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2,Care);
   // making prepopulated memento to showcase rollback
-  BurgerOrder* order = new RegularBunOrder();
+  BurgerOrder* order;
+  order->inspected=true;
+  order= new RegularBunOrder();
   order->add(new PattyOrder());
   order->add(new CheeseOrder());
   order->add(new TomatoSauceOrder());
@@ -68,6 +70,7 @@ int main() {
   tab->addOrderedItem(order);
   tab->calculateTotalPrice();
   Care->addMemento(tab->createMemento());
+  order->inspected=false;
   //-------------------------------------------------------------
   mediator->addChef(cheeseChef);
   mediator->addColleague((Colleague *)waiter);

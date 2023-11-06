@@ -59,6 +59,7 @@ void CreateOrder::execute()
       this->burgerorder->add(new MustardSauceOrder());
     }
   }
+  burgerorder->inspected=true;
   this->orders.clear();
 };
 
