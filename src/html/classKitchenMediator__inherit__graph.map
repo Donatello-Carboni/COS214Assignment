@@ -1,0 +1,4 @@
+<map id="KitchenMediator" name="KitchenMediator">
+<area shape="rect" id="node1" title="Class representing a mediator for communication between kitchen colleagues and chef." alt="" coords="10,5,139,32"/>
+<area shape="rect" id="node2" href="$classConcreteMediator.html" title="Concrete mediator class responsible for coordinating communication between colleagues,..." alt="" coords="5,80,144,107"/>
+</map>

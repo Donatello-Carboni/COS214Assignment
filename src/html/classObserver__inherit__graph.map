@@ -1,0 +1,4 @@
+<map id="Observer" name="Observer">
+<area shape="rect" id="node1" title="Abstract class for an observer observing changes in a Table." alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node2" href="$classWaiter.html" title="Class representing a Waiter that serves customers in a restaurant." alt="" coords="14,80,78,107"/>
+</map>
