@@ -147,6 +147,7 @@ void WaitingToOrder::chooseItems(Customer* customer)
             }
         }
     customer->setOrder(order);
+    changeHappiness(customer);
     customer->setState(new Default());
 }
 
@@ -187,9 +188,8 @@ void WaitingToOrder::changeHappiness(Customer* customer)
         srand(time(NULL));
     }
 
-    int happiness = rand() % 12;
+    int happiness = rand() % 5 + 8;
     customer->changeHappiness(happiness);
-    cout << "[WAITING_TO_ORDER] - Happiness changed..." << endl;
     cout << "[WAITING_TO_ORDER] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 
