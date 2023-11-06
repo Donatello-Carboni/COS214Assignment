@@ -17,7 +17,7 @@ class CreateComplaint : public Command {
 private:
   int happy; /**< The happiness level of the Customer making the report. */
   BurgerOrder *burgerorder; /**< Pointer to the BurgerOrder object. */
-
+  bool Inspection = false; /**< Boolean to check if the order has been inspected. */
 public:
   /**
    * @brief Constructor for the CreateComplaint class.
