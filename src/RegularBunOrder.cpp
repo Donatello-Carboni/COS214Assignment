@@ -3,6 +3,12 @@
 RegularBunOrder::RegularBunOrder()
 {
     price = 15.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << "Adding Regular Bun to the order" << std::endl;
+        std::cin>>read;
+    }
     add(this);
     // std::cout << "done creating burger bun" << std::endl;
 }

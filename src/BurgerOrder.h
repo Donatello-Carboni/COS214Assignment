@@ -14,7 +14,7 @@ public:
      * @brief Default constructor for BurgerOrder.
      */
     BurgerOrder();
-
+    static bool inspected;
     /**
      * @brief Virtual destructor for BurgerOrder.
      */
@@ -55,6 +55,7 @@ private:
     BurgerOrder* head; /**< Pointer to the head of the BurgerOrder list. */
     BurgerOrder* next; /**< Pointer to the next BurgerOrder. */
     double price; /**< The price of the BurgerOrder. */
+    
 };
 
 #endif

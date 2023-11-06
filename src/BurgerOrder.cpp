@@ -2,7 +2,7 @@
 
 // BurgerOrder* BurgerOrder::base = nullptr;                      //First instance of BurgerOrder object
 // BurgerOrder* BurgerOrder::head = nullptr;                      //Head of the linked list
-
+bool BurgerOrder::inspected = false;   
 BurgerOrder::BurgerOrder()
 {
     if (base == nullptr)

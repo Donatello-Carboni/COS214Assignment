@@ -3,6 +3,12 @@
 TomatoSauceOrder::TomatoSauceOrder()
 {
     price = 12.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << "Adding Tomatoe Sauce to the order" << std::endl;
+        std::cin>>read;
+    }
     add(this);
 }
 

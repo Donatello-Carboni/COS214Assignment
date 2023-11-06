@@ -3,6 +3,12 @@
 LettuceOrder::LettuceOrder()
 {
     price = 8.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << "Adding Lettuce to the order" << std::endl;
+        std::cin>>read;
+    }
     add(this);
 }
 
