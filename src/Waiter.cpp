@@ -173,7 +173,7 @@ void Waiter::CompleteCircuit() {
       //   cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
       //   this->removeTab(c->getCustomerNumber());
       // }
-      c->getHappiness();//do cmd and template
+      this->storeHappy(c->getHappiness());
       c->leave();
     }
     cout << "done serving customer" << endl;
@@ -220,7 +220,7 @@ void Waiter::CompleteCircuit() {
       //   cout<<c->getCustomerNumber()<<"is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<"for "+c->getPlate()->toString()<<endl;
       //   this->removeTab(c->getCustomerNumber());
       // }
-      c->getHappiness();//do cmd and template
+      this->storeHappy(c->getHappiness());
       c->leave();
       }
     }
@@ -301,3 +301,20 @@ Tab* Waiter::getTab(int tabID) {
 void Waiter::removeTab(int tabID) { TabMap.erase(tabID); }
 
 void Waiter::storeTab(int tabID, Tab* tab) { TabMap[tabID] = tab; }
+
+int Waiter::getHappy()
+{
+ if (!HappyVec.empty()) {
+    int happy = HappyVec.back();   // Get the last element
+    HappyVec.pop_back();           // Remove the last element
+    return happy;
+  } else {
+    return -1;
+  }
+}
+
+void Waiter::storeHappy(int ID)
+{
+  HappyVec.push_back(ID);
+  this->mediator->notifyReport((Colleague*)this);
+}

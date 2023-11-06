@@ -25,6 +25,7 @@
 #include "../ExtrasChef.h"
 #include "../BunChef.h"
 #include "../Customer.h"
+#include "../CreateComplaint.h"
 
 int main() {
   //======================
@@ -196,7 +197,7 @@ int main() {
   mediator->addColleague((Colleague *)waiter);
 
   Command *command = new CreateOrder();
-  Command *command2 = new CreateOrder();
+  Command *command2 = new CreateComplaint();
 
   mediator->addCommand(command);
   mediator->addCommand(command2);
@@ -220,6 +221,6 @@ int main() {
   waiter->CompleteCircuit();
   waiter->CompleteCircuit();
   // waiter2->CompleteCircuit();
-
+   Manager::getManager().toString();
   return 0;
 }

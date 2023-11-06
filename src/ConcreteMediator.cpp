@@ -5,8 +5,6 @@
 void ConcreteMediator::notify(Colleague *colleague, int choice,
                               std::vector<std::string> order) {}
 
-void ConcreteMediator::HandleCommand(int choice) {}
-
 void ConcreteMediator::notifyOrder(Colleague *colleague, int choice,
                                    std::string order)
 {
@@ -49,4 +47,11 @@ void ConcreteMediator::notifyDone(Colleague *colleague)
   //w->storeTab(ID, new Tab(Cmd->getBurgerOrder()));
   // cout << "Waiter plate map:" << endl;
   // w->printPlateMap();
+}
+
+void ConcreteMediator::notifyReport(Colleague *colleague){
+    cout<<"Notify Report"<<endl;
+    CreateComplaint *Cmd = (CreateComplaint *)getCommands().at(1);
+    Cmd->setHappy(((Waiter*)colleague)->getHappy());
+    Cmd->execute();
 }

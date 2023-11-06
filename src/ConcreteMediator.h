@@ -3,6 +3,7 @@
 #include "KitchenMediator.h"  // Mediator
 #include "Command.h"
 #include "CreateOrder.h"
+#include "CreateComplaint.h"
 class ConcreteMediator : public KitchenMediator {
  private:
  public:
@@ -12,7 +13,7 @@ class ConcreteMediator : public KitchenMediator {
   void notify(Colleague *colleague, int choice, std::vector<std::string> order);
   void notifyOrder(Colleague *colleague, int choice, std::string order);
   void notifyDone(Colleague *colleague);
-  void HandleCommand(int choice);
+  void notifyReport(Colleague *colleague);
 };
 
 #endif

@@ -28,6 +28,8 @@ class Waiter: public Colleague, public Observer{
      std::vector<Table*> OccupiedTables;
      //tab
      std::unordered_map<int, Tab*> TabMap;
+     //happy
+     std::vector<int> HappyVec;
     public:
         //mediator
         void WriteDownOrder(std::vector<std::string> order);
@@ -56,6 +58,8 @@ class Waiter: public Colleague, public Observer{
         Tab* getTab(int tabID);
         void removeTab(int tabID);
         void storeTab(int tabID, Tab* tab);
+        void storeHappy(int happy);
+        int getHappy();
 };
 
 #endif
