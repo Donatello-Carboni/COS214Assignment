@@ -1,9 +1,12 @@
 #include "Waiter.h"
-#include "Tab.h"
+
 #include <algorithm>
 
 #include "AboutToLeave.h"
 #include "ConcreteMediator.h"
+#include "Tab.h"
+bool Waiter::Iterator = false;
+bool Waiter::Observation = false;
 void Waiter::WriteDownOrder(std::vector<std::string> order) {
   for (int i = 0; i < order.size(); i++) {
     std::string Singleorder = order[i];
@@ -12,11 +15,11 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
     if (Singleorder.find("CANCEL-") != std::string::npos) {
       // remove cancel- from string
       Singleorder.erase(0, 7);
-      
+
       this->CancelItem(Singleorder);
     } else {
       // cout<<"Write Down Order: "<<Singleorder<<endl;
-      cout<<"Write Down Order: "<<Singleorder<<endl;
+      cout << "Write Down Order: " << Singleorder << endl;
       this->mediator->notifyOrder((Colleague*)this, 1, Singleorder);
     }
   }
@@ -31,7 +34,8 @@ void Waiter::CancelItem(std::string order) {
 
 void Waiter::DoneOrder() { this->mediator->notifyDone((Colleague*)this); }
 
-Waiter::Waiter(ConcreteMediator* mediator, std::vector<Table*> freeTables,Caretaker* caretaker)
+Waiter::Waiter(ConcreteMediator* mediator, std::vector<Table*> freeTables,
+               Caretaker* caretaker)
     : FreeTables(freeTables) {
   this->mediator = mediator;
   for (auto table : FreeTables) {
@@ -40,7 +44,7 @@ Waiter::Waiter(ConcreteMediator* mediator, std::vector<Table*> freeTables,Careta
   this->currTable = 0;
   this->currInternalTable = 0;
   this->currCustomer = 0;
-  this->caretaker=caretaker;
+  this->caretaker = caretaker;
 }
 
 Waiter::~Waiter() {
@@ -90,7 +94,19 @@ void Waiter::seatCustomer(vector<Customer*> customers) {
         cout << "No free tables left" << endl;
       }
     }
-    this->FreeTables[whichTable]->setState(false);
+    std::string read;
+    if(Observation==false){
+      cout << "First group of customers seated observer triggered" << endl;
+      cout<<"Free tables: "<<this->getFreeTablesCount()<<endl;
+      cout<<"Occupied tables: "<<this->getOccupiedTablesCount()<<endl;
+      this->FreeTables[whichTable]->setState(false);
+      cout<<"Free tables: "<<this->getFreeTablesCount()<<endl;
+      cout<<"Occupied tables: "<<this->getOccupiedTablesCount()<<endl;
+      cin >> read;
+      Observation=true;
+    }else{
+      this->FreeTables[whichTable]->setState(false);
+    }
   } else {
     cout << "No free tables" << endl;
   }
@@ -103,15 +119,25 @@ void Waiter::nextTable() {
     } else {
       this->currTable = 0;
     }
-    //cout << "Current table: " << this->currTable << endl;
+    // cout << "Current table: " << this->currTable << endl;
   } else {
     cout << "No occupied tables" << endl;
   }
 }
 
 Customer* Waiter::nextCustomer() {
-  // cout << "next customer" << endl;
-  // cout << "currTable in next customer: " << this->currTable << endl;
+// cout << "next customer" << endl;
+// cout << "currTable in next customer: " << this->currTable << endl;
+std:
+  string read;
+  if (Iterator == false) {
+    cout << "Getting Customer" << endl;
+    cout << "Current iterator vars customer:" << this->currCustomer
+         << " Internal Table:" << this->currInternalTable
+         << " composite table:" << this->currTable << endl;
+    cout << "Enter when inspected" << endl;
+    cin >> read;
+  }
   CompositeTable* currComp =
       (CompositeTable*)this->OccupiedTables.at(this->currTable);
 
@@ -119,7 +145,7 @@ Customer* Waiter::nextCustomer() {
       (RestaurantTable*)currComp->getTables().at(this->currInternalTable);
 
   if (this->currCustomer + 1 > currRestTable->getCustomerCount()) {
-    //cout << "next internal table" << endl;
+    // cout << "next internal table" << endl;
     this->currCustomer = 0;
     this->currInternalTable++;
     // cout << "composite tables tables size" << currComp->getTables().size()
@@ -136,12 +162,15 @@ Customer* Waiter::nextCustomer() {
   // cout << "currInternalTable: " << this->currInternalTable << endl;
   Customer* c = currRestTable->getCustomers().at(this->currCustomer);
   this->currCustomer++;
- // cout << "returning customer" << endl;
+  // cout << "returning customer" << endl;
   return c;
 }
 
 void Waiter::CompleteCircuit() {
-  cout << "Starting 1st iteration of circuit" << endl;
+  if (Iterator == false) {
+    cout << "First iteration of circuit" << endl;
+  } else {
+  }
   Customer* c = nullptr;
   while (this->currTable != 1) {
     c = this->nextCustomer();
@@ -149,16 +178,19 @@ void Waiter::CompleteCircuit() {
       break;
     }
     if (this->currCustomer > 3) {
-      cout << "next table" << endl;
+      // cout << "next table" << endl;
+
       this->nextTable();
     }
-    
+
     cout << "serving customer " << c->getCustomerNumber() << endl;
     std::string stateStr = c->getState()->toString();
     if (stateStr == "[WAITING_TO_ORDER]") {
-      TabMemento t=this->caretaker->getMemento();
-      if(t.getTabID()>=0){
-        cout<<"There exists a tab that need to be paid of by customer "<<c->getCustomerNumber()<<" of total "<<t.getTotalPrice()<<endl;
+      TabMemento t = this->caretaker->getMemento();
+      if (t.getTabID() >= 0) {
+        cout << "There exists a tab that need to be paid of by customer "
+             << c->getCustomerNumber() << " of total " << t.getTotalPrice()
+             << endl;
       }
       c->placeOrder();
       this->WriteDownOrder(c->getOrder());
@@ -172,26 +204,30 @@ void Waiter::CompleteCircuit() {
       this->printPlateMap();
       c->setState(new AboutToLeave());
     } else if (stateStr == "[ABOUT_TO_LEAVE]") {
-
       if (c->Tab()) {
-        cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
+        cout << c->getCustomerNumber() << " is making a tab for "
+             << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+             << " for " + c->getPlate()->toString() << endl;
         this->printTabMap();
-        Tab* tab=this->getTab(c->getCustomerNumber());
+        Tab* tab = this->getTab(c->getCustomerNumber());
         this->caretaker->addMemento(tab->createMemento());
         this->removeTab(c->getCustomerNumber());
       } else {
-        cout<<c->getCustomerNumber()<<" is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
+        cout << c->getCustomerNumber() << " is paying a total of "
+             << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+             << " for " + c->getPlate()->toString() << endl;
         this->removeTab(c->getCustomerNumber());
       }
       this->storeHappy(c->getHappiness());
       c->leave();
     }
     cout << "done serving customer" << endl;
-    if(c->getCustomerNumber()==0){
+    if (c->getCustomerNumber() == 0) {
       string ready;
-         cout << "first customer served. Enter when inspected" << endl;
-    cin>>ready;
-  cout << "Resuming simulation..." << endl;
+      this->mediator->inspected=true;
+      cout << "first customer served. Enter when inspected" << endl;
+      cin >> ready;
+      cout << "Resuming simulation..." << endl;
     }
     cout << "done serving customer" << endl;
   }
@@ -216,7 +252,7 @@ void Waiter::CompleteCircuit() {
       std::string stateStr = c->getState()->toString();
 
       if (stateStr == "[WAITING_TO_ORDER]") {
-        //logic for checking tab
+        // logic for checking tab
         c->placeOrder();
         this->WriteDownOrder(c->getOrder());
       } else if (stateStr == "[DEFAULT]") {
@@ -229,19 +265,22 @@ void Waiter::CompleteCircuit() {
         this->printPlateMap();
         c->setState(new AboutToLeave());
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
-
         if (c->Tab()) {
-        cout<<c->getCustomerNumber()<<" is making a tab for "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
-        this->printTabMap();
-        Tab* tab=this->getTab(c->getCustomerNumber());
-        this->caretaker->addMemento(tab->createMemento());
-       this->removeTab(c->getCustomerNumber());
-      } else {
-        cout<<c->getCustomerNumber()<<" is paying a total of "<<(this->getTab(c->getCustomerNumber()))->getTotalPrice()<<" for "+c->getPlate()->toString()<<endl;
-        this->removeTab(c->getCustomerNumber());
-      }
-      this->storeHappy(c->getHappiness());
-      c->leave();
+          cout << c->getCustomerNumber() << " is making a tab for "
+               << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+               << " for " + c->getPlate()->toString() << endl;
+          this->printTabMap();
+          Tab* tab = this->getTab(c->getCustomerNumber());
+          this->caretaker->addMemento(tab->createMemento());
+          this->removeTab(c->getCustomerNumber());
+        } else {
+          cout << c->getCustomerNumber() << " is paying a total of "
+               << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+               << " for " + c->getPlate()->toString() << endl;
+          this->removeTab(c->getCustomerNumber());
+        }
+        this->storeHappy(c->getHappiness());
+        c->leave();
       }
     }
   }
@@ -313,29 +352,25 @@ Tab* Waiter::getTab(int customerID) {
     Tab* tab = it->second;
     return tab;
   } else {
-    return nullptr; // Tab not found
+    return nullptr;  // Tab not found
   }
 }
 
 void Waiter::removeTab(int tabID) { TabMap.erase(tabID); }
 
-void Waiter::storeTab(int customerID, Tab* tab) {
-  TabMap[customerID] = tab;
-}
+void Waiter::storeTab(int customerID, Tab* tab) { TabMap[customerID] = tab; }
 
-int Waiter::getHappy()
-{
- if (!HappyVec.empty()) {
-    int happy = HappyVec.back();   // Get the last element
-    HappyVec.pop_back();           // Remove the last element
+int Waiter::getHappy() {
+  if (!HappyVec.empty()) {
+    int happy = HappyVec.back();  // Get the last element
+    HappyVec.pop_back();          // Remove the last element
     return happy;
   } else {
     return -1;
   }
 }
 
-void Waiter::storeHappy(int ID)
-{
+void Waiter::storeHappy(int ID) {
   HappyVec.push_back(ID);
   this->mediator->notifyReport((Colleague*)this);
 }

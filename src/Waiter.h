@@ -43,7 +43,7 @@ private:
     
   // Happiness
   std::vector<int> HappyVec; /**< Vector containing recorded happiness values. */
-
+   
 public:
     /**
      * @brief Constructor for the Waiter class.
@@ -58,7 +58,8 @@ public:
      * @brief Destructor for the Waiter class.
      */
     ~Waiter();
-
+    static  bool Iterator; /**< Boolean to check if the waiter is iterating through tables. */
+    static bool Observation; /**< Boolean to check if the waiter is observing tables. */
     /**
      * @brief Update method called when a table's state changes.
      * @param changedTable - The table that changed.

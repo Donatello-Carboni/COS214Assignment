@@ -102,6 +102,7 @@ int main() {
   cin>>ready;
   cout << "Starting" << endl;
   waiter->CompleteCircuit();
+  waiter->Iterator=true;
     cout << "Second iteration returning orders" << endl;
   cin>>ready;
   cout << "Resuming simulation..." << endl;
