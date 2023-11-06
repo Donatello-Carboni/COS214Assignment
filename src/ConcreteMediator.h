@@ -17,6 +17,7 @@ public:
      * @brief Default constructor for ConcreteMediator.
      */
     ConcreteMediator(){};
+    bool inspected = false;
 
     /**
      * @brief Parameterized constructor for ConcreteMediator.
