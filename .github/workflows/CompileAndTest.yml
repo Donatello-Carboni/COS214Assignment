@@ -5,12 +5,14 @@ on:
     branches:
       - main
       - developer
+      - DemoCreation
     # paths:
       # - 'src/**'
   pull_request:
     branches:
       - main
       - developer
+      - DemoCreation
     # paths:
       # - 'src/**'
 
