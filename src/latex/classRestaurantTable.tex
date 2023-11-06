@@ -1,0 +1,159 @@
+\hypertarget{classRestaurantTable}{}\doxysection{Restaurant\+Table Class Reference}
+\label{classRestaurantTable}\index{RestaurantTable@{RestaurantTable}}
+
+
+Class representing a table in a restaurant establishment, inheriting from the \mbox{\hyperlink{classTable}{Table}} class.  
+
+
+
+
+{\ttfamily \#include $<$Restaurant\+Table.\+h$>$}
+
+
+
+Inheritance diagram for Restaurant\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classRestaurantTable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Restaurant\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classRestaurantTable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRestaurantTable_a3270c691163aae9087aa0d4fa3c25545}{Restaurant\+Table}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classRestaurantTable}{Restaurant\+Table}} class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classRestaurantTable_a96ab80e0553995addb7a767129f1150f}{Add\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)
+\begin{DoxyCompactList}\small\item\em Adds a customer to the table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classRestaurantTable_a9495b3d97eac0e5d0858ed9e87690c66}{Remove\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)
+\begin{DoxyCompactList}\small\item\em Removes a customer from the table. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRestaurantTable_aa92bd861d0b67da90d8a31f1a35fb8d9}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Get the maximum capacity of the table for customers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRestaurantTable_af639cb389a9ae82d87b8af51053a1f50}{get\+Customer\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the count of customers currently at the table. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ $>$ \mbox{\hyperlink{classRestaurantTable_aa3d69d14bfd39d70011632d5ba144c9b}{get\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Get the vector of customers at the table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a table in a restaurant establishment, inheriting from the \mbox{\hyperlink{classTable}{Table}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRestaurantTable_a3270c691163aae9087aa0d4fa3c25545}\label{classRestaurantTable_a3270c691163aae9087aa0d4fa3c25545}} 
+\index{RestaurantTable@{RestaurantTable}!RestaurantTable@{RestaurantTable}}
+\index{RestaurantTable@{RestaurantTable}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{RestaurantTable()}{RestaurantTable()}}
+{\footnotesize\ttfamily Restaurant\+Table\+::\+Restaurant\+Table (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classRestaurantTable}{Restaurant\+Table}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & -\/ Maximum capacity of the table for customers. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRestaurantTable_a96ab80e0553995addb7a767129f1150f}\label{classRestaurantTable_a96ab80e0553995addb7a767129f1150f}} 
+\index{RestaurantTable@{RestaurantTable}!AddCustomer@{AddCustomer}}
+\index{AddCustomer@{AddCustomer}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{AddCustomer()}{AddCustomer()}}
+{\footnotesize\ttfamily bool Restaurant\+Table\+::\+Add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a customer to the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the addition was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTable_a90b2637521bc39a7c4ce194afe043cb9}{Table}}.
+
+\mbox{\Hypertarget{classRestaurantTable_aa92bd861d0b67da90d8a31f1a35fb8d9}\label{classRestaurantTable_aa92bd861d0b67da90d8a31f1a35fb8d9}} 
+\index{RestaurantTable@{RestaurantTable}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Restaurant\+Table\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the maximum capacity of the table for customers. 
+
+\begin{DoxyReturn}{Returns}
+The maximum capacity of the table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurantTable_af639cb389a9ae82d87b8af51053a1f50}\label{classRestaurantTable_af639cb389a9ae82d87b8af51053a1f50}} 
+\index{RestaurantTable@{RestaurantTable}!getCustomerCount@{getCustomerCount}}
+\index{getCustomerCount@{getCustomerCount}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{getCustomerCount()}{getCustomerCount()}}
+{\footnotesize\ttfamily int Restaurant\+Table\+::get\+Customer\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the count of customers currently at the table. 
+
+\begin{DoxyReturn}{Returns}
+The count of customers at the table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurantTable_aa3d69d14bfd39d70011632d5ba144c9b}\label{classRestaurantTable_aa3d69d14bfd39d70011632d5ba144c9b}} 
+\index{RestaurantTable@{RestaurantTable}!getCustomers@{getCustomers}}
+\index{getCustomers@{getCustomers}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{getCustomers()}{getCustomers()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCustomer}{Customer}}$\ast$$>$ Restaurant\+Table\+::get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the vector of customers at the table. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing \mbox{\hyperlink{classCustomer}{Customer}} objects at the table. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestaurantTable_a9495b3d97eac0e5d0858ed9e87690c66}\label{classRestaurantTable_a9495b3d97eac0e5d0858ed9e87690c66}} 
+\index{RestaurantTable@{RestaurantTable}!RemoveCustomer@{RemoveCustomer}}
+\index{RemoveCustomer@{RemoveCustomer}!RestaurantTable@{RestaurantTable}}
+\doxysubsubsection{\texorpdfstring{RemoveCustomer()}{RemoveCustomer()}}
+{\footnotesize\ttfamily bool Restaurant\+Table\+::\+Remove\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a customer from the table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the removal was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTable_a72c0194a02ee8e912ccc830b111a844b}{Table}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Restaurant\+Table.\+h\item 
+Restaurant\+Table.\+cpp\end{DoxyCompactItemize}

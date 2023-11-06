@@ -1,0 +1,218 @@
+\hypertarget{classWaitingToOrder}{}\doxysection{Waiting\+To\+Order Class Reference}
+\label{classWaitingToOrder}\index{WaitingToOrder@{WaitingToOrder}}
+
+
+Class representing the state when the customer is waiting to order.  
+
+
+
+
+{\ttfamily \#include $<$Waiting\+To\+Order.\+h$>$}
+
+
+
+Inheritance diagram for Waiting\+To\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classWaitingToOrder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Waiting\+To\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classWaitingToOrder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWaitingToOrder_a231d94a9839dffecc7a37eba198135b4}\label{classWaitingToOrder_a231d94a9839dffecc7a37eba198135b4}} 
+\mbox{\hyperlink{classWaitingToOrder_a231d94a9839dffecc7a37eba198135b4}{Waiting\+To\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classWaitingToOrder}{Waiting\+To\+Order}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaitingToOrder_a62e01f39c4e9988cd94b8eb930b9356a}\label{classWaitingToOrder_a62e01f39c4e9988cd94b8eb930b9356a}} 
+\mbox{\hyperlink{classWaitingToOrder_a62e01f39c4e9988cd94b8eb930b9356a}{$\sim$\+Waiting\+To\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classWaitingToOrder}{Waiting\+To\+Order}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_aaf6e1b2d895bacabefac1f5e631f71e3}{choose\+Items}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allows the customer to choose items to order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_afce109a35865c84d77dd9c9c41a84a91}{call\+To\+Order}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Notifies that the customer is waiting to place an order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_a3b2dc27cce47d43e0315d8b0b0bfd9c0}{idle}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Indicates the idle state for the customer waiting to order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_aaa759372ee933ec5dc3cd4a31a6fc7e0}{call\+For\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Initiates the process of getting the bill for the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_af38563f8d478c13952087915d5a1f11f}{pay\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Handles the process of paying the bill for the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_a0ceec4ddf993d5715bda6dd058413075}{review}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Handles the customer\textquotesingle{}s review process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaitingToOrder_a0e41d4a68d002183d82f2ad700b3335f}{change\+Happiness}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Randomly changes the customer\textquotesingle{}s happiness. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWaitingToOrder_a1e1138caf2e8a7dd1b9d22ee2d73e5e1}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns the string representation of the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing the state when the customer is waiting to order. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaitingToOrder_aaa759372ee933ec5dc3cd4a31a6fc7e0}\label{classWaitingToOrder_aaa759372ee933ec5dc3cd4a31a6fc7e0}} 
+\index{WaitingToOrder@{WaitingToOrder}!callForBill@{callForBill}}
+\index{callForBill@{callForBill}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{callForBill()}{callForBill()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::call\+For\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initiates the process of getting the bill for the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a3286080132494c6d2ec03cca2ba054b3}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_afce109a35865c84d77dd9c9c41a84a91}\label{classWaitingToOrder_afce109a35865c84d77dd9c9c41a84a91}} 
+\index{WaitingToOrder@{WaitingToOrder}!callToOrder@{callToOrder}}
+\index{callToOrder@{callToOrder}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{callToOrder()}{callToOrder()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::call\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Notifies that the customer is waiting to place an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa09257ae6efe963395d8fd912fa05402}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_a0e41d4a68d002183d82f2ad700b3335f}\label{classWaitingToOrder_a0e41d4a68d002183d82f2ad700b3335f}} 
+\index{WaitingToOrder@{WaitingToOrder}!changeHappiness@{changeHappiness}}
+\index{changeHappiness@{changeHappiness}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{changeHappiness()}{changeHappiness()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::change\+Happiness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Randomly changes the customer\textquotesingle{}s happiness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a4db4be03bb2c5879125fe76244277804}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_aaf6e1b2d895bacabefac1f5e631f71e3}\label{classWaitingToOrder_aaf6e1b2d895bacabefac1f5e631f71e3}} 
+\index{WaitingToOrder@{WaitingToOrder}!chooseItems@{chooseItems}}
+\index{chooseItems@{chooseItems}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{chooseItems()}{chooseItems()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::choose\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Allows the customer to choose items to order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aeab420351e13fd2757ace694089b5938}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_a3b2dc27cce47d43e0315d8b0b0bfd9c0}\label{classWaitingToOrder_a3b2dc27cce47d43e0315d8b0b0bfd9c0}} 
+\index{WaitingToOrder@{WaitingToOrder}!idle@{idle}}
+\index{idle@{idle}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::idle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Indicates the idle state for the customer waiting to order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a60c8744e2f61a4821d761615e0fd9e81}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_af38563f8d478c13952087915d5a1f11f}\label{classWaitingToOrder_af38563f8d478c13952087915d5a1f11f}} 
+\index{WaitingToOrder@{WaitingToOrder}!payBill@{payBill}}
+\index{payBill@{payBill}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{payBill()}{payBill()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::pay\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles the process of paying the bill for the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_a0ceec4ddf993d5715bda6dd058413075}\label{classWaitingToOrder_a0ceec4ddf993d5715bda6dd058413075}} 
+\index{WaitingToOrder@{WaitingToOrder}!review@{review}}
+\index{review@{review}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{review()}{review()}}
+{\footnotesize\ttfamily void Waiting\+To\+Order\+::review (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles the customer\textquotesingle{}s review process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classState_a00bb52b0534b424774580637ad121f7b}{State}}.
+
+\mbox{\Hypertarget{classWaitingToOrder_a1e1138caf2e8a7dd1b9d22ee2d73e5e1}\label{classWaitingToOrder_a1e1138caf2e8a7dd1b9d22ee2d73e5e1}} 
+\index{WaitingToOrder@{WaitingToOrder}!toString@{toString}}
+\index{toString@{toString}!WaitingToOrder@{WaitingToOrder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Waiting\+To\+Order\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the string representation of the state. 
+
+\begin{DoxyReturn}{Returns}
+A string indicating the state. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classState_a7384d38ca7d9f4312f62711885325fa3}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiting\+To\+Order.\+h\item 
+Waiting\+To\+Order.\+cpp\end{DoxyCompactItemize}
