@@ -168,18 +168,22 @@ std:
 
 void Waiter::CompleteCircuit() {
   if (Iterator == false) {
-    cout << "First iteration of circuit" << endl;
+    cout << bold << yellow;
+    cout << "|  " << blue << "*" << reset << bold << " Starting 1st iteration of circuit..." << endl;
   } else {
+    cout << bold << yellow;
+    cout << "|  " << blue << "*" << reset << bold << " Starting 1st iteration of circuit..." << endl;
   }
   Customer* c = nullptr;
   while (this->currTable != 1) {
     c = this->nextCustomer();
+    
     if (c == nullptr) {
       break;
     }
     if (this->currCustomer > 3) {
       // cout << "next table" << endl;
-
+      
       this->nextTable();
     }
 

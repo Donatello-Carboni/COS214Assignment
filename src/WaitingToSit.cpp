@@ -66,6 +66,7 @@ void WaitingToSit::changeHappiness(Customer* customer)
 
     int happiness = rand() % 30 + 6;
     customer->changeHappiness(happiness);
+    cout << bold << cyan;
     cout << "[WAITING_TO_SIT] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 

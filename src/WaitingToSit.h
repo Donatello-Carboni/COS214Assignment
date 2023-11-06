@@ -77,6 +77,10 @@ public:
      * @return A string representing the state.
      */
     string toString();
+    private:
+    std::string cyan = "\033[36m";
+    std::string bold = "\033[1m";
+    std::string reset = "\033[0m";
 };
 
 #endif

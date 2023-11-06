@@ -93,6 +93,7 @@ void Customer::printOrder() {
 }
 
 void Customer::sitDown() {
+  cout << bold << blue;
   cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
        << ") is sitting down at a table" << endl;
   state->chooseItems(this);

@@ -30,6 +30,47 @@
 #include "../Tab.h"
 int main() {
   string ready = "";
+  //======TERMINAL PREP======
+  //    Styles
+  std::string reset = "\033[0m";
+  std::string bold = "\033[1m";
+  std::string underline = "\033[4m";
+  std::string blink_slow_flash  = "\033[5m";
+  std::string reverse = "\033[7m";
+  //    Colours
+  std::string red = "\033[31m";
+  std::string green = "\033[32m";
+  std::string yellow = "\033[33m";
+  std::string blue = "\033[34m";
+  std::string magenta = "\033[35m";
+  std::string cyan = "\033[36m";
+  std::string white = "\033[37m";
+  //    Background-Colours
+  std::string blackBack = "\033[40m";
+  std::string redBack = "\033[41m";
+  std::string greenBack = "\033[42m";
+  std::string yellowBack = "\033[43m";
+  std::string blueBack = "\033[44m";
+  std::string magentaBack = "\033[45m";
+  std::string cyanBack = "\033[46m";
+  std::string whiteBack = "\033[47m";
+  //===========END===========
+
+  cout << "\033[1;31;5m";
+  cout << "|=========================================|" << endl;
+  cout << "|===$       " << cyan << "BURGER BLITZ TYCOON" << "\033[1;31;5m" << "       $===|" << endl;
+  cout << "|=========================================|" << endl;
+  cout << "" << endl;
+  cout << reset << endl;
+  cout << yellow << bold;
+  cout << "|  + About to seat customers..." << endl;
+  cout << reset;
+  cin>>ready;
+
+  cout << bold << endl;
+  cout << "Resuming simulation..." << endl;
+  cout << reset << endl << endl;
+  
   KitchenMediator *mediator = new ConcreteMediator();
 
   CheeseChef *cheeseChef = new CheeseChef();
@@ -73,7 +114,9 @@ int main() {
   order->inspected=false;
   //-------------------------------------------------------------
   mediator->addChef(cheeseChef);
+
   mediator->addColleague((Colleague *)waiter);
+  mediator->addColleague((Colleague *)waiter2);
 
   Command *command = new CreateOrder();
   Command *command2 = new CreateComplaint();
@@ -93,24 +136,41 @@ int main() {
     //c->placeOrder();
     seat4.push_back(c);
   }
+  std::vector<Customer *> seat3;
+  for (int i = 12; i < 16; i++) {
+    Customer *c = new Customer(i);
+    //c->placeOrder();
+    seat3.push_back(c);
+  }
   cout << "starting to seat" << endl;
   cin>>ready;
   cout << "Resuming simulation..." << endl;
   waiter->seatCustomer(seat9);
   waiter->seatCustomer(seat4);
-  cout << "Commencing First Waiter Iteration taking orders. Note there exits a an order as a from Customer 0 Tab for a Cheese-Burger with mushrooms and tomato sauce that will need to be paid off before the customer may order" << endl;
+  cout<<"Waiter 2 seating customers"<<endl;
+  waiter2->seatCustomer(seat3);
+  cout << "" << endl;
+  cout << reset << bold << yellow; 
+  cout << "|  + " << green << "Commencing First Waiter Iteration taking orders..." << endl;
+  cout << reset << bold << yellow; 
+  cout << "|  + " << green << "Note there exits an order from Customer 0 Tab for a Cheese-Burger " << endl << yellow;
+  cout << "|    " << green << "with mushrooms and tomato sauce that will need to be paid off before" << endl << yellow
+       << "|    " << green << "the customer may order" << reset << endl;
+  cout << reset;
   cin>>ready;
-  cout << "Starting" << endl;
   waiter->CompleteCircuit();
   waiter->Iterator=true;
+  waiter2->CompleteCircuit();
     cout << "Second iteration returning orders" << endl;
   cin>>ready;
   cout << "Resuming simulation..." << endl;
   waiter->CompleteCircuit();
+  waiter2->CompleteCircuit();
     cout << "Third itertaion paying bills or making tabs and leaving" << endl;
   cin>>ready;
   cout << "Resuming simulation..." << endl;
   waiter->CompleteCircuit();
+  waiter2->CompleteCircuit();
   cout << "Last iteration complete these customers made reviews" << endl;
   cin>>ready;
   cout << "Resuming simulation..." << endl;

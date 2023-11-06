@@ -133,6 +133,9 @@ public:
   Plate* getPlate();
 
 private:
+  std::string blue = "\033[34m";
+  std::string bold = "\033[1m";
+  std::string reset = "\033[0m";
   State* state; /**< The current state of the customer. */
   int happiness; /**< The happiness level of the customer. */
   std::vector<std::string> order; /**< The customer's order. */
