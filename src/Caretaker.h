@@ -10,7 +10,6 @@ class Caretaker {
 
  public:
   void addMemento(TabMemento memento);
-
   TabMemento getMemento();
 };
 
