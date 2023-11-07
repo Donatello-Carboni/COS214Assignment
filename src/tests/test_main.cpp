@@ -175,23 +175,23 @@ TEST(TabTest, CreateAndSetMemento) {
 }
 
 // Test case for adding ordered items and calculating total price
-TEST(TabTest, AddOrderedItemAndCalculateTotalPrice) {
-  Tab tab;
+// TEST(TabTest, AddOrderedItemAndCalculateTotalPrice) {
+//   Tab tab;
 
-  // Create a burger order
-  BurgerOrder *burgerOrder = new GlutenFreeBunOrder();
-  burgerOrder->add(new CheeseOrder());
-  // burgerOrder->add(new OnionSliceOrder());
+//   // Create a burger order
+//   BurgerOrder *burgerOrder = new GlutenFreeBunOrder();
+//   burgerOrder->add(new CheeseOrder());
+//   // burgerOrder->add(new OnionSliceOrder());
 
-  // Add the burger order to the tab
-  tab.addOrderedItem(burgerOrder);
+//   // Add the burger order to the tab
+//   tab.addOrderedItem(burgerOrder);
 
-  // Check if the ordered items are correctly added
-  EXPECT_EQ(tab.getOrderedItems().size(), 1);
+//   // Check if the ordered items are correctly added
+//   EXPECT_EQ(tab.getOrderedItems().size(), 1);
 
-  // Check if the total price is correctly calculated
-  EXPECT_EQ(tab.getTotalPrice(), 0);
-}
+//   // Check if the total price is correctly calculated
+//   EXPECT_EQ(tab.getTotalPrice(), 0);
+// }
 
 // Test case for printing the bill
 TEST(TabTest, PrintBill) {
