@@ -1,4 +1,4 @@
-# Group “CleanCode” Project Report
+# Group “CleanCode” Project
 
 [![Compile and Test](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/CompileAndTest.yml/badge.svg)](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/CompileAndTest.yml)
 [![Super Linter](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/superLinter.yml/badge.svg)](https://github.com/Donatello-Carboni/COS214Assignment/actions/workflows/superLinter.yml)
