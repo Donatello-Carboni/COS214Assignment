@@ -93,13 +93,6 @@ TEST(CustomerTest, sitDown) {
   ASSERT_EQ(c->getState()->toString(), "[WAITING_TO_ORDER]");
 }
 
-// TEST(CustomerTest, leave) {
-//   Customer* c = new Customer(1);
-
-//   //Checks if object calls destructor
-//   ASSERT_EQ(c->leave(), NULL);
-// }
-
 TEST(CustomerTest, getTheBill_and_paid) {
   Customer *c = new Customer(1);
   c->setState(new Default());
@@ -122,6 +115,7 @@ TEST(ReportManagerTest, SingletonInstance) {
   ASSERT_EQ(&manager1, &manager2);
 }
 
+<<<<<<< Updated upstream
 TEST(ManagerTest, AddAndPrintReports) {
   Manager &manager = Manager::getManager();
 
@@ -151,6 +145,8 @@ TEST(ManagerTest, AddAndPrintReports) {
   ASSERT_EQ(buffer.str(), expectedOutput);
 }
 
+=======
+>>>>>>> Stashed changes
 //=============================================
 //============TAB & MEMENTO TEST===============
 //=============================================
@@ -186,11 +182,17 @@ TEST(TabTest, SetMemento) {
   ASSERT_EQ(memento.getOrderedItems(), tab.getOrderedItems());
 }
 
+<<<<<<< Updated upstream
 // Add more test cases for other functions in Tab class
 
 //=============================================
 //=========CARETAKER & MEMENTO TEST============
 //=============================================
+=======
+// Test case for printing the bill
+TEST(TabTest, PrintBill) {
+  testing::internal::CaptureStdout();  // Redirect cout for testing
+>>>>>>> Stashed changes
 
 TEST(CaretakerTest, AddAndGetMemento) {
   Caretaker caretaker;
@@ -212,6 +214,7 @@ TEST(CaretakerTest, AddAndGetMemento) {
   // (similar to the previous tests)
 }
 
+<<<<<<< Updated upstream
 //=================================================
 //===========MEDIATOR & COLLEAGUE TEST=============
 //=================================================
@@ -232,6 +235,8 @@ TEST(CaretakerTest, AddAndGetMemento) {
 //   // delete mediator;
 // }
 
+=======
+>>>>>>> Stashed changes
 //===============================================
 //===========MEDIATOR & COMMAND TEST=============
 //===============================================
@@ -249,62 +254,7 @@ TEST(MediatorTest, AddCommand) {
   ASSERT_EQ(mediator->getCommands().size(), 2);
   ASSERT_EQ(mediator->getCommands().at(0), command);
   ASSERT_EQ(mediator->getCommands().at(1), command2);
-  // delete mediator;
-  // ASSERT_EQ(1, 1);
-  // delete mediator;
-  // ASSERT_EQ(1, 1);
 }
-
-// TEST(MediatorTest, CommsToDecor) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
-
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
-
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
-
-//   waiter->WriteDownOrder("Burger");
-//   waiter->WriteDownOrder("Burger");
-//   Command *command3 = mediator->getCommands().at(0);
-//   CreateOrder *command4 = (CreateOrder *)command3;
-//   // Perform assertions to validate the number of colleagues
-//   // std::string test = command4->burger->test;
-//   // ASSERT_EQ(test, "BurgerBurger");
-//   // delete mediator;
-// }
-
-//====================================
-//===========COMMAND TEST=============
-//====================================
-
-// TEST(COMMAND, decorcmd) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
-
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
-
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
-
-//   waiter->WriteDownOrder("ID-1");
-//   waiter->WriteDownOrder("RegularBun");
-//   waiter->WriteDownOrder("Cheese");
-//   waiter->DoneOrder();
-//   bool truefalse = false;
-//   if (waiter->getPlate() != NULL) {
-//     truefalse = true;
-//   }
-//   EXPECT_TRUE(truefalse);
-// }
 
 //======================================
 //===========COMPOSITE TEST=============
