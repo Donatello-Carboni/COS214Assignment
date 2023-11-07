@@ -19,11 +19,17 @@
 #include "vector"
 #include "Plate.h"  
 #include <iostream>
-class Chef : public Colleague
-{
-    
+/**
+ * @brief Abstract class representing a chef, inheriting from Colleague.
+ */
+class Chef : public Colleague {
 public:
-    virtual void addToPlate(BurgerOrder* order,Plate* plate)  = 0;
+    /**
+     * @brief Adds the prepared burger order to the plate.
+     * @param order - Pointer to the BurgerOrder object.
+     * @param plate - Pointer to the Plate object.
+     */
+    virtual void addToPlate(BurgerOrder* order, Plate* plate) = 0;
 };
 
-#endif 
+#endif

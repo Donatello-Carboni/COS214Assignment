@@ -1,0 +1,406 @@
+\hypertarget{classWaiter}{}\doxysection{Waiter Class Reference}
+\label{classWaiter}\index{Waiter@{Waiter}}
+
+
+Class representing a \mbox{\hyperlink{classWaiter}{Waiter}} that serves customers in a restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Waiter.\+h$>$}
+
+
+
+Inheritance diagram for Waiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classWaiter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Waiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classWaiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaiter_a1b35a815d29b77d79d74c08498a12c48}{Waiter}} (\mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}} $\ast$mediator, std\+::vector$<$ \mbox{\hyperlink{classTable}{Table}} $\ast$ $>$ Free\+Tables)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classWaiter}{Waiter}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}\label{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}} 
+\mbox{\hyperlink{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}{$\sim$\+Waiter}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classWaiter}{Waiter}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a812c0f22562031a7f68ced4de370c36e}{update}} (\mbox{\hyperlink{classTable}{Table}} $\ast$changed\+Table)
+\begin{DoxyCompactList}\small\item\em Update method called when a table\textquotesingle{}s state changes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaiter_a61ca6450a76ec1415798e98e7775a122}{get\+Free\+Tables\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the count of available (free) tables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaiter_a53dfafc0ed4e8790765d1afdae298e3e}{get\+Occupied\+Tables\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the count of occupied tables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_ae77d8c0c4d7a5f37555f41cfc237f467}{seat\+Customer}} (std\+::vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ $>$ customers)
+\begin{DoxyCompactList}\small\item\em Seat a group of customers at a table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_af4e0a33bbf50fd4d575756657031fcca}\label{classWaiter_af4e0a33bbf50fd4d575756657031fcca}} 
+void \mbox{\hyperlink{classWaiter_af4e0a33bbf50fd4d575756657031fcca}{next\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Move to the next table. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomer}{Customer}} $\ast$ \mbox{\hyperlink{classWaiter_a257c36de2748a2f812a71a8472c36df5}{next\+Customer}} ()
+\begin{DoxyCompactList}\small\item\em Get the next customer at the current table. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_a209c91a3a217fb9499c430551877e88c}\label{classWaiter_a209c91a3a217fb9499c430551877e88c}} 
+void \mbox{\hyperlink{classWaiter_a209c91a3a217fb9499c430551877e88c}{Complete\+Circuit}} ()
+\begin{DoxyCompactList}\small\item\em Complete a circuit, serving tables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_ad59884ab6424eed5191870747607b1a4}{store\+Plate}} (int plate\+ID, \mbox{\hyperlink{classPlate}{Plate}} $\ast$plate)
+\begin{DoxyCompactList}\small\item\em Store a \mbox{\hyperlink{classPlate}{Plate}} object in the plate\+Map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlate}{Plate}} $\ast$ \mbox{\hyperlink{classWaiter_a55bf784a3b28a507ae7d58e648607a70}{get\+Plate}} (int plate\+ID)
+\begin{DoxyCompactList}\small\item\em Get a \mbox{\hyperlink{classPlate}{Plate}} object from the plate\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_ac60eac8363a35c9bd356b0dfe7e525b3}{remove\+Plate}} (int plate\+ID)
+\begin{DoxyCompactList}\small\item\em Remove a \mbox{\hyperlink{classPlate}{Plate}} from the plate\+Map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_aa75c100dfcb62a602857989e16e7423c}\label{classWaiter_aa75c100dfcb62a602857989e16e7423c}} 
+void \mbox{\hyperlink{classWaiter_aa75c100dfcb62a602857989e16e7423c}{print\+Plate\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Print the plate\+Map for debugging purposes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_ad0cf9046feee5e432632fe98c6569692}\label{classWaiter_ad0cf9046feee5e432632fe98c6569692}} 
+void \mbox{\hyperlink{classWaiter_ad0cf9046feee5e432632fe98c6569692}{print\+Burger\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Print the Burger\+Map for debugging purposes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$ \mbox{\hyperlink{classWaiter_aa30f3be441ba6ac04b41ec19318ade57}{get\+Burger\+Order}} (int order\+ID)
+\begin{DoxyCompactList}\small\item\em Get a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object from the Burger\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a07d759e649222806e8c39515dbeaa9db}{remove\+Burger\+Order}} (int order\+ID)
+\begin{DoxyCompactList}\small\item\em Remove a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} from the Burger\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a25bce11fd10f67d71d4a19735ba71e31}{store\+Tab}} (int tab\+ID, \mbox{\hyperlink{classTab}{Tab}} $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Store a \mbox{\hyperlink{classTab}{Tab}} object in the Tab\+Map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTab}{Tab}} $\ast$ \mbox{\hyperlink{classWaiter_a811a69e4642e15bc9f619fe6357bf8d2}{get\+Tab}} (int tab\+ID)
+\begin{DoxyCompactList}\small\item\em Get a \mbox{\hyperlink{classTab}{Tab}} object from the Tab\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a9238a2e4ea9952ec0b4c65f7659a4ddb}{remove\+Tab}} (int tab\+ID)
+\begin{DoxyCompactList}\small\item\em Remove a \mbox{\hyperlink{classTab}{Tab}} from the Tab\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_aa1234818fa727d106e9bfd8210953c8c}{store\+Happy}} (int happy)
+\begin{DoxyCompactList}\small\item\em Store a happiness value in the Happy\+Vec. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaiter_a48c61a019d3b7981cdb55c172ff48217}{get\+Happy}} ()
+\begin{DoxyCompactList}\small\item\em Get the last stored happiness value from Happy\+Vec. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a4c6a3b4a2a60c352a5b2776d1dcf3772}{Write\+Down\+Order}} (std\+::vector$<$ std\+::string $>$ order)
+\begin{DoxyCompactList}\small\item\em Write down an order for the kitchen to process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_add7eeb7bcab6b30678fdd0558b47a842}{Cancel\+Item}} (std\+::string order)
+\begin{DoxyCompactList}\small\item\em Cancel a specific item from an order. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_a9620d12d38565fb54be9d3d3eed21f75}\label{classWaiter_a9620d12d38565fb54be9d3d3eed21f75}} 
+void \mbox{\hyperlink{classWaiter_a9620d12d38565fb54be9d3d3eed21f75}{Done\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Notify the kitchen that an order is complete. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a41d94d51016de17d76d4de4ced6e07b1}{store\+Burger\+Order}} (int order\+ID, \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$order)
+\begin{DoxyCompactList}\small\item\em Store a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} in the Burger\+Map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaiter_a6d0c83c78dcb2e904ef7e28eabc54fe4}\label{classWaiter_a6d0c83c78dcb2e904ef7e28eabc54fe4}} 
+void \mbox{\hyperlink{classWaiter_a6d0c83c78dcb2e904ef7e28eabc54fe4}{print\+Tab\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Print the Tab\+Map for debugging purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a \mbox{\hyperlink{classWaiter}{Waiter}} that serves customers in a restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaiter_a1b35a815d29b77d79d74c08498a12c48}\label{classWaiter_a1b35a815d29b77d79d74c08498a12c48}} 
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{Waiter()}{Waiter()}}
+{\footnotesize\ttfamily Waiter\+::\+Waiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}} $\ast$}]{mediator,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classTable}{Table}} $\ast$ $>$}]{Free\+Tables }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classWaiter}{Waiter}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mediator} & -\/ A pointer to the \mbox{\hyperlink{classConcreteMediator}{Concrete\+Mediator}} object. \\
+\hline
+{\em Free\+Tables} & -\/ A vector of available tables. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaiter_add7eeb7bcab6b30678fdd0558b47a842}\label{classWaiter_add7eeb7bcab6b30678fdd0558b47a842}} 
+\index{Waiter@{Waiter}!CancelItem@{CancelItem}}
+\index{CancelItem@{CancelItem}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{CancelItem()}{CancelItem()}}
+{\footnotesize\ttfamily void Waiter\+::\+Cancel\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{order }\end{DoxyParamCaption})}
+
+
+
+Cancel a specific item from an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & -\/ The item to be removed from the order. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_aa30f3be441ba6ac04b41ec19318ade57}\label{classWaiter_aa30f3be441ba6ac04b41ec19318ade57}} 
+\index{Waiter@{Waiter}!getBurgerOrder@{getBurgerOrder}}
+\index{getBurgerOrder@{getBurgerOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getBurgerOrder()}{getBurgerOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$ Waiter\+::get\+Burger\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+ID }\end{DoxyParamCaption})}
+
+
+
+Get a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object from the Burger\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+ID} & -\/ The ID of the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a61ca6450a76ec1415798e98e7775a122}\label{classWaiter_a61ca6450a76ec1415798e98e7775a122}} 
+\index{Waiter@{Waiter}!getFreeTablesCount@{getFreeTablesCount}}
+\index{getFreeTablesCount@{getFreeTablesCount}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getFreeTablesCount()}{getFreeTablesCount()}}
+{\footnotesize\ttfamily int Waiter\+::get\+Free\+Tables\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the count of available (free) tables. 
+
+\begin{DoxyReturn}{Returns}
+The count of free tables. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a48c61a019d3b7981cdb55c172ff48217}\label{classWaiter_a48c61a019d3b7981cdb55c172ff48217}} 
+\index{Waiter@{Waiter}!getHappy@{getHappy}}
+\index{getHappy@{getHappy}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getHappy()}{getHappy()}}
+{\footnotesize\ttfamily int Waiter\+::get\+Happy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the last stored happiness value from Happy\+Vec. 
+
+\begin{DoxyReturn}{Returns}
+The last stored happiness value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a53dfafc0ed4e8790765d1afdae298e3e}\label{classWaiter_a53dfafc0ed4e8790765d1afdae298e3e}} 
+\index{Waiter@{Waiter}!getOccupiedTablesCount@{getOccupiedTablesCount}}
+\index{getOccupiedTablesCount@{getOccupiedTablesCount}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getOccupiedTablesCount()}{getOccupiedTablesCount()}}
+{\footnotesize\ttfamily int Waiter\+::get\+Occupied\+Tables\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the count of occupied tables. 
+
+\begin{DoxyReturn}{Returns}
+The count of occupied tables. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a55bf784a3b28a507ae7d58e648607a70}\label{classWaiter_a55bf784a3b28a507ae7d58e648607a70}} 
+\index{Waiter@{Waiter}!getPlate@{getPlate}}
+\index{getPlate@{getPlate}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getPlate()}{getPlate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlate}{Plate}} $\ast$ Waiter\+::get\+Plate (\begin{DoxyParamCaption}\item[{int}]{plate\+ID }\end{DoxyParamCaption})}
+
+
+
+Get a \mbox{\hyperlink{classPlate}{Plate}} object from the plate\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate\+ID} & -\/ The ID of the plate to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classPlate}{Plate}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a811a69e4642e15bc9f619fe6357bf8d2}\label{classWaiter_a811a69e4642e15bc9f619fe6357bf8d2}} 
+\index{Waiter@{Waiter}!getTab@{getTab}}
+\index{getTab@{getTab}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getTab()}{getTab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTab}{Tab}} $\ast$ Waiter\+::get\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab\+ID }\end{DoxyParamCaption})}
+
+
+
+Get a \mbox{\hyperlink{classTab}{Tab}} object from the Tab\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+ID} & -\/ The ID of the tab to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{classTab}{Tab}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a257c36de2748a2f812a71a8472c36df5}\label{classWaiter_a257c36de2748a2f812a71a8472c36df5}} 
+\index{Waiter@{Waiter}!nextCustomer@{nextCustomer}}
+\index{nextCustomer@{nextCustomer}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{nextCustomer()}{nextCustomer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ Waiter\+::next\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next customer at the current table. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the next \mbox{\hyperlink{classCustomer}{Customer}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a07d759e649222806e8c39515dbeaa9db}\label{classWaiter_a07d759e649222806e8c39515dbeaa9db}} 
+\index{Waiter@{Waiter}!removeBurgerOrder@{removeBurgerOrder}}
+\index{removeBurgerOrder@{removeBurgerOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{removeBurgerOrder()}{removeBurgerOrder()}}
+{\footnotesize\ttfamily void Waiter\+::remove\+Burger\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+ID }\end{DoxyParamCaption})}
+
+
+
+Remove a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} from the Burger\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+ID} & -\/ The ID of the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_ac60eac8363a35c9bd356b0dfe7e525b3}\label{classWaiter_ac60eac8363a35c9bd356b0dfe7e525b3}} 
+\index{Waiter@{Waiter}!removePlate@{removePlate}}
+\index{removePlate@{removePlate}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{removePlate()}{removePlate()}}
+{\footnotesize\ttfamily void Waiter\+::remove\+Plate (\begin{DoxyParamCaption}\item[{int}]{plate\+ID }\end{DoxyParamCaption})}
+
+
+
+Remove a \mbox{\hyperlink{classPlate}{Plate}} from the plate\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate\+ID} & -\/ The ID of the plate to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_a9238a2e4ea9952ec0b4c65f7659a4ddb}\label{classWaiter_a9238a2e4ea9952ec0b4c65f7659a4ddb}} 
+\index{Waiter@{Waiter}!removeTab@{removeTab}}
+\index{removeTab@{removeTab}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{removeTab()}{removeTab()}}
+{\footnotesize\ttfamily void Waiter\+::remove\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab\+ID }\end{DoxyParamCaption})}
+
+
+
+Remove a \mbox{\hyperlink{classTab}{Tab}} from the Tab\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+ID} & -\/ The ID of the tab to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_ae77d8c0c4d7a5f37555f41cfc237f467}\label{classWaiter_ae77d8c0c4d7a5f37555f41cfc237f467}} 
+\index{Waiter@{Waiter}!seatCustomer@{seatCustomer}}
+\index{seatCustomer@{seatCustomer}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{seatCustomer()}{seatCustomer()}}
+{\footnotesize\ttfamily void Waiter\+::seat\+Customer (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ $>$}]{customers }\end{DoxyParamCaption})}
+
+
+
+Seat a group of customers at a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customers} & -\/ A vector of \mbox{\hyperlink{classCustomer}{Customer}} objects to be seated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_a41d94d51016de17d76d4de4ced6e07b1}\label{classWaiter_a41d94d51016de17d76d4de4ced6e07b1}} 
+\index{Waiter@{Waiter}!storeBurgerOrder@{storeBurgerOrder}}
+\index{storeBurgerOrder@{storeBurgerOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{storeBurgerOrder()}{storeBurgerOrder()}}
+{\footnotesize\ttfamily void Waiter\+::store\+Burger\+Order (\begin{DoxyParamCaption}\item[{int}]{order\+ID,  }\item[{\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$}]{order }\end{DoxyParamCaption})}
+
+
+
+Store a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} in the Burger\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+ID} & -\/ The ID of the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}}. \\
+\hline
+{\em order} & -\/ A pointer to the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_aa1234818fa727d106e9bfd8210953c8c}\label{classWaiter_aa1234818fa727d106e9bfd8210953c8c}} 
+\index{Waiter@{Waiter}!storeHappy@{storeHappy}}
+\index{storeHappy@{storeHappy}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{storeHappy()}{storeHappy()}}
+{\footnotesize\ttfamily void Waiter\+::store\+Happy (\begin{DoxyParamCaption}\item[{int}]{happy }\end{DoxyParamCaption})}
+
+
+
+Store a happiness value in the Happy\+Vec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em happy} & -\/ The happiness value to store. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_ad59884ab6424eed5191870747607b1a4}\label{classWaiter_ad59884ab6424eed5191870747607b1a4}} 
+\index{Waiter@{Waiter}!storePlate@{storePlate}}
+\index{storePlate@{storePlate}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{storePlate()}{storePlate()}}
+{\footnotesize\ttfamily void Waiter\+::store\+Plate (\begin{DoxyParamCaption}\item[{int}]{plate\+ID,  }\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate }\end{DoxyParamCaption})}
+
+
+
+Store a \mbox{\hyperlink{classPlate}{Plate}} object in the plate\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate\+ID} & -\/ The ID of the plate. \\
+\hline
+{\em plate} & -\/ A pointer to the \mbox{\hyperlink{classPlate}{Plate}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_a25bce11fd10f67d71d4a19735ba71e31}\label{classWaiter_a25bce11fd10f67d71d4a19735ba71e31}} 
+\index{Waiter@{Waiter}!storeTab@{storeTab}}
+\index{storeTab@{storeTab}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{storeTab()}{storeTab()}}
+{\footnotesize\ttfamily void Waiter\+::store\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab\+ID,  }\item[{\mbox{\hyperlink{classTab}{Tab}} $\ast$}]{tab }\end{DoxyParamCaption})}
+
+
+
+Store a \mbox{\hyperlink{classTab}{Tab}} object in the Tab\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+ID} & -\/ The ID of the tab. \\
+\hline
+{\em tab} & -\/ A pointer to the \mbox{\hyperlink{classTab}{Tab}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaiter_a812c0f22562031a7f68ced4de370c36e}\label{classWaiter_a812c0f22562031a7f68ced4de370c36e}} 
+\index{Waiter@{Waiter}!update@{update}}
+\index{update@{update}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Waiter\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}} $\ast$}]{changed\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update method called when a table\textquotesingle{}s state changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em changed\+Table} & -\/ The table that changed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classObserver_ab8029d1afb3ed4a2e8e8dc8c174cc457}{Observer}}.
+
+\mbox{\Hypertarget{classWaiter_a4c6a3b4a2a60c352a5b2776d1dcf3772}\label{classWaiter_a4c6a3b4a2a60c352a5b2776d1dcf3772}} 
+\index{Waiter@{Waiter}!WriteDownOrder@{WriteDownOrder}}
+\index{WriteDownOrder@{WriteDownOrder}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{WriteDownOrder()}{WriteDownOrder()}}
+{\footnotesize\ttfamily void Waiter\+::\+Write\+Down\+Order (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{order }\end{DoxyParamCaption})}
+
+
+
+Write down an order for the kitchen to process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & -\/ A vector of strings representing the ordered items. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiter.\+h\item 
+Waiter.\+cpp\end{DoxyCompactItemize}

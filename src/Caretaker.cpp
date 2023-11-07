@@ -4,14 +4,10 @@ void Caretaker::addMemento(TabMemento memento) {
   tabHistory.push_back(memento);
 }
 
-TabMemento Caretaker::getMemento(int numberOfRollbacks) {
-  if (numberOfRollbacks > tabHistory.size()) {
-    numberOfRollbacks = tabHistory.size();
+TabMemento Caretaker::getMemento() {
+  if (tabHistory.size() == 0) {
+    return *(new TabMemento());
+  } else {
+    return tabHistory[tabHistory.size() - 1];
   }
-  TabMemento memento;
-  for (int i = 0; i < numberOfRollbacks; i++) {
-    memento = tabHistory.back();
-    tabHistory.pop_back();
-  }
-  return memento;
 }

@@ -12,7 +12,6 @@
 #include "../Command.h"
 #include "../ConcreteMediator.h"
 #include "../CreateOrder.h"
-#include "../Customer.h"
 #include "../KitchenMediator.h"
 #include "../Plate.h"
 #include "../Tab.h"
@@ -20,148 +19,29 @@
 #include "../Waiter.h"
 #include "../WaitingToOrder.h"
 #include "../WaitingToSit.h"
-
+#include "../SauceChef.h"
+#include "../CheeseChef.h"
+#include "../PattyChef.h"
+#include "../ExtrasChef.h"
+#include "../BunChef.h"
+#include "../Customer.h"
+#include "../CreateComplaint.h"
+#include "../Caretaker.h"
+#include "../Tab.h"
 int main() {
-  //======================
-  //======CUSTOMER========
-  //======================
-  // This is the customer main, however I've added some sections of comments
-  // directing the flow of what should happen in the demo main. Other classes
-  // will be added later in between (such as the waiter, mediator, command etc)
-
-  int numCustomers = 0;
-  string ready = "";
-  Customer customer1(++numCustomers);
-  Customer customer2(++numCustomers);
-  Customer customer3(++numCustomers);
-  Customer customer4(++numCustomers);
-
-  // Customers being assigned to a table, table could be assigned these 4
-  // customers?
-  customer1.sitDown();
-  customer2.sitDown();
-  customer3.sitDown();
-  customer4.sitDown();
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation..." << endl;
-
-  // Customers are ready to order...
-  customer1.placeOrder();
-  customer2.placeOrder();
-  customer3.placeOrder();
-  customer4.placeOrder();
-
-  // Customers are now in default state awaiting order...
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation..." << endl;
-
-  // Waiter needs to retrieve their order via the table & iterator
-  customer1.printOrder();
-  customer2.printOrder();
-  customer3.printOrder();
-  customer4.printOrder();
-
-  cout << "The meals are now being prepared..." << endl;
-  cout << "." << endl;
-  cout << ".." << endl;
-  cout << "..." << endl;
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Waiter needs to store order & add it to the bill in the memento
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Waiter needs to send order (string vector) through mediator and command to
-  // decorator)
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Decorator creates order objects based on order (command triggers the
-  // creation of objects)
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Chef needs to create items
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Chef needs to send created order back
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Waiter gives order back to customer
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  // Customer gets the bill and leaves a review/complaint
-
-  cout << "Simulation paused, enter any key to continue: ";
-  cin >> ready;
-  cout << "Resuming simulation" << endl;
-
-  customer1.getTheBill();
-  customer2.getTheBill();
-  customer3.getTheBill();
-  customer4.getTheBill();
-
-  //================
-  //======END=======
-  //================
-
-  // Create a Caretaker and a Tab
-  Caretaker caretaker;
-  Tab tab;
-
-  // Perform some actions on the tab
-  tab.addOrderedItem("Item1", 10.0);
-  tab.addOrderedItem("Item2", 15.0);
-
-  // Save the initial state in the caretaker
-  caretaker.addMemento(tab.createMemento());
-
-  // Perform more actions on the tab
-  tab.addOrderedItem("Item3", 20.0);
-
-  // Save the updated state in the caretaker
-  caretaker.addMemento(tab.createMemento());
-
-  // Print the current tab state
-  std::cout << "Current Tab State:" << std::endl;
-  tab.printBill();
-
-  // Rollback to the previous state
-  TabMemento previousState = caretaker.getMemento(3);
-  tab.setMemento(previousState);
-
-  // Print the tab state after rollback
-  std::cout << "\nTab State After Rollback:" << std::endl;
-  tab.printBill();
-
-  tab.setMemento(tab.createMemento());
-
-  std::cout << "\nTab State After Rollback:" << std::endl;
-  tab.printBill();
-  // Mediator
   KitchenMediator *mediator = new ConcreteMediator();
 
-  Chef *chef = new BaseChef();
+  CheeseChef *cheeseChef = new CheeseChef();
+  SauceChef *sauceChef = new SauceChef();
+  PattyChef *pattyChef = new PattyChef();
+  ExtrasChef *extrasChef = new ExtrasChef();
+  BunChef * bunChef = new BunChef();
+
+  cheeseChef->add(sauceChef);
+  sauceChef->add(pattyChef);
+  pattyChef->add(extrasChef);
+  extrasChef->add(bunChef);
+
   // 3 tables
   CompositeTable table;
   CompositeTable table2;
@@ -173,15 +53,32 @@ int main() {
   CompositeTable table4;
   FreeTables2.push_back(&table3);
   FreeTables2.push_back(&table4);
+  Caretaker* Care = new Caretaker();
+  Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables,Care);
+  Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2,Care);
 
-  Waiter *waiter = new Waiter((ConcreteMediator *)mediator, FreeTables);
-  Waiter *waiter2 = new Waiter((ConcreteMediator *)mediator, FreeTables2);
+  // making prepopulated memento to showcase rollback
+  BurgerOrder* order;
+  order->inspected=true;
+  order= new RegularBunOrder();
+  order->add(new PattyOrder());
+  order->add(new CheeseOrder());
+  order->add(new TomatoSauceOrder());
+  order->add(new MushroomOrder());
+  Tab* tab=new Tab();
+  tab->setTabID(0);
+  tab->addOrderedItem(order);
+  tab->calculateTotalPrice();
+  Care->addMemento(tab->createMemento());
+  order->inspected=false;
+  //-------------------------------------------------------------
+  mediator->addChef(cheeseChef);
 
-  mediator->addColleague((Colleague *)chef);
   mediator->addColleague((Colleague *)waiter);
+  mediator->addColleague((Colleague *)waiter2);
 
   Command *command = new CreateOrder();
-  Command *command2 = new CreateOrder();
+  Command *command2 = new CreateComplaint();
 
   mediator->addCommand(command);
   mediator->addCommand(command2);
@@ -190,19 +87,103 @@ int main() {
   std::vector<Customer *> seat4;
   for (int i = 0; i < 8; i++) {
     Customer *c = new Customer(i);
-    c->placeOrder();
+    //c->placeOrder();
     seat9.push_back(c);
   }
-  for (int i = 10; i < 14; i++) {
+  for (int i = 8; i < 12; i++) {
     Customer *c = new Customer(i);
-    c->placeOrder();
+    //c->placeOrder();
     seat4.push_back(c);
   }
-  cout << "starting to seat" << endl;
-  waiter->seatCustomer(seat9);
-  // waiter2->seatCustomer(seat4);
-  waiter->CompleteCircuit();
-  // waiter2->CompleteCircuit();
+  std::vector<Customer *> seat3;
+  for (int i = 12; i < 16; i++) {
+    Customer *c = new Customer(i);
+    //c->placeOrder();
+    seat3.push_back(c);
+  }
 
+  string ready = "";
+  //======TERMINAL PREP======
+  //    Styles
+  std::string reset = "\033[0m";
+  std::string bold = "\033[1m";
+  std::string underline = "\033[4m";
+  std::string blink_slow_flash  = "\033[5m";
+  std::string reverse = "\033[7m";
+  //    Colours
+  std::string red = "\033[31m";
+  std::string green = "\033[32m";
+  std::string yellow = "\033[33m";
+  std::string blue = "\033[34m";
+  std::string magenta = "\033[35m";
+  std::string cyan = "\033[36m";
+  std::string white = "\033[37m";
+  //    Background-Colours
+  std::string blackBack = "\033[40m";
+  std::string redBack = "\033[41m";
+  std::string greenBack = "\033[42m";
+  std::string yellowBack = "\033[43m";
+  std::string blueBack = "\033[44m";
+  std::string magentaBack = "\033[45m";
+  std::string cyanBack = "\033[46m";
+  std::string whiteBack = "\033[47m";
+  //===========END===========
+
+  cout << "\033[1;31;5m";
+  cout << "|=========================================|" << endl;
+  cout << "|===" << white << "$" << cyan <<"       " << cyan << "BURGER BLITZ TYCOON" << "\033[1;31;5m" << "       " << white << "$" << red << "===|" << endl;
+  cout << "|=========================================|" << endl;
+  cout << reset << endl;
+  cout << yellow << bold;
+  cout << "|  + About to seat customers..." << endl;
+  cout << reset;
+  cin>>ready;
+
+  cout << yellow << bold;
+  cout << "|  + Waiter 1 seating customers..." << endl;
+  waiter->seatCustomer(seat9);
+  waiter->seatCustomer(seat4);
+
+  cout << bold << endl;
+  cout << "Resuming simulation..." << endl;
+  cout << reset << endl;
+
+  cout << yellow << bold;
+  cout << "|  + Waiter 2 seating customers..." << endl;
+  waiter2->seatCustomer(seat3);
+  
+  cout << "" << endl;
+  cout << reset << bold << yellow; 
+  cout << "|  + " << green << "Commencing First Waiter Iteration taking orders..." << endl;
+  cout << reset << bold << yellow; 
+  cout << "|  + " << green << "Note there exits an order from Customer 0 Tab for a Cheese-Burger " << endl << yellow;
+  cout << "|    " << green << "with mushrooms and tomato sauce that will need to be paid off before" << endl << yellow
+       << "|    " << green << "the customer may order" << reset << endl;
+  cout << reset;
+  cin>>ready;
+
+  waiter->CompleteCircuit();
+  waiter->Iterator=true;
+  
+  waiter2->CompleteCircuit();
+  cout << yellow << bold <<  "|  + Second iteration returning orders" << endl << reset;
+  cin>>ready;
+  
+  cout << bold << "Resuming simulation..." << endl;
+
+  waiter->CompleteCircuit();
+  waiter2->CompleteCircuit();
+    cout << yellow << bold <<  "|  + Third itertaion paying bills or making tabs and leaving" << endl << reset;
+  cin>>ready;
+
+  cout << bold << "Resuming simulation..." << endl;
+  
+  waiter->CompleteCircuit();
+  waiter2->CompleteCircuit();
+  cout << yellow << bold <<  "|  + Last iteration complete these customers made reviews" << endl << reset;
+  cin>>ready;
+
+  cout << bold << "Resuming simulation..." << endl;
+   Manager::getManager().toString();
   return 0;
 }

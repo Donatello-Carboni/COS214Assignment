@@ -1,0 +1,130 @@
+\hypertarget{classBurgerToppingOrder}{}\doxysection{Burger\+Topping\+Order Class Reference}
+\label{classBurgerToppingOrder}\index{BurgerToppingOrder@{BurgerToppingOrder}}
+
+
+Class representing a burger topping order, inheriting from \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}}.  
+
+
+
+
+{\ttfamily \#include $<$Burger\+Topping\+Order.\+h$>$}
+
+
+
+Inheritance diagram for Burger\+Topping\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBurgerToppingOrder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Burger\+Topping\+Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classBurgerToppingOrder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBurgerToppingOrder_aaa9bbd7e15a90cdc166adb6dda0b6b49}\label{classBurgerToppingOrder_aaa9bbd7e15a90cdc166adb6dda0b6b49}} 
+\mbox{\hyperlink{classBurgerToppingOrder_aaa9bbd7e15a90cdc166adb6dda0b6b49}{Burger\+Topping\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classBurgerToppingOrder}{Burger\+Topping\+Order}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBurgerToppingOrder_a7e3f73158cc2a203a1cd394ba20991ec}\label{classBurgerToppingOrder_a7e3f73158cc2a203a1cd394ba20991ec}} 
+virtual \mbox{\hyperlink{classBurgerToppingOrder_a7e3f73158cc2a203a1cd394ba20991ec}{$\sim$\+Burger\+Topping\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classBurgerToppingOrder}{Burger\+Topping\+Order}}. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classBurgerToppingOrder_a1d9a05cbce4a55834816008a8043bd1c}{get\+Price}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the price of the burger topping order. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classBurgerToppingOrder_aa3ee1c816c114d4543085e51f4387e6b}{to\+String}} ()=0
+\begin{DoxyCompactList}\small\item\em Represent the burger topping order as a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$ \mbox{\hyperlink{classBurgerToppingOrder_acafa042cda84af03c61bb7a9ba41520b}{get\+Burger}} ()
+\begin{DoxyCompactList}\small\item\em Get the burger order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBurgerToppingOrder_aca2449a21ea352717fc57223ab97a92b}{set\+Burger}} (\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$burger)
+\begin{DoxyCompactList}\small\item\em Set the burger order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a burger topping order, inheriting from \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBurgerToppingOrder_acafa042cda84af03c61bb7a9ba41520b}\label{classBurgerToppingOrder_acafa042cda84af03c61bb7a9ba41520b}} 
+\index{BurgerToppingOrder@{BurgerToppingOrder}!getBurger@{getBurger}}
+\index{getBurger@{getBurger}!BurgerToppingOrder@{BurgerToppingOrder}}
+\doxysubsubsection{\texorpdfstring{getBurger()}{getBurger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$ Burger\+Topping\+Order\+::get\+Burger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the burger order. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBurgerToppingOrder_a1d9a05cbce4a55834816008a8043bd1c}\label{classBurgerToppingOrder_a1d9a05cbce4a55834816008a8043bd1c}} 
+\index{BurgerToppingOrder@{BurgerToppingOrder}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!BurgerToppingOrder@{BurgerToppingOrder}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily virtual double Burger\+Topping\+Order\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the price of the burger topping order. 
+
+\begin{DoxyReturn}{Returns}
+The price of the burger topping order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBurgerOrder_a5977473d278a03005dbbe977e2498dbd}{Burger\+Order}}.
+
+
+
+Implemented in \mbox{\hyperlink{classTomatoSauceOrder_a875e6fd5c8564c8a03723921e603cab6}{Tomato\+Sauce\+Order}}, \mbox{\hyperlink{classPattyOrder_ab316f9ed137a9f4c5e204165ea3ffb5b}{Patty\+Order}}, \mbox{\hyperlink{classOnionSliceOrder_a08f963e8032833d25b8ca2df256a1756}{Onion\+Slice\+Order}}, \mbox{\hyperlink{classMustardSauceOrder_a2962d6b7350483b849f5f8215e01db07}{Mustard\+Sauce\+Order}}, \mbox{\hyperlink{classMushroomOrder_aba4f6a8ce361622dc77403fdba656c32}{Mushroom\+Order}}, \mbox{\hyperlink{classLettuceOrder_a262528f971c3aef1d6f7b7c31d7cfc14}{Lettuce\+Order}}, \mbox{\hyperlink{classGherkinOrder_a062b2106dba8bfc8cb6786caab33dfd1}{Gherkin\+Order}}, and \mbox{\hyperlink{classCheeseOrder_a43e1f13e38a5b9f868c0fd069be1e38f}{Cheese\+Order}}.
+
+\mbox{\Hypertarget{classBurgerToppingOrder_aca2449a21ea352717fc57223ab97a92b}\label{classBurgerToppingOrder_aca2449a21ea352717fc57223ab97a92b}} 
+\index{BurgerToppingOrder@{BurgerToppingOrder}!setBurger@{setBurger}}
+\index{setBurger@{setBurger}!BurgerToppingOrder@{BurgerToppingOrder}}
+\doxysubsubsection{\texorpdfstring{setBurger()}{setBurger()}}
+{\footnotesize\ttfamily void Burger\+Topping\+Order\+::set\+Burger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$}]{burger }\end{DoxyParamCaption})}
+
+
+
+Set the burger order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em burger} & -\/ Pointer to the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBurgerToppingOrder_aa3ee1c816c114d4543085e51f4387e6b}\label{classBurgerToppingOrder_aa3ee1c816c114d4543085e51f4387e6b}} 
+\index{BurgerToppingOrder@{BurgerToppingOrder}!toString@{toString}}
+\index{toString@{toString}!BurgerToppingOrder@{BurgerToppingOrder}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily virtual std\+::string Burger\+Topping\+Order\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Represent the burger topping order as a string. 
+
+\begin{DoxyReturn}{Returns}
+String representation of the burger topping order. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBurgerOrder_a0474a92b90c7a35271e76dd82ccbc078}{Burger\+Order}}.
+
+
+
+Implemented in \mbox{\hyperlink{classTomatoSauceOrder_ab5659f4963517fd75223a171784aaa5d}{Tomato\+Sauce\+Order}}, \mbox{\hyperlink{classPattyOrder_af4cb1b805346db4e59ee816037d01ad6}{Patty\+Order}}, \mbox{\hyperlink{classOnionSliceOrder_a43ede9ce5f4fbdd3c39c9ecc24433529}{Onion\+Slice\+Order}}, \mbox{\hyperlink{classMustardSauceOrder_adfa82d35de00e8a54a05c866ae39c31d}{Mustard\+Sauce\+Order}}, \mbox{\hyperlink{classMushroomOrder_a4cc6f59fd79aa00bbb7d2d8c054bf99d}{Mushroom\+Order}}, \mbox{\hyperlink{classLettuceOrder_aaf0e76cb233b7eaed3547cfd5dcc295d}{Lettuce\+Order}}, \mbox{\hyperlink{classGherkinOrder_a9ac47b50be2ce586357f7426412c5d5c}{Gherkin\+Order}}, and \mbox{\hyperlink{classCheeseOrder_ab03b9d9649b4a4db1ec79659f30a7ec4}{Cheese\+Order}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Burger\+Topping\+Order.\+h\item 
+Burger\+Topping\+Order.\+cpp\end{DoxyCompactItemize}

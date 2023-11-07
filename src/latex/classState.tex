@@ -1,0 +1,196 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+Inheritance diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}\label{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}} 
+\mbox{\hyperlink{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}{State}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classState}{State}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classState_afab438d92b90dc18d194dbd9c9c8bab3}\label{classState_afab438d92b90dc18d194dbd9c9c8bab3}} 
+virtual \mbox{\hyperlink{classState_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classState}{State}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_aeab420351e13fd2757ace694089b5938}{choose\+Items}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method to allow the customer to choose items to order. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_aa09257ae6efe963395d8fd912fa05402}{call\+To\+Order}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method to handle the scenario when a customer is called to place an order. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a60c8744e2f61a4821d761615e0fd9e81}{idle}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method representing the idle state of a customer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a3286080132494c6d2ec03cca2ba054b3}{call\+For\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method for calling the bill for the customer\textquotesingle{}s order. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}{pay\+Bill}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method to handle the payment of the bill by the customer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a00bb52b0534b424774580637ad121f7b}{review}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method for the customer to review their experience. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classState_a4db4be03bb2c5879125fe76244277804}{change\+Happiness}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Method to change the customer\textquotesingle{}s happiness. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classState_a7384d38ca7d9f4312f62711885325fa3}{to\+String}} ()=0
+\begin{DoxyCompactList}\small\item\em Method to get a string representation of the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_a3286080132494c6d2ec03cca2ba054b3}\label{classState_a3286080132494c6d2ec03cca2ba054b3}} 
+\index{State@{State}!callForBill@{callForBill}}
+\index{callForBill@{callForBill}!State@{State}}
+\doxysubsubsection{\texorpdfstring{callForBill()}{callForBill()}}
+{\footnotesize\ttfamily virtual void State\+::call\+For\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method for calling the bill for the customer\textquotesingle{}s order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_a29fe7ccebce44112b6c31e76264a3c9c}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_aaa759372ee933ec5dc3cd4a31a6fc7e0}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_a71a988564d5c9fc7cde93fba648879a1}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a8ed18e4ac27bacb0e543ab6737ab963a}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_aa09257ae6efe963395d8fd912fa05402}\label{classState_aa09257ae6efe963395d8fd912fa05402}} 
+\index{State@{State}!callToOrder@{callToOrder}}
+\index{callToOrder@{callToOrder}!State@{State}}
+\doxysubsubsection{\texorpdfstring{callToOrder()}{callToOrder()}}
+{\footnotesize\ttfamily virtual void State\+::call\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to handle the scenario when a customer is called to place an order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_ac18d806d9168dcd539594fd2da9fe49d}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_afce109a35865c84d77dd9c9c41a84a91}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_a7b3d035c72dd1c97fc527c57c344713a}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a840bd6e183171fc500a14ce7afd0aa45}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_a4db4be03bb2c5879125fe76244277804}\label{classState_a4db4be03bb2c5879125fe76244277804}} 
+\index{State@{State}!changeHappiness@{changeHappiness}}
+\index{changeHappiness@{changeHappiness}!State@{State}}
+\doxysubsubsection{\texorpdfstring{changeHappiness()}{changeHappiness()}}
+{\footnotesize\ttfamily virtual void State\+::change\+Happiness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to change the customer\textquotesingle{}s happiness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_a266928533f07fe81cf9ba76fd31d18dd}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_a0e41d4a68d002183d82f2ad700b3335f}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_ab92c7d2680c07069300f7a5a850b0ec1}{Default}}, and \mbox{\hyperlink{classAboutToLeave_ad3c32ca245a34fc98b92cf7e657e92a0}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_aeab420351e13fd2757ace694089b5938}\label{classState_aeab420351e13fd2757ace694089b5938}} 
+\index{State@{State}!chooseItems@{chooseItems}}
+\index{chooseItems@{chooseItems}!State@{State}}
+\doxysubsubsection{\texorpdfstring{chooseItems()}{chooseItems()}}
+{\footnotesize\ttfamily virtual void State\+::choose\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to allow the customer to choose items to order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_a2bafadf752d916bec94769b812a20a83}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_aaf6e1b2d895bacabefac1f5e631f71e3}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_a271b8ac1b39696ec6e3fb22c55513544}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a394cb70f030b2fdd69fd4d53a3163aba}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_a60c8744e2f61a4821d761615e0fd9e81}\label{classState_a60c8744e2f61a4821d761615e0fd9e81}} 
+\index{State@{State}!idle@{idle}}
+\index{idle@{idle}!State@{State}}
+\doxysubsubsection{\texorpdfstring{idle()}{idle()}}
+{\footnotesize\ttfamily virtual void State\+::idle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method representing the idle state of a customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_a0f5f54810e04538f22bc71e48384a401}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_a3b2dc27cce47d43e0315d8b0b0bfd9c0}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_a7ceada776e846e7ce197ed4ac284efc8}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a9862861ebfbaf2f0a4e283fb1d1ff748}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}\label{classState_aa49ec01548e1d18f8bd1f2abc1ec3d76}} 
+\index{State@{State}!payBill@{payBill}}
+\index{payBill@{payBill}!State@{State}}
+\doxysubsubsection{\texorpdfstring{payBill()}{payBill()}}
+{\footnotesize\ttfamily virtual void State\+::pay\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to handle the payment of the bill by the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_ad64095bc5b859456631a64958dad843b}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_af38563f8d478c13952087915d5a1f11f}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_a53e2829fabe0d7b5d222ec4df6a26233}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a1038aa1f66886e4a34b93282cc6abdb0}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_a00bb52b0534b424774580637ad121f7b}\label{classState_a00bb52b0534b424774580637ad121f7b}} 
+\index{State@{State}!review@{review}}
+\index{review@{review}!State@{State}}
+\doxysubsubsection{\texorpdfstring{review()}{review()}}
+{\footnotesize\ttfamily virtual void State\+::review (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method for the customer to review their experience. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the \mbox{\hyperlink{classCustomer}{Customer}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_a317ee61d56ec5defb4f03fd455e0061f}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_a0ceec4ddf993d5715bda6dd058413075}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_aa4611c7efc6358e85ca3d00da882d34f}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a990087ce6e1aaaa37b341a728800e447}{About\+To\+Leave}}.
+
+\mbox{\Hypertarget{classState_a7384d38ca7d9f4312f62711885325fa3}\label{classState_a7384d38ca7d9f4312f62711885325fa3}} 
+\index{State@{State}!toString@{toString}}
+\index{toString@{toString}!State@{State}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily virtual std\+::string State\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to get a string representation of the state. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the state. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitingToSit_af5bad1329ed4f4c9f568a801d6b10d5c}{Waiting\+To\+Sit}}, \mbox{\hyperlink{classWaitingToOrder_a1e1138caf2e8a7dd1b9d22ee2d73e5e1}{Waiting\+To\+Order}}, \mbox{\hyperlink{classDefault_aeefa31621c9d7110865e8490bf4594ce}{Default}}, and \mbox{\hyperlink{classAboutToLeave_a2eb395a8509570dc73b935410e8bf9ba}{About\+To\+Leave}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State.\+h\item 
+State.\+cpp\end{DoxyCompactItemize}

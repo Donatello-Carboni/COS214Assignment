@@ -1,0 +1,5 @@
+<map id="Table" name="Table">
+<area shape="rect" id="node1" title="Abstract class representing a table in a restaurant." alt="" coords="115,5,171,32"/>
+<area shape="rect" id="node2" href="$classCompositeTable.html" title="Class representing a composite table, inheriting from Table. This class can contain multiple tables o..." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$classRestaurantTable.html" title="Class representing a table in a restaurant establishment, inheriting from the Table class." alt="" coords="156,80,283,107"/>
+</map>

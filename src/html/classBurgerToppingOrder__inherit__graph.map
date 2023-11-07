@@ -1,0 +1,12 @@
+<map id="BurgerToppingOrder" name="BurgerToppingOrder">
+<area shape="rect" id="node1" title="Class representing a burger topping order, inheriting from BurgerOrder." alt="" coords="155,183,305,209"/>
+<area shape="rect" id="node3" href="$classCheeseOrder.html" title="Class to handle a cheese order, inheriting from BurgerToppingOrder." alt="" coords="375,5,482,32"/>
+<area shape="rect" id="node4" href="$classGherkinOrder.html" title="Class representing an order for gherkins as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="374,56,483,83"/>
+<area shape="rect" id="node5" href="$classLettuceOrder.html" title="Class representing an order for lettuce as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="375,107,482,133"/>
+<area shape="rect" id="node6" href="$classMushroomOrder.html" title="Class representing an order for mushrooms as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="365,157,492,184"/>
+<area shape="rect" id="node7" href="$classMustardSauceOrder.html" title="Class representing an order for mustard sauce as a burger topping, inheriting from BurgerToppingOrder..." alt="" coords="353,208,504,235"/>
+<area shape="rect" id="node8" href="$classOnionSliceOrder.html" title="Class representing an order for onion slices as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="365,259,492,285"/>
+<area shape="rect" id="node9" href="$classPattyOrder.html" title="Class representing an order for a patty as a burger topping, inheriting from BurgerToppingOrder." alt="" coords="383,309,474,336"/>
+<area shape="rect" id="node10" href="$classTomatoSauceOrder.html" title="Class representing an order for tomato sauce as a burger topping." alt="" coords="356,360,501,387"/>
+<area shape="rect" id="node2" href="$classBurgerOrder.html" title="Class representing a generic BurgerOrder." alt="" coords="5,183,107,209"/>
+</map>

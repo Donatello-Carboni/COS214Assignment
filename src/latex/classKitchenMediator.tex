@@ -1,0 +1,221 @@
+\hypertarget{classKitchenMediator}{}\doxysection{Kitchen\+Mediator Class Reference}
+\label{classKitchenMediator}\index{KitchenMediator@{KitchenMediator}}
+
+
+Class representing a mediator for communication between kitchen colleagues and chef.  
+
+
+
+
+{\ttfamily \#include $<$Kitchen\+Mediator.\+h$>$}
+
+
+
+Inheritance diagram for Kitchen\+Mediator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classKitchenMediator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classKitchenMediator_a9a8ab05ab770453121f41a45365b3287}\label{classKitchenMediator_a9a8ab05ab770453121f41a45365b3287}} 
+\mbox{\hyperlink{classKitchenMediator_a9a8ab05ab770453121f41a45365b3287}{Kitchen\+Mediator}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classKitchenMediator_aa8f955e2d3fab78aba1bacb12f901f16}{Kitchen\+Mediator}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classCommand}{Command}} $\ast$command\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classChef}{Chef}} $\ast$chef)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}} class with initial colleagues, commands, and chef. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKitchenMediator_ad2413fb3d97c6208a63fe60bf3a039f6}\label{classKitchenMediator_ad2413fb3d97c6208a63fe60bf3a039f6}} 
+virtual \mbox{\hyperlink{classKitchenMediator_ad2413fb3d97c6208a63fe60bf3a039f6}{$\sim$\+Kitchen\+Mediator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classKitchenMediator_a45832c71da29062664f72eaef0763fcf}{notify}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague, int choice, std\+::vector$<$ std\+::string $>$ order)=0
+\begin{DoxyCompactList}\small\item\em Method to notify colleagues and chef about orders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKitchenMediator_a1436112549516cbfc6cd68c664f845ea}{add\+Colleague}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague)
+\begin{DoxyCompactList}\small\item\em Method to add a colleague to the mediator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKitchenMediator_aed04fafe5fc85759c6dacbb6f3187fae}{add\+Command}} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\begin{DoxyCompactList}\small\item\em Method to add a command to the mediator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKitchenMediator_ae47ec2a5a39d42b5248b80f4f052d3ee}{remove\+Colleague}} (\mbox{\hyperlink{classColleague}{Colleague}} $\ast$colleague)
+\begin{DoxyCompactList}\small\item\em Method to remove a colleague from the mediator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKitchenMediator_a04069825e0132ea4d23951ca08756a96}{remove\+Command}} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\begin{DoxyCompactList}\small\item\em Method to remove a command from the mediator. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classColleague}{Colleague}} $\ast$ $>$ \mbox{\hyperlink{classKitchenMediator_aa87718ff82ab10694b424f1c95d85942}{get\+Colleagues}} ()
+\begin{DoxyCompactList}\small\item\em Get the collection of colleagues. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCommand}{Command}} $\ast$ $>$ \mbox{\hyperlink{classKitchenMediator_ac58cc343e87310308b1d8a3b15682172}{get\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em Get the collection of commands. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChef}{Chef}} $\ast$ \mbox{\hyperlink{classKitchenMediator_ab67de096fc255ddb7dc201dd714c26a4}{get\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em Get the chef responsible for cooking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKitchenMediator_ad3cf418da25cfc103edefcce0b9fa57b}{add\+Chef}} (\mbox{\hyperlink{classChef}{Chef}} $\ast$chef)
+\begin{DoxyCompactList}\small\item\em Method to add a chef to the mediator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a mediator for communication between kitchen colleagues and chef. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKitchenMediator_aa8f955e2d3fab78aba1bacb12f901f16}\label{classKitchenMediator_aa8f955e2d3fab78aba1bacb12f901f16}} 
+\index{KitchenMediator@{KitchenMediator}!KitchenMediator@{KitchenMediator}}
+\index{KitchenMediator@{KitchenMediator}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{KitchenMediator()}{KitchenMediator()}}
+{\footnotesize\ttfamily Kitchen\+Mediator\+::\+Kitchen\+Mediator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{chef }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classKitchenMediator}{Kitchen\+Mediator}} class with initial colleagues, commands, and chef. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ An array of colleague objects. \\
+\hline
+{\em command} & -\/ An array of command objects. \\
+\hline
+{\em chef} & -\/ Pointer to the chef. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKitchenMediator_ad3cf418da25cfc103edefcce0b9fa57b}\label{classKitchenMediator_ad3cf418da25cfc103edefcce0b9fa57b}} 
+\index{KitchenMediator@{KitchenMediator}!addChef@{addChef}}
+\index{addChef@{addChef}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{addChef()}{addChef()}}
+{\footnotesize\ttfamily void Kitchen\+Mediator\+::add\+Chef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{chef }\end{DoxyParamCaption})}
+
+
+
+Method to add a chef to the mediator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chef} & -\/ Pointer to the chef. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKitchenMediator_a1436112549516cbfc6cd68c664f845ea}\label{classKitchenMediator_a1436112549516cbfc6cd68c664f845ea}} 
+\index{KitchenMediator@{KitchenMediator}!addColleague@{addColleague}}
+\index{addColleague@{addColleague}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{addColleague()}{addColleague()}}
+{\footnotesize\ttfamily void Kitchen\+Mediator\+::add\+Colleague (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague }\end{DoxyParamCaption})}
+
+
+
+Method to add a colleague to the mediator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ Pointer to the colleague object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKitchenMediator_aed04fafe5fc85759c6dacbb6f3187fae}\label{classKitchenMediator_aed04fafe5fc85759c6dacbb6f3187fae}} 
+\index{KitchenMediator@{KitchenMediator}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Kitchen\+Mediator\+::add\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+
+
+Method to add a command to the mediator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & -\/ Pointer to the command object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKitchenMediator_ab67de096fc255ddb7dc201dd714c26a4}\label{classKitchenMediator_ab67de096fc255ddb7dc201dd714c26a4}} 
+\index{KitchenMediator@{KitchenMediator}!getChef@{getChef}}
+\index{getChef@{getChef}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{getChef()}{getChef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChef}{Chef}} $\ast$ Kitchen\+Mediator\+::get\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the chef responsible for cooking. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the chef. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKitchenMediator_aa87718ff82ab10694b424f1c95d85942}\label{classKitchenMediator_aa87718ff82ab10694b424f1c95d85942}} 
+\index{KitchenMediator@{KitchenMediator}!getColleagues@{getColleagues}}
+\index{getColleagues@{getColleagues}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{getColleagues()}{getColleagues()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classColleague}{Colleague}} $\ast$ $>$ Kitchen\+Mediator\+::get\+Colleagues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the collection of colleagues. 
+
+\begin{DoxyReturn}{Returns}
+A vector of colleague objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKitchenMediator_ac58cc343e87310308b1d8a3b15682172}\label{classKitchenMediator_ac58cc343e87310308b1d8a3b15682172}} 
+\index{KitchenMediator@{KitchenMediator}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{getCommands()}{getCommands()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCommand}{Command}} $\ast$ $>$ Kitchen\+Mediator\+::get\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the collection of commands. 
+
+\begin{DoxyReturn}{Returns}
+A vector of command objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKitchenMediator_a45832c71da29062664f72eaef0763fcf}\label{classKitchenMediator_a45832c71da29062664f72eaef0763fcf}} 
+\index{KitchenMediator@{KitchenMediator}!notify@{notify}}
+\index{notify@{notify}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily virtual void Kitchen\+Mediator\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague,  }\item[{int}]{choice,  }\item[{std\+::vector$<$ std\+::string $>$}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to notify colleagues and chef about orders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ The colleague notifying about an order. \\
+\hline
+{\em choice} & -\/ The choice of the order. \\
+\hline
+{\em order} & -\/ A vector of strings representing the order. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classConcreteMediator_a63f0cc74dbff6f121a932187e5356d85}{Concrete\+Mediator}}.
+
+\mbox{\Hypertarget{classKitchenMediator_ae47ec2a5a39d42b5248b80f4f052d3ee}\label{classKitchenMediator_ae47ec2a5a39d42b5248b80f4f052d3ee}} 
+\index{KitchenMediator@{KitchenMediator}!removeColleague@{removeColleague}}
+\index{removeColleague@{removeColleague}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{removeColleague()}{removeColleague()}}
+{\footnotesize\ttfamily void Kitchen\+Mediator\+::remove\+Colleague (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classColleague}{Colleague}} $\ast$}]{colleague }\end{DoxyParamCaption})}
+
+
+
+Method to remove a colleague from the mediator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colleague} & -\/ Pointer to the colleague object to remove. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKitchenMediator_a04069825e0132ea4d23951ca08756a96}\label{classKitchenMediator_a04069825e0132ea4d23951ca08756a96}} 
+\index{KitchenMediator@{KitchenMediator}!removeCommand@{removeCommand}}
+\index{removeCommand@{removeCommand}!KitchenMediator@{KitchenMediator}}
+\doxysubsubsection{\texorpdfstring{removeCommand()}{removeCommand()}}
+{\footnotesize\ttfamily void Kitchen\+Mediator\+::remove\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+
+
+Method to remove a command from the mediator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & -\/ Pointer to the command object to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kitchen\+Mediator.\+h\item 
+Kitchen\+Mediator.\+cpp\end{DoxyCompactItemize}

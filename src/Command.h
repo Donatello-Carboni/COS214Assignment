@@ -1,11 +1,20 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 #include <string>
-#include "Burger.h"
+/**
+ * @brief Abstract class defining a command.
+ */
 class Command {
- private:
- public:
-  Command(){};
-  virtual void execute() = 0;
+public:
+    /**
+     * @brief Default constructor for the Command class.
+     */
+    Command() {};
+
+    /**
+     * @brief Virtual method to execute the command.
+     */
+    virtual void execute() = 0;
 };
+
 #endif

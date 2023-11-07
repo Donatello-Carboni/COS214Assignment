@@ -1,7 +1,7 @@
 #include "Customer.h"
-
+#include <cstdlib>  
+#include <ctime>    
 #include <random>
-
 #include "WaitingToOrder.h"
 #include "WaitingToSit.h"
 
@@ -10,12 +10,24 @@ Customer::Customer() { paid = false; }
 Customer::Customer(int num) {
   customerNumber = num;
   happiness = 60;
-  // may need to start at waiting to order
   state = new WaitingToSit();
+
+  // Seed the random number generator once at the beginning of your program
+  static bool seeded = false;
+  if (!seeded) {
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    seeded = true;
+  }
+
+  // Generate a random number (0 or 1) to determine the value of WantsTab
+  int randomValue = std::rand() % 2;  // Generates 0 or 1
+
+  // Set WantsTab based on the random value (0 or 1)
+  this->WantsTab = (randomValue == 1);
 }
 
 Customer::~Customer() {
-  cout << "Customer (" << customerNumber << ") left the restaurant..." << endl;
+  cout << yellow << bold << "|  + " << white << "Customer (" << customerNumber << ")" << yellow << " left the restaurant..." << endl << reset;
 }
 
 int Customer::getHappiness() { return happiness; }
@@ -23,17 +35,18 @@ int Customer::getHappiness() { return happiness; }
 void Customer::changeHappiness(int happy) {
   random_device random;
   mt19937 happ(random());
-  std::uniform_int_distribution<int> happiness(1, 2);
+  std::uniform_int_distribution<int> happiness(1, 100);
   int incOrDec = happiness(happ);
 
-  switch (incOrDec) {
-    case 1: {
+  if (incOrDec < 50)
       this->happiness += happy;
-    }
-    case 2: {
+  else 
       this->happiness -= happy;
-    }
-  }
+
+  if (this->happiness > 100)
+    this->happiness = 100;
+  else if (this->happiness <= 0)
+    this->happiness = 0;
 }
 
 State* Customer::getState() { return state; }
@@ -46,17 +59,17 @@ void Customer::setState(State* currState) {
 }
 
 void Customer::setOrder(vector<string> extras) {
-  cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
-       << ") is ready to order!" << endl;
+  cout << bold << blue << "[CUSTOMER]\t\t- Customer (" << customerNumber
+       << ") is ready to order!" << endl << reset;
   order = extras;
 }
 
 vector<string> Customer::getOrder() { return order; }
 
 void Customer::placeOrder() {
-  // need to make sure its strings just being pushed
-  cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
-       << ") is deciding what to order..." << endl;
+  //need to make sure its strings just being pushed
+  cout << bold << blue << "[CUSTOMER]\t\t- Customer (" << customerNumber
+       << ") is deciding what to order..." << endl << reset;
   state->chooseItems(this);
 }
 
@@ -80,11 +93,34 @@ void Customer::printOrder() {
 }
 
 void Customer::sitDown() {
+  cout << bold << blue;
   cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
        << ") is sitting down at a table" << endl;
-  setState(new WaitingToOrder());
+  state->chooseItems(this);
 }
 
 void Customer::leave() { this->~Customer(); }
 
 bool Customer::didPay() { return paid; }
+
+bool Customer::Tab()
+{
+  return WantsTab;
+}
+
+void Customer::givePlate(Plate* plate)
+{
+  this->plate = plate;
+}
+
+Plate* Customer::removePlate()
+{
+  Plate* plate = this->plate;
+  this->plate = NULL;
+  return plate;
+}
+
+Plate* Customer::getPlate()
+{
+  return this->plate;
+}
