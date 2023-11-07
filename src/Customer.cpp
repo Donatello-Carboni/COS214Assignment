@@ -27,7 +27,7 @@ Customer::Customer(int num) {
 }
 
 Customer::~Customer() {
-  cout << "Customer (" << customerNumber << ") left the restaurant..." << endl;
+  cout << yellow << bold << "|  + " << white << "Customer (" << customerNumber << ")" << yellow << " left the restaurant..." << endl << reset;
 }
 
 int Customer::getHappiness() { return happiness; }
@@ -59,8 +59,8 @@ void Customer::setState(State* currState) {
 }
 
 void Customer::setOrder(vector<string> extras) {
-  cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
-       << ") is ready to order!" << endl;
+  cout << bold << blue << "[CUSTOMER]\t\t- Customer (" << customerNumber
+       << ") is ready to order!" << endl << reset;
   order = extras;
 }
 
@@ -68,8 +68,8 @@ vector<string> Customer::getOrder() { return order; }
 
 void Customer::placeOrder() {
   //need to make sure its strings just being pushed
-  cout << "[CUSTOMER]\t\t- Customer (" << customerNumber
-       << ") is deciding what to order..." << endl;
+  cout << bold << blue << "[CUSTOMER]\t\t- Customer (" << customerNumber
+       << ") is deciding what to order..." << endl << reset;
   state->chooseItems(this);
 }
 

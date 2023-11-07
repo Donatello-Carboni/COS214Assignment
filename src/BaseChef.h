@@ -24,6 +24,11 @@ class BaseChef : public Chef {
 private:
     // BurgerOrder *order; // order to be added to plate
     Plate *plate; // Plate for adding the order
+    std::string white = "\033[37m";
+    std::string green = "\033[32m";
+    std::string yellow = "\033[31m";
+    std::string bold = "\033[1m";
+    std::string reset = "\033[0m";
 
 protected:
     BaseChef *nextChef; // Pointer to the next chef in the chain

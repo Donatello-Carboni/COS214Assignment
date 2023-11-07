@@ -6,7 +6,7 @@ MustardSauceOrder::MustardSauceOrder()
     std::string read="";
     if(this->inspected == false)
     {
-        std::cout << "Adding Mustard to the order" << std::endl;
+        std::cout << yellow << bold << "|  + Adding " << white << "Mustard" << yellow << " to the order" << std::endl << "| " << reset;
         std::cin>>read;
     }
     add(this);

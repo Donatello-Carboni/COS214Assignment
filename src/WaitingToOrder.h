@@ -68,6 +68,12 @@ public:
      * @return A string indicating the state.
      */
     std::string toString();
+
+private:
+    std::string magenta = "\033[35m";
+    std::string reset = "\033[0m";
+    std::string bold = "\033[1m";
+
 };
 
 #endif

@@ -190,7 +190,8 @@ void WaitingToOrder::changeHappiness(Customer* customer)
 
     int happiness = rand() % 5 + 8;
     customer->changeHappiness(happiness);
-    cout << "[WAITING_TO_ORDER] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
+    cout << magenta << bold << "[WAITING_TO_ORDER]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
+    cout << reset;
 }
 
 string WaitingToOrder::toString()

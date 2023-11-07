@@ -10,6 +10,15 @@
 class Review : public Report {
 private:
   int rating; /**< The rating associated with the review. */
+  std::string cyan = "\033[36m";
+  std::string blue = "\033[34m";
+  std::string bold = "\033[1m";
+  std::string yellow = "\033[33m";
+  std::string green = "\033[32m";
+  std::string red = "\033[31m";
+  std::string white = "\033[37m";
+  std::string reset = "\033[0m";
+
 
 public:
   /**

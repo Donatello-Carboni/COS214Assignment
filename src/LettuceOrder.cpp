@@ -6,7 +6,7 @@ LettuceOrder::LettuceOrder()
     std::string read="";
     if(this->inspected == false)
     {
-        std::cout << "Adding Lettuce to the order" << std::endl;
+        std::cout << yellow << bold << "|  + Adding " << white << "Lettuce" << yellow << " to the order" << std::endl << "| " << reset;
         std::cin>>read;
     }
     add(this);

@@ -48,14 +48,14 @@ float Tab::calculateTotalPrice() {
 }
 
 void Tab::printBill() {
-  std::cout << "Tab ID: " << tabID << std::endl;
+  std::cout << blue << bold << "Tab ID: " << white << tabID << std::endl;
   calculateTotalPrice();
-  std::cout << "Total Price: " << totalPrice << std::endl;
-  std::cout << "Ordered Items: " << std::endl;
+  std::cout << yellow << bold << "|  + " << blue << "Total Price: " << white << totalPrice << std::endl;
+  std::cout << yellow << bold << "|  + " << blue << "Ordered Items: " << std::endl;
   for (int i = 0; i < orderedItems.size(); i++) {
     BurgerOrder* curr = orderedItems[i];
     while (curr != NULL) {
-      std::cout << "\t Item: " << curr->toString() << "\t Price: R"
+      std::cout << cyan << "\t Item: " << white << curr->toString() << green <<"\t\t Price: " << white << "R"
                 << curr->getPrice() << std::endl;
       curr = curr->getNext();
     }

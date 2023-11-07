@@ -26,6 +26,12 @@ class CreateOrder : public Command {
   std::vector<std::string> orders; /**< List of orders. */
   BurgerOrder* burgerorder; /**< Pointer to the BurgerOrder object. */
   bool Inspection = false; /**< Boolean to check if the order has been inspected. */
+  std::string yellow = "\033[33m";
+  std::string red = "\033[31m";
+  std::string white = "\033[37m";
+  std::string bold = "\033[1m";
+  std::string reset = "\033[0m";
+  
  public:
   /**
    * @brief Constructor for the CreateOrder class.

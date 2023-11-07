@@ -135,6 +135,8 @@ public:
 private:
   std::string blue = "\033[34m";
   std::string bold = "\033[1m";
+  std::string yellow = "\033[33m";
+  std::string white = "\033[37m";
   std::string reset = "\033[0m";
   State* state; /**< The current state of the customer. */
   int happiness; /**< The happiness level of the customer. */

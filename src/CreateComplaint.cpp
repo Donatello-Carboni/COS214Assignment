@@ -5,16 +5,14 @@ Report* CreateComplaint::buildReport(int Happy)
 {
     std::string read;
     if(Inspection==false){
-        std::cout<<"Report Creation happening"<<std::endl;
-        std::cout<<"Press Enter to Continue"<<std::endl;
+        std::cout << yellow << bold << "|  + Report Creation happening"<<std::endl << reset;
         std::cin>>read;
     }
      std::string head;
      std::string body;
     if(Happy>50){
         if(this->Inspection==false){
-            std::cout<<"Happy Customer could have otherwise been an unhappy customer"<<std::endl;
-            std::cout<<"Press Enter to Continue"<<std::endl;
+            std::cout << yellow << bold << "|  + " << white << "Happy Customer could have otherwise been an unhappy customer" << std::endl << reset;
             std::cin>>read;
         }
         head="Happy Customer";
@@ -23,8 +21,7 @@ Report* CreateComplaint::buildReport(int Happy)
     }
     else{
         if(this->Inspection==false){
-            std::cout<<"Unhappy Customer could have otherwise been an happy customer"<<std::endl;
-            std::cout<<"Press Enter to Continue"<<std::endl;
+            std::cout << yellow << bold << "|  + " << white << "Unhappy Customer could have otherwise been an happy customer" << std::endl << reset;
             std::cin>>read;
         }
         head="Unhappy Customer";
@@ -54,14 +51,12 @@ void CreateComplaint::setHappy(int Happy){
 void CreateComplaint::execute()
 {   std::string read;
     if(Inspection==false){
-        std::cout<<"Report command"<<std::endl;
-        std::cout<<"Press Enter to Continue"<<std::endl;
+        std::cout << yellow << bold << "|  + " << magenta << "Report command" << std::endl << reset;
         std::cin>>read;
     }
     Manager::getManager().addReport(this->buildReport(happy));
     if(Inspection==false){
-        std::cout<<"Report added"<<std::endl;
-        std::cout<<"Press Enter to Continue"<<std::endl;
+        std::cout << yellow << bold << "|  + " << magenta << "Report added" << std::endl << reset;
         Manager::getManager().toString();
         std::cin>>read;
         Inspection=true;

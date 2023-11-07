@@ -19,7 +19,7 @@ void Waiter::WriteDownOrder(std::vector<std::string> order) {
       this->CancelItem(Singleorder);
     } else {
       // cout<<"Write Down Order: "<<Singleorder<<endl;
-      cout << "Write Down Order: " << Singleorder << endl;
+      cout << yellow << bold<< "|  + Write Down Order: " << white << Singleorder << endl << reset;
       this->mediator->notifyOrder((Colleague*)this, 1, Singleorder);
     }
   }
@@ -91,24 +91,27 @@ void Waiter::seatCustomer(vector<Customer*> customers) {
       if (this->FreeTables[whichTable]->AddCustomer(customers[i])) {
         customers[i]->sitDown();
       } else {
-        cout << "No free tables left" << endl;
+        cout << yellow << "|  + No free tables left" << reset << endl;
       }
     }
     std::string read;
     if(Observation==false){
-      cout << "First group of customers seated observer triggered" << endl;
-      cout<<"Free tables: "<<this->getFreeTablesCount()<<endl;
-      cout<<"Occupied tables: "<<this->getOccupiedTablesCount()<<endl;
+      cout << endl << yellow << bold;
+      cout << "|  + First group of customers seated observer triggered" << endl;
+      cout << "|  =" << green << " Free tables: " << white << this->getFreeTablesCount() << endl << yellow;
+      cout << "|  =" << red <<  " Occupied tables: " << white << this->getOccupiedTablesCount() << reset << endl;
       this->FreeTables[whichTable]->setState(false);
-      cout<<"Free tables: "<<this->getFreeTablesCount()<<endl;
-      cout<<"Occupied tables: "<<this->getOccupiedTablesCount()<<endl;
+      cout << endl << yellow << bold;
+      cout << "|  + Table distribution after observer was triggered" << endl;
+      cout << "|  =" << green << " Free tables: " << white << this->getFreeTablesCount() << endl << yellow;
+      cout << "|  =" << red << " Occupied tables: " << white << this->getOccupiedTablesCount() << reset << endl;
       cin >> read;
       Observation=true;
     }else{
       this->FreeTables[whichTable]->setState(false);
     }
   } else {
-    cout << "No free tables" << endl;
+    cout << reset << yellow << bold << "|  + No free tables" << reset << endl;
   }
 };
 
@@ -121,7 +124,7 @@ void Waiter::nextTable() {
     }
     // cout << "Current table: " << this->currTable << endl;
   } else {
-    cout << "No occupied tables" << endl;
+    cout << yellow << "|  + No occupied tables" << reset << endl;
   }
 }
 
@@ -131,11 +134,11 @@ Customer* Waiter::nextCustomer() {
 std:
   string read;
   if (Iterator == false) {
-    cout << "Getting Customer" << endl;
-    cout << "Current iterator vars customer:" << this->currCustomer
-         << " Internal Table:" << this->currInternalTable
-         << " composite table:" << this->currTable << endl;
-    cout << "Enter when inspected" << endl;
+    cout << yellow << bold << "|  + Getting Customer" << endl;
+    cout << "|  + Current iterator vars customer: " << white << this->currCustomer << endl << yellow
+         << "|  + Internal Table: " << white << this->currInternalTable << endl << yellow
+         << "|  + Composite table: " << white << this->currTable << endl;
+    cout << "" << reset << endl;
     cin >> read;
   }
   CompositeTable* currComp =
@@ -186,15 +189,15 @@ void Waiter::CompleteCircuit() {
       
       this->nextTable();
     }
-
-    cout << "serving customer " << c->getCustomerNumber() << endl;
+    cout << yellow << bold;
+    cout << "|  + Serving " << white << "Customer " << c->getCustomerNumber() << endl;
     std::string stateStr = c->getState()->toString();
     if (stateStr == "[WAITING_TO_ORDER]") {
       TabMemento t = this->caretaker->getMemento();
       if (t.getTabID() >= 0) {
-        cout << "There exists a tab that need to be paid of by customer "
-             << c->getCustomerNumber() << " of total " << t.getTotalPrice()
-             << endl;
+        cout << yellow << "|  "<< red << "! There exists a tab that has to be paid off " << white << "by Customer "
+             << c->getCustomerNumber() << red << " of total " << white << t.getTotalPrice()
+             << endl << reset;
       }
       c->placeOrder();
       this->WriteDownOrder(c->getOrder());
@@ -204,36 +207,37 @@ void Waiter::CompleteCircuit() {
       if (plate != nullptr) {
         c->givePlate(plate);
       }
-      cout << "Waiter plate map:" << endl;
+      cout << yellow << bold;
+      cout << "|  + Waiter plate map:" << endl;
       this->printPlateMap();
       c->setState(new AboutToLeave());
     } else if (stateStr == "[ABOUT_TO_LEAVE]") {
       if (c->Tab()) {
-        cout << c->getCustomerNumber() << " is making a tab for "
+        cout << yellow << bold << "|  + " << white << c->getCustomerNumber() << yellow << " is making a tab for "
              << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
-             << " for " + c->getPlate()->toString() << endl;
+             << yellow << " for " << green << c->getPlate()->toString() << endl << reset;
         this->printTabMap();
         Tab* tab = this->getTab(c->getCustomerNumber());
         this->caretaker->addMemento(tab->createMemento());
         this->removeTab(c->getCustomerNumber());
       } else {
-        cout << c->getCustomerNumber() << " is paying a total of "
-             << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
-             << " for " + c->getPlate()->toString() << endl;
+        cout << bold << yellow << "|  + " << white << c->getCustomerNumber() << yellow << " is paying a total of "
+             << white << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+             << yellow << " for " << green << c->getPlate()->toString() << endl << reset;
         this->removeTab(c->getCustomerNumber());
       }
       this->storeHappy(c->getHappiness());
       c->leave();
     }
-    cout << "done serving customer" << endl;
+    cout << yellow << bold << "|  " << green << "! Finished serving customer" << endl << reset;
     if (c->getCustomerNumber() == 0) {
       string ready;
       this->mediator->inspected=true;
-      cout << "first customer served. Enter when inspected" << endl;
+      cout << yellow << bold <<  "|  + First customer served" << endl << reset;
       cin >> ready;
-      cout << "Resuming simulation..." << endl;
+      cout << white << bold << "Resuming simulation..." << endl;
     }
-    cout << "done serving customer" << endl;
+    cout << yellow << bold << "|  " << green << "! Finished serving customer" << endl << reset;
   }
   if (c == nullptr && this->OccupiedTables.size() == 1) {
     this->currCustomer = 0;
@@ -241,7 +245,7 @@ void Waiter::CompleteCircuit() {
     this->currTable = 0;
     return;
   }
-  cout << "Finishing circuit itertions circuit" << endl;
+  cout << yellow << bold << "|  + Finishing circuit itertions circuit" << endl << reset;
   this->currTable++;
   this->currInternalTable = 0;
   this->currCustomer = 0;
@@ -265,22 +269,22 @@ void Waiter::CompleteCircuit() {
         if (plate != nullptr) {
           c->givePlate(plate);
         }
-        cout << "Waiter plate map:" << endl;
+        cout << yellow << bold << "|  + " << white << "Waiter" << yellow << " plate map:" << endl;
         this->printPlateMap();
         c->setState(new AboutToLeave());
       } else if (stateStr == "[ABOUT_TO_LEAVE]") {
         if (c->Tab()) {
-          cout << c->getCustomerNumber() << " is making a tab for "
-               << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
-               << " for " + c->getPlate()->toString() << endl;
+          cout << yellow << bold << "|  + " << white << c->getCustomerNumber() << yellow << " is making a tab for "
+               << white << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+               << yellow << " for " << green << c->getPlate()->toString() << endl << reset;
           this->printTabMap();
           Tab* tab = this->getTab(c->getCustomerNumber());
           this->caretaker->addMemento(tab->createMemento());
           this->removeTab(c->getCustomerNumber());
         } else {
-          cout << c->getCustomerNumber() << " is paying a total of "
-               << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
-               << " for " + c->getPlate()->toString() << endl;
+          cout << bold << yellow << "|  + " << white <<c->getCustomerNumber() << yellow << " is paying a total of "
+               << white << (this->getTab(c->getCustomerNumber()))->getTotalPrice()
+               << yellow << " for " << green << c->getPlate()->toString() << endl;
           this->removeTab(c->getCustomerNumber());
         }
         this->storeHappy(c->getHappiness());
@@ -311,17 +315,17 @@ Plate* Waiter::getPlate(int plateID) {
 void Waiter::removePlate(int plateID) { plateMap.erase(plateID); }
 
 void Waiter::printPlateMap() {
-  std::cout << "Plate Map Contents:" << std::endl;
+  std::cout << yellow << bold << "|  + Plate Map Contents:" << std::endl << reset;
   for (const auto& pair : plateMap) {
-    std::cout << "ID: " << pair.first << ", Plate: " << pair.second->toString()
+    std::cout << cyan << bold << "|  = ID: " << white << pair.first << yellow << ", " << cyan << "Plate: " << white << pair.second->toString()
               << std::endl;
   }
 }
 
 void Waiter::printBurgerMap() {
-  std::cout << "Burger Map Contents:" << std::endl;
+  std::cout << yellow << bold << "|  + Burger Map Contents:" << std::endl << reset;
   for (const auto& pair : BurgerMap) {
-    std::cout << "ID: " << pair.first << ", Burger: " << pair.second->toString()
+    std::cout << cyan << bold << "|  = ID: " << white << pair.first << yellow << ", " << cyan << "Burger: " << white << pair.second->toString()
               << std::endl;
   }
 }
@@ -344,9 +348,11 @@ void Waiter::storeBurgerOrder(int orderID, BurgerOrder* order) {
 }
 
 void Waiter::printTabMap() {
-  std::cout << "Tab Map Contents:" << std::endl;
+  std::cout << yellow << bold << "|  + Tab Map Contents:" << std::endl << reset;
   for (const auto& pair : TabMap) {
-    std::cout << "ID: " << pair.first << ", Tab: " << pair.second << std::endl;
+    std::cout << blue << bold << "|  = ID: " << white << pair.first << yellow << ", " << blue << "Tab: "; 
+    pair.second->printBill();
+    std::cout << std::endl << reset;
   }
 }
 

@@ -6,7 +6,7 @@ TomatoSauceOrder::TomatoSauceOrder()
     std::string read="";
     if(this->inspected == false)
     {
-        std::cout << "Adding Tomatoe Sauce to the order" << std::endl;
+        std::cout << yellow << bold << "|  + Adding " << white << "Tomato Sauce" << yellow << " to the order" << std::endl << "| " << reset;
         std::cin>>read;
     }
     add(this);

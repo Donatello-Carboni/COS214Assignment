@@ -16,7 +16,15 @@ class Tab {
   int tabID; /**< The ID of the tab. */
   float totalPrice; /**< The total price of the tab. */
   std::vector<BurgerOrder*> orderedItems; /**< The list of ordered items in the tab. */
-
+  std::string cyan = "\033[36m";
+  std::string blue = "\033[34m";
+  std::string bold = "\033[1m";
+  std::string yellow = "\033[33m";
+  std::string green = "\033[32m";
+  std::string red = "\033[31m";
+  std::string white = "\033[37m";
+  std::string reset = "\033[0m";
+  
  public:
     /**
    * @brief Constructor for the Tab object.

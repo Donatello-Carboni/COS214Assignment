@@ -11,6 +11,11 @@
 class ConcreteMediator : public KitchenMediator {
 private:
     // Declare any private members here (if necessary).
+    std::string white = "\033[37m";
+    std::string yellow = "\033[33m";
+    std::string green = "\033[32m";
+    std::string bold = "\033[1m";
+    std::string reset = "\033[0m";
 
 public:
     /**

@@ -5,8 +5,7 @@ void CreateOrder::execute()
 {
   std::string read;
   if(Inspection==false){
-    std::cout<<"Order Creation happening"<<std::endl;
-    std::cout<<"Press Enter to Continue"<<std::endl;
+    std::cout << yellow << bold << "|  + Order is being created"<< std::endl << "| " << reset;
     std::cin>>read;
   }
   if (this->orders.at(1) == "REGULAR_BUN")
@@ -79,12 +78,12 @@ void CreateOrder::RemoveOrder(std::string order)
     {
       std::string read;
       if(Inspection==false){
-        std::cout<<"Order Cancelation happening"<<order<<std::endl;
-        std::cout<<"Cancel out of Order: "<<order<<std::endl;
+        std::cout << yellow << bold << "|  - " << red << "Order Cancelation: " << white << order << std::endl;
+        std::cout << yellow << "|  - " << red << "Cancel out of Order: " << white << order << std::endl << reset;
         std::cin>>read;
         this->Inspection = true;
       }else{
-        std::cout<<"Cancel out of Order: "<<order<<std::endl;
+        std::cout << yellow << bold << "|  - " << red << "Cancel out of Order: "<< white << order << std::endl << reset;
       }
       this->orders.erase(std::next(it).base());
       break;

@@ -13,7 +13,7 @@ void ConcreteMediator::notifyOrder(Colleague *colleague, int choice,
   if (choice == 1) {
     std::string read = "";
     if (this->inspected == false) {
-      std::cout << "Notifier is calling write order to command" << std::endl;
+      std::cout << yellow << bold << "|  + Notifier is calling " << green << "Write Order" << yellow << " to Command" << std::endl << reset;
       std::cin >> read;
     }
 
@@ -21,7 +21,7 @@ void ConcreteMediator::notifyOrder(Colleague *colleague, int choice,
   } else if (choice == 2) {
     std::string read = "";
     if (this->inspected == false) {
-      std::cout << "Notifier is calling Remove order to command" << std::endl;
+      std::cout << yellow << bold << "|  + Notifier is calling " << green << "Remove Order" << yellow << " to Command" << std::endl << reset;
       std::cin >> read;
     }
 
@@ -40,7 +40,7 @@ void ConcreteMediator::notifyDone(Colleague *colleague) {
 
   std::string read = "";
   if (this->inspected == false) {
-    std::cout << "Passing empty Plate to Chef chain." << std::endl;
+    std::cout << yellow << bold << "|  + Passing empty Plate to " << white << "Chef chain." << yellow << std::endl << "| " << reset;
     std::cin >> read;
   }
 
@@ -53,14 +53,14 @@ void ConcreteMediator::notifyDone(Colleague *colleague) {
   }
 
   if (this->inspected == false) {
-    std::cout << "Finding correct waiter..." << std::endl;
+    std::cout << yellow << bold << "|  + Finding correct waiter..." << std::endl << "| " << reset;
     std::cin >> read;
   }
 
   Waiter *w = (Waiter *)this->getColleagues().at(i);
 
   if (this->inspected == false) {
-    std::cout << "Giving populated Plate to waiter." << std::endl;
+    std::cout << yellow << bold << "|  + Giving populated Plate to waiter." << std::endl << "| " << reset;
     std::cin >> read;
   }
 
@@ -79,7 +79,7 @@ void ConcreteMediator::notifyDone(Colleague *colleague) {
 }
 
 void ConcreteMediator::notifyReport(Colleague *colleague) {
-  cout << "Notify Report" << endl;
+  cout << yellow << bold << "| + Notify Report" << endl << reset;
   CreateComplaint *Cmd = (CreateComplaint *)getCommands().at(1);
   Cmd->setHappy(((Waiter *)colleague)->getHappy());
   Cmd->execute();

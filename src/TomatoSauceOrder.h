@@ -33,6 +33,10 @@ public:
 
 private:
     double price; /**< The price of the tomato sauce order. */
+    std::string white = "\033[37m";
+    std::string yellow = "\033[31m";
+    std::string bold = "\033[1m";
+    std::string reset = "\033[0m";
 };
 
 #endif
