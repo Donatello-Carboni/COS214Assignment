@@ -1,0 +1,4 @@
+<map id="Chef" name="Chef">
+<area shape="rect" id="node1" title="Abstract class representing a chef, inheriting from Colleague." alt="" coords="23,80,75,107"/>
+<area shape="rect" id="node2" href="$classColleague.html" title="Abstract class representing a colleague." alt="" coords="5,5,92,32"/>
+</map>

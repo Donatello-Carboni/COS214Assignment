@@ -58,7 +58,7 @@ void Default::changeHappiness(Customer* customer)
         srand(time(NULL));
     }
 
-    int happiness = rand() % 12;
+    int happiness = rand() % 6 + 3;
     
     customer->changeHappiness(happiness);
     cout << "[DEFAULT]\t\t- HAPPINESS: " << customer->getHappiness() << endl;

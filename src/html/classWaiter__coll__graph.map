@@ -1,0 +1,5 @@
+<map id="Waiter" name="Waiter">
+<area shape="rect" id="node1" title="Class representing a Waiter that serves customers in a restaurant." alt="" coords="70,80,134,107"/>
+<area shape="rect" id="node2" href="$classColleague.html" title="Abstract class representing a colleague." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node3" href="$classObserver.html" title="Abstract class for an observer observing changes in a Table." alt="" coords="116,5,197,32"/>
+</map>

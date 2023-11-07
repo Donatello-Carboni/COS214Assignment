@@ -55,11 +55,10 @@ void AboutToLeave::changeHappiness(Customer* customer)
         srand(time(NULL));
     }
 
-    int happiness = rand() % 12;
+    int happiness = rand() % 5 + 4;
 
     customer->changeHappiness(happiness);
-    cout << "[ABOUT_TO_LEAVE] - Happiness changed..." << endl;
-    cout << "[ABOUT_TO_LEAVE] - Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
+    cout << "[ABOUT_TO_LEAVE]\t- Happiness:\tCustomer " << customer->getCustomerNumber() << "[" << customer->getHappiness() << "] " << endl;
 }
 
 string AboutToLeave::toString()

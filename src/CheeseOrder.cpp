@@ -3,6 +3,12 @@
 CheeseOrder::CheeseOrder()
 {
     price = 10.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << yellow << bold << "|  + Adding " << white << "Cheese" << yellow << " to the order" << std::endl << "| " << reset;
+        std::cin>>read;
+    }
     add(this);
 }
 
@@ -22,9 +28,4 @@ std::string CheeseOrder::toString()
 double CheeseOrder::getPrice()
 {
     return price;
-}
-
-BurgerOrder* CheeseOrder::getNext()
-{
-    return getNext();
 }

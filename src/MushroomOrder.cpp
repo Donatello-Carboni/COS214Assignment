@@ -3,6 +3,12 @@
 MushroomOrder::MushroomOrder()
 {
     price = 18.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << yellow << bold << "|  + Adding " << white << "Mushrooms" << yellow << " to the order" << std::endl << "| " << reset;
+        std::cin>>read;
+    }
     add(this);
 }
 

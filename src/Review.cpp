@@ -7,7 +7,7 @@ Review::Review(std::string header, std::string body, int rating)
 
 void Review::report() const {
   Report::report();
-  std::cout << "Rating: " << rating << std::endl;
+  std::cout << blue << bold << "Rating: " << white << rating << std::endl;
 }
 
 int Review::getRating() { return rating; }

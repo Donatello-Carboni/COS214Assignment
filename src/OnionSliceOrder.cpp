@@ -3,6 +3,12 @@
 OnionSliceOrder::OnionSliceOrder()
 {
     price = 7.00;
+    std::string read="";
+    if(this->inspected == false)
+    {
+        std::cout << yellow << bold << "|  + Adding " << white << "Onions" << yellow << " to the order" << std::endl << "| " << reset;
+        std::cin>>read;
+    }
     add(this);
 }
 

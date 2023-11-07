@@ -1,0 +1,102 @@
+\hypertarget{classBaseChef}{}\doxysection{Base\+Chef Class Reference}
+\label{classBaseChef}\index{BaseChef@{BaseChef}}
+
+
+Class representing a base chef, inheriting from \mbox{\hyperlink{classChef}{Chef}}.  
+
+
+
+
+{\ttfamily \#include $<$Base\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Base\+Chef\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBaseChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Chef\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classBaseChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBaseChef_afac8a1b1fb42eae21b43f82b3f521605}\label{classBaseChef_afac8a1b1fb42eae21b43f82b3f521605}} 
+\mbox{\hyperlink{classBaseChef_afac8a1b1fb42eae21b43f82b3f521605}{Base\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDefault}{Default}} constructor for \mbox{\hyperlink{classBaseChef}{Base\+Chef}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBaseChef}{Base\+Chef}} $\ast$ \mbox{\hyperlink{classBaseChef_a1729ecc7a5d8dd0f6acaa2702198c696}{add}} (\mbox{\hyperlink{classBaseChef}{Base\+Chef}} $\ast$chef)
+\begin{DoxyCompactList}\small\item\em Method to set the next chef in the chain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBaseChef_a53bc27da63fa567c27c0ff9f356c85c1}{add\+To\+Plate}} (\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$order, \mbox{\hyperlink{classPlate}{Plate}} $\ast$plate)
+\begin{DoxyCompactList}\small\item\em Handle method to add a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} to the plate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBaseChef_a307e1ddf34a466b81c5327a94709bfb2}\label{classBaseChef_a307e1ddf34a466b81c5327a94709bfb2}} 
+\mbox{\hyperlink{classBaseChef}{Base\+Chef}} $\ast$ {\bfseries next\+Chef}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a base chef, inheriting from \mbox{\hyperlink{classChef}{Chef}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBaseChef_a1729ecc7a5d8dd0f6acaa2702198c696}\label{classBaseChef_a1729ecc7a5d8dd0f6acaa2702198c696}} 
+\index{BaseChef@{BaseChef}!add@{add}}
+\index{add@{add}!BaseChef@{BaseChef}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBaseChef}{Base\+Chef}} $\ast$ Base\+Chef\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBaseChef}{Base\+Chef}} $\ast$}]{chef }\end{DoxyParamCaption})}
+
+
+
+Method to set the next chef in the chain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chef} & -\/ Pointer to the next \mbox{\hyperlink{classBaseChef}{Base\+Chef}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the next \mbox{\hyperlink{classBaseChef}{Base\+Chef}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBaseChef_a53bc27da63fa567c27c0ff9f356c85c1}\label{classBaseChef_a53bc27da63fa567c27c0ff9f356c85c1}} 
+\index{BaseChef@{BaseChef}!addToPlate@{addToPlate}}
+\index{addToPlate@{addToPlate}!BaseChef@{BaseChef}}
+\doxysubsubsection{\texorpdfstring{addToPlate()}{addToPlate()}}
+{\footnotesize\ttfamily void Base\+Chef\+::add\+To\+Plate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} $\ast$}]{order,  }\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handle method to add a \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} to the plate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & -\/ Pointer to the \mbox{\hyperlink{classBurgerOrder}{Burger\+Order}} object. \\
+\hline
+{\em plate} & -\/ Pointer to the \mbox{\hyperlink{classPlate}{Plate}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classChef_abdf1a20823d8f9c157a4e01ecd95a9c3}{Chef}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classSauceChef_af6c1e44e7de1de447293abd0473d9c3f}{Sauce\+Chef}}, \mbox{\hyperlink{classPattyChef_a06ccc0a0cbfe431dca58ed5f6861fb8c}{Patty\+Chef}}, \mbox{\hyperlink{classExtrasChef_ac047a7a8d46000150b2ba581dda680fa}{Extras\+Chef}}, \mbox{\hyperlink{classCheeseChef_af4d0d7124c94c9ca2e904931f0c610e7}{Cheese\+Chef}}, and \mbox{\hyperlink{classBunChef_ab9d49c2f5a545dbb7a2539eeaa169fb3}{Bun\+Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Chef.\+h\item 
+Base\+Chef.\+cpp\end{DoxyCompactItemize}

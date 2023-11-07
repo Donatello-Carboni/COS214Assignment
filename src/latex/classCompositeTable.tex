@@ -1,0 +1,149 @@
+\hypertarget{classCompositeTable}{}\doxysection{Composite\+Table Class Reference}
+\label{classCompositeTable}\index{CompositeTable@{CompositeTable}}
+
+
+Class representing a composite table, inheriting from \mbox{\hyperlink{classTable}{Table}}. This class can contain multiple tables or sub-\/tables.  
+
+
+
+
+{\ttfamily \#include $<$Composite\+Table.\+h$>$}
+
+
+
+Inheritance diagram for Composite\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classCompositeTable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composite\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classCompositeTable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classCompositeTable_a960ee2f396137c91b0b79a9d2f03cabe}{Add\+Table}} (\mbox{\hyperlink{classTable}{Table}} $\ast$table)
+\begin{DoxyCompactList}\small\item\em Adds a table to the composite table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCompositeTable_a69d333dfadebe6eb6a146a8f3229946f}{Remove\+Table}} (\mbox{\hyperlink{classTable}{Table}} $\ast$table)
+\begin{DoxyCompactList}\small\item\em Removes a table from the composite table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCompositeTable_adf36502deae8d672816670f4517cc2f1}{Add\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)
+\begin{DoxyCompactList}\small\item\em Adds a customer to the composite table. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCompositeTable_a4493e58a2358aaa380c1b6777d654248}{Remove\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)
+\begin{DoxyCompactList}\small\item\em Removes a customer from the composite table. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classTable}{Table}} $\ast$ $>$ \mbox{\hyperlink{classCompositeTable_a8252303d36d82ddfbcb64189883cfd44}{get\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vector of tables contained within the composite table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a composite table, inheriting from \mbox{\hyperlink{classTable}{Table}}. This class can contain multiple tables or sub-\/tables. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompositeTable_adf36502deae8d672816670f4517cc2f1}\label{classCompositeTable_adf36502deae8d672816670f4517cc2f1}} 
+\index{CompositeTable@{CompositeTable}!AddCustomer@{AddCustomer}}
+\index{AddCustomer@{AddCustomer}!CompositeTable@{CompositeTable}}
+\doxysubsubsection{\texorpdfstring{AddCustomer()}{AddCustomer()}}
+{\footnotesize\ttfamily bool Composite\+Table\+::\+Add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a customer to the composite table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the customer to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean indicating the success of the operation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTable_a90b2637521bc39a7c4ce194afe043cb9}{Table}}.
+
+\mbox{\Hypertarget{classCompositeTable_a960ee2f396137c91b0b79a9d2f03cabe}\label{classCompositeTable_a960ee2f396137c91b0b79a9d2f03cabe}} 
+\index{CompositeTable@{CompositeTable}!AddTable@{AddTable}}
+\index{AddTable@{AddTable}!CompositeTable@{CompositeTable}}
+\doxysubsubsection{\texorpdfstring{AddTable()}{AddTable()}}
+{\footnotesize\ttfamily bool Composite\+Table\+::\+Add\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}} $\ast$}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a table to the composite table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & -\/ Pointer to the table to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean indicating the success of the operation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeTable_a8252303d36d82ddfbcb64189883cfd44}\label{classCompositeTable_a8252303d36d82ddfbcb64189883cfd44}} 
+\index{CompositeTable@{CompositeTable}!getTables@{getTables}}
+\index{getTables@{getTables}!CompositeTable@{CompositeTable}}
+\doxysubsubsection{\texorpdfstring{getTables()}{getTables()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classTable}{Table}} $\ast$ $>$ Composite\+Table\+::get\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the vector of tables contained within the composite table. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classTable}{Table}} pointers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeTable_a4493e58a2358aaa380c1b6777d654248}\label{classCompositeTable_a4493e58a2358aaa380c1b6777d654248}} 
+\index{CompositeTable@{CompositeTable}!RemoveCustomer@{RemoveCustomer}}
+\index{RemoveCustomer@{RemoveCustomer}!CompositeTable@{CompositeTable}}
+\doxysubsubsection{\texorpdfstring{RemoveCustomer()}{RemoveCustomer()}}
+{\footnotesize\ttfamily bool Composite\+Table\+::\+Remove\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a customer from the composite table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & -\/ Pointer to the customer to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean indicating the success of the operation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTable_a72c0194a02ee8e912ccc830b111a844b}{Table}}.
+
+\mbox{\Hypertarget{classCompositeTable_a69d333dfadebe6eb6a146a8f3229946f}\label{classCompositeTable_a69d333dfadebe6eb6a146a8f3229946f}} 
+\index{CompositeTable@{CompositeTable}!RemoveTable@{RemoveTable}}
+\index{RemoveTable@{RemoveTable}!CompositeTable@{CompositeTable}}
+\doxysubsubsection{\texorpdfstring{RemoveTable()}{RemoveTable()}}
+{\footnotesize\ttfamily bool Composite\+Table\+::\+Remove\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTable}{Table}} $\ast$}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a table from the composite table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & -\/ Pointer to the table to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean indicating the success of the operation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Composite\+Table.\+h\item 
+Composite\+Table.\+cpp\end{DoxyCompactItemize}

@@ -8,7 +8,7 @@ Complaint::Complaint(std::string header, std::string body,
 
 void Complaint::report() const {
   Report::report();
-  std::cout << "Complaint: " << complaint << std::endl;
+  std::cout << red << bold << "|  + Complaint: " << white << complaint << std::endl << reset;
 }
 
 std::string Complaint::getComplaint() { return complaint; }

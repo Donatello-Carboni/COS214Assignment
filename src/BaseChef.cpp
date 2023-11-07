@@ -27,6 +27,6 @@ void BaseChef::addToPlate(BurgerOrder* order, Plate *plate)
     }
     else
     {
-        std::cout << "Order Complete." << std::endl;
+        std::cout << yellow << bold << "|  + " << green << "Order Complete." << std::endl << reset;
     }
 }

@@ -1,0 +1,6 @@
+<map id="SauceChef" name="SauceChef">
+<area shape="rect" id="node1" title="Class representing a chef specializing in preparing sauces for burger orders." alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node2" href="$classBaseChef.html" title="Class representing a base chef, inheriting from Chef." alt="" coords="9,155,93,181"/>
+<area shape="rect" id="node3" href="$classChef.html" title="Abstract class representing a chef, inheriting from Colleague." alt="" coords="25,80,77,107"/>
+<area shape="rect" id="node4" href="$classColleague.html" title="Abstract class representing a colleague." alt="" coords="7,5,94,32"/>
+</map>

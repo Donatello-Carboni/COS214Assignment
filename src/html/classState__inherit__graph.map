@@ -1,0 +1,7 @@
+<map id="State" name="State">
+<area shape="rect" id="node1" title=" " alt="" coords="210,5,266,32"/>
+<area shape="rect" id="node2" href="$classAboutToLeave.html" title="Class representing the state when a customer is about to leave, inheriting from State." alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$classDefault.html" title="Class representing the default state for a customer, inheriting from State." alt="" coords="143,80,213,107"/>
+<area shape="rect" id="node4" href="$classWaitingToOrder.html" title="Class representing the state when the customer is waiting to order." alt="" coords="237,80,359,107"/>
+<area shape="rect" id="node5" href="$classWaitingToSit.html" title="The WaitingToSit class represents the state where a customer is waiting to be seated in a restaurant." alt="" coords="383,80,485,107"/>
+</map>

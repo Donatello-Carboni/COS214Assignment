@@ -1,0 +1,11 @@
+<map id="Colleague" name="Colleague">
+<area shape="rect" id="node1" title="Abstract class representing a colleague." alt="" coords="277,5,363,32"/>
+<area shape="rect" id="node2" href="$classChef.html" title="Abstract class representing a chef, inheriting from Colleague." alt="" coords="253,80,305,107"/>
+<area shape="rect" id="node9" href="$classWaiter.html" title="Class representing a Waiter that serves customers in a restaurant." alt="" coords="329,80,393,107"/>
+<area shape="rect" id="node3" href="$classBaseChef.html" title="Class representing a base chef, inheriting from Chef." alt="" coords="237,155,321,181"/>
+<area shape="rect" id="node4" href="$classBunChef.html" title="Class representing a chef specialized in handling bun orders, inheriting from BaseChef." alt="" coords="5,229,83,256"/>
+<area shape="rect" id="node5" href="$classCheeseChef.html" title="Class representing a chef specialized in handling cheese orders, inheriting from BaseChef." alt="" coords="107,229,207,256"/>
+<area shape="rect" id="node6" href="$classExtrasChef.html" title="Class representing a chef specialized in adding extra toppings to a plate." alt="" coords="232,229,325,256"/>
+<area shape="rect" id="node7" href="$classPattyChef.html" title="Class representing a chef specialized in preparing patties for burger orders." alt="" coords="349,229,435,256"/>
+<area shape="rect" id="node8" href="$classSauceChef.html" title="Class representing a chef specializing in preparing sauces for burger orders." alt="" coords="459,229,549,256"/>
+</map>
