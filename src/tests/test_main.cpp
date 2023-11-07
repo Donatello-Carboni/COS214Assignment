@@ -122,35 +122,6 @@ TEST(ReportManagerTest, SingletonInstance) {
   ASSERT_EQ(&manager1, &manager2);
 }
 
-// TEST(ManagerTest, AddAndPrintReports) {
-//   Manager &manager = Manager::getManager();
-
-//   Report *review = new Review("Movie Review", "Great movie!", 5);
-//   Report *complaint =
-//       new Complaint("Service Complaint", "Poor service", "Late delivery");
-
-//   manager.addReport(review);
-//   manager.addReport(complaint);
-
-//   // Redirect std::cout to a stringstream for testing
-//   std::stringstream buffer;
-//   std::streambuf *old = std::cout.rdbuf(buffer.rdbuf());
-
-//   manager.toString();
-
-//   // Reset std::cout
-//   std::cout.rdbuf(old);
-
-//   // Check if the output matches the expected result
-//   std::string expectedOutput =
-//       "Header: Movie Review\nBody: Great movie!\nRating: "
-//       "5\n--------------------------\n"
-//       "Header: Service Complaint\nBody: Poor service\nComplaint: Late "
-//       "delivery\n--------------------------\n";
-
-//   ASSERT_EQ(buffer.str(), expectedOutput);
-// }
-
 //=============================================
 //============TAB & MEMENTO TEST===============
 //=============================================
@@ -174,25 +145,6 @@ TEST(TabTest, CreateAndSetMemento) {
   EXPECT_EQ(tab.getTotalPrice(), 0);
 }
 
-// Test case for adding ordered items and calculating total price
-// TEST(TabTest, AddOrderedItemAndCalculateTotalPrice) {
-//   Tab tab;
-
-//   // Create a burger order
-//   BurgerOrder *burgerOrder = new GlutenFreeBunOrder();
-//   burgerOrder->add(new CheeseOrder());
-//   // burgerOrder->add(new OnionSliceOrder());
-
-//   // Add the burger order to the tab
-//   tab.addOrderedItem(burgerOrder);
-
-//   // Check if the ordered items are correctly added
-//   EXPECT_EQ(tab.getOrderedItems().size(), 1);
-
-//   // Check if the total price is correctly calculated
-//   EXPECT_EQ(tab.getTotalPrice(), 0);
-// }
-
 // Test case for printing the bill
 TEST(TabTest, PrintBill) {
   testing::internal::CaptureStdout();  // Redirect cout for testing
@@ -208,50 +160,6 @@ TEST(TabTest, PrintBill) {
   EXPECT_NE(output.find("Total Price: "), std::string::npos);
   EXPECT_NE(output.find("Ordered Items:"), std::string::npos);
 }
-
-// Test case for adding multiple BurgerOrders
-// TEST(TabTest, AddMultipleOrderedItems) {
-//   Tab tab;
-//! Need to fix this test
-//   // Create and add the first burger order
-//   BurgerOrder *burgerOrder1 = new GlutenFreeBunOrder();
-//   burgerOrder1->add(new CheeseOrder());
-//   burgerOrder1->add(new OnionSliceOrder());
-//   tab.addOrderedItem(burgerOrder1);
-
-//   // Create and add the second burger order
-//   BurgerOrder *burgerOrder2 = new GlutenFreeBunOrder();
-//   burgerOrder2->add(new CheeseOrder());
-//   burgerOrder2->add(new CheeseOrder());
-//   burgerOrder2->add(new OnionSliceOrder());
-//   tab.addOrderedItem(burgerOrder2);
-
-//   // Check if the ordered items are correctly added
-//   EXPECT_EQ(tab.getOrderedItems().size(), 2);
-
-//   // Check if the total price is correctly calculated
-//   EXPECT_EQ(tab.getTotalPrice(), 0);
-// }
-
-//=================================================
-//===========MEDIATOR & COLLEAGUE TEST=============
-//=================================================
-
-// TEST(MediatorTest, AddColleague) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
-
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-
-//   // Perform assertions to validate the number of colleagues
-//   ASSERT_EQ(mediator->getColleagues().size(), 2);
-//   ASSERT_EQ(mediator->getColleagues().at(0), (Colleague *)chef);
-//   ASSERT_EQ(mediator->getColleagues().at(1), (Colleague *)waiter);
-//   // delete mediator;
-//   // delete mediator;
-// }
 
 //===============================================
 //===========MEDIATOR & COMMAND TEST=============
@@ -270,62 +178,7 @@ TEST(MediatorTest, AddCommand) {
   ASSERT_EQ(mediator->getCommands().size(), 2);
   ASSERT_EQ(mediator->getCommands().at(0), command);
   ASSERT_EQ(mediator->getCommands().at(1), command2);
-  // delete mediator;
-  // ASSERT_EQ(1, 1);
-  // delete mediator;
-  // ASSERT_EQ(1, 1);
 }
-
-// TEST(MediatorTest, CommsToDecor) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
-
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
-
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
-
-//   waiter->WriteDownOrder("Burger");
-//   waiter->WriteDownOrder("Burger");
-//   Command *command3 = mediator->getCommands().at(0);
-//   CreateOrder *command4 = (CreateOrder *)command3;
-//   // Perform assertions to validate the number of colleagues
-//   // std::string test = command4->burger->test;
-//   // ASSERT_EQ(test, "BurgerBurger");
-//   // delete mediator;
-// }
-
-//====================================
-//===========COMMAND TEST=============
-//====================================
-
-// TEST(COMMAND, decorcmd) {
-//   KitchenMediator *mediator = new ConcreteMediator();
-//   Chef *chef = new BaseChef();
-//   Waiter *waiter = new Waiter((ConcreteMediator *)mediator);
-
-//   mediator->addColleague((Colleague *)chef);
-//   mediator->addColleague((Colleague *)waiter);
-//   Command *command = new CreateOrder();
-//   Command *command2 = new CreateOrder();
-
-//   mediator->addCommand(command);
-//   mediator->addCommand(command2);
-
-//   waiter->WriteDownOrder("ID-1");
-//   waiter->WriteDownOrder("RegularBun");
-//   waiter->WriteDownOrder("Cheese");
-//   waiter->DoneOrder();
-//   bool truefalse = false;
-//   if (waiter->getPlate() != NULL) {
-//     truefalse = true;
-//   }
-//   EXPECT_TRUE(truefalse);
-// }
 
 //======================================
 //===========COMPOSITE TEST=============
